@@ -1,40 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+## 🖥️ Running the Website Locally
 
-## Getting Started
+1. Download Node.js from [https://nodejs.org/en](https://nodejs.org/en)  
+   **Recommended version:** `v22.12.0`
 
-First, run the development server:
+2. Verify installation:
+   ```bash
+   node -v
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/HCI-Tech-Lab/hcitechlab.github.io.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Navigate to the project folder:
+   ```bash
+   cd hcitechlab.github.io
+   ```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+5. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+6. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+7. Open your browser and go to:  
+   [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌿 Creating a Branch for Request Changes
 
-To learn more about Next.js, take a look at the following resources:
+1. Go to the **Branches** section in the GitHub repo.
+2. Click **New Branch**.
+3. Name your branch using the format: `YYMMDD-Name`  
+   (Ensure the source is set to `main`)
+4. In your code editor/terminal, run:
+   ```bash
+   git fetch origin
+   git checkout <branchName>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+5. Make your changes, commit, and push:
+   ```bash
+   git add .
+   git commit -m "Your descriptive commit message"
+   git push -u origin <branchName>
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. Go to your branch on GitHub and **create a Pull Request**,  
+   adding **Professor** and/or **Murad** as reviewer.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👥 Member Update
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Member data is in: `src/data/members_data.js`
+
+- Format:
+   ```js
+   {
+     "img": "img/Member/filename",
+     "hoverImg": "img/Member/filename",
+     "name": "Member Name",
+     "title": "Ph.D. Student / M.S. Student",
+     "interest": "Research Interest",
+     "link": "Link to Homepage",
+     "mail": "Email Address",
+     "linkedin": "Link to LinkedIn profile",
+     "note": "Notes regarding coadvising/leave of absence/break"
+   }
+   ```
+
+- To update the image:
+  - Upload it to `public/img/Member/`
+  - Set the `img` and `hoverImg` fields (⚠️ Do **not** use `/` at the beginning)
+  - Follow naming convention: `Initials.jpg`, `InitialsHover.png`, etc.
+
+---
+
+## 📰 News Update
+
+- News data is in: `src/data/news_data.js`
+
+- Format:
+   ```js
+   {
+     icon: "img/icon/award.png", // Choose from img/icon/
+     title: "Title",
+     date: "Mar 28 2025",
+     content: "Text content or use HTML for links",
+     images: ["img/news/example1.png", "img/news/example2.jpg"],
+     // Optional
+     extraContent: "<div>Additional HTML shown when 'Read more' is clicked</div>"
+   }
+   ```
+
+- Upload images to the `public/` folder  
+  (⚠️ Do **not** add `/` at the start of image paths)
+
+---
+
