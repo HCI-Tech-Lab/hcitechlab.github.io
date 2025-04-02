@@ -105,3 +105,45 @@
 
 ---
 
+## 📚 Publication Update
+
+- Publication data is located in: `src/data/research_data.js`
+
+- Format:
+  ```js
+  {
+    poster: "research/2025/TVCG/TVCG_01.png",
+    demo: "research/2025/TVCG/TVCG_01.mp4",
+    title: "Research Title",
+    authors: "Authors",
+    status: "When and where it is going to be published",
+    conference: "Name of Conference",
+    conferenceLink: "https://conference-website.com",
+    award: "Details if any award won",
+    website: "https://project-website.com",
+    doi: "https://doi-link.com",
+    video: "video file or link",
+    pdf: "research/2025/TVCG/TVCG_01.pdf",
+    presentation: "file or link",
+    media: "media link",
+    highligt: false, // Whether the publication appears on the main page (keep as false when adding)
+    category: "Conference / Journal (peer-reviewed)" 
+    // Options:
+    // "Conference / Journal (peer-reviewed)"
+    // "Poster / Demo / Workshop"
+    // "Domestic Conference / Journal"
+    // "Preprint"
+  }
+  ```
+
+- Upload poster images, demo videos, PDFs, etc. to:  
+  `public/research/<year>/<conference>/<filename>`
+
+- Then use the relative path:  
+  `"research/<year>/<conference>/<filename>"`
+
+- ⚠️ If a file or video doesn't exist, set its field to an empty string: `""`
+
+---
+
+
