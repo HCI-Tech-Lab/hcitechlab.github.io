@@ -306,6 +306,17 @@ export const msStudents = [
 ];
 
 export const interns = [
+    {
+        img: "img/Member/SC.jpg",
+        hoverImg: "main_icon.png",
+        name: "Seoyun Cha",
+        title: "Intern",
+        interest: "",
+        link: "#",
+        mail: "sy021023@seoultech.ac.kr",
+        linkedin: "#",
+        note: "",
+    },
 ];
 
 export const gradAlumni = [
