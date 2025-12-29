@@ -317,6 +317,17 @@ export const interns = [
         linkedin: "#",
         note: "",
     },
+    {
+        img: "img/Member/YJ.jpg",
+        hoverImg: "main_icon.png",
+        name: "Yejin Jang",
+        title: "Intern",
+        interest: "",
+        link: "#",
+        mail: "jangyejin1@gmail.com",
+        linkedin: "#",
+        note: "",
+    },
 ];
 
 export const gradAlumni = [
