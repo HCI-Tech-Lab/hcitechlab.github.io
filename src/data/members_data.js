@@ -89,7 +89,7 @@ export const phdStudents = [
         interest: "Viscoelastic Haptic Rendering",
         link: "https://www.soyeongyang.com",
         mail: "sy.yang@kaist.ac.kr",
-        linkedin: "www.linkedin.com/in/soyeong-yang-720bb5362",
+        linkedin: "https://www.linkedin.com/in/soyeong-yang-720bb5362",
         note: "",
     },
     {
