@@ -1,7 +1,7 @@
 export const research_temp = {
     "2025": [
         {
-            poster: "research/2026/TVCG/TVCG_2026_1.PNG",
+            poster: "research/2026/TVCG/TVCG_2026_1.png",
             demo: "",
             title: "AquaHaptics: Towards Immersive Haptic-based Hand Interactions for Virtual Underwater Experience",
             authors: "Soyeong Yang, Sang Ho Yoon",
