@@ -242,10 +242,10 @@ export const msStudents = [
         hoverImg: "img/Member/hover_image/DL_hover.jpg",
         name: "Dohui Lee",
         title: "M.S. Student",
-        interest: "Research Interest",
-        link: "http://dohuilee.notion.site",
-        mail: "#",
-        linkedin: "#",
+        interest: "Human-Centered XR Interaction with AI",
+        link: "https://dohui-lee.github.io/",
+        mail: "dohui.lee@kaist.ac.kr",
+        linkedin: "https://www.linkedin.com/in/dohui-lee-607943219/",
         note: "",
     },
     {
@@ -306,6 +306,28 @@ export const msStudents = [
 ];
 
 export const interns = [
+    {
+        img: "img/Member/SC.jpg",
+        hoverImg: "main_icon.png",
+        name: "Seoyun Cha",
+        title: "Intern",
+        interest: "",
+        link: "#",
+        mail: "sy021023@seoultech.ac.kr",
+        linkedin: "#",
+        note: "",
+    },
+    {
+        img: "img/Member/YJ.jpg",
+        hoverImg: "main_icon.png",
+        name: "Yejin Jang",
+        title: "Intern",
+        interest: "",
+        link: "#",
+        mail: "jangyejin1@gmail.com",
+        linkedin: "#",
+        note: "",
+    },
 ];
 
 export const gradAlumni = [
