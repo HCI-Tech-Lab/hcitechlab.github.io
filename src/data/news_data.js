@@ -4,6 +4,15 @@ export const news = [
     {
         icon: "img/icon/paper2.jpg",
         title: "A paper accepted to IEEE TVCG",
+        date: "Jan 2, 2026",
+        content: (
+            <>Our paper <strong>AquaHaptics: Towards Immersive Haptic-based Hand Interactions for Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
+        ),
+        images: [],
+    },
+    {
+        icon: "img/icon/paper2.jpg",
+        title: "A paper accepted to IEEE TVCG",
         date: "Dec 7, 2025",
         content: (
             <>Our paper <strong>ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application</strong> led by Seo Young (co-advised by Prof. Woontack Woo) and Junghoon is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>

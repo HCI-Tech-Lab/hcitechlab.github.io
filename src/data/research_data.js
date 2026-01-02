@@ -1,6 +1,24 @@
 export const research_temp = {
     "2025": [
         {
+            poster: "research/2026/TVCG/TVCG_2026_1.PNG",
+            demo: "",
+            title: "AquaHaptics: Towards Immersive Haptic-based Hand Interactions for Virtual Underwater Experience",
+            authors: "Soyeong Yang, Sang Ho Yoon",
+            status: "Accepted - Will be Published",
+            conference: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+            conferenceLink: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945",
+            award: "",
+            website: "",
+            doi: "",
+            video: "",
+            pdf: "",
+            presentation: "",
+            media: "",
+            highlight: false,
+            category: "Conference / Journal (peer-reviewed)"
+        },
+        {
             poster: "research/2025/TVCG/TVCG_02.jpg",
             demo: "",
             title: "ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application",
@@ -396,24 +414,6 @@ export const research_temp = {
             media: "",
             highlight: false,
             category: "Under Review"
-        },
-        {
-            poster: "img/icon/Under_Review.png",
-            demo: "",
-            title: "Underwater Haptic Experience",
-            authors: "Soyeong Yang et.al",
-            status: "Under Review",
-            conference: "",
-            conferenceLink: "",
-            award: "",
-            website: "",
-            doi: "",
-            video: "",
-            pdf: "",
-            presentation: "",
-            media: "",
-            highlight: false,
-            category: "Submitted"
         },
         {
             poster: "img/icon/Under_Review.png",
