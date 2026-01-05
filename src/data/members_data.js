@@ -328,6 +328,17 @@ export const interns = [
         linkedin: "#",
         note: "",
     },
+    {
+        img: "img/Member/HD.jpg",
+        hoverImg: "main_icon.png",
+        name: "HyeongJin Do",
+        title: "Intern",
+        interest: "",
+        link: "#",
+        mail: "dohj3220@kaist.ac.kr",
+        linkedin: "#",
+        note: "",
+    },
 ];
 
 export const gradAlumni = [

@@ -69,10 +69,10 @@ const WelcomeCard = () => {
               </ul>
             </h4>
             
-            <Link class="btn btn-primary" href="https://www.youtube.com/@HCI_Tech" target="_blank"><b>HCI Tech Youtube</b></Link>
+            <Link className="btn btn-primary" href="https://www.youtube.com/@HCI_Tech" target="_blank"><b>HCI Tech Youtube</b></Link>
             <br />
             <br />
-            <Link class="btn btn-dark" href="https://youtu.be/BndS5KMmBHA" target="_blank"><b>Learn More about HCI Tech Lab (Korean)</b></Link>
+            <Link className="btn btn-dark" href="https://youtu.be/BndS5KMmBHA" target="_blank"><b>Learn More about HCI Tech Lab (Korean)</b></Link>
         </div>
       </div>
     </div>
