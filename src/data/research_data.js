@@ -1,5 +1,5 @@
 export const research_temp = {
-    "2025": [
+    "2026":[
         {
             poster: "research/2026/TVCG/TVCG_2026_1.png",
             demo: "",
@@ -19,7 +19,7 @@ export const research_temp = {
             category: "Conference / Journal (peer-reviewed)"
         },
         {
-            poster: "research/2025/TVCG/TVCG_02.jpg",
+            poster: "research/2026/TVCG/TVCG_2026_0.jpg",
             demo: "",
             title: "ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application",
             authors: "Seo Young Oh, Junghoon Seo, Juyoung Lee, Boram Yoon, Woontack Woo*, Sang Ho Yoon*",
@@ -35,7 +35,9 @@ export const research_temp = {
             media: "",
             highlight: false,
             category: "Conference / Journal (peer-reviewed)"
-        },
+        }
+    ],    
+    "2025": [
         {
             poster: "research/2025/IMWUT/MovingPress.png",
             demo: "",
