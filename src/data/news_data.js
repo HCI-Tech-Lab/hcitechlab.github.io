@@ -6,7 +6,7 @@ export const news = [
         title: "A paper accepted to IEEE TVCG",
         date: "Jan 2, 2026",
         content: (
-            <>Our paper <strong>AquaHaptics: Towards Immersive Haptic-based Hand Interactions for Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
+            <>Our paper <strong>AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
         images: [],
     },
