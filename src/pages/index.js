@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       {/* SECTION 4: Highlighted Publications (Light Gray Background) */}
-      <div style={{ backgroundColor: '#ebf3f8ff', width: '100%', padding: '0px 0', borderTop: '1px solid #eee' }}>
+      <div style={{ backgroundColor: '#ebf3f8ff', width: '100%', padding: '3px 0', borderTop: '1px solid #eee' }}>
         <div className="container">
           <HighlightedPublicatons />
         </div>
@@ -279,6 +279,19 @@ const HighlightedPublicatons = () => {
               )
             )}
         </div>
+
+        <div className="text-center mt-3">
+          <Link href="/publications" className="btn btn-light" style={{ 
+              border: '1px solid #ddd', 
+              padding: '10px 40px', 
+              fontWeight: '600',
+              borderRadius: '2px',
+              backgroundColor: '#f8f9fa'
+            }}>
+            See More &rarr;
+          </Link>
+        </div>
+
       </div>
     </div>
   );
