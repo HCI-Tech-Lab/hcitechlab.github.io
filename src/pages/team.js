@@ -61,7 +61,7 @@ const Postdocs = () => {
           postdocs.map(
             (member, index) => (
               <Fragment key = {index}>
-                <div className = "col-lg-3 col-md-4 col-sm-6 col-12" style = {{textAlign: "center"}}>
+                <div className = "col-lg-3 col-md-4 col-sm-6 col-6" style = {{textAlign: "center"}}>
                   <MemberImage originalImage = {member['img']} hoverImage = {member['hoverImg']} />
                   <b style={{fontSize: "24px"}}>{member['name']} </b><br/>
                   <span style={{fontSize: "14px"}}>{member['interest'] == "Research Interest" ? "" : member['interest']}</span><br/>
@@ -91,7 +91,7 @@ const PhdStudents = () => {
           phdStudents.map(
             (member, index) => (
               <Fragment key = {index}>
-                <div className = "col-lg-3 col-md-4 col-sm-6 col-12" style = {{textAlign: "center"}}>
+                <div className = "col-lg-3 col-md-4 col-sm-6 col-6" style = {{textAlign: "center"}}>
                   <MemberImage originalImage = {member['img']} hoverImage = {member['hoverImg']} />
                   <b style={{fontSize: "24px"}}>{member['name']} </b><br/>
                   <span style={{fontSize: "14px"}}>{member['interest'] == "Research Interest" ? "" : member['interest']}</span><br/>
@@ -121,7 +121,7 @@ const MasterStudents = () => {
           msStudents.map(
             (member, index) => (
               <Fragment key = {index}>
-                <div className = "col-lg-3 col-md-4 col-sm-6 col-12" style = {{textAlign: "center"}}>
+                <div className = "col-lg-3 col-md-4 col-sm-6 col-6" style = {{textAlign: "center"}}>
                   <MemberImage originalImage = {member['img']} hoverImage = {member['hoverImg']} />
                   <b style={{fontSize: "24px"}}>{member['name']} </b><br/>
                   <span style={{fontSize: "14px"}}>{member['interest'] == "Research Interest" ? "" : member['interest']}</span><br/>
@@ -151,7 +151,7 @@ const Interns = () => {
         interns.map(
           (member, index) => (
             <Fragment key = {index}>
-                <div className = "col-lg-3 col-md-4 col-sm-6 col-12" style = {{textAlign: "center"}}>
+                <div className = "col-lg-3 col-md-4 col-sm-6 col-6" style = {{textAlign: "center"}}>
                   <MemberImage originalImage = {member['img']} hoverImage = {member['hoverImg']} />
                   <b style={{fontSize: "24px"}}>{member['name']} </b><br/>
                   <span style={{fontSize: "14px"}}>{member['interest'] == "Research Interest" ? "" : member['interest']}</span><br/>
@@ -176,32 +176,25 @@ const Interns = () => {
 const AdministrativeStaff = () => {
   return (
     <div className = "container-fluid">
-      <div className = "row justify-content-center">
+      <div className = "row justify-content-center mb-3">
       <h1 className="card-title" style = {{textAlign: "center"}}>Administrative Staff</h1>
-        <div className = "col-lg-3 col-md-4 col-sm-6 col-12" style={{paddingBottom: "20px"}}>
+        <div className = "col-lg-3 col-md-4 col-sm-6 col-6" style={{textAlign: "center"}}>
           <MemberImage originalImage = "img/Member/NK.jpg" hoverImage = "main_icon.png" />
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12" style={{textAlign: "left"}}>
-          <b style={{fontSize: "24px"}}>Nahyeong Kim</b><br/>
-          <br/>
-          Tel: +82-42-350-5914<br/>
-          Office: N25 2F #3241
+          <b style={{fontSize: "24px"}}>Nahyeong Kim</b>
+            <div className = "contact-box">
+              <Link href={`mailto: kimnahyeong@kaist.ac.kr`} target="_blank"><i className = "bi bi-envelope-fill"/></Link>
+           </div>
         </div>
 
-        <div className = "col-lg-3 col-md-4 col-sm-6 col-12" style={{paddingBottom: "20px"}}>
+        <div className="col-lg-3 col-md-4 col-sm-6 col-6" style={{textAlign: "center"}}>
           <MemberImage originalImage = "img/Member/EC.png" hoverImage = "main_icon.png" />
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12" style={{textAlign: "left"}}>
-          <b style={{fontSize: "24px"}}>EunJi Cho</b><br/>
-          <br/>
-          Tel: +82-42-350-5915<br/>
-          Office: N25 2F #3241
+          <b style={{fontSize: "24px" }}>EunJi Cho</b>
+          <div className = "contact-box">
+              <Link href={`mailto: choangie@kaist.ac.kr`} target="_blank"><i className = "bi bi-envelope-fill"/></Link>
+           </div>
         </div>
       </div>
-      
     </div>
-    
-    
   );
 }
 
