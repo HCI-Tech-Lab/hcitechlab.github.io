@@ -9,6 +9,7 @@ export const news = [
             <>Our paper <strong>AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
         images: [],
+        category: "Publication",
     },
     {
         icon: "img/icon/paper2.jpg",
@@ -18,13 +19,16 @@ export const news = [
             <>Our paper <strong>ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application</strong> led by Seo Young (co-advised by Prof. Woontack Woo) and Junghoon is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
         images: [],
+        
     },
     {
         icon: "img/icon/speaker.png",
         title: "Winter 2026 Undergraduate Research Internship",
         date: "Nov 7 2025",
         content: <div>We are looking for research interns (including URP) for 2025 Winter. Application deadline is Nov 18th. You can find more information <Link href="/recruiting_under" target="_blank">here</Link>.</div>,
-        images: []
+        images: [],
+        category: "Position",      
+        status: "Closed",       
     },
     {
         icon: "img/icon/visit.png",

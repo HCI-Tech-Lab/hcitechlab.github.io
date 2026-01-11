@@ -15,7 +15,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -33,7 +33,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         }
     ],    
@@ -88,7 +88,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
                 {
@@ -233,7 +233,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -287,7 +287,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -524,7 +524,7 @@ export const research_temp = {
             pdf: "research/IMWUT2024/IMWUT2024.pdf",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
             category: "Conference / Journal (peer-reviewed)"
         },
         {

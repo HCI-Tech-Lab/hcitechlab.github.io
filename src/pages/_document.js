@@ -20,14 +20,25 @@ export default function Document() {
               <div className="col-lg-6 px-4"> 
                 <h5 className="m-0 text-left text-white" style= {{fontSize:"medium"}} ><b>HCI Tech Lab</b></h5> 
                 <h5 className="m-0 text-left" style= {{color: "lightgray", fontSize:"small"}}>
-                  KAIST, N5, Room 2346<br />
+                  KAIST, N5, Room 2347<br />
                   291 Daehak-ro, Yuseong-gu, Daejeon (34141) <br />
                   Republic of Korea
                 </h5> 
               </div>
 
-              <div className="col-lg-6 text-keft">
-                <img alt="footer" src="CT_New_Logo_White.png" width = {5000} height={500} style={{ height: '50px' , width: "auto"}}/>
+              <div className="col-lg-6 col-12 text-lg-end text-start px-4 mt-1">
+                <img 
+                  className="d-none d-md-inline-block" 
+                  alt="footer-desktop" 
+                  src="CT_New_Logo_White1.png" 
+                  style={{ height: '50px', width: "auto"}}
+                />
+                <img 
+                  className="d-inline-block d-md-none" 
+                  alt="footer-mobile" 
+                  src="Logo_Black.png" 
+                  style={{ height: '50px', width: "auto"}}
+                />
               </div>
 
             </div>
