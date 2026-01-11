@@ -6,7 +6,6 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100%;
-  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
 }
 
 nav.navbar {

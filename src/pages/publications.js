@@ -24,9 +24,8 @@ export default function Publications() {
     // Filter options
     const categories = [
         "All",
-        "Conference / Journal (peer-reviewed)",
+        "Conference(Peer-Reviewed) / Journal",
         "Poster / Demo / Workshop",
-        "Domestic Conference / Journal",
         "Preprint",
         "Submitted"
     ];
@@ -34,6 +33,25 @@ export default function Publications() {
     return (
         <SectionContainer>
             <div className="row">
+                 {/* 1. TOP SECTION: Header & Filters */}
+                <div className="mb-3">
+                    <h1 className="fw-bold mb-2" style={{ color: "black" }}>Publications</h1>
+                    <div className="row g-3">
+                        <div className="col-md-6">
+                            <label className="form-label text-muted small fw-bold">Publication Type</label>
+                            <select 
+                                className="form-select border-0 shadow-sm" 
+                                value={selectedCategory} 
+                                onChange={(e) => setSelectedCategory(e.target.value)}
+                                style={{ padding: '10px', borderRadius: '8px', backgroundColor: '#f2f8ffff' }}
+                            >
+                                {categories.map((cat) => (
+                                    <option key={cat} value={cat}>{cat}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Research Publications List */}
                 <div className="col-md-10">
@@ -46,7 +64,10 @@ export default function Publications() {
                     .filter(year => research_temp[year].some(item => selectedCategory === "All" || item.category === selectedCategory)) // Filter out empty years
                     .map(year => (
                         <div key={year} ref={(el) => (yearRefs.current[year] = el)}>
-                            <h2 className="card-title" style={{ color: "rgb(0, 50, 100)" }}>{year}</h2>
+                            <div className="d-flex align-items-center mb-4">
+                                <h2 className="m-0 me-3" style={{ color: "#003264", fontWeight: "800" }}>{year}</h2>
+                                <div style={{ flex: 1, height: "1px", backgroundColor: "#ddd" }}></div>
+                            </div>
                             {research_temp[year]
                                 .filter(item => selectedCategory === "All" || item.category === selectedCategory)
                                 .map((item, index) => (
@@ -87,7 +108,47 @@ export default function Publications() {
                         ))}
                 </div>
 
-                {/* Sidebar for Year Navigation & Tag Filters */}
+                <div className="col-md-2 d-none d-md-block" style={{ position: 'relative' }}>
+                  
+                  {/* STICKY CONTAINER */}
+                  {/* This div effectively pins itself to the window while inside the column */}
+                  <div style={{ 
+                      position: "sticky", 
+                      top: "100px", /* Distance from top of screen */
+                      alignSelf: "start" 
+                  }}>
+                      <div className="text-end ps-3 border-start">
+                        <p className="text-muted small fw-bold mb-3">JUMP TO YEAR</p>
+                        
+                        {Object.keys(research_temp)
+                            .sort((a, b) => {
+                                if (a === "2021 and Before") return 1;
+                                if (b === "2021 and Before") return -1;
+                                return parseInt(b) - parseInt(a);
+                            })
+                            .map(year => (
+                            <div key={year} className="mb-2">
+                                <button 
+                                    onClick={() => scrollToYear(year)}
+                                    className="btn btn-link text-decoration-none fw-bold"
+                                    style={{ 
+                                        fontSize: '1.2rem', 
+                                        padding: '0', 
+                                        color: '#555',
+                                        transition: 'color 0.2s'
+                                    }}
+                                    onMouseEnter={(e) => e.target.style.color = '#000'}
+                                    onMouseLeave={(e) => e.target.style.color = '#555'}
+                                >
+                                    {year}
+                                </button>
+                            </div>
+                        ))}
+                      </div>
+                  </div>
+                </div>
+
+                {/* Sidebar for Year Navigation & Tag Filters 
                 <div className="col-md-2">
                   <div className="sticky-top" style={{ top: "80px", height: "calc(100vh - 80px)", overflowY: "auto" }}>
                       <div className="list-group">
@@ -116,7 +177,7 @@ export default function Publications() {
                           ))}
                       </div>
                   </div>
-                </div>
+                </div>*/}
 
 
             </div>
