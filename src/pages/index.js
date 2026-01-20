@@ -117,6 +117,7 @@ const getCategoryColor = (category) => {
 
 const NewsCard = () => {
   const latestNews = news.slice(0, 4);
+  const [selectedNews, setSelectedNews] = useState(null);
 
   return (
     <div className="col-12">
@@ -159,6 +160,16 @@ const NewsCard = () => {
                   : newsItem.content}
               </div>
 
+              {/* Read More Button (Only for items with extra content) */}
+              {newsItem.extraContent && (
+                  <button 
+                      className="read-more-btn" 
+                      onClick={() => setSelectedNews(newsItem)}
+                  >
+                      Read More
+                  </button>
+              )}
+
               {newsItem.images && newsItem.images.length > 0 && (
                 /* The d-flex wrapper ensures images sit side-by-side if there are multiple */
                 <div className="d-flex gap-2">
@@ -180,6 +191,17 @@ const NewsCard = () => {
             </div>
           ))}
         </div>
+
+        {/* Modal Pop-Up */}
+        {selectedNews && (
+            <div className="modal-overlay" onClick={() => setSelectedNews(null)}>
+                <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                    <button className="close-btn" onClick={() => setSelectedNews(null)}>✖</button>
+                    <h3>{selectedNews.title}</h3>
+                    <p>{selectedNews.extraContent}</p>
+                </div>
+            </div>
+        )}
 
         <div className="text-center mt-3">
           <Link href="/news" className="btn btn-light" style={{ 

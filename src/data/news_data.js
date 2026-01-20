@@ -6,7 +6,7 @@ export const news = [
         title: "Two papers accepted to CHI 2026",
         date: "Jan 20 2026",
         content: (
-            <>Two papers from HCI Tech Lab have been accepted to <Link href="https://chi2026.acm.org/" target="_blank">CHI 2026</Link>. Congratulations to Kun-woo Song and Dohui Lee!</>
+            <>Two papers from HCI Tech Lab have been accepted to <Link href="https://chi2026.acm.org/" target="_blank">CHI 2026</Link>. Congratulations to Kun-woo Song, Dohui Lee, and Youngrae Kim!</>
         ),
         images: [],
         category: "Publication",
