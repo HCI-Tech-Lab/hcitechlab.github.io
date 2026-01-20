@@ -367,9 +367,12 @@ span.type{
   background: white;
   padding: 20px;
   border-radius: 10px;
-  width: 50%;
+  width: 90%;
+  max-width: 600px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  max-height: 85vh;     
+  overflow-y: auto;
 }
 
 .close-btn {

@@ -1,16 +1,52 @@
 export const research_temp = {
     "2026":[
         {
+            poster: "img/icon/preprint.png",
+            demo: "",
+            title: "HOICraft: In-Situ VLM-based Authoring Tool for Part-Level Hand-Object Interaction Design in VR",
+            authors: "Dohui Lee, Qi Sun, Sang Ho Yoon",
+            status: "Conditionally Accepted",
+            conference: "CHI2026",
+            conferenceLink: "https://chi2026.acm.org/",
+            award: "",
+            website: "",
+            doi: "",
+            video: "",
+            pdf: "",
+            presentation: "",
+            media: "",
+            highlight: false,
+            category: "Conference / Journal (peer-reviewed)"
+        },
+        {
+            poster: "img/icon/preprint.png",
+            demo: "",
+            title: "Tendon Vibration for Virtual Object Interactions",
+            authors: "Kun-Woo Song, Youngrae Kim, Sang Ho Yoon",
+            status: "Conditionally Accepted",
+            conference: "CHI2026",
+            conferenceLink: "https://chi2026.acm.org/",
+            award: "",
+            website: "",
+            doi: "",
+            video: "",
+            pdf: "",
+            presentation: "",
+            media: "",
+            highlight: false,
+            category: "Preprint"
+        },
+        {
             poster: "research/2026/TVCG/TVCG_2026_1.png",
             demo: "",
             title: "AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience",
             authors: "Soyeong Yang, Sang Ho Yoon",
-            status: "Accepted - Will be Published",
+            status: "",
             conference: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
-            conferenceLink: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945",
+            conferenceLink: "https://ieeexplore.ieee.org/document/11359085",
             award: "",
             website: "",
-            doi: "",
+            doi: "https://doi.org/10.1109/TVCG.2026.3652832",
             video: "",
             pdf: "",
             presentation: "",
@@ -23,7 +59,7 @@ export const research_temp = {
             demo: "",
             title: "ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application",
             authors: "Seo Young Oh, Junghoon Seo, Juyoung Lee, Boram Yoon, Woontack Woo*, Sang Ho Yoon*",
-            status: "Accepted - Will be Published",
+            status: "",
             conference: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
             conferenceLink: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945",
             award: "",
@@ -107,6 +143,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 2,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -306,6 +344,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 1,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -398,7 +438,6 @@ export const research_temp = {
             highlight: false,
             category: "Conference / Journal (peer-reviewed)"
         },
-
         {
             poster: "img/icon/Under_Review.png",
             demo: "",
@@ -416,24 +455,6 @@ export const research_temp = {
             media: "",
             highlight: false,
             category: "Under Review"
-        },
-        {
-            poster: "img/icon/Under_Review.png",
-            demo: "",
-            title: "Tendon Vibration for Virtual Object Interactions",
-            authors: "Kun-Woo Song et.al",
-            status: "Under Review",
-            conference: "",
-            conferenceLink: "",
-            award: "",
-            website: "",
-            doi: "",
-            video: "",
-            pdf: "",
-            presentation: "",
-            media: "",
-            highlight: false,
-            category: "Submitted"
         },
         {
             poster: "img/icon/Under_Review.png",
@@ -597,6 +618,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
+            play: true,
+            playOrder: 3,
             category: "Poster / Demo / Workshop"
         },
         {
@@ -615,6 +638,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
+            play: true,
+            playOrder: 4,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -633,6 +658,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
+            play: true,
+            playOrder: 5,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -689,6 +716,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
+            play: true,
+            playOrder: 6,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
