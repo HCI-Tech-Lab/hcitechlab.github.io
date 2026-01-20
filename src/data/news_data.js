@@ -3,6 +3,32 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "img/icon/paper2.jpg",
+        title: "Two papers accepted to CHI 2026",
+        date: "Jan 20 2026",
+        content: (
+            <>Two papers from HCI Tech Lab have been accepted to <Link href="https://chi2026.acm.org/" target="_blank">CHI 2026</Link>. Congratulations to Kun-woo Song and Dohui Lee!</>
+        ),
+        images: [],
+        category: "Publication",
+        extraContent: (
+            <>
+            <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>Finger Tendon Vibration: Finger Movement Illusions for Immersive Virtual Object Interaction</h4>
+                        <h6><b>AUTHORS</b> Kun-woo Song, Youngrae Kim, Sang Ho Yoon</h6>
+                    </div>
+                </div>
+                <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>HOICraft: In-Situ VLM-based Authoring Tool for Part-Level Hand-Object Interaction Design in VR</h4>
+                        <h6><b>AUTHORS</b> Dohui Lee, Qi Sun, Sang Ho Yoon</h6>
+                    </div>
+                </div>
+            </>
+        )
+    },
+    {
+        icon: "img/icon/paper2.jpg",
         title: "A paper accepted to IEEE TVCG",
         date: "Jan 2, 2026",
         content: (
@@ -19,7 +45,7 @@ export const news = [
             <>Our paper <strong>ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application</strong> led by Seo Young (co-advised by Prof. Woontack Woo) and Junghoon is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
         images: [],
-        
+        category: "Publication",
     },
     {
         icon: "img/icon/speaker.png",
