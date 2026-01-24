@@ -24,7 +24,7 @@ export default function Publications() {
     // Filter options
     const categories = [
         "All",
-        "Conference(Peer-Reviewed) / Journal",
+        "Conference / Journal (peer-reviewed)",
         "Poster / Demo / Workshop",
         "Preprint",
         "Submitted"

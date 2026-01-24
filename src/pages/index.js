@@ -454,9 +454,11 @@ const carouselItems = allResearch
 
                       {/* Compact Links */}
                       <div className="d-flex flex-wrap gap-2 mt-2" style={{ fontSize: '0.75rem' }}>
-                        {item.pdf && <Link href={item.pdf} target="_blank" style={{ textDecoration: 'underline' }}>PDF</Link>}
-                        {item.video && <Link href={item.video} target="_blank" style={{ textDecoration: 'underline' }}>Video</Link>}
-                        {item.website && <Link href={item.website} target="_blank" style={{ textDecoration: 'underline' }}>Web</Link>}
+                        {item.website && <Link className="publication-link" href={item.website} target="_blank">Project Website</Link>}
+                        {item.doi && <Link className="publication-link" href={item.doi} target="_blank">DOI</Link>}
+                        {item.video && <Link className="publication-link" href={item.video} target="_blank">Video</Link>}
+                        {item.pdf && <Link className="publication-link" href={item.pdf} target="_blank">PDF</Link>}
+                        {item.media && <Link className="publication-link" href={item.media} target="_blank">MEDIA</Link>}
                       </div>
                     </div>
 

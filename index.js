@@ -40,7 +40,6 @@ export default function Home() {
           
 
           {/* <ResearchHighlights /> */}
-
           <HighlightedPublicatons />
 
         </div>
@@ -157,7 +156,6 @@ const NewsCard = () => {
 }
 
 //HighlightedPublications
-
 const HighlightedPublicatons = () => {
   return (
     <div className = "container">
