@@ -38,7 +38,7 @@ export const research_temp = {
         },
         {
             poster: "research/2026/TVCG/TVCG_2026_1.png",
-            demo: "",
+            demo: "research/2026/TVCG/AquaHaptics.mp4",
             title: "AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience",
             authors: "Soyeong Yang, Sang Ho Yoon",
             status: "",
@@ -52,6 +52,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 3,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -144,7 +146,7 @@ export const research_temp = {
             media: "",
             highlight: true,
             play: true,
-            playOrder: 2,
+            playOrder: 4,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -258,7 +260,7 @@ export const research_temp = {
         },
         {
             poster: "research/2025/IMWUT/Ultraboard.png",
-            demo: "",
+            demo: "research/2025/CHI2025/Ultraboard.mp4",
             title: "UltraBoard: Always-Available Wearable Ultrasonic Mid-air Haptic Interface for Responsive and Robust VR Inputs",
             authors: "Changhyeon Park, Yubin Lee, Sang Ho Yoon",
             status: "",
@@ -272,6 +274,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
+            play: true,
+            playOrder: 5,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -294,7 +298,7 @@ export const research_temp = {
         },
         {
             poster: "research/2025/CHI2025/T2IRay.png",
-            demo: "",
+            demo: "research/2025/CHI2025/T2IRay.mp4",
             title: "T2IRay: Design of Thumb-to-Index based Indirect Pointing for Continuous and Robust AR/VR Input",
             authors: "Jina Kim, Yang Zhang, Sang Ho Yoon",
             status: "",
@@ -308,6 +312,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 2,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -619,7 +625,7 @@ export const research_temp = {
             media: "",
             highlight: false,
             play: true,
-            playOrder: 3,
+            playOrder: 6,
             category: "Poster / Demo / Workshop"
         },
         {
@@ -638,8 +644,6 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            play: true,
-            playOrder: 4,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -658,8 +662,6 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            play: true,
-            playOrder: 5,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -716,8 +718,6 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            play: true,
-            playOrder: 6,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
