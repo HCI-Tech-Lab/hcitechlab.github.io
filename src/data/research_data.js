@@ -45,7 +45,7 @@ export const research_temp = {
             conference: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
             conferenceLink: "https://ieeexplore.ieee.org/document/11359085",
             award: "",
-            website: "",
+            website: "https://aquahaptics.hcitech.org/",
             doi: "https://doi.org/10.1109/TVCG.2026.3652832",
             video: "",
             pdf: "",
