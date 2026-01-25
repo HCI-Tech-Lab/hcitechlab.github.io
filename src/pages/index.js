@@ -454,6 +454,13 @@ const carouselItems = allResearch
 
                       {/* Compact Links */}
                       <div className="d-flex flex-wrap gap-2 mt-2" style={{ fontSize: '0.75rem' }}>
+                        {item.award &&  <h6 className="d-flex align-items-center">
+                                                <img
+                                                    src="/img/icon/award_small.png"
+                                                    alt="award"
+                                                    style={{ width: "20px", height: "20px", marginRight: "5px" }}
+                                                    />
+                                                <b>AWARD:&nbsp;</b> {item.award}</h6>}
                         {item.website && <Link className="publication-link" href={item.website} target="_blank">Project Website</Link>}
                         {item.doi && <Link className="publication-link" href={item.doi} target="_blank">DOI</Link>}
                         {item.video && <Link className="publication-link" href={item.video} target="_blank">Video</Link>}

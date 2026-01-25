@@ -333,7 +333,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
