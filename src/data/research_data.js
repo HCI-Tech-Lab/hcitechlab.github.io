@@ -16,7 +16,7 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            category: "Conference / Journal (peer-reviewed)"
+            category: "Preprint"
         },
         {
             poster: "img/icon/preprint.png",
