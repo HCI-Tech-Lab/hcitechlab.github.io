@@ -320,7 +320,7 @@ export const research_temp = {
         },
         {
             poster: "research/2025/CHI2025/Choreocraft.png",
-            demo: "",
+            demo: "research/2025/CHI2025/Choreocraft.mp4",
             title: "ChoreoCraft: In-situ Crafting of Choreography in Virtual Reality through Creativity Support Tool",
             authors: "Kyungeun Jung*, Hyunyoung Han*, Sang Ho Yoon",
             status: "",
@@ -334,6 +334,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 8,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
