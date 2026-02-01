@@ -404,8 +404,6 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
-            play: true,
-            playOrder: 8,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -535,9 +533,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
-            play: true,
-            playOrder: 6,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -573,7 +569,7 @@ export const research_temp = {
             pdf: "research/ISMAR2024/ismar2024.pdf",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
