@@ -524,7 +524,7 @@ export const research_temp = {
     "2024": [
         {
             poster: "research/2024/NeurIPS/nips2024.jpg",
-            demo: "",
+            demo: "research/2024/NeurIPS/nips2024.mp4",
             title: "Posture-Informed Muscular Force Learning for Robust Hand Pressure Estimation",
             authors: "Kyungjin Seo*, Junghoon Seo*, Hanseok Jeong, Sangpil Kim, Sang Ho Yoon",
             status: "",
@@ -542,7 +542,7 @@ export const research_temp = {
         },
         {
             poster: "research/2024/IMWUT/IMWUT2024.png",
-            demo: "",
+            demo: "research/2024/IMWUT/IMWUT2024.mp4",
             title: "EStatiG: Wearable Haptic Feedback with Multi-Phalanx Electrostatic Brake for Enhanced Object Perception in VR",
             authors: "Nicha Vanichvoranun*, Hojeong Lee*, Seoyeon Kim, Sang Ho Yoon",
             status: "",
