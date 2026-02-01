@@ -537,7 +537,9 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
+            play: true,
+            playOrder: 6,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -628,8 +630,7 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            play: true,
-            playOrder: 6,
+            play: false,
             category: "Poster / Demo / Workshop"
         },
         {
