@@ -145,6 +145,42 @@ export const research_temp = {
             media: "",
             highlight: false,
             category: "Submitted"
+        },
+        {
+            poster: "img/icon/Under_Review.png",
+            demo: "",
+            title: "Expert-in-the-Loop VLM",
+            authors: "Youjin Sung et.al",
+            status: "Under Review",
+            conference: "",
+            conferenceLink: "",
+            award: "",
+            website: "",
+            doi: "",
+            video: "",
+            pdf: "",
+            presentation: "",
+            media: "",
+            highlight: false,
+            category: "Submitted"
+        },
+        {
+            poster: "img/icon/Under_Review.png",
+            demo: "",
+            title: "Study on XR Touch Input",
+            authors: "Yubin Lee et.al",
+            status: "Under Review",
+            conference: "",
+            conferenceLink: "",
+            award: "",
+            website: "",
+            doi: "",
+            video: "",
+            pdf: "",
+            presentation: "",
+            media: "",
+            highlight: false,
+            category: "Submitted"
         }
     ],    
     "2025": [
