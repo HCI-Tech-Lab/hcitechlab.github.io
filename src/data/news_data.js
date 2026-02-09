@@ -2,6 +2,13 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "img/icon/team.png",
+        title: "Lab Activity",
+        date: "Jan 26 2026",
+        content: "Lab Winter Retreat",
+        images: ["img/Lab/2601/1.jpg","img/Lab/2601/2.jpg","img/Lab/2601/3.jpg"]
+    },
+    {
         icon: "img/icon/paper2.jpg",
         title: "Two papers accepted to CHI 2026",
         date: "Jan 20 2026",
@@ -36,6 +43,20 @@ export const news = [
         ),
         images: [],
         category: "Publication",
+    },
+    {
+        icon: "img/icon/team.png",
+        title: "Lab Gathering",
+        date: "Dec 23 2025",
+        content: "End-of-Year Lab Gathering",
+        images: ["img/Lab/2512/EOY.png","img/Lab/2512/EOY1.png"]
+    },
+    {
+        icon: "img/icon/visit.png",
+        title: "Visit from HITSZ",
+        date: "Dec 16 2025",
+        content: <dev>Prof.Yitian Shao from HITSZ visited us!</dev>,
+        images: ["img/Lab/2512/YItian_Visit1.jpg","img/Lab/2512/YItian_Visit2.jpg","img/Lab/2512/YItian_Visit3.jpg",]
     },
     {
         icon: "img/icon/paper2.jpg",

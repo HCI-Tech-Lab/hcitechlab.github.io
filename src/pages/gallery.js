@@ -19,6 +19,30 @@ export default function Gallery() {
   }
 
 const galleries = {
+  "January, 2026 (Lab Retreat": [
+    "img/Lab/2601/1.jpg",
+    "img/Lab/2601/2.jpg",
+    "img/Lab/2601/3.jpg",
+    "img/Lab/2601/4.jpg",
+    "img/Lab/2601/5.jpg",
+  ],
+  "January, 2026 (External Visit, Korea University)": [
+    "img/Lab/2601/CY_Visit.jpg",
+  ],
+  "December, 2025 (End of Year Gathering)": [
+    "img/Lab/2512/EOY.png",
+    "img/Lab/2512/EOY1.png",
+  ],
+  "December, 2025 (External Visit, HITSZ)": [
+    "img/Lab/2512/YItian_Visit1.jpg",
+    "img/Lab/2512/YItian_Visit2.jpg",
+    "img/Lab/2512/YItian_Visit3.jpg",
+  ],
+  "December, 2025 (External Visit, Yitian Shao)": [
+    "img/Lab/2512/YItian_Visit1.jpg",
+    "img/Lab/2512/YItian_Visit2.jpg",
+    "img/Lab/2512/YItian_Visit3.jpg",
+  ],
   "November, 2025 (External Visit, Distinguished professors from Denmark)": [
     "img/Lab/2511/Denmark1.jpg",
     "img/Lab/2511/Denmark2.jpg",
