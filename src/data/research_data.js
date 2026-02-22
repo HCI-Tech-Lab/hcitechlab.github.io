@@ -65,7 +65,7 @@ export const research_temp = {
             conference: "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
             conferenceLink: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945",
             award: "",
-            website: "",
+            website: "https://ohseo.github.io/projects/2025_01_forcectrl/",
             doi: "https://doi.org/10.1109/tvcg.2025.3647547",
             video: "",
             pdf: "",
@@ -73,6 +73,24 @@ export const research_temp = {
             media: "",
             highlight: false,
             category: "Conference / Journal (peer-reviewed)"
+        },
+        {
+            poster: "img/icon/Under_Review.png",
+            demo: "",
+            title: "Dance Motion Simplification to Support Dance Learning",
+            authors: "Hyungyoung Han et.al",
+            status: "Under Review",
+            conference: "",
+            conferenceLink: "",
+            award: "",
+            website: "",
+            doi: "",
+            video: "",
+            pdf: "",
+            presentation: "",
+            media: "",
+            highlight: false,
+            category: "Submitted"
         },
         {
             poster: "img/icon/Under_Review.png",
