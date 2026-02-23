@@ -144,7 +144,7 @@ export const phdStudents = [
         title: "M.S. Student",
         interest: "Sensor Fabrication & Toolkit",
         link: "#",
-        mail: "taleweaver@kaist.ac.kr",
+        mail: "#",
         linkedin: "https://www.linkedin.com/in/hyung-wook-yi-673828178",
         note: "",
     },
