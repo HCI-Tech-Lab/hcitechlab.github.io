@@ -298,10 +298,10 @@ export const msStudents = [
         hoverImg: "main_icon.png",
         name: "HyeongJin Do",
         title: "M.S. Student",
-        interest: "",
+        interest: "Haptics, AI-based sensing",
         link: "#",
         mail: "dohj3220@kaist.ac.kr",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/%EB%8F%84%ED%98%95%EC%A7%84-undefined-893a163b2/",
         note: "",
     },
     {
