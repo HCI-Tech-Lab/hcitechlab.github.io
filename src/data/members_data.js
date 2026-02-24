@@ -53,10 +53,10 @@ export const phdStudents = [
         hoverImg: "img/Member/hover_image/KJ_hover.jpg",
         name: "Kyungeun Jung",
         title: "Ph.D. Student",
-        interest: "Research Interest",
+        interest: "Motion-Aware Haptic Interaction",
         link: "https://kyungeun.xyz/",
-        mail: "#",
-        linkedin: "#",
+        mail: "",
+        linkedin: "https://www.linkedin.com/in/kyungeunjung/",
         note: "",
     },
     {
