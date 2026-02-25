@@ -323,10 +323,10 @@ export const interns = [
         hoverImg: "main_icon.png",
         name: "Yejin Jang",
         title: "Intern",
-        interest: "",
+        interest: "Haptics",
         link: "#",
         mail: "jangyejin1@gmail.com",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/yejin-jang-445778390/",
         note: "",
     }
 ];
