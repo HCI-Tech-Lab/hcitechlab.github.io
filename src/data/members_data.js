@@ -60,7 +60,7 @@ export const phdStudents = [
         note: "",
     },
     {
-        img: "img/Member/MK.jpg",
+        img: "img/Member/MK26.png",
         hoverImg: "img/Member/hover_image/MK_hover.jpg",
         name: "Min-yung Kim",
         title: "Ph.D. Student",
