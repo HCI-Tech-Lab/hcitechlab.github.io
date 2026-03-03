@@ -26,7 +26,7 @@ export const ctp445_data = [
                     type: 0,
                     notes: [],
                     dues: [
-                        { name: "Sign up Form due by 2/29(Thu) 11:59pm", link: "https://forms.gle/vDR7HHYKfBtYUsTH9" }
+                        { name: "Sign up Form due by 3/6(Fri) 11:59pm", link: "https://forms.gle/bqSEgiq1gzCKhB74A" }
                     ]
                 },
                 day2: {
@@ -308,7 +308,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "5/20",
+                    date: "5/18",
                     titles: ["Authoring"],
                     type: 0,
                     notes: [
@@ -322,8 +322,8 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "5/22",
-                    titles: ["CTScape Participation on 5/31 (Make-up Class)"],
+                    date: "5/20",
+                    titles: [""],
                     type: 1,
                     notes: [
                         { name: "CTScape Registration", link: "https://docs.google.com/forms/d/e/1FAIpQLSf2fWT_AWZEYC2A4xJvVfmYFifZavBqaFjuTykrl-n67Bmz4Q/viewform" }
@@ -333,7 +333,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "5/27",
+                    date: "5/25",
                     titles: ["Navigation"],
                     type: 0,
                     notes: [
@@ -347,7 +347,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "5/29",
+                    date: "5/27",
                     titles: ["Collaboration"],
                     type: 0,
                     notes: [
@@ -362,8 +362,8 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "6/3",
-                    titles: ["Final Presentation"],
+                    date: "6/1",
+                    titles: [""],
                     type: 1,
                     notes: [
                         { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }
@@ -373,8 +373,8 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "6/5",
-                    titles: ["Final Presentation"],
+                    date: "6/3",
+                    titles: ["No Class"],
                     type: 1,
                     notes: [
                         { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }
@@ -386,14 +386,14 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "6/10",
+                    date: "6/8",
                     titles: ["No class (Finals Week)"],
                     type: 2,
                     notes: [],
                     dues: []
                 },
                 day2: {
-                    date: "6/12",
+                    date: "6/10",
                     titles: ["No class (Finals Week)"],
                     type: 2,
                     notes: [],
