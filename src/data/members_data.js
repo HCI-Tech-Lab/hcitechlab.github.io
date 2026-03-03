@@ -60,7 +60,7 @@ export const phdStudents = [
         note: "",
     },
     {
-        img: "img/Member/MK.jpg",
+        img: "img/Member/MK26.png",
         hoverImg: "img/Member/hover_image/MK_hover.jpg",
         name: "Min-yung Kim",
         title: "Ph.D. Student",
@@ -298,10 +298,10 @@ export const msStudents = [
         hoverImg: "main_icon.png",
         name: "HyeongJin Do",
         title: "M.S. Student",
-        interest: "",
+        interest: "Haptics, AI-based sensing",
         link: "#",
         mail: "dohj3220@kaist.ac.kr",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/%EB%8F%84%ED%98%95%EC%A7%84-undefined-893a163b2/",
         note: "",
     },
     {
@@ -323,10 +323,10 @@ export const interns = [
         hoverImg: "main_icon.png",
         name: "Yejin Jang",
         title: "Intern",
-        interest: "",
+        interest: "Haptics",
         link: "#",
         mail: "jangyejin1@gmail.com",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/yejin-jang-445778390/",
         note: "",
     }
 ];
