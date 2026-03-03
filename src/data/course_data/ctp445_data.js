@@ -21,7 +21,7 @@ export const ctp445_data = [
         schedule: [
             {
                 day1: {
-                    date: "3/4",
+                    date: "3/2",
                     titles: ["Course Overview"],
                     type: 0,
                     notes: [],
@@ -30,7 +30,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "3/9",
+                    date: "3/4",
                     titles: ["Introduction to Augmented Reality"],
                     type: 0,
                     notes: [
@@ -42,7 +42,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "3/11",
+                    date: "3/9",
                     titles: ["Team Formation Activity"],
                     type: 1,
                     notes: [
@@ -55,7 +55,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "3/16",
+                    date: "3/11",
                     titles: ["AR Toolkit Introduction"],
                     type: 1,
                     notes: [
@@ -70,7 +70,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "3/18",
+                    date: "3/16",
                     titles: ["Visual System and Display"],
                     type: 0,
                     notes: [
@@ -83,7 +83,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "3/23",
+                    date: "3/18",
                     titles: ["Tracking"],
                     type: 0,
                     notes: [
@@ -96,7 +96,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "3/25",
+                    date: "3/23",
                     titles: ["AR Toolkit #2"],
                     type: 1,
                     notes: [{ name: "HW#2 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" }],
@@ -106,7 +106,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "3/30",
+                    date: "3/25",
                     titles: ["Computer Vision for AR"],
                     type: 0,
                     notes: [
@@ -119,7 +119,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "4/1",
+                    date: "3/30",
                     titles: ["Project Feedback Meetings (Individual Team)"],
                     type: 0,
                     notes: [{ name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }],
@@ -128,7 +128,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "4/6",
+                    date: "4/1",
                     titles: ["Project Proposal Presentation"],
                     type: 1,
                     notes: [{ name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }],
@@ -141,7 +141,7 @@ export const ctp445_data = [
             
             {
                 day1: {
-                    date: "4/8",
+                    date: "4/6",
                     titles: ["Calibration and Registration"],
                     type: 0,
                     notes: [
@@ -155,7 +155,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "4/13",
+                    date: "4/8",
                     titles: ["Project Feedback & Discussion", "AR Toolkit Q&A"],
                     type: 1,
                     notes: [
@@ -167,7 +167,7 @@ export const ctp445_data = [
             },
             {
                 day1: {
-                    date: "4/15",
+                    date: "4/13",
                     titles: ["Visual Coherence"],
                     type: 0,
                     notes: [
@@ -180,7 +180,7 @@ export const ctp445_data = [
                     ]
                 },
                 day2: {
-                    date: "4/17",
+                    date: "4/15",
                     titles: ["No class"],
                     type: 2,
                     notes: [],
