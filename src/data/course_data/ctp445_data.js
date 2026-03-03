@@ -26,7 +26,7 @@ export const ctp445_data = [
                     type: 0,
                     notes: [],
                     dues: [
-                        { name: "Sign up Form due by 3/6(Fri) 11:59pm", link: "https://forms.gle/bqSEgiq1gzCKhB74A" }
+                        { name: "Sign up Form due by 3/6(Fri) 11:59pm", link: "https://forms.gle/Zh2cSomwzFTBuxAN9" }
                     ]
                 },
                 day2: {
