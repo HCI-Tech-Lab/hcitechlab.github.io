@@ -46,11 +46,11 @@ export const ctp445_data = [
                     titles: ["Team Formation Activity"],
                     type: 1,
                     notes: [
-                        { name: "Team Formation Activity", link: "https://docs.google.com/presentation/d/1CcayTyM_HsN1wYlhdG-WqGnjXDXUFDPQMsrDezj35sM/edit?usp=sharing" }
+                        { name: "Team Formation Activity", link: "" }
                     ],
                     dues: [
-                        { name: "Reading Group Announcement", link: "https://docs.google.com/spreadsheets/d/19RklFtOvIpy6RwKsXWMVE-Z-LgvtZuzJdsvyW951ssI/edit?usp=sharing" },
-                        { name: "Topic Presentation Team Announcement", link: "https://docs.google.com/spreadsheets/d/11EqvFcPR8pH-4SRbAvcOe7nH_TiHG2RauyWxh_I4GXY/edit?usp=sharing" },
+                        { name: "Reading Group Announcement", link: "" },
+                        { name: "Topic Presentation Team Announcement", link: "" },
                         { name: "Reading Response (RR) due by 3/7(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
