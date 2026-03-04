@@ -309,10 +309,10 @@ export const msStudents = [
         hoverImg: "main_icon.png",
         name: "Hyunwook Jung",
         title: "M.S. Student",
-        interest: "",
+        interest: "Human-Centered XR Interaction with AI",
         link: "#",
         mail: "hyunwook7120@kaist.ac.kr",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/hyunwook-jung-77048b306/",
         note: "",
     }
 ];
