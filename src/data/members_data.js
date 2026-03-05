@@ -132,7 +132,7 @@ export const phdStudents = [
         name: "Hanseok Jeong",
         title: "M.S. Student",
         interest: "AI-based Sensing Technology",
-        link: "#",
+        link: "https://hanseok-j.github.io",
         mail: "hsjeong@kaist.ac.kr",
         linkedin: "https://www.linkedin.com/in/jeong-hanseok-88b385152/",
         note: "",
