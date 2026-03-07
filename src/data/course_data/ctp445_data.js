@@ -22,58 +22,55 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "3/2",
-                    titles: ["Course Overview"],
-                    type: 0,
+                    titles: ["No Class"],
+                    type: 2,
                     notes: [],
-                    dues: [
-                        { name: "Sign up Form due by 3/6(Fri) 11:59pm", link: "https://forms.gle/Zh2cSomwzFTBuxAN9" }
-                    ]
+                    dues: [],
                 },
                 day2: {
                     date: "3/4",
+                    titles: ["Course Overview"],
+                    type: 0,
+                    notes: [],
+                     dues: [{ name: "Sign up Form due by 3/6(Fri) 11:59pm", link: "https://forms.gle/Zh2cSomwzFTBuxAN9" }]
+                }
+            },
+            {
+                day1: {
+                    date: "3/9",
                     titles: ["Introduction to Augmented Reality"],
                     type: 0,
                     notes: [
                         { name: "Ronald T. Azuma, A Survey of Augmented Reality", link: "http://cierto.org/pdf/ARpresence.pdf" },
                         { name: "Paul Milgram et al., Augmented reality: a class of displays on the reality-virtuality continuum", link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/2351/1/Augmented-reality--a-class-of-displays-on-the-reality/10.1117/12.197321.full?SSO=1" }
                     ],
-                    dues: []
-                }
-            },
-            {
-                day1: {
-                    date: "3/9",
-                    titles: ["Team Formation Activity"],
-                    type: 1,
-                    notes: [
-                        { name: "Team Formation Activity", link: "" }
-                    ],
                     dues: [
                         { name: "Reading Group Announcement", link: "" },
-                        { name: "Topic Presentation Team Announcement", link: "" },
-                        { name: "Reading Response (RR) due by 3/7(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Topic Presentation Team Announcement", link: "" }
                     ]
                 },
                 day2: {
                     date: "3/11",
-                    titles: ["AR Toolkit Introduction"],
-                    type: 1,
+                    titles: ["Team Formation Activity"],
+                    type: 0,
                     notes: [
-                        { name: "AR Toolkit Introduction (KLMS)", link: "https://klms.kaist.ac.kr/" },
-                        { name: "HW#1 & Extra Credit Task Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
-                        { name: "Get started with Unity Tutorial", link: "https://learn.unity.com/mission/real-time-creation-essentials" }
+                        { name: "Team Formation Activity", link: "" }
                     ],
                     dues: [
-                        { name: "Extra Credit Task due by 3/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Reading Response (RR) due by 3/12(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
             },
             {
                 day1: {
                     date: "3/16",
-                    titles: ["Visual System and Display"],
-                    type: 0,
+                    titles: ["AR Toolkit Introduction"],
+                    type: 1,
                     notes: [
+                        { name: "AR Toolkit Introduction (KLMS)", link: "https://klms.kaist.ac.kr/" },
+                        { name: "HW#1 & Extra Credit Task Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
+                        { name: "Get started with Unity Tutorial", link: "https://learn.unity.com/mission/real-time-creation-essentials" },
+
                         { name: 'Pausch et al. "Quantifying immersion in virtual reality." SIGGRAPH, 1997', link: "https://dl.acm.org/doi/10.1145/258734.258744" },
                         { name: 'Chang et al. "Toward the next-generation VR/AR optics: a review of holographic near-eye displays from a human-centric perspective." Optica, 2020', link: "https://www.osapublishing.org/abstract.cfm?uri=optica-7-11-1563" }
                     ],
@@ -84,7 +81,7 @@ export const ctp445_data = [
                 },
                 day2: {
                     date: "3/18",
-                    titles: ["Tracking"],
+                    titles: ["Visual System and Display"],
                     type: 0,
                     notes: [
                         { name: 'Newman et al. "Ubiquitous tracking for augmented reality" ISMAR 2004', link: "https://doi.org/10.1109/ISMAR.2004.62" },
@@ -97,7 +94,7 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "3/23",
-                    titles: ["AR Toolkit #2"],
+                    titles: ["Tracking"],
                     type: 1,
                     notes: [{ name: "HW#2 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" }],
                     dues: [
@@ -107,7 +104,7 @@ export const ctp445_data = [
                 },
                 day2: {
                     date: "3/25",
-                    titles: ["Computer Vision for AR"],
+                    titles: ["AR Toolkit #2"],
                     type: 0,
                     notes: [
                         { name: 'Reitmayr et al. "Simultaneous localization and mapping for augmented reality" 2010', link: "https://ieeexplore.ieee.org/abstract/document/5557942?casa_token=qaN6K0ARGEsAAAAA:RR7HORB1f8MO4p4L8Gw_NidXdfphS5TPhWxO07AP4VmzCZcPm6HZ8FktCYtiOcw_bKZAO1MEjw" },
@@ -120,7 +117,7 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "3/30",
-                    titles: ["Project Feedback Meetings (Individual Team)"],
+                    titles: ["Computer Vision for AR"],
                     type: 0,
                     notes: [{ name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }],
                     dues: [
