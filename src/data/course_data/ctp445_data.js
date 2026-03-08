@@ -45,8 +45,7 @@ export const ctp445_data = [
                         { name: "Paul Milgram et al., Augmented reality: a class of displays on the reality-virtuality continuum", link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/2351/1/Augmented-reality--a-class-of-displays-on-the-reality/10.1117/12.197321.full?SSO=1" }
                     ],
                     dues: [
-                        { name: "Reading Group Announcement", link: "" },
-                        { name: "Topic Presentation Team Announcement", link: "" }
+                        { name: "Reading Group Announcement", link: "" }
                     ]
                 },
                 day2: {
@@ -54,9 +53,12 @@ export const ctp445_data = [
                     titles: ["Team Formation Activity"],
                     type: 0,
                     notes: [
-                        { name: "Team Formation Activity", link: "" }
+                        { name: "Team Formation Activity", link: "https://docs.google.com/presentation/d/1TjET3PFZWMi4v4JLsTbKXRHwxBCAc1suzjx4YY2VdMI/edit?usp=sharing" },
+                        { name: '*Pausch et al. "Quantifying immersion in virtual reality." SIGGRAPH, 1997', link: "https://dl.acm.org/doi/10.1145/258734.258744" },
+                        { name: 'Chang et al. "Toward the next-generation VR/AR optics: a review of holographic near-eye displays from a human-centric perspective." Optica, 2020', link: "https://www.osapublishing.org/abstract.cfm?uri=optica-7-11-1563" }
                     ],
                     dues: [
+                        { name: "Topic Presentation Team Announcement", link: "" },
                         { name: "Reading Response (RR) due by 3/12(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
@@ -69,14 +71,10 @@ export const ctp445_data = [
                     notes: [
                         { name: "AR Toolkit Introduction (KLMS)", link: "https://klms.kaist.ac.kr/" },
                         { name: "HW#1 & Extra Credit Task Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
-                        { name: "Get started with Unity Tutorial", link: "https://learn.unity.com/mission/real-time-creation-essentials" },
-
-                        { name: 'Pausch et al. "Quantifying immersion in virtual reality." SIGGRAPH, 1997', link: "https://dl.acm.org/doi/10.1145/258734.258744" },
-                        { name: 'Chang et al. "Toward the next-generation VR/AR optics: a review of holographic near-eye displays from a human-centric perspective." Optica, 2020', link: "https://www.osapublishing.org/abstract.cfm?uri=optica-7-11-1563" }
+                        { name: "Get started with Unity Tutorial", link: "https://learn.unity.com/mission/real-time-creation-essentials" }                        
                     ],
                     dues: [
-                        { name: "Group AR Project Sign Up due 3/11 11:59pm", link: "https://forms.gle/MKMqzRdj8di1v2UPA" },
-                        { name: "RR Group A due by 3/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Group AR Project Sign Up due 3/13 11:59pm", link: "https://forms.gle/Drq7hgmz8LsWcH7V6" }
                     ]
                 },
                 day2: {
@@ -88,7 +86,7 @@ export const ctp445_data = [
                         { name: 'Feiner et al. "Windows on the world: 2D windows for 3D augmented reality" UIST 1993', link: "https://dl.acm.org/doi/10.1145/168642.168657" },
                         { name: 'Huo et al. "SynchronizAR: Instant Synchronization for Spontaneous and Spatial Collaborations in Augmented Reality" UIST 2018', link: "https://dl.acm.org/doi/abs/10.1145/3242587.3242595" }
                     ],
-                    dues: [{ name: "Topic Presentation #1", link: ""  }]
+                    dues: []
                 }
             },
             {
@@ -98,8 +96,8 @@ export const ctp445_data = [
                     type: 1,
                     notes: [{ name: "HW#2 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" }],
                     dues: [
-                        { name: "HW #1 due by 3/18(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "RR Group B due by 3/18(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Topic Presentation #1", link: ""  },
+                        { name: "RR Group A due by 3/23(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                     ]
                 },
                 day2: {
@@ -111,7 +109,10 @@ export const ctp445_data = [
                         { name: 'Rublee et al. "Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras" IEEE Trans. Robot, 2017', link: "https://ieeexplore.ieee.org/abstract/document/7946260?casa_token=-kzAlWuUn78AAAAA:a_o6PVi-tDmCK6iUUzerkL4DHR_ut1ErUhwBe65TXWwUP7yNNFQR9Wlv-AXp-fZl6S9MMmh1Uw" },
                         { name: 'Ma et al. "Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image" ICRA, 2018', link: "https://ieeexplore.ieee.org/abstract/document/8460184" }
                     ],
-                    dues: [{ name: "Topic Presentation #2", link: ""  }]
+                    dues: [
+                        { name: "HW #1 due by 3/25(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" },
+                        { name: "RR Group B due by 3/26(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        ]
                 }
             },
             {
@@ -121,6 +122,7 @@ export const ctp445_data = [
                     type: 0,
                     notes: [{ name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }],
                     dues: [
+                        { name: "Topic Presentation #2", link: ""  },
                         { name: "Proposal Presentation Slides due by 3/26(Tue) 11:59pm (All Teams)", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
