@@ -60,7 +60,7 @@ export const ctp445_data = [
                     dues: [
                         { name: "Topic Presentation Team Announcement", link: "" },
                         { name: "Reading Response (RR) due by 3/12(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "Group AR Project Sign Up due 3/13 11:59pm", link: "https://forms.gle/Drq7hgmz8LsWcH7V6" }
+                        { name: "Group AR Project Sign Up due 3/13 11:59pm", link: "https://forms.gle/vVS5KzXDQGB7cNND7" }
                     ]
                 }
             },
