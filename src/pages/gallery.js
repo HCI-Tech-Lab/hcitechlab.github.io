@@ -21,9 +21,9 @@ export default function Gallery() {
 const galleries = {
   "February, 2026 (Graduation)": [
     "img/Lab/2602/Grad_1.jpg",
-    "img/Lab/2601/Grad_2.jpg",
-    "img/Lab/2601/Grad_3.jpg",
-    "img/Lab/2601/Grad_4.jpg",
+    "img/Lab/2602/Grad_2.jpg",
+    "img/Lab/2602/Grad_3.jpg",
+    "img/Lab/2602/Grad_4.jpg",
   ],
   "January, 2026 (Lab Retreat)": [
     "img/Lab/2601/1.jpg",
