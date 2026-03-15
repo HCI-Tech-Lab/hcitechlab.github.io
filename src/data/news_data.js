@@ -2,6 +2,30 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "img/icon/paper2.jpg",
+        title: "A paper accepted to IEEE TVCG",
+        date: "Mar 15, 2026",
+        content: (
+            <>Our paper <strong>Align-to-Scale: Mode Switching Technique for Unimanual 3D Object Manipulation with Gaze-Hand-Object Alignment in Extended Reality</strong> led by Min-yung is accepted to <Link href="https://etra.acm.org/2026/" target="_blank">ETRA 2026</Link>.</>
+        ),
+        images: [],
+        category: "Publication",
+    },
+    {
+        icon: "img/icon/project.png",
+        title: "New Research Project",
+        date: "Mar 12 2026",
+        content: <><strong>Context-Aware Multimodal Physical AI Framework for Coexistence-Oriented Human–Robot Interaction</strong> supported by NRF was selected.</>,
+        images: []
+    },
+    {
+        icon: "img/icon/graduation.png",
+        title: "2026 Graduation",
+        date: "Feb 20 2026",
+        content: "Kun-woo, Hojeong, Hyunyoung, Hanseok, Hyungwook, and Yubin graudated. Congrats!",
+        images: ["img/Lab/2602/Grad_1.jpg", "img/Lab/2602/Grad_2.png"],
+    },
+    {
         icon: "img/icon/team.png",
         title: "Lab Activity",
         date: "Jan 26 2026",
@@ -33,6 +57,13 @@ export const news = [
                 </div>
             </>
         )
+    },
+    {
+        icon: "img/icon/Welcome.jpg",
+        title: "Graduate Students",
+        date: "Mar 1, 2026",
+        content: "Welcome our new Ph.D. students Hanseok Jeong, Hyung Wook Yi and MS students HyeongJin Do, Hyunwook Jung!",
+        images: []
     },
     {
         icon: "img/icon/paper2.jpg",
@@ -153,6 +184,13 @@ export const news = [
         date: "Sep 28 2025",
         content: <dev>Our lab participated in <Link href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=11590&menu=83" target="_blank">Pre-UIST</Link> event in KAIST.</dev>,
         images: ["img/Lab/2509/PreUIST0.jpg","img/Lab/2509/PreUIST2.jpg"]
+    },
+    {
+        icon: "img/icon/Welcome.jpg",
+        title: "Graduate Students",
+        date: "Sep 1, 2025",
+        content: "Welcome our new Ph.D. students Kun-woo Song, Hojeong Lee and MS student Donghee Hyun!",
+        images: []
     },
     {
         icon: "img/icon/star.png",
