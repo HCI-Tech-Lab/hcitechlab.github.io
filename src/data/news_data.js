@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "img/icon/paper2.jpg",
-        title: "A paper accepted to IEEE TVCG",
+        title: "A paper accepted to ETRA 2026",
         date: "Mar 15, 2026",
         content: (
             <>Our paper <strong>Align-to-Scale: Mode Switching Technique for Unimanual 3D Object Manipulation with Gaze-Hand-Object Alignment in Extended Reality</strong> led by Min-yung is accepted to <Link href="https://etra.acm.org/2026/" target="_blank">ETRA 2026</Link>.</>
@@ -23,7 +23,7 @@ export const news = [
         title: "2026 Graduation",
         date: "Feb 20 2026",
         content: "Kun-woo, Hojeong, Hyunyoung, Hanseok, Hyungwook, and Yubin graudated. Congrats!",
-        images: ["img/Lab/2602/Grad_1.jpg", "img/Lab/2602/Grad_2.png"],
+        images: ["img/Lab/2602/Grad_1.jpg", "img/Lab/2602/Grad_2.jpg"],
     },
     {
         icon: "img/icon/team.png",
@@ -67,7 +67,7 @@ export const news = [
     },
     {
         icon: "img/icon/paper2.jpg",
-        title: "A paper accepted to IEEE TVCG",
+        title: "A paper accepted to IEEE TVCG (VR2026)",
         date: "Jan 2, 2026",
         content: (
             <>Our paper <strong>AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
@@ -91,7 +91,7 @@ export const news = [
     },
     {
         icon: "img/icon/paper2.jpg",
-        title: "A paper accepted to IEEE TVCG",
+        title: "A paper accepted to IEEE TVCG (VR2026)",
         date: "Dec 7, 2025",
         content: (
             <>Our paper <strong>ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application</strong> led by Seo Young (co-advised by Prof. Woontack Woo) and Junghoon is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
