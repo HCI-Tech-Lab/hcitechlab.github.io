@@ -99,7 +99,7 @@ export const ctp445_data = [
                     ],
                     dues: [
                         { name: "Topic Presentation #1", link: ""  },
-                        { name: "HW#1 due by 3/23(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" },
+                        { name: "Extra Credit HW due by 3/22(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                     ]
                 },
                 day2: {
@@ -113,6 +113,7 @@ export const ctp445_data = [
                         { name: 'Ma et al. "Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image" ICRA, 2018', link: "https://ieeexplore.ieee.org/abstract/document/8460184" }
                     ],
                     dues: [
+                        { name: "HW#1 due by 3/25(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "RR Group B due by 3/26(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                         ]
                 }
