@@ -2,6 +2,46 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "img/icon/speaker.png",
+        title: "M.S./Ph.D. Openings",
+        date: "Mar 15 2026",
+        content: <div>We are looking for M.S and Ph.D students for Fall 2026 and Spring 2027 semester. Please refer to updated <Link href="/recruiting_graduate" target="_blank">M.S./Ph.D. Openings</Link>.</div>,
+        images: [],
+        category: "Position",      
+        status: "Open",       
+    },
+    {
+        icon: "img/icon/paper2.jpg",
+        title: "A paper accepted to ETRA 2026",
+        date: "Mar 15, 2026",
+        content: (
+            <>Our paper <strong>Align-to-Scale: Mode Switching Technique for Unimanual 3D Object Manipulation with Gaze-Hand-Object Alignment in Extended Reality</strong> led by Min-yung is accepted to <Link href="https://etra.acm.org/2026/" target="_blank">ETRA 2026</Link>.</>
+        ),
+        images: [],
+        category: "Publication",
+    },
+    {
+        icon: "img/icon/project.png",
+        title: "New Research Project",
+        date: "Mar 12 2026",
+        content: <><strong>Context-Aware Multimodal Physical AI Framework for Coexistence-Oriented Human–Robot Interaction</strong> supported by NRF was selected.</>,
+        images: []
+    },
+    {
+        icon: "img/icon/graduation.png",
+        title: "2026 Graduation",
+        date: "Feb 20 2026",
+        content: "Kun-woo, Hojeong, Hyunyoung, Hanseok, Hyungwook, and Yubin graudated. Congrats!",
+        images: ["img/Lab/2602/Grad_1.jpg", "img/Lab/2602/Grad_2.jpg"],
+    },
+    {
+        icon: "img/icon/team.png",
+        title: "Lab Activity",
+        date: "Jan 26 2026",
+        content: "Lab Winter Retreat",
+        images: ["img/Lab/2601/1.jpg","img/Lab/2601/2.jpg","img/Lab/2601/3.jpg"]
+    },
+    {
         icon: "img/icon/paper2.jpg",
         title: "Two papers accepted to CHI 2026",
         date: "Jan 20 2026",
@@ -28,8 +68,15 @@ export const news = [
         )
     },
     {
+        icon: "img/icon/Welcome.jpg",
+        title: "Graduate Students",
+        date: "Mar 1, 2026",
+        content: "Welcome our new Ph.D. students Hanseok Jeong, Hyung Wook Yi and MS students HyeongJin Do, Hyunwook Jung!",
+        images: []
+    },
+    {
         icon: "img/icon/paper2.jpg",
-        title: "A paper accepted to IEEE TVCG",
+        title: "A paper accepted to IEEE TVCG (VR2026)",
         date: "Jan 2, 2026",
         content: (
             <>Our paper <strong>AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
@@ -38,8 +85,22 @@ export const news = [
         category: "Publication",
     },
     {
+        icon: "img/icon/team.png",
+        title: "Lab Gathering",
+        date: "Dec 23 2025",
+        content: "End-of-Year Lab Gathering",
+        images: ["img/Lab/2512/EOY.png","img/Lab/2512/EOY1.png"]
+    },
+    {
+        icon: "img/icon/visit.png",
+        title: "Visit from HITSZ",
+        date: "Dec 16 2025",
+        content: <dev>Prof.Yitian Shao from HITSZ visited us!</dev>,
+        images: ["img/Lab/2512/YItian_Visit1.jpg","img/Lab/2512/YItian_Visit2.jpg","img/Lab/2512/YItian_Visit3.jpg",]
+    },
+    {
         icon: "img/icon/paper2.jpg",
-        title: "A paper accepted to IEEE TVCG",
+        title: "A paper accepted to IEEE TVCG (VR2026)",
         date: "Dec 7, 2025",
         content: (
             <>Our paper <strong>ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application</strong> led by Seo Young (co-advised by Prof. Woontack Woo) and Junghoon is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
@@ -132,6 +193,13 @@ export const news = [
         date: "Sep 28 2025",
         content: <dev>Our lab participated in <Link href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=11590&menu=83" target="_blank">Pre-UIST</Link> event in KAIST.</dev>,
         images: ["img/Lab/2509/PreUIST0.jpg","img/Lab/2509/PreUIST2.jpg"]
+    },
+    {
+        icon: "img/icon/Welcome.jpg",
+        title: "Graduate Students",
+        date: "Sep 1, 2025",
+        content: "Welcome our new Ph.D. students Kun-woo Song, Hojeong Lee and MS student Donghee Hyun!",
+        images: []
     },
     {
         icon: "img/icon/star.png",

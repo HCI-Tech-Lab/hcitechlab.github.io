@@ -4,36 +4,34 @@ import Link from "next/link";
 export default function RecruitingGrad() {
     return (
         <SectionContainer>
-            <h1 className="card-title">M.S./Ph.D. Open Positions</h1>
+            <h1 className="card-title">M.S./Ph.D. Open Positions (Updated: Mar 2026)</h1>
             <br />
             <h2> Applications for M.S./Ph.D. Positions <Link href="https://forms.gle/bsay5LuEGfJjBC1P9" target="_blank">[Apply Now]</Link></h2>
-            <p>If you are interested in working with us as a MS/PhD student, please send me an <b><i><a href="mailto:sangho@kaist.ac.kr"> email</a></i></b> or submit <b><i><a href="https://forms.gle/PFQ9CbpZDgLED2gGA" target="_blank">Google Form</a></i></b>.</p>
-            <p>State briefly why you are interested and attach a CV, including information about the grades you had as an undergraduate.</p>
-            <b>Important: please insert “Application PhD” or “Application MS" in the subject line if you send an email.</b>
+            <p>If you are interested in joining our lab as a M.S./Ph.D. student, please send me an <b><i><a href="mailto:sangho@kaist.ac.kr"> email</a></i></b> and submit <b><i><a href="https://forms.gle/PFQ9CbpZDgLED2gGA" target="_blank">Google Form</a></i></b>.</p>
+            <p>Please briefly describe your research interests and attach your CV, including your undergraudate transcript or GPA.</p>
+            <b>Important: Please insert “Application PhD” or “Application MS" in the subject line if you send an email.</b>
 
             <br />
             <br />
             <br />
 
             <h2>HCI Tech Lab Introduction</h2>
-            <p>As an interdisciplinary research group in Culture Technology, we build physical/digital interactive system empowered by novel sensing/haptic technologies. In HCI Tech Lab, we aim to explore novel interactive technologies that bring direct benefits to real world users. Our research process generally includes:</p>
+            <p>As an interdisciplinary research group in Culture Technology, we build physical and digital interactive system powered by novel sensing andhaptic technologies. At HCI Tech Lab, we explore interactive technologies that bring direct benefits to real-world users. Our research process generally includes:</p>
             <ul style={{marginLeft: "30px"}}>
-                <li><h5>Find gaps between interface/device and human</h5></li>
-                <li><h5>Bridge the gap with novel technical/social solution</h5></li>
+                <li><h5>Identify gaps between interface/device and human needs</h5></li>
+                <li><h5>Bridge the gap with novel technical and social solutions</h5></li>
                 <li><h5>Evaluate the solution with research methods</h5></li>
-                <li><h5>Deploy the solution with practical applications</h5></li> 
+                <li><h5>Deploy solutions with real-world applications</h5></li> 
             </ul>
-            <h5 style={{marginLeft: "10px", paddingBottom: "20px"}}> Refer to recent <Link href="/publication"><b>papers</b></Link> for examples. </h5>
-            
-
+            <h5 style={{marginLeft: "10px", paddingBottom: "20px"}}> See our recent <Link href="/publications" target="_blank"><b>publications</b></Link> for examples.</h5>
 
             <h2>Potential Projects</h2>
-            <h5> You’ll be working on a research project, and closely interacting with me and others. Here are some potential project ideas: </h5>
+            <h5> You will work on a research project in a close collaboration with the PI and the other lab members. Here are some potential project ideas: </h5>
             <ul style={{marginLeft: "30px"}}>
-                <li><h5>Build/Collect/Design Physical AI data and model</h5></li>
-                <li><h5>Design/build/evaluate novel sensing techniques</h5></li>
-                <li><h5>Design/build/evaluate wearable haptic experiences</h5></li>
-                <li><h5>Creativity & Authoring Toolkit for human-centered interactions</h5></li>
+                <li><h5>Build, collect, design physical AI dataset and models</h5></li>
+                <li><h5>Design, build, evaluate novel sensing techniques</h5></li>
+                <li><h5>Design, build, evaluate wearable haptic experiences</h5></li>
+                <li><h5>Develop creativity and authoring toolkits for human-centered interaction</h5></li>
                 <li><h5>You can also suggest new ideas!</h5></li>
             </ul>
 
@@ -42,29 +40,28 @@ export default function RecruitingGrad() {
             <h2>Requirement</h2>
 
             <ul style={{marginLeft: "30px"}}>
-                <li><h5>We are looking for students who are eager to learn and build physical & digital interactive system.<br />
-                        <b>(Looking for students from diverse backgrounds & majors!)</b></h5></li>
-                <li><h5>We are looking for students who are ready for physical prototyping.</h5></li>
-                <li><h5>We are looking for students with responsibility who can realize their own proposed ideas.</h5></li>
-                <li><h5>We are looking for students to have SW/HW prototyping experience in real research projects. (Optional, but strongly recommended)</h5></li>
+                <li><h5>We welcome students from diverse backgrounds and majors. Ideal candidates are:</h5></li>
+                <li><h5>Eager to learn and build physical and digital interactive systems</h5></li>
+                <li><h5>Self-motivated and able to take ownership of their proposed ideas</h5></li>
+                <li><h5>Experienced in SW/HW prototyping within research projects (optional but strongly recommended)</h5></li>
             </ul>
 
             <br />
 
             <h2>Ph.D. Student</h2>
             <ul style={{marginLeft: "30px"}}>
-                <li><h5>I prefer accepting Ph.D. student who has valid prior research experiences. Please apply as M.S. if you do not have feasible research experiences.</h5></li>
-                <li><h5>If you would like to have research experience prior to Ph.D., please work in our lab as an intern or apply as a M.S. student.</h5></li>
-                <li><h5>In KAIST GSCT, a Master's degree is a requirement for all incoming Ph.D. students.</h5></li>
+                <li><h5>We prefer Ph.D. candidates with prior research experience and publications in related venues (e.g., top conferences listed on <Link href="https://csrankings.org/#/fromyear/2022/toyear/2026/index?vision&mlmining&graph&chi&robotics&visualization&asia" target="_blank">CSRankings</Link>).</h5></li>
+                <li><h5>If you do not yet have research experience or publications, please consider applying for the M.S. program first.</h5></li>
+                <li><h5>At KAIST, a Master's degree is required for admission to the Ph.D. program.</h5></li>
             </ul>
 
             <br />
 
             <h2>M.S. Student</h2>
             <ul style={{marginLeft: "30px"}}>
-                <li><h5>I do not have any preference on research experiences for M.S. students.</h5></li>
-                <li><h5>All M.S. students are expected to carry out research project and write a thesis.</h5></li>
-                <li><h5>Please contact me as early as possible since slots are limited each semester.</h5></li>
+                <li><h5><b>(Spring 2027 Admission) We will only consider candidates who complete an internship in our lab during Summer 2026.</b></h5></li>
+                <li><h5><b>(Fall 2026 Admission) Priority will be given to candidates who complete a lab internship during Summer 2026.</b></h5></li>
+                <li><h5>All M.S. students are expected to conduct an individual research project and complete a thesis.</h5></li>
                 <li><h5>For official admission in Graduate School of Culture Technology, please refer to <Link href="https://ct.kaist.ac.kr/pages/sub/sub0601" target="_blank">admission website.</Link></h5></li>
                 <li><h5>For official admission in Graduate School of Metaverse, please refer to <Link href="https://meta.kaist.ac.kr/" target="_blank">admission website.</Link></h5></li>
                 <li><h5>For official admission in School of Computing, please refer to <Link href="https://cs.kaist.ac.kr/content?menu=41" target="_blank">admission website.</Link></h5></li>
@@ -76,9 +73,9 @@ export default function RecruitingGrad() {
             <h2>Conditions</h2>
             <ul style={{marginLeft: "30px"}}>
                 <li><h5>Monthly Stipend + Research Incentive</h5></li>
-                <li><h5>Personal office space in the N5 building. Hybrid work environment is allowed if needed.</h5></li>
+                <li><h5>Personal office space in the N5 building, with a hybrid work arrangement available as needed.</h5></li>
                 <li><h5>Standing desk and individual PC & monitor provided.</h5></li>
-                <li><h5>Prototyping related consumables & equipment are supported.</h5></li>
+                <li><h5>Prototyping-related consumables and equipment are provided.</h5></li>
             </ul>
             <br />
         </SectionContainer>

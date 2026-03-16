@@ -53,14 +53,14 @@ export const phdStudents = [
         hoverImg: "img/Member/hover_image/KJ_hover.jpg",
         name: "Kyungeun Jung",
         title: "Ph.D. Student",
-        interest: "Research Interest",
+        interest: "Motion-Aware Haptic Interaction",
         link: "https://kyungeun.xyz/",
-        mail: "#",
-        linkedin: "#",
+        mail: "",
+        linkedin: "https://www.linkedin.com/in/kyungeunjung/",
         note: "",
     },
     {
-        img: "img/Member/MK.jpg",
+        img: "img/Member/MK26.png",
         hoverImg: "img/Member/hover_image/MK_hover.jpg",
         name: "Min-yung Kim",
         title: "Ph.D. Student",
@@ -92,17 +92,7 @@ export const phdStudents = [
         linkedin: "https://www.linkedin.com/in/soyeong-yang-720bb5362",
         note: "",
     },
-    {
-        img: "img/Member/SO.jpg",
-        hoverImg: "img/Member/hover_image/SO_hover.jpg",
-        name: "Seo Young Oh",
-        title: "Ph.D. Student",
-        interest: "Research Interest",
-        link: "#",
-        mail: "#",
-        linkedin: "https://www.linkedin.com/in/ohseo/",
-        note: "(Co-advised by Prof. Woontack Woo)",
-    },
+
     {
         img: "img/Member/HL.jpeg",
         hoverImg: "img/Member/hover_image/HI_hover.png",
@@ -113,6 +103,61 @@ export const phdStudents = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/hyung-il-yi-5875b217b/",
         note: "",
+    },
+    {
+        img: "img/Member/KWS.jpg",
+        hoverImg: "img/Member/hover_image/KWS_hover.jpg",
+        name: "Kun-Woo Song",
+        title: "M.S. Student",
+        interest: "Research Interest",
+        link: "#",
+        mail: "#",
+        linkedin: "https://www.linkedin.com/in/kun-woo-song-1557b2112/",
+        note: "",
+    },
+    {
+        img: "img/Member/HJ.png",
+        hoverImg: "img/Member/hover_image/HJ_hover.jpg",
+        name: "Hojeong Lee",
+        title: "M.S. Student",
+        interest: "Haptics, Soft Actuator",
+        link: "https://leeeho.github.io/leeho.io/index.html",
+        mail: "leeho@kaist.ac.kr",
+        linkedin: "https://www.linkedin.com/in/leeho99/",
+        note: "",
+    }, 
+    {
+        img: "img/Member/HS.png",
+        hoverImg: "img/Member/hover_image/HS_hover.jpg",
+        name: "Hanseok Jeong",
+        title: "M.S. Student",
+        interest: "AI-based Sensing Technology",
+        link: "https://hanseok-j.github.io",
+        mail: "hsjeong@kaist.ac.kr",
+        linkedin: "https://www.linkedin.com/in/jeong-hanseok-88b385152/",
+        note: "",
+    },
+    {
+        img: "img/Member/HWL.jpg",
+        hoverImg: "img/Member/hover_image/HWL_hover.jpg",
+        name: "Hyung Wook Yi",
+        title: "M.S. Student",
+        interest: "Sensor Fabrication & Toolkit",
+        link: "#",
+        mail: "#",
+        linkedin: "https://www.linkedin.com/in/hyung-wook-yi-673828178",
+        note: "",
+    },
+    {
+        img: "img/Member/SO.jpg",
+        hoverImg: "img/Member/hover_image/SO_hover.jpg",
+        name: "Seo Young Oh",
+        title: "Ph.D. Student",
+        interest: "Research Interest",
+        link: "#",
+        mail: "#",
+        linkedin: "https://www.linkedin.com/in/ohseo/",
+        note: "(Co-advised by Prof. Woontack Woo)",
     },
     {
         img: "img/Member/MB.jpeg",
@@ -145,28 +190,6 @@ export const phdStudents = [
                 Tech & Experience Team)
             </>
         ),
-    },
-        {
-        img: "img/Member/KWS.jpg",
-        hoverImg: "img/Member/hover_image/KWS_hover.jpg",
-        name: "Kun-Woo Song",
-        title: "M.S. Student",
-        interest: "Research Interest",
-        link: "#",
-        mail: "#",
-        linkedin: "https://www.linkedin.com/in/kun-woo-song-1557b2112/",
-        note: "",
-    },
-    {
-        img: "img/Member/HJ.png",
-        hoverImg: "img/Member/hover_image/HJ_hover.jpg",
-        name: "Hojeong Lee",
-        title: "M.S. Student",
-        interest: "Haptics, Soft Actuator",
-        link: "https://leeeho.github.io/leeho.io/index.html",
-        mail: "leeho@kaist.ac.kr",
-        linkedin: "https://www.linkedin.com/in/leeho99/",
-        note: "",
     }
 ];
 
@@ -181,39 +204,6 @@ export const msStudents = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/fangqing-li-kk1208x",
         note: "",
-    },
-    {
-        img: "img/Member/HWL.jpg",
-        hoverImg: "img/Member/hover_image/HWL_hover.jpg",
-        name: "Hyung Wook Yi",
-        title: "M.S. Student",
-        interest: "Research Interest",
-        link: "#",
-        mail: "#",
-        linkedin: "https://www.linkedin.com/in/hyung-wook-yi-673828178",
-        note: "",
-    },
-    {
-        img: "img/Member/HS.png",
-        hoverImg: "img/Member/hover_image/HS_hover.jpg",
-        name: "Hanseok Jeong",
-        title: "M.S. Student",
-        interest: "AI-based Sensing Technology",
-        link: "#",
-        mail: "hsjeong@kaist.ac.kr",
-        linkedin: "https://www.linkedin.com/in/jeong-hanseok-88b385152/",
-        note: "",
-    },
-    {
-        img: "img/Member/YL.jpg",
-        hoverImg: "img/Member/hover_image/YL_hover.jpg",
-        name: "Yubin Lee",
-        title: "M.S. Student",
-        interest: "Research Interest",
-        link: "#",
-        mail: "#",
-        linkedin: "https://www.linkedin.com/in/yubin-lee-1475972b5/",
-        note: "(Co-advised by Prof. Geehyuk Lee)",
     },
     {
         img: "img/Member/CH.jpg",
@@ -303,45 +293,69 @@ export const msStudents = [
         linkedin: "https://www.linkedin.com/in/donghee-hyun-4715b0265/",
         note: "",
     },
+    {
+        img: "img/Member/HD.jpg",
+        hoverImg: "main_icon.png",
+        name: "HyeongJin Do",
+        title: "M.S. Student",
+        interest: "Haptics, AI-based sensing",
+        link: "#",
+        mail: "dohj3220@kaist.ac.kr",
+        linkedin: "https://www.linkedin.com/in/%EB%8F%84%ED%98%95%EC%A7%84-undefined-893a163b2/",
+        note: "",
+    },
+    {
+        img: "img/Member/HWJ.jpg",
+        hoverImg: "main_icon.png",
+        name: "Hyunwook Jung",
+        title: "M.S. Student",
+        interest: "Human-Centered XR Interaction with AI",
+        link: "#",
+        mail: "hyunwook7120@kaist.ac.kr",
+        linkedin: "https://www.linkedin.com/in/hyunwook-jung-77048b306/",
+        note: "",
+    }
 ];
 
 export const interns = [
-    {
-        img: "img/Member/SC.jpg",
-        hoverImg: "main_icon.png",
-        name: "Seoyun Cha",
-        title: "Intern",
-        interest: "",
-        link: "#",
-        mail: "sy021023@seoultech.ac.kr",
-        linkedin: "#",
-        note: "",
-    },
     {
         img: "img/Member/YJ.jpg",
         hoverImg: "main_icon.png",
         name: "Yejin Jang",
         title: "Intern",
-        interest: "",
+        interest: "Haptics",
         link: "#",
         mail: "jangyejin1@gmail.com",
-        linkedin: "#",
+        linkedin: "https://www.linkedin.com/in/yejin-jang-445778390/",
         note: "",
-    },
-    {
-        img: "img/Member/HD.jpg",
-        hoverImg: "main_icon.png",
-        name: "HyeongJin Do",
-        title: "Intern",
-        interest: "",
-        link: "#",
-        mail: "dohj3220@kaist.ac.kr",
-        linkedin: "#",
-        note: "",
-    },
+    }
 ];
 
 export const gradAlumni = [
+    {
+        name: "Hanseok Jeong",
+        nameLink: "#",
+        title: "M.S. Student",
+        period: "Spring 2024 - Winter 2026",
+        thesisLink: "#",
+        current: "(now Ph.D Student @ HCI Tech Lab, KAIST)",
+    },
+    {
+        name: "Yubin Lee",
+        nameLink: "https://www.linkedin.com/in/yubin-lee-1475972b5/",
+        title: "M.S. Student",
+        period: "Spring 2024 - Winter 2026",
+        thesisLink: "#",
+        current: "",
+    },
+    {
+        name: "Hyung Wook Yi",
+        nameLink: "#",
+        title: "M.S. Student",
+        period: "Fall 2023 - Winter 2026",
+        thesisLink: "#",
+        current: "(now Ph.D Student @ HCI Tech Lab, KAIST)",
+    },
     {
         name: "Hojeong Lee",
         nameLink: "#",
@@ -436,7 +450,8 @@ export const gradAlumni = [
                 (now Staff Engineer @{" "}
                 <Link href="https://www.samsung.com/sec/" target="_blank">
                     Samsung Electronics
-                </Link>{" "})
+                </Link>{""}
+                )
             </span>
         ),
     },
@@ -484,6 +499,13 @@ export const gradAlumni = [
 
 export const internAlumni = [
     {
+        name: "Seoyun Cha",
+        nameLink: "#",
+        title: "Undergraduate Intern (SeoulTech)",
+        period: "Winter 2026",
+        current: "",
+    },
+    {
         name: "Son Nghiem",
         nameLink: "#",
         title: "Undergraduate Intern (KAIST)",
@@ -495,7 +517,7 @@ export const internAlumni = [
         nameLink: "#",
         title: "Research Intern (HYU)",
         period: "Winter 2025",
-        current: "",
+        current: "(now M.S. Student @ HCI Tech Lab, KAIST)",
     },
     {
         name: "Murad Eynizada",
@@ -560,7 +582,7 @@ export const internAlumni = [
         nameLink: "#",
         title: "Undergraduate Intern (KAIST)",
         period: "Fall 2023",
-        current: "(now M.S. Student @ HCI Tech Lab, KAIST)",
+        current: "(Graduated with an M.S. degree from KAIST @ HCI Tech Lab)",
     },
     {
         name: "Hyungbin Byun",
@@ -602,7 +624,7 @@ export const internAlumni = [
         nameLink: "#",
         title: "Undergraduate Intern (SKKU)",
         period: "Summer 2023",
-        current: "(now M.S. Student @ HCI Tech Lab, KAIST)",
+        current: "(now Ph.D. Student @ HCI Tech Lab, KAIST)",
     },
     {
         name: "Soyeong Yang",
