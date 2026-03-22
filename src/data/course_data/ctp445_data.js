@@ -123,8 +123,7 @@ export const ctp445_data = [
                     date: "3/30",
                     titles: ["Computer Vision for AR"],
                     type: 0,
-                    notes: [{ name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" },
-                    ],
+                    notes: [],
                     dues: [
                         { name: "Topic Presentation #2", link: ""  },
                         { name: "Proposal Presentation Slides due by 3/31(Tue) 11:59pm (All Teams)", link: "https://klms.kaist.ac.kr/" }
@@ -134,7 +133,7 @@ export const ctp445_data = [
                     date: "4/1",
                     titles: ["Project Proposal Presentation"],
                     type: 1,
-                    notes: [{ name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" }],
+                    notes: [{ name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }],
                     dues: [
                         { name: "RR Group A due by 4/2(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "HW#2 due by 4/3(Fri) 11:59pm", link: "https://klms.kaist.ac.kr/" }
@@ -176,7 +175,7 @@ export const ctp445_data = [
                     titles: ["Project Feedback & Discussion"],
                     type: 1,
                     notes: [
-                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" },
+                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" },
                         { name: "HW#3 Handout (KLMS)", link: "" }
                     ],
                     dues: [
@@ -246,7 +245,7 @@ export const ctp445_data = [
                     titles: ["Project Progress Presentation"],
                     type: 1,
                     notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" }
+                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
                         { name: "Progress Presentation Slides due by 4/28(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" }
@@ -257,7 +256,7 @@ export const ctp445_data = [
                     titles: ["Project Progress Presentation"],
                     type: 1,
                     notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" }
+                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: []
                 }
@@ -268,7 +267,7 @@ export const ctp445_data = [
                     titles: ["Project Feedback Meeting"],
                     type: 1,
                     notes: [
-                        { name: "Project Feedback Meeting", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" }
+                        { name: "Project Feedback Meeting", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
                         { name: "HW#4 due by 5/5(Sun) 11:59pm", link: "" },
@@ -369,7 +368,7 @@ export const ctp445_data = [
                     type: 1,
                     
                     notes: [
-                            { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1nBLJ3C1hX5-OPibhi8fx_G_ezeKd46E4eBVtCf_WgwE/edit?usp=sharing" }
+                            { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
                         { name: "Final Presentation Slides due by 6/9 11:59pm", link: "https://klms.kaist.ac.kr/" },
