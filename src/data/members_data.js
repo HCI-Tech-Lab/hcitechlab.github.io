@@ -82,7 +82,7 @@ export const phdStudents = [
         note: "",
     },
     {
-        img: "img/Member/SY.png",
+        img: "img/Member/SY.jpg",
         hoverImg: "img/Member/hover_image/SY_hover.jpg",
         name: "Soyeong Yang",
         title: "Ph.D. Student",
