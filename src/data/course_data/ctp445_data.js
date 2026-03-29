@@ -122,7 +122,7 @@ export const ctp445_data = [
                 day1: {
                     date: "3/30",
                     titles: ["Computer Vision for AR"],
-                    type: 0,
+                    type: 1,
                     notes: [],
                     dues: [
                         { name: "Topic Presentation #2", link: ""  },
@@ -145,7 +145,7 @@ export const ctp445_data = [
                 day1: {
                     date: "4/6",
                     titles: ["Calibration and Registration"],
-                    type: 0,
+                    type: 1,
                     notes: [
                         { name: "Zhang, '*A flexible new technique for camera calibration' TPAMI, 2000", link: "https://ieeexplore.ieee.org/abstract/document/888718?casa_token=6ik8Npprs3wAAAAA:z5G3I2AzeslRykA8O1HI_DV9glciPYQc3nzwxngUnPxI25EpjfWjoi3RNUzz37Yi2XEWMPY31Q" },
                         { name: "Tuceryan et al., 'Single-point active alignment method (SPAAM) for optical see-through HMD calibration for augmented reality' Presence: Teleoperators & Virtual Environments, 2002", link: "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.412.5855&rep=rep1&type=pdf" },
@@ -176,7 +176,6 @@ export const ctp445_data = [
                     type: 1,
                     notes: [
                         { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" },
-                        { name: "HW#3 Handout (KLMS)", link: "" }
                     ],
                     dues: [
                     ]
@@ -186,9 +185,7 @@ export const ctp445_data = [
                     titles: ["AR Toolkit Q&A"],
                     type: 1,
                     notes: [],
-                    dues: [
-                        { name: "HW#3 due by 4/20(Mon) 11:59pm", link: "" }
-                    ]
+                    dues: [{ name: "HW#3 due by 4/15(Wed) 11:59pm", link: "" }]
                 }
             },
             {
@@ -213,7 +210,7 @@ export const ctp445_data = [
                 day1: {
                     date: "4/27",
                     titles: ["Situated Visualization"],
-                    type: 0,
+                    type: 1,
                     notes: [
                         { name: "HW#4 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
                         { name: "*White et al., 'SiteLens: Situated visualization techniques for urban site visits' CHI, 2009", link: "https://doi.org/10.1145/1518701.1518871" },
@@ -228,7 +225,7 @@ export const ctp445_data = [
                 day2: {
                     date: "4/29",
                     titles: ["Interaction"],
-                    type: 0,
+                    type: 1,
                     notes: [
                         { name: "*Ishii et al., 'Tangible bits: towards seamless interfaces between people, bits and atoms' CHI, 1997", link: "https://dl.acm.org/doi/pdf/10.1145/258549.258715" },
                         { name: "Du et al., 'DepthLab: Real-time 3D interaction with depth maps for mobile augmented reality' UIST, 2020", link: "https://dl.acm.org/doi/abs/10.1145/3379337.3415881" },
@@ -277,7 +274,7 @@ export const ctp445_data = [
                 day2: {
                     date: "5/13",
                     titles: ["Modeling & Annotation"],
-                    type: 0,
+                    type: 1,
                     notes: [
                         { name: "*Newcombe et al., 'Kinectfusion: Real-time dense surface mapping and tracking' ISMAR, 2011", link: "https://ieeexplore.ieee.org/abstract/document/6162880" },
                         { name: "Nuernberger et al., 'Interpreting 2d gesture annotations in 3d augmented reality' 3DUI, 2016", link: "https://ieeexplore.ieee.org/abstract/document/7460046" }
@@ -291,7 +288,7 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "5/18",
-                    titles: ["User Study"],
+                    titles: ["User Study & Authoring"],
                     type: 0,
                     notes: [],
                     dues: [
@@ -310,8 +307,8 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "5/25",
-                    titles: ["Authoring"],
-                    type: 0,
+                    titles: ["No Class"],
+                    type: 2,
                     notes: [
                         { name: "*Lee et al., 'Immersive authoring: What you experience is what you get' Communications of the ACM, 2005", link: "https://dl.acm.org/doi/10.1145/1070838.1070840" },
                         { name: "Villanueva et al., 'Meta-AR-app: an authoring platform for collaborative augmented reality in STEM classrooms' CHI, 2020", link: "https://dl.acm.org/doi/abs/10.1145/3313831.3376146" },
@@ -325,7 +322,7 @@ export const ctp445_data = [
                 day2: {
                     date: "5/27",
                     titles: ["Navigation"],
-                    type: 0,
+                    type: 1,
                     notes: [
                         { name: "*Mulloni et al., 'Indoor positioning and navigation with camera phones' IEEE Pervasive Computing, 2009", link: "https://doi.org/10.1109/MPRV.2009.30" },
                         { name: "Sukan et al., 'Parafrustum: Visualization techniques for guiding a user to a constrained set of viewing positions and orientations' UIST, 2014", link: "https://doi.org/10.1145/2642918.2647417" },
