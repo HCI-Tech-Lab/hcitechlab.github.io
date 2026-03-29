@@ -107,7 +107,7 @@ export const ctp445_data = [
                     titles: ["AR Toolkit #2"],
                     type: 1,
                     notes: [
-                        { name: "HW#2 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
+                        { name: "HW#2,3 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
                         { name: '*Reitmayr et al. "Simultaneous localization and mapping for augmented reality" 2010', link: "https://ieeexplore.ieee.org/abstract/document/5557942?casa_token=qaN6K0ARGEsAAAAA:RR7HORB1f8MO4p4L8Gw_NidXdfphS5TPhWxO07AP4VmzCZcPm6HZ8FktCYtiOcw_bKZAO1MEjw" },
                         { name: 'Rublee et al. "Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras" IEEE Trans. Robot, 2017', link: "https://ieeexplore.ieee.org/abstract/document/7946260?casa_token=-kzAlWuUn78AAAAA:a_o6PVi-tDmCK6iUUzerkL4DHR_ut1ErUhwBe65TXWwUP7yNNFQR9Wlv-AXp-fZl6S9MMmh1Uw" },
                         { name: 'Ma et al. "Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image" ICRA, 2018', link: "https://ieeexplore.ieee.org/abstract/document/8460184" }
