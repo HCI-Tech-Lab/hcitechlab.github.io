@@ -126,7 +126,7 @@ export const ctp445_data = [
                     notes: [],
                     dues: [
                         { name: "Topic Presentation #2", link: ""  },
-                        { name: "Proposal Presentation Slides due by 3/31(Tue) 11:59pm (All Teams)", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Proposal Presentation Slides due by 4/1(Wed) 11:59pm (All Teams)", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
                 day2: {
