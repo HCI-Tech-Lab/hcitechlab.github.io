@@ -239,13 +239,10 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "5/4",
-                    titles: ["Project Progress Presentation"],
-                    type: 1,
-                    notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
-                    ],
+                    titles: ["Project Preparation"],
+                    type: 0,
+                    notes: [],
                     dues: [
-                        { name: "Progress Presentation Slides due by 4/28(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
                 day2: {
@@ -255,7 +252,9 @@ export const ctp445_data = [
                     notes: [
                         { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
-                    dues: []
+                    dues: [
+                        { name: "Progress Presentation Slides due by 5/6(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                    ]
                 }
             },
             {
@@ -264,10 +263,11 @@ export const ctp445_data = [
                     titles: ["Project Feedback Meeting"],
                     type: 1,
                     notes: [
-                        { name: "Project Feedback Meeting", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
+                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
                         { name: "HW#4 due by 5/5(Sun) 11:59pm", link: "" },
+                        { name: "Progress Report due by 5/10(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "RR Group A (Modeling & Annotation) due by 5/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
@@ -281,7 +281,7 @@ export const ctp445_data = [
                     ],
                     dues: [
                         { name: "Topic Presentation #6", link: "" },
-                        { name: "Progress Report due by 5/12(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "RR Group B (Authoring) due by 5/14(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
             },
@@ -289,10 +289,15 @@ export const ctp445_data = [
                 day1: {
                     date: "5/18",
                     titles: ["User Study & Authoring"],
-                    type: 0,
-                    notes: [],
+                    type: 1,
+                    notes: [
+                        { name: "*Lee et al., 'Immersive authoring: What you experience is what you get' Communications of the ACM, 2005", link: "https://dl.acm.org/doi/10.1145/1070838.1070840" },
+                        { name: "Villanueva et al., 'Meta-AR-app: an authoring platform for collaborative augmented reality in STEM classrooms' CHI, 2020", link: "https://dl.acm.org/doi/abs/10.1145/3313831.3376146" },
+                        { name: "Wang et al., 'GesturAR: An Authoring System for Creating Freehand Interactive Augmented Reality Applications' UIST, 2021", link: "https://dl.acm.org/doi/abs/10.1145/3472749.3474769" }
+                    ],
                     dues: [
-                        { name: "RR Group B (Authoring) due by 5/21(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Topic Presentation #7", link: "" },
+                        { name: "RR Group A (Navigation) due by 5/21(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                     ]
                 },
                 day2: {
@@ -310,13 +315,8 @@ export const ctp445_data = [
                     titles: ["No Class"],
                     type: 2,
                     notes: [
-                        { name: "*Lee et al., 'Immersive authoring: What you experience is what you get' Communications of the ACM, 2005", link: "https://dl.acm.org/doi/10.1145/1070838.1070840" },
-                        { name: "Villanueva et al., 'Meta-AR-app: an authoring platform for collaborative augmented reality in STEM classrooms' CHI, 2020", link: "https://dl.acm.org/doi/abs/10.1145/3313831.3376146" },
-                        { name: "Wang et al., 'GesturAR: An Authoring System for Creating Freehand Interactive Augmented Reality Applications' UIST, 2021", link: "https://dl.acm.org/doi/abs/10.1145/3472749.3474769" }
                     ],
                     dues: [
-                        { name: "Topic Presentation #7", link: "" },
-                        { name: "RR Group A (Navigation) due by 5/25(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
                 day2: {
@@ -368,20 +368,19 @@ export const ctp445_data = [
                             { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
-                        { name: "Final Presentation Slides due by 6/9 11:59pm", link: "https://klms.kaist.ac.kr/" },
+                        { name: "Final Presentation Slides due by 6/8 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "Final Presentation Audience Evaluation due by 6/10(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     
                     ]
                 },
                 day2: {
                     date: "6/10",
-                    titles: ["Final Presentation"],
+                    titles: ["Project Feedback Meeting"],
                     type: 1,
                     notes: [
+                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
-                    dues: [
-
-                    ]
+                    dues: []
                 }
             },
             {
