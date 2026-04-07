@@ -202,7 +202,7 @@ export const ctp445_data = [
                     type: 2,
                     notes: [],
                     dues: [
-                        { name: "RR Group A due by 4/18(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "RR Group A due by 4/23(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
             },
@@ -219,7 +219,7 @@ export const ctp445_data = [
                     ],
                     dues: [
                         { name: "Topic Presentation #4", link: ""  },
-                        { name: "RR Group B (Interaction) due by 4/22(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "RR Group B (Interaction) due by 4/27(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 },
                 day2: {
@@ -266,7 +266,6 @@ export const ctp445_data = [
                         { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
-                        { name: "HW#4 due by 5/5(Sun) 11:59pm", link: "" },
                         { name: "Progress Report due by 5/10(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "RR Group A (Modeling & Annotation) due by 5/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
@@ -296,8 +295,7 @@ export const ctp445_data = [
                         { name: "Wang et al., 'GesturAR: An Authoring System for Creating Freehand Interactive Augmented Reality Applications' UIST, 2021", link: "https://dl.acm.org/doi/abs/10.1145/3472749.3474769" }
                     ],
                     dues: [
-                        { name: "Topic Presentation #7", link: "" },
-                        { name: "RR Group A (Navigation) due by 5/21(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" },
+                        { name: "Topic Presentation #7", link: "" }
                     ]
                 },
                 day2: {
@@ -306,6 +304,7 @@ export const ctp445_data = [
                     type: 2,
                     notes: [],
                     dues: [
+                        { name: "RR Group A (Navigation) due by 5/21(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
             },
