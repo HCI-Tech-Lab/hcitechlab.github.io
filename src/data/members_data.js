@@ -11,7 +11,7 @@ export const postdocs = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/jinwook-kim-779491183/",
         note: "",
-    },
+    }/*,
     {
         img: "img/Member/KK.JPG",
         hoverImg: "main_icon.png",
@@ -22,7 +22,7 @@ export const postdocs = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/kimkeunwook/",
         note: "",
-    }
+    }*/
 ];
 
 export const phdStudents = [
@@ -498,6 +498,13 @@ export const gradAlumni = [
 ];
 
 export const internAlumni = [
+    {
+        name: "Keunwook Kim",
+        nameLink: "#",
+        title: "Industrial Designer / Creative Technologist",
+        period: "Winter-Spring 2026",
+        current: "",
+    },
     {
         name: "Seoyun Cha",
         nameLink: "#",
