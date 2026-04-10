@@ -11,7 +11,7 @@ export const research_temp = {
             award: "",
             website: "https://align.hcitech.org/",
             doi: "https://arxiv.org/abs/2603.18535",
-            video: "",
+            video: "https://youtu.be/eR1eGxs2cYA",
             pdf: "",
             presentation: "",
             media: "",
