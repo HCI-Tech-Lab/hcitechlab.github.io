@@ -9,7 +9,7 @@ export const research_temp = {
             conference: "ETRA2026",
             conferenceLink: "https://etra.acm.org/2026/",
             award: "",
-            website: "align.hcitech.org",
+            website: "https://align.hcitech.org/",
             doi: "https://arxiv.org/abs/2603.18535",
             video: "",
             pdf: "",
