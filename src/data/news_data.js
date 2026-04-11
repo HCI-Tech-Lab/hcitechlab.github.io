@@ -28,6 +28,13 @@ export const news = [
         images: []
     },
     {
+        icon: "img/icon/Welcome.jpg",
+        title: "Graduate Students",
+        date: "Mar 1, 2026",
+        content: "Welcome our new Ph.D. students Hanseok Jeong, Hyung Wook Yi and MS students HyeongJin Do, Hyunwook Jung!",
+        images: []
+    },
+    {
         icon: "img/icon/graduation.png",
         title: "2026 Graduation",
         date: "Feb 20 2026",
@@ -66,13 +73,6 @@ export const news = [
                 </div>
             </>
         )
-    },
-    {
-        icon: "img/icon/Welcome.jpg",
-        title: "Graduate Students",
-        date: "Mar 1, 2026",
-        content: "Welcome our new Ph.D. students Hanseok Jeong, Hyung Wook Yi and MS students HyeongJin Do, Hyunwook Jung!",
-        images: []
     },
     {
         icon: "img/icon/paper2.jpg",

@@ -1,7 +1,7 @@
 export const research_temp = {
     "2026":[
         {
-            poster: "img/icon/preprint.png",
+            poster: "research/2026/ETRA/Align.jpg",
             demo: "",
             title: "Align-to-Scale: Mode Switching Technique for Unimanual 3D Object Manipulation with Gaze-Hand-Object Alignment in Extended Reality",
             authors: "Min-yung Kim, Jinwook Kim, Ken Pfeuffer, Sang Ho Yoon",
@@ -11,7 +11,7 @@ export const research_temp = {
             award: "",
             website: "",
             doi: "",
-            video: "",
+            video: "https://www.youtube.com/watch?v=eR1eGxs2cYA",
             pdf: "",
             presentation: "",
             media: "",
@@ -19,40 +19,40 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "img/icon/preprint.png",
+            poster: "research/2026/CHI2026/HOICraft.jpg",
             demo: "",
             title: "HOICraft: In-Situ VLM-based Authoring Tool for Part-Level Hand-Object Interaction Design in VR",
             authors: "Dohui Lee, Qi Sun, Sang Ho Yoon",
-            status: "Preprint",
+            status: "",
             conference: "CHI2026",
             conferenceLink: "https://chi2026.acm.org/",
             award: "",
             website: "https://hoicraft.hcitech.org/",
             doi: "https://arxiv.org/abs/2602.08219",
-            video: "",
+            video: "https://www.youtube.com/watch?v=-QvYgTRsOgI",
             pdf: "",
             presentation: "",
             media: "",
             highlight: false,
-            category: "Preprint"
+            category: "Conference / Journal (peer-reviewed)"
         },
         {
-            poster: "img/icon/preprint.png",
+            poster: "research/2026/CHI2026/FTV.jpg",
             demo: "",
             title: "Finger Tendon Vibration: Finger Movement Illusions for Immersive Virtual Object Interaction",
             authors: "Kun-Woo Song, Youngrae Kim, Sang Ho Yoon",
-            status: "Preprint",
+            status: "",
             conference: "CHI2026",
             conferenceLink: "https://chi2026.acm.org/",
             award: "",
             website: "https://ftv.hcitech.org",
             doi: "https://arxiv.org/abs/2602.08201",
-            video: "",
+            video: "https://www.youtube.com/watch?v=v2W-RMr8XpU",
             pdf: "",
             presentation: "",
             media: "",
             highlight: false,
-            category: "Preprint"
+            category: "Conference / Journal (peer-reviewed)"
         },
         {
             poster: "research/2026/TVCG/TVCG_2026_1.png",
@@ -65,7 +65,7 @@ export const research_temp = {
             award: "",
             website: "https://aquahaptics.hcitech.org/",
             doi: "https://doi.org/10.1109/TVCG.2026.3652832",
-            video: "",
+            video: "https://www.youtube.com/watch?v=Wb6hJrp4kCM&t=3s",
             pdf: "",
             presentation: "",
             media: "",
