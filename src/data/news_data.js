@@ -8,7 +8,7 @@ export const news = [
         content: <div>We are looking for M.S and Ph.D students for Fall 2026 and Spring 2027 semester. Please refer to updated <Link href="/recruiting_graduate" target="_blank">M.S./Ph.D. Openings</Link>.</div>,
         images: [],
         category: "Position",      
-        status: "Open",       
+        status: "Closed",       
     },
     {
         icon: "img/icon/paper2.jpg",

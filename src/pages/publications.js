@@ -5,7 +5,7 @@ import { research_temp } from "@/data/research_data";
 
 export default function Publications() {
     const yearRefs = useRef({});
-    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [selectedCategory, setSelectedCategory] = useState("Conference / Journal (peer-reviewed)");
 
     useEffect(() => {
         Object.keys(research_temp).forEach(year => {
