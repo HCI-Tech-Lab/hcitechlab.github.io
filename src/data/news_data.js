@@ -1,7 +1,43 @@
 import Link from 'next/link';
 
 export const news = [
-    
+    {
+        icon: "img/icon/conf.png",
+        title: "CHI 2026 Participation",
+        date: "Apr 23 2026",
+        content: <dev>Our lab participated in CHI'26 in Barcelona. Kun-woo and Dohui presented papers and our lab participated in workshop.</dev>,
+        images: [],
+    },
+    {
+        icon: "img/icon/paper2.jpg",
+        title: "A paper accepted to ToH",
+        date: "Apr 16 2026",
+        content: (<>Our paper <strong>VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception</strong> led by Hojeong is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4543165" target="_blank">IEEE Transactions on Haptics (ToH)</Link>.</>),
+        images: [],
+        category: "Publication",
+        status: "",       
+    },
+    {
+        icon: "img/icon/team.png",
+        title: "Lab Activity (KAIST Strawberry Party)",
+        date: "Apr 3 2026",
+        content: "Lab Gathering at the KAIST Strawberry Party.",
+        images: [],
+    },    
+    {
+        icon: "img/icon/visit.png",
+        title: "Visit from Google AR & VR",
+        date: "Mar 22 2026",
+        content: <dev>Mar from Google BIRD lab under Google AR & VR visited KAIST and HCI Tech Lab for seminar and potential research collaboration.</dev>,
+        images: [],
+    },
+    {
+        icon: "img/icon/conf.png",
+        title: "VR 2026 Participation",
+        date: "Mar 22 2026",
+        content: <dev>Our lab participated in VR'26 in Daegu. Soyeong presented TVCG and workshop papers.</dev>,
+        images: [],
+    },
     {
         icon: "img/icon/speaker.png",
         title: "M.S./Ph.D. Openings",
