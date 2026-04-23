@@ -1,7 +1,7 @@
 export const research_temp = {
     "2026":[
         {
-            poster: "research/2026/IMWUT/Align.jpg",
+            poster: "research/2026/IMWUT/rehabgen.jpg",
             demo: "",
             title: "RehabGen: Generative Expert-in-the-Loop Vision-Language Model for Everyday Contextualized Rehabilitation Exercises",
             authors: "Youjin Sung, Heejin Jeong, Xuhai \"Orson\" Xu, Sang Ho Yoon",
@@ -19,7 +19,7 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "research/2026/IMWUT/Align.jpg",
+            poster: "research/2026/IMWUT/curve.png",
             demo: "",
             title: "CurvedTouch: Effects of Surface Curvature and Cursor Mapping Method for XR Touch Input on Curved Surface",
             authors: "Yubin Lee, Liwei Chan, Geehyuk Lee, Sang Ho Yoon",
@@ -37,15 +37,15 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "research/2026/TOH/toh_mod2.jpg",
+            poster: "research/2026/TOH/toh_1.png",
             demo: "",
             title: "VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception",
             authors: "Hojeong Lee, Eunho Kim, Rachel Kim, Sang Ho Yoon",
             status: "",
-            conference: "IEEE Transactions on Haptics (ToH)",
-            conferenceLink: "https://doi.org/10.1109/TOH.2026.3685691",
+            conference: "IEEE Transactions on Haptics",
+            conferenceLink: "",
             award: "",
-            website: "https://vibgrasp.hcitech.org/",
+            website: "",
             doi: "https://doi.org/10.1109/TOH.2026.3685691",
             video: "",
             pdf: "",
