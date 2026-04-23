@@ -39,7 +39,7 @@ export const research_temp = {
         {
             poster: "research/2026/TOH/toh_1.jpg",
             demo: "",
-            title: "Multimodal Haptic Rendering with Gloves",
+            title: "VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception",
             authors: "Hojeong Lee, Eunho Kim, Rachel Kim, Sang Ho Yoon",
             status: "",
             conference: "",
