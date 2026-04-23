@@ -19,7 +19,7 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "research/2026/IMWUT/curve.jpg",
+            poster: "research/2026/IMWUT/curve.png",
             demo: "",
             title: "CurvedTouch: Effects of Surface Curvature and Cursor Mapping Method for XR Touch Input on Curved Surface",
             authors: "Yubin Lee, Liwei Chan, Geehyuk Lee, Sang Ho Yoon",
