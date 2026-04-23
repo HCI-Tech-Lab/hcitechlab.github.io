@@ -1,7 +1,7 @@
 export const research_temp = {
     "2026":[
         {
-            poster: "research/2026/IMWUT/rehabgen.jpg",
+            poster: "research/2026/IMWUT/Align.jpg",
             demo: "",
             title: "RehabGen: Generative Expert-in-the-Loop Vision-Language Model for Everyday Contextualized Rehabilitation Exercises",
             authors: "Youjin Sung, Heejin Jeong, Xuhai \"Orson\" Xu, Sang Ho Yoon",
@@ -19,7 +19,7 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "research/2026/IMWUT/curve.png",
+            poster: "research/2026/IMWUT/Align.jpg",
             demo: "",
             title: "CurvedTouch: Effects of Surface Curvature and Cursor Mapping Method for XR Touch Input on Curved Surface",
             authors: "Yubin Lee, Liwei Chan, Geehyuk Lee, Sang Ho Yoon",
