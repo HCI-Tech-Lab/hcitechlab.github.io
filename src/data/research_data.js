@@ -70,7 +70,7 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            category: "Preprint"
+            category: "Conference / Journal (peer-reviewed)"
         },
         {
             poster: "research/2026/CHI2026/HOICraft.jpg",
