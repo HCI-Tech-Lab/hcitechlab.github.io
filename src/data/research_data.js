@@ -37,7 +37,7 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "research/2026/TOH/toh_1.png",
+            poster: "research/2026/TOH/toh_mod2.jpg",
             demo: "",
             title: "VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception",
             authors: "Hojeong Lee, Eunho Kim, Rachel Kim, Sang Ho Yoon",
