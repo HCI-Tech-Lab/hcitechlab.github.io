@@ -37,7 +37,7 @@ export const research_temp = {
             category: "Preprint"
         },
         {
-            poster: "research/2026/TOH/TOH_1.jpg",
+            poster: "research/2026/TOH/toh_1.jpg",
             demo: "",
             title: "Multimodal Haptic Rendering with Gloves",
             authors: "Hojeong Lee, Eunho Kim, Rachel Kim, Sang Ho Yoon",
