@@ -4,7 +4,7 @@ export const news = [
     {
         icon: "img/icon/conf.png",
         title: "CHI 2026 Participation",
-        date: "Apr 23 206",
+        date: "Apr 23 2026",
         content: <dev>Our lab participated in CHI'26 in Barcelona. Kun-woo and Dohui presented papers and our lab participated in workshop.</dev>,
         images: "",
     },
