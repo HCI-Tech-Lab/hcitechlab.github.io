@@ -116,7 +116,7 @@ const getCategoryColor = (category) => {
 };
 
 const NewsCard = () => {
-  const latestNews = news.slice(0, 4);
+  const latestNews = news.slice(0, 8);
   const [selectedNews, setSelectedNews] = useState(null);
 
   return (
