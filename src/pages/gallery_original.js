@@ -1,129 +1,22 @@
-import { useState, useEffect } from "react";
+import GalleryCarousel from "@/components/gallery_carousel";
 import SectionContainer from "@/components/section_container";
-import baguetteBox from 'baguettebox.js';
-// Make sure to import baguetteBox CSS in your app if you haven't globally!
-// import 'baguettebox.js/dist/baguetteBox.min.css';
-
-// ... (Keep your galleries object here exactly as you have it) ...
 
 export default function Gallery() {
-    // --- Pagination State ---
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 4; // Lowered to 4 since we show ALL photos per event now
-    
-    const keys = Object.keys(galleries);
-    const totalPages = Math.ceil(keys.length / itemsPerPage);
-
-    // Calculate indices for slicing
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentKeys = keys.slice(indexOfFirstItem, indexOfLastItem);
-
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
-    const handleNext = () => { if (currentPage < totalPages) setCurrentPage(currentPage + 1); };
-
-    // Initialize lightbox popups. 
-    // We put [currentPage] in the dependency array so it re-runs when we change pages!
-    useEffect(() => {
-        baguetteBox.run('.gallery-event-container');
-    }, [currentPage]);
-
-    // Dynamic Pagination Logic
-    const getPageNumbers = () => {
-        const pages = [];
-        if (totalPages <= 5) {
-            for (let i = 1; i <= totalPages; i++) pages.push(i);
-        } else {
-            if (currentPage <= 3) {
-                pages.push(1, 2, 3, 4, '...', totalPages);
-            } else if (currentPage >= totalPages - 2) {
-                pages.push(1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
-            } else {
-                pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
-            }
-        }
-        return pages;
-    };
-
     return (
-        <SectionContainer>
-            {/* Standardized Header */}
-            <div className="d-flex justify-content-between align-items-center mb-4">
-                <h2 style={{ fontWeight: '800', margin: 0 }}>HCI Tech Lab Gallery</h2>
-            </div>
-            
-            {/* Gallery Events Mapping */}
-            <div className="gallery-wrapper">
-                {currentKeys.map((key, index) => (
-                    <div key={index} className="gallery-event-container mb-5 pb-4">
-                        
-                        {/* Event Title Header */}
-                        <div className="d-flex align-items-center mb-4 mt-3">
-                            {/* Applied the new custom class here */}
-                            <h4 className="gallery-event-title">{key}</h4>
-                            
-                            {/* Keeping the elegant horizontal line next to it */}
-                            <div style={{ flex: 1, height: "2px", backgroundColor: "#e2e8f0" }}></div>
-                        </div>
-
-                        {/* Masonry Grid for this specific event */}
-                        <div className="masonry-grid">
-                            {galleries[key].map((src, imgIndex) => (
-                                <a 
-                                    href={src} 
-                                    key={imgIndex} 
-                                    className="masonry-item" 
-                                    data-caption={`${key}`}
-                                >
-                                    <img 
-                                        src={src} 
-                                        alt={`${key} photo ${imgIndex + 1}`} 
-                                        loading="lazy" /* Improves performance by only loading images as they scroll into view */
-                                    />
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {/* Pagination Controls */}
-            {totalPages > 1 && (
-                <div className="d-flex flex-wrap justify-content-center align-items-center mt-5 mb-4" style={{ gap: '4px' }}>
-                    {getPageNumbers().map((number, index) => (
-                        number === '...' ? (
-                            <span key={`ellipsis-${index}`} style={{ padding: '8px 12px', color: '#333' }}>...</span>
-                        ) : (
-                            <button
-                                key={number}
-                                onClick={() => paginate(number)}
-                                style={{ 
-                                    padding: '6px 14px', borderRadius: '0', cursor: 'pointer', border: '1px solid #333',
-                                    fontSize: '0.9rem', fontWeight: '500', transition: 'all 0.2s ease',
-                                    backgroundColor: currentPage === number ? '#ffffff' : '#2b2b2b',
-                                    color: currentPage === number ? '#2b2b2b' : '#ffffff',
-                                }}
-                            >
-                                {number}
-                            </button>
-                        )
-                    ))}
-                    <button 
-                        onClick={handleNext} disabled={currentPage === totalPages}
-                        style={{ 
-                            padding: '6px 14px', border: '1px solid #333', borderRadius: '0', fontSize: '0.9rem', fontWeight: '500', marginLeft: '4px',
-                            backgroundColor: currentPage === totalPages ? '#f8f9fa' : '#2b2b2b',
-                            color: currentPage === totalPages ? '#ccc' : '#ffffff',
-                            cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
-                        }}
-                    >
-                        NEXT &raquo;
-                    </button>
-                </div>
-            )}
-        </SectionContainer>
+      <SectionContainer>
+        <div className = "gallery-block grid-gallery">
+          <div className="heading"><h2>HCI Tech Lab Gallery</h2></div>
+          <div className = "row">
+            {
+              Object.keys(galleries).map((key, index) => (
+                <GalleryCarousel images={galleries[key]} id = {index} title = {key} key = {index} />
+              ))
+            }
+          </div>
+        </div>
+      </SectionContainer>
     );
-}
+  }
 
 const galleries = {
   "February, 2026 (Graduation)": [

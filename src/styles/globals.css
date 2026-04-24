@@ -190,15 +190,15 @@ a {
 
 .publication-link{
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   white-space: normal !important;
   display: inline-block;
-  padding: 0.35em 0.65em;
+  padding: 0.5em 0.65em;
   line-height: 1;
   text-align: center;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   margin-bottom: 5px;
   margin-right: 5px;
   color: #fff;
@@ -470,5 +470,68 @@ span.type{
     text-align: left;    /* Keep bullet points left-aligned internally */
     display: inline-block; /* Allows the list block itself to be centered */
     padding-left: 1.5rem; /* Ensure bullets are visible */
+  }
+}
+
+/* --- Masonry Gallery Layout --- */
+.masonry-grid {
+  column-count: 1; /* Default to 1 column on mobile */
+  column-gap: 16px;
+  width: 100%;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .masonry-grid { column-count: 2; }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .masonry-grid { column-count: 3; }
+}
+
+/* Large Desktop: 4 columns (matches your screenshot) */
+@media (min-width: 1200px) {
+  .masonry-grid { column-count: 4; }
+}
+
+.masonry-item {
+  break-inside: avoid; /* Prevents an image from being split across columns */
+  margin-bottom: 16px;
+  display: block;
+  border-radius: 12px; /* Matches the rounded corners in your screenshot */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.masonry-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto; /* RULE: No cropping, maintains original aspect ratio! */
+  display: block;
+  border-radius: 12px;
+}
+
+/* Custom styling for Gallery Event Titles */
+.gallery-event-title {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 600; /* Extra bold to match the screenshot */
+  color: #001f3f; /* A deep navy blue, similar to the screenshot */
+  font-size: 1.5rem; /* CHANGE THIS VALUE to make it bigger or smaller */
+  letter-spacing: -0.5px; /* Pulls the letters slightly tighter for that modern headline look */
+  text-transform: uppercase; /* Forces it to be ALL CAPS like the screenshot */
+  margin: 0;
+  padding-right: 15px; /* Space between text and the line */
+}
+
+/* Optional: Make it slightly smaller on mobile screens */
+@media (max-width: 768px) {
+  .gallery-event-title {
+    font-size: 1.25rem;
   }
 }

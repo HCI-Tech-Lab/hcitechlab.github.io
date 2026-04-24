@@ -7,7 +7,7 @@ export default function Publications() {
     const yearRefs = useRef({});
     
     // State for filtering and searching
-    const [selectedCategory, setSelectedCategory] = useState("All");
+    const [selectedCategory, setSelectedCategory] = useState("Conference / Journal (peer-reviewed)");
     const [searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
@@ -212,12 +212,12 @@ export default function Publications() {
                                             <b>AWARD:&nbsp;</b> {item.award}</h6>}
                                             
                                         <div className="d-flex flex-wrap gap-2 mt-2" style={{ fontSize: '0.8rem' }}>
-                                            {item.website && <Link className="btn btn-sm btn-outline-secondary rounded-pill px-3" href={item.website} target="_blank">Project Website</Link>}
-                                            {item.doi && <Link className="btn btn-sm btn-outline-secondary rounded-pill px-3" href={item.doi} target="_blank">DOI</Link>}
-                                            {item.video && <Link className="btn btn-sm btn-outline-secondary rounded-pill px-3" href={item.video} target="_blank">VIDEO</Link>}
-                                            {item.pdf && <Link className="btn btn-sm btn-outline-secondary rounded-pill px-3" href={item.pdf} target="_blank">PDF</Link>}
-                                            {item.presentation && <Link className="btn btn-sm btn-outline-secondary rounded-pill px-3" href={item.presentation} target="_blank">PRESENTATION</Link>}
-                                            {item.media && <Link className="btn btn-sm btn-outline-secondary rounded-pill px-3" href={item.media} target="_blank">MEDIA</Link>}
+                                            {item.website && <Link className="publication-link" href={item.website} target="_blank">Project Website</Link>}
+                                            {item.doi && <Link className="publication-link" href={item.doi} target="_blank">DOI</Link>}
+                                            {item.video && <Link className="publication-link" href={item.video} target="_blank">VIDEO</Link>}
+                                            {item.pdf && <Link className="publication-link" href={item.pdf} target="_blank">PDF</Link>}
+                                            {item.presentation && <Link className="publication-link" href={item.presentation} target="_blank">PRESENTATION</Link>}
+                                            {item.media && <Link className="publication-link" href={item.media} target="_blank">MEDIA</Link>}
                                         </div>
                                     </div>
                                 </div>
