@@ -535,3 +535,18 @@ span.type{
     font-size: 1.25rem;
   }
 }
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08) !important;
+}
+
+.contact-icon {
+  transition: all 0.2s ease;
+}
+
+.contact-icon:hover {
+  background-color: #1260de !important; /* Your lab's primary blue */
+  color: white !important;
+  transform: scale(1.1);
+}
