@@ -252,7 +252,7 @@ export const ctp445_data = [
                         { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
                     ],
                     dues: [
-                        { name: "Progress Presentation Slides due by 5/6(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "Progress Presentation Slides due by 5/6(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "RR Group A (Modeling & Annotation) due by 5/7(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
