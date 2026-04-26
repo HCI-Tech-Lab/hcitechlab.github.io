@@ -212,7 +212,6 @@ export const ctp445_data = [
                     titles: ["Situated Visualization"],
                     type: 1,
                     notes: [
-                        { name: "HW#4 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
                         { name: "*White et al., 'SiteLens: Situated visualization techniques for urban site visits' CHI, 2009", link: "https://doi.org/10.1145/1518701.1518871" },
                         { name: "Willet et al., 'Embedded data representations' TVCG, 2016", link: "https://doi.org/10.1109/TVCG.2016.2598608" },
                         { name: "Lin et al., 'Towards an Understanding of Situated AR Visualization for Basketball Free-Throw Training' CHI, 2021", link: "https://doi.org/10.1145/3411764.3445649" }
@@ -254,24 +253,13 @@ export const ctp445_data = [
                     ],
                     dues: [
                         { name: "Progress Presentation Slides due by 5/6(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                        { name: "RR Group A (Modeling & Annotation) due by 5/7(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
             },
             {
                 day1: {
                     date: "5/11",
-                    titles: ["Project Feedback Meeting"],
-                    type: 1,
-                    notes: [
-                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
-                    ],
-                    dues: [
-                        { name: "Progress Report due by 5/10(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "RR Group A (Modeling & Annotation) due by 5/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "5/13",
                     titles: ["Modeling & Annotation"],
                     type: 1,
                     notes: [
@@ -279,7 +267,18 @@ export const ctp445_data = [
                         { name: "Nuernberger et al., 'Interpreting 2d gesture annotations in 3d augmented reality' 3DUI, 2016", link: "https://ieeexplore.ieee.org/abstract/document/7460046" }
                     ],
                     dues: [
+                        { name: "Progress Report due by 5/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "Topic Presentation #6", link: "" },
+                    ]
+                },
+                day2: {
+                    date: "5/13",
+                    titles: ["Project Feedback Meeting"],
+                    type: 1,
+                    notes: [
+                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
+                    ],
+                    dues: [
                         { name: "RR Group B (Authoring) due by 5/14(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
