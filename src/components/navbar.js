@@ -10,8 +10,8 @@ const NavBar = () => {
         <div className = "container">
                 
                 <Link href = '/' className = 'navbar-brand'>
-                    <img alt = "logo" src = "Logo_White.png" width = {240} height = {60} className = "d-none d-sm-block"/>
-                    <img alt = "small" src="Logo_White.png" width = {200} height = {50} class="small d-block d-sm-none" />
+                    <img alt = "logo" src = "/Logo_White.png" width = {240} height = {60} className = "d-none d-sm-block"/>
+                    <img alt = "small" src="/Logo_White.png" width = {200} height = {50} class="small d-block d-sm-none" />
                 </Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
