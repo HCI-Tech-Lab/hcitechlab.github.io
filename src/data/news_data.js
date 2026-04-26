@@ -6,7 +6,7 @@ export const news = [
         title: "CHI 2026 Participation",
         date: "Apr 23 2026",
         content: <dev>Our lab participated in CHI'26 in Barcelona. Kun-woo and Dohui presented papers and our lab participated in workshop.</dev>,
-        images: [],
+        images: ["img/Lab/2604/CHI1.jpg","img/Lab/2604/CHI2.jpg"],
     },
     {
         icon: "img/icon/paper2.jpg",
@@ -22,21 +22,21 @@ export const news = [
         title: "Lab Activity (KAIST Strawberry Party)",
         date: "Apr 3 2026",
         content: "Lab Gathering at the KAIST Strawberry Party.",
-        images: [],
+        images: ["img/Lab/2604/SP1.jpg"],
     },    
     {
         icon: "img/icon/visit.png",
         title: "Visit from Google AR & VR",
         date: "Mar 22 2026",
         content: <dev>Mar from Google BIRD lab under Google AR & VR visited KAIST and HCI Tech Lab for seminar and potential research collaboration.</dev>,
-        images: [],
+        images: ["img/Lab/2604/G1.jpg","img/Lab/2604/G3.jpg"],
     },
     {
         icon: "img/icon/conf.png",
         title: "VR 2026 Participation",
         date: "Mar 22 2026",
         content: <dev>Our lab participated in VR'26 in Daegu. Soyeong presented TVCG and workshop papers.</dev>,
-        images: [],
+        images: ["img/Lab/2603/VR2.jpg","img/Lab/2604/VR5.jpeg"],
     },
     {
         icon: "img/icon/speaker.png",

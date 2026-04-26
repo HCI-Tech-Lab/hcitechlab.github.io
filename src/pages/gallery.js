@@ -126,6 +126,30 @@ export default function Gallery() {
 }
 
 const galleries = {
+  "Apr, 2026 (Lab Retreat)": [
+    "img/Lab/2602/SP1.jpg",
+    "img/Lab/2602/SP2.jpg",
+  ],
+  "Apr, 2026 (CHI)": [
+    "img/Lab/2604/CHI1.jpg",
+    "img/Lab/2604/CHI2.jpg",
+    "img/Lab/2604/CHI3.jpg",
+    "img/Lab/2604/CHI4.jpg",
+    "img/Lab/2604/CHI5.jpg",
+    "img/Lab/2604/CHI6.jpg",
+  ],
+  "Mar, 2026 (VR)": [
+    "img/Lab/2603/VR1.jpg",
+    "img/Lab/2603/VR2.jpg",
+    "img/Lab/2603/VR3.jpeg",
+    "img/Lab/2603/VR4.jpeg",
+    "img/Lab/2603/VR5.jpeg",
+  ],
+  "March, 2026 (External Visit, Mar Gonzalez)": [
+    "img/Lab/2603/G1.jpg",
+    "img/Lab/2603/G2.jpg",
+    "img/Lab/2603/G3.jpg",
+  ],
   "February, 2026 (Graduation)": [
     "img/Lab/2602/Grad_1.jpg",
     "img/Lab/2602/Grad_2.jpg",
