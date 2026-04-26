@@ -29,14 +29,14 @@ export const news = [
         title: "Visit from Google AR & VR",
         date: "Mar 22 2026",
         content: <dev>Mar from Google BIRD lab under Google AR & VR visited KAIST and HCI Tech Lab for seminar and potential research collaboration.</dev>,
-        images: ["img/Lab/2604/G1.jpg","img/Lab/2604/G3.jpg"],
+        images: ["img/Lab/2603/G1.jpg","img/Lab/2603/G3.jpg"],
     },
     {
         icon: "img/icon/conf.png",
         title: "VR 2026 Participation",
         date: "Mar 22 2026",
         content: <dev>Our lab participated in VR'26 in Daegu. Soyeong presented TVCG and workshop papers.</dev>,
-        images: ["img/Lab/2603/VR2.jpg","img/Lab/2604/VR5.jpeg"],
+        images: ["img/Lab/2603/VR2.jpg","img/Lab/2603/VR5.jpeg"],
     },
     {
         icon: "img/icon/speaker.png",
