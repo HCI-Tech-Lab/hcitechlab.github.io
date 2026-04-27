@@ -127,8 +127,8 @@ export default function Gallery() {
 
 const galleries = {
   "Apr, 2026 (Lab Retreat)": [
-    "img/Lab/2602/SP1.jpg",
-    "img/Lab/2602/SP2.jpg",
+    "img/Lab/2604/SP1.jpg",
+    "img/Lab/2604/SP2.jpg",
   ],
   "Apr, 2026 (CHI)": [
     "img/Lab/2604/CHI1.jpg",

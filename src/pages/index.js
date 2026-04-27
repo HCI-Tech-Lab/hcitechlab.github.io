@@ -214,7 +214,6 @@ const NewsCard = () => {
 };
 
 // --- UPDATED COMPONENT: Selected Video Carousel ---
-// --- UPDATED COMPONENT: Selected Video Carousel ---
 const SelectedCarousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [progress, setProgress] = useState(0);

@@ -2,44 +2,51 @@ import Link from 'next/link';
 
 export const news = [
     {
-        icon: "img/icon/conf.png",
+        icon: "",
+        title: "Google Student Researcher Internship",
+        date: "Apr 24 2026",
+        content: <dev>Jina Kim started internship as a Student Researcher at Google BIRD lab(Seattle)! </dev>,
+        images: ["img/Lab/2604/Google.jpeg"],
+    },
+    {
+        icon: "",
         title: "CHI 2026 Participation",
         date: "Apr 23 2026",
         content: <dev>Our lab participated in CHI'26 in Barcelona. Kun-woo and Dohui presented papers and our lab participated in workshop.</dev>,
         images: ["img/Lab/2604/CHI1.jpg","img/Lab/2604/CHI2.jpg"],
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to ToH",
         date: "Apr 16 2026",
         content: (<>Our paper <strong>VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception</strong> led by Hojeong is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4543165" target="_blank">IEEE Transactions on Haptics (ToH)</Link>.</>),
-        images: [],
+        images: ["img/Other/TOH.jpg"],
         category: "Publication",
         status: "",       
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
         title: "Lab Activity (KAIST Strawberry Party)",
         date: "Apr 3 2026",
         content: "Lab Gathering at the KAIST Strawberry Party.",
         images: ["img/Lab/2604/SP1.jpg"],
     },    
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from Google AR & VR",
         date: "Mar 22 2026",
         content: <dev>Mar from Google BIRD lab under Google AR & VR visited KAIST and HCI Tech Lab for seminar and potential research collaboration.</dev>,
         images: ["img/Lab/2603/G1.jpg","img/Lab/2603/G3.jpg"],
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "VR 2026 Participation",
         date: "Mar 22 2026",
         content: <dev>Our lab participated in VR'26 in Daegu. Soyeong presented TVCG and workshop papers.</dev>,
         images: ["img/Lab/2603/VR2.jpg","img/Lab/2603/VR5.jpeg"],
     },
     {
-        icon: "img/icon/speaker.png",
+        icon: "",
         title: "M.S./Ph.D. Openings",
         date: "Mar 15 2026",
         content: <div>We are looking for M.S and Ph.D students for Fall 2026 and Spring 2027 semester. Please refer to updated <Link href="/recruiting_graduate" target="_blank">M.S./Ph.D. Openings</Link>.</div>,
@@ -48,13 +55,13 @@ export const news = [
         status: "Closed",       
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to ETRA 2026",
         date: "Mar 15, 2026",
         content: (
             <>Our paper <strong>Align-to-Scale: Mode Switching Technique for Unimanual 3D Object Manipulation with Gaze-Hand-Object Alignment in Extended Reality</strong> led by Min-yung is accepted to <Link href="https://etra.acm.org/2026/" target="_blank">ETRA 2026</Link>.</>
         ),
-        images: [],
+        images: ["img/Other/etra26.png"],
         category: "Publication",
     },
     {
@@ -62,7 +69,7 @@ export const news = [
         title: "New Research Project",
         date: "Mar 12 2026",
         content: <><strong>Context-Aware Multimodal Physical AI Framework for Coexistence-Oriented Human–Robot Interaction</strong> supported by NRF was selected.</>,
-        images: []
+        images: ["img/Other/nrf.png"],
     },
     {
         icon: "img/icon/Welcome.jpg",
