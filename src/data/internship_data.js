@@ -6,8 +6,11 @@ export const internshipCalls = {
         documentLink: "https://docs.google.com/document/d/1UNCWeRzZ6PiqTy_5QTMem1K363fA48CVYoocI8fzqmw/edit?usp=sharing",
         projectTitles: [
             "[Project#1] Multimodal Hand Interaction Dataset & Modeling",
-            "[Project #2] Impact Dataset & Haptic Generation from Movies with Multimodal AI",
-            "[Project#2] Human-Robot Interaction",
+            "[Project#2] Multimodal Hand Interaction Dataset & Modeling",
+            "[Project#3] Generative Motion Synthesis for Expressive Robots (HRI)",
+            "[Project#4] Haptic Rendering Hardware",
+            "[Project#5] Haptic Rendering Hardware",
+            "[Project#6] HOI+Haptics Authoring",
         ],
         deadline: "May 8, 2026 (Fri)",
     },
