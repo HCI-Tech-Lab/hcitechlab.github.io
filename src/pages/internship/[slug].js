@@ -23,7 +23,7 @@ export default function InternshipCall({ data }) {
             <p>As an interdisciplinary research group in Culture Technology, we build physical/digital interactive systems empowered by novel sensing/haptic technologies. In HCI Tech Lab, we aim to explore novel interactive technologies that bring direct benefits to real world users. Our research process generally includes:</p>
             <ul style={{marginLeft: "30px"}}>
                 <li><h5>Find gaps between interface/device and human</h5></li>
-                <li><h5>Bridge the gap with novel technical/social solution</h5></li>
+                <li><h5>Bridge the gap with novel technical &social solution</h5></li>
                 <li><h5>Evaluate the solution with research methods</h5></li>
                 <li><h5>Deploy the solution with practical applications</h5></li> 
             </ul>
@@ -52,7 +52,7 @@ export default function InternshipCall({ data }) {
                 <li className="mb-2"><h5>Flexible start/end dates + working hours.</h5></li>
                 <li className="mb-2"><h5><b>Interns will be paid & personal office space</b> will be provided in the N5 building</h5></li>
                 <li className="mb-2"><h5><b>URP</b> is a great option for undergraduate students at KAIST</h5></li>
-                <li className="mb-2"><h5>Prefers students who are willing to extend the internship. At the end of the internship, we will discuss extending the internship. The decision will depend on various factors (Internship progress, fit to the lab, commitment, etc).</h5></li>
+                <li className="mb-2"><h5>Preference will be given to students who are willing to continue in the lab beyond the internship as graduate students.</h5></li>
             </ul>
 
             <br />

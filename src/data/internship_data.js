@@ -2,17 +2,18 @@ export const internshipCalls = {
     // Example of a past/future call. Its URL will be: yourwebsite.com/internship/summer-2026
     "summer-2026": {
         period: "Summer 2026",
-        formLink: "https://forms.gle/yZJqa9GuTzHX7G8e8", 
+        formLink: "https://forms.gle/6ch3FZ8M6bK6yiq1A", 
         documentLink: "https://docs.google.com/document/d/1UNCWeRzZ6PiqTy_5QTMem1K363fA48CVYoocI8fzqmw/edit?usp=sharing",
         projectTitles: [
-            "[Project#1] Multimodal Hand Interaction Dataset & Modeling",
-            "[Project#2] Multimodal Hand Interaction Dataset & Modeling",
-            "[Project#3] Generative Motion Synthesis for Expressive Robots (HRI)",
-            "[Project#4] Haptic Rendering Hardware",
-            "[Project#5] Haptic Rendering Hardware",
-            "[Project#6] HOI+Haptics Authoring",
+            "Multimodal Hand Interaction Dataset & Modeling (Topic: Physical AI, Haptics)",
+            "Generative Motion Synthesis for Expressive Robots (Topic: Robotics-HRI, HCI)",
+            "Human-Robot Haptic Interaction Generation (Topic: Robotics-HRI, HCI)",
+            "HOI(Hand Object Interaction)-to-Haptics (Topic: HCI, Haptics)",
+            "Haptic Interface for Fingers (Topic: Haptics, HCI)",
+            "Soft Actuators for Viscoelastic Haptic Rendering(Topic: Haptics)",
+            "Haptic Glove with Novel Actuation & Rendering(Topic: Haptics)",        
         ],
-        deadline: "May 8, 2026 (Fri)",
+        deadline: "May 15, 2026 (Fri)",
     },
 
     // The key below ("winter-2026") becomes your URL: yourwebsite.com/internship/winter-2026
