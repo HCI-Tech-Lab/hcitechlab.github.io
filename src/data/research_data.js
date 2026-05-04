@@ -51,7 +51,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -69,7 +69,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -87,7 +87,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -105,7 +105,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -123,9 +123,9 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
             play: true,
-            playOrder: 2,
+            playOrder: 4,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -343,9 +343,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
-            play: true,
-            playOrder: 7,
+            highlight: false,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -400,7 +398,7 @@ export const research_temp = {
             media: "",
             highlight: true,
             play: true,
-            playOrder: 4,
+            playOrder: 5,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -528,8 +526,7 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            play: true,
-            playOrder: 5,
+            play: false,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -565,7 +562,9 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
+            play: true,
+            playOrder: 3,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -713,7 +712,9 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: true,
+            highlight: false,
+            play: true,
+            playOrder: 2,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
