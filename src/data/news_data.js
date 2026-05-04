@@ -2,6 +2,15 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "img/icon/speaker.png",
+        title: "Winter 2026 Undergraduate Research Internship",
+        date: "May 4 2026",
+        content: <div>We are looking for research interns (including URP) for 2026 Summer. Application deadline is May 15th. You can find more information <Link href="/internship/summer-2026" target="_blank">here</Link>.</div>,
+        images: [],
+        category: "Position",      
+        status: "Open",       
+    },
+    {
         icon: "",
         title: "Google Student Researcher Internship",
         date: "Apr 24 2026",
