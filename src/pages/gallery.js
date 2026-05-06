@@ -175,11 +175,7 @@ const galleries = {
     "img/Lab/2512/YItian_Visit2.jpg",
     "img/Lab/2512/YItian_Visit3.jpg",
   ],
-  "December, 2025 (External Visit, Yitian Shao)": [
-    "img/Lab/2512/YItian_Visit1.jpg",
-    "img/Lab/2512/YItian_Visit2.jpg",
-    "img/Lab/2512/YItian_Visit3.jpg",
-  ],
+
   "November, 2025 (External Visit, Distinguished professors from Denmark)": [
     "img/Lab/2511/Denmark1.jpg",
     "img/Lab/2511/Denmark2.jpg",
