@@ -344,8 +344,8 @@ const galleries = {
   "July, 2024": [
     "img/Lab/2407/2407_0.jpg",
     "img/Lab/2407/2407_1.jpg",
-    "img/Lab/2407/2407_2.png",
-    "img/Lab/2407/2407_3.png",
+    "img/Lab/2407/2407_2.jpg",
+    "img/Lab/2407/2407_3.jpg",
   ],
   "May, 2024": [
     "img/Lab/2405/2405_1.jpg",
