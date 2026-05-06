@@ -172,8 +172,8 @@ const galleries = {
   ],
   "December, 2025 (External Visit, HITSZ)": [
     "img/Lab/2512/YItian_Visit1.jpg",
-    "img/Lab/2512/YItian_Visit2.jpg",
-    "img/Lab/2512/YItian_Visit3.jpg",
+    "img/Lab/2512/Yitian_Visit2.jpg",
+    "img/Lab/2512/Yitian_Visit3.jpg",
   ],
 
   "November, 2025 (External Visit, Distinguished professors from Denmark)": [
