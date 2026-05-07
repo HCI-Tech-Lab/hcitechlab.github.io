@@ -42,7 +42,7 @@ export const phdStudents = [
         hoverImg: "img/Member/hover_image/JK_hover.jpg",
         name: "Jina Kim",
         title: "Ph.D. Student",
-        interest: "Research Interest",
+        interest: "Multimodal interaction & Sensing for XR",
         link: "https://www.jinakim.xyz/",
         mail: "#",
         linkedin: "#",
