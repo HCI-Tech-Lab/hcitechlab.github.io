@@ -18,7 +18,7 @@ export default function News() {
 
     // --- Pagination State ---
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 8; 
+    const itemsPerPage = 20; 
 
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;

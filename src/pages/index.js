@@ -29,7 +29,14 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SECTION 3: Video Section (White Background) */}
+      {/* SECTION 3: Highlighted Publications (Light Gray Background) */}
+      <div style={{ backgroundColor: '#ebf3f8ff', width: '100%', padding: '3px 0', borderTop: '1px solid #eee' }}>
+        <div className="container">
+          <HighlightedPublicatons />
+        </div>
+      </div>
+
+        {/* SECTION 4: Video Section (White Background) */}
       <div style={{ backgroundColor: '#ffffff', width: '100%', padding: '20px 0' }}>
         <div className="container">
           <div className="col-12">
@@ -44,12 +51,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SECTION 4: Highlighted Publications (Light Gray Background) */}
-      <div style={{ backgroundColor: '#ebf3f8ff', width: '100%', padding: '3px 0', borderTop: '1px solid #eee' }}>
-        <div className="container">
-          <HighlightedPublicatons />
-        </div>
-      </div>
 
     </div>
   );
@@ -103,15 +104,14 @@ const WelcomeCard = () => {
   );
 }
 
-//NewsCard
+// Helper function for the modal badges
 const getCategoryColor = (category) => {
-  if (!category) return '#1260de'; // Default Blue
+  if (!category) return '#1260de';
   const lower = category.toLowerCase();
-
-  if (lower.includes('position')) return '#008924ff'; // Default Grey for other position statuses
-  if (lower.includes('opening')) return '#6c757d'; // Grey
-  if (lower.includes('news')) return '#000000ff'; // Green
-  if (lower.includes('award')) return '#c4c732ff'; // Green
+  if (lower.includes('position')) return '#008924ff';
+  if (lower.includes('opening')) return '#6c757d';
+  if (lower.includes('news')) return '#000000ff';
+  if (lower.includes('award')) return '#c4c732ff';
   return '#1260de';
 };
 
@@ -119,29 +119,52 @@ const NewsCard = () => {
   const latestNews = news.slice(0, 8);
   const [selectedNews, setSelectedNews] = useState(null);
 
+  // Helper to render icon smartly (handles both file paths and emojis)
+  const renderIcon = (iconStr, height = '20px') => {
+      if (!iconStr) return null;
+      if (iconStr.includes('/') || iconStr.includes('.')) {
+          return <img src={iconStr} alt="icon" style={{ height: height, width: 'auto', objectFit: 'contain' }} />;
+      }
+      return <span style={{ fontSize: '1.2rem' }}>{iconStr}</span>;
+  };
+
   return (
     <div className="col-12">
       <div className="container">
-        {/* Section Header */}
-          <div style={{ width: '50px', height: '5px', backgroundColor: '#1260de', marginBottom: '10px' }}></div>
-          <h2 style={{ fontWeight: '800', marginBottom: '5px' }}>News</h2>
-            <div className="d-flex justify-content-between align-items-end mb-3">
-               Latest news from HCI Tech Lab
-              <Link href="/news" style={{ fontSize: '0.9rem', color: '#666', textDecoration: 'none' }}>
-                All News ↗
-              </Link>
-            </div>
+        
+        {/* Inline CSS for the Zoom-in Animation */}
+        <style>{`
+            @keyframes modalZoomIn {
+                from { transform: scale(0.8); opacity: 0; }
+                to { transform: scale(1); opacity: 1; }
+            }
+        `}</style>
 
+        {/* Section Header */}
+        <div style={{ width: '50px', height: '5px', backgroundColor: '#1260de', marginBottom: '10px' }}></div>
+        <h2 style={{ fontWeight: '800', marginBottom: '5px' }}>News</h2>
+        <div className="d-flex justify-content-between align-items-end mb-3">
+            Latest news from HCI Tech Lab
+            <Link href="/news" style={{ fontSize: '0.9rem', color: '#666', textDecoration: 'none' }}>
+            All News ↗
+            </Link>
+        </div>
 
         {/* News Grid */}
         <div className="news-grid">
           {latestNews.map((newsItem, index) => (
-            <div className="news-grid-card" key={index}>
-              <div className="d-flex gap-2 mb-2">
-                <span 
-                  className="tag-badge" 
-                  style={{ backgroundColor: getCategoryColor(newsItem.category || "News") }}
-                >
+            <div 
+                className="news-grid-card" 
+                key={index}
+                onClick={() => setSelectedNews(newsItem)}
+                style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
+            >
+              <div className="d-flex gap-2 mb-2 align-items-center">
+                
+                {/* --- FIX 2: Smart Icon Rendering --- */}
+                {renderIcon(newsItem.icon)}
+                
+                <span className="tag-badge" style={{ backgroundColor: getCategoryColor(newsItem.category || "News") }}>
                   {newsItem.category || "News"}
                 </span>
                               
@@ -166,27 +189,25 @@ const NewsCard = () => {
                   : newsItem.content}
               </div>
 
-              {/* Read More Button (Only for items with extra content) */}
               {newsItem.extraContent && (
-                  <button 
-                      className="read-more-btn" 
-                      onClick={() => setSelectedNews(newsItem)}
-                  >
-                      Read More
-                  </button>
+                  <div style={{ color: '#1260de', fontSize: '0.85rem', fontWeight: 'bold', marginBottom: '15px' }}>
+                      Read More &rarr;
+                  </div>
               )}
 
+              {/* --- FIX 1: Fixed Image Overflow Layout --- */}
               {newsItem.images && newsItem.images.length > 0 && (
-                /* The d-flex wrapper ensures images sit side-by-side if there are multiple */
-                <div className="d-flex gap-2">
+                <div className="d-flex gap-2 mt-auto" style={{ height: '120px', width: '100%' }}>
                   {newsItem.images.slice(0, 2).map((src, i) => (
                     <img 
                       key={i} 
                       src={src} 
                       alt="news-thumb" 
                       style={{ 
-                        width: '50%',        /* Automatically fits maximally to the grid width */
-                        objectFit: 'cover',   /* Crops the image to fill the area without distortion */
+                        flex: 1,
+                        minWidth: 0,          /* CRITICAL FIX: Stops images from overflowing */
+                        height: '100%',
+                        objectFit: 'cover',   
                         borderRadius: '4px', 
                         border: '1px solid #eee' 
                       }} 
@@ -198,13 +219,72 @@ const NewsCard = () => {
           ))}
         </div>
 
-        {/* Modal Pop-Up */}
+        {/* MODAL POP-UP WITH ZOOM ANIMATION */}
         {selectedNews && (
-            <div className="modal-overlay" onClick={() => setSelectedNews(null)}>
-                <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                    <button className="close-btn" onClick={() => setSelectedNews(null)}>✖</button>
-                    <h3>{selectedNews.title}</h3>
-                    <p>{selectedNews.extraContent}</p>
+            <div 
+                className="modal-overlay" 
+                onClick={() => setSelectedNews(null)}
+                style={{
+                    position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+                    display: 'flex', justifyContent: 'center', alignItems: 'center',
+                    zIndex: 9999 
+                }}
+            >
+                <div 
+                    className="modal-content" 
+                    onClick={(e) => e.stopPropagation()} 
+                    style={{
+                        backgroundColor: '#fff', padding: '30px', borderRadius: '12px',
+                        width: '90%', maxWidth: '700px', 
+                        maxHeight: '85vh', overflowY: 'auto', 
+                        position: 'relative', boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
+                        textAlign: 'left',
+                        animation: 'modalZoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards' 
+                    }}
+                >
+                    <button 
+                        className="close-btn" 
+                        onClick={() => setSelectedNews(null)}
+                        style={{
+                            position: 'absolute', top: '15px', right: '20px',
+                            background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#666'
+                        }}
+                    >
+                        ✖
+                    </button>
+
+                    <div className="d-flex gap-2 mb-3 align-items-center">
+                        {/* --- FIX 2: Applied smart icon to modal as well --- */}
+                        {renderIcon(selectedNews.icon, '24px')}
+                        
+                        <span className="tag-badge" style={{ backgroundColor: getCategoryColor(selectedNews.category || "News"), padding: '4px 10px', color: '#fff', borderRadius: '4px', fontSize: '0.85rem' }}>
+                            {selectedNews.category || "News"}
+                        </span>
+                    </div>
+
+                    <h2 style={{ fontWeight: 'bold', marginBottom: '10px' }}>{selectedNews.title}</h2>
+                    <div style={{ fontSize: '0.9rem', color: '#888', marginBottom: '20px' }}>{selectedNews.date}</div>
+                    
+                    <div style={{ fontSize: '1rem', color: '#333', lineHeight: '1.6', marginBottom: '20px' }}>
+                        {selectedNews.content}
+                        {selectedNews.extraContent && (
+                            <div className="mt-3" dangerouslySetInnerHTML={{ __html: selectedNews.extraContent }} />
+                        )}
+                    </div>
+
+                    {selectedNews.images && selectedNews.images.length > 0 && (
+                        <div className="d-flex flex-column gap-3 mt-4">
+                            {selectedNews.images.map((src, i) => (
+                                <img 
+                                    key={i} 
+                                    src={src} 
+                                    alt="news-large" 
+                                    style={{ width: '100%', borderRadius: '8px', border: '1px solid #eee' }} 
+                                />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         )}

@@ -21,12 +21,13 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                    <ul className="navbar-nav gap-3" style={{ marginLeft: '4rem' }}>
                     {[
-                        { path: '/publications', label: 'PUBLICATIONS' },
+                        { path: '/news', label: 'NEWS' },
                         { path: '/team', label: 'TEAM' },
+                        { path: '/publications', label: 'PUBLICATIONS' },
+                        { path: '/projects', label: 'PROJECTS' },
                         { path: '/courses', label: 'COURSES' },
                         { path: '/gallery', label: 'GALLERY' },
                         { path: '/contact', label: 'CONTACT' },
-                        { path: '/news', label: 'NEWS' },
                     ].map((item) => (
                     <li className="nav-item" key = {item.path}> <Link href={item.path} className={`nav-link ${path == item.path ? "active" : ""}`}> {item.label} </Link> </li>
                     ))}

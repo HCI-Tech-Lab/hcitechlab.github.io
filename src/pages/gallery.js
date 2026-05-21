@@ -9,7 +9,7 @@ import baguetteBox from 'baguettebox.js';
 export default function Gallery() {
     // --- Pagination State ---
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 4; // Lowered to 4 since we show ALL photos per event now
+    const itemsPerPage = 12; // Lowered to 4 since we show ALL photos per event now
     
     const keys = Object.keys(galleries);
     const totalPages = Math.ceil(keys.length / itemsPerPage);
@@ -126,6 +126,14 @@ export default function Gallery() {
 }
 
 const galleries = {
+  "May, 2026 (Teacher's Day)": [
+    "img/Lab/2605/Teacher0.JPG",
+    "img/Lab/2605/Teacher1.JPG",
+    "img/Lab/2605/Teacher2.JPG",
+    "img/Lab/2605/Teacher3.JPG",
+    "img/Lab/2605/Teacher4.JPG",
+    "img/Lab/2605/Teacher5.JPG",
+  ],
   "Apr, 2026 (Lab Retreat)": [
     "img/Lab/2604/SP1.jpg",
     "img/Lab/2604/SP2.jpg",
