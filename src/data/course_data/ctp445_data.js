@@ -348,7 +348,7 @@ export const ctp445_data = [
                 },
                 day2: {
                     date: "6/3",
-                    titles: ["No Class (Election)"],
+                    titles: ["No Class (Election Day)"],
                     type: 2,
                     notes: [
                        ],
@@ -359,35 +359,32 @@ export const ctp445_data = [
             {
                 day1: {
                     date: "6/8",
-                    titles: ["Final Presentation"],
-                    type: 1,
+                    titles: ["Final Project Preparation"],
+                    type: 2,
                     
-                    notes: [
-                            { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
-                    ],
-                    dues: [
-                        { name: "Final Presentation Slides due by 6/8 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "Final Presentation Audience Evaluation due by 6/10(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    
-                    ]
+                    notes: [],
+                    dues: []
                 },
                 day2: {
                     date: "6/10",
-                    titles: ["Project Feedback Meeting"],
-                    type: 1,
-                    notes: [
-                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
-                    ],
+                    titles: ["Final Project Preparation"],
+                    type: 2,
+                    notes: [],
                     dues: []
                 }
             },
             {
                 day1: {
                     date: "6/15",
-                    titles: ["No class (Finals Week)"],
-                    type: 2,
-                    notes: [],
-                    dues: []
+                    titles: ["Final Presentation"],
+                    type: 1,
+                    notes: [
+                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1oSsv9AEjgp6wzCg8f30q3oyQglIpfmGtCn1W1CxIpRI/edit?usp=sharing" }
+                    ],
+                    dues: [
+                        { name: "Final Presentation Slides due by 6/14 11:59pm", link: "https://klms.kaist.ac.kr/" },
+                        { name: "Final Presentation Audience Evaluation due by 6/15(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
+                    ]
                 },
                 day2: {
                     date: "6/17",
@@ -395,7 +392,7 @@ export const ctp445_data = [
                     type: 2,
                     notes: [],
                     dues: [
-                        { name: "Final Report & Video due by 6/16(Tue) 11:59pm", link: "https://klms.kaist.ac.kr/" },
+                        { name: "Final Report & Video due by 6/17(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" },
                         { name: "Audience Evaluation (Final Video) due by 6/18(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
