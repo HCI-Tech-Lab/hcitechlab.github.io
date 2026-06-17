@@ -8,7 +8,7 @@ export const news = [
         content: (<>A paper <strong>A Novel Flexible Shaft-driven Mechanism for Multidirectional Active Force Feedback in Haptic Gloves: A Preliminary Study</strong> in collaboration with ETRI is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369" target="_blank">IEEE Robotics and Automation Letters (RA-L)</Link>.</>),
         images: [],
         category: "Publication",
-        status: "PrePrint",       
+        status: "",       
     },
     {
         icon: "img/icon/paper2.jpg",
