@@ -2,6 +2,41 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "",
+        title: "A paper accepted to IEEE Robotics and Automation Letters (RA-L)",
+        date: "Jun 17 2026",
+        content: (<>A paper <strong>A Novel Flexible Shaft-driven Mechanism for Multidirectional Active Force Feedback in Haptic Gloves: A Preliminary Study</strong> in collaboration with ETRI is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369" target="_blank">IEEE Robotics and Automation Letters (RA-L)</Link>.</>),
+        images: [],
+        category: "Publication",
+        status: "PrePrint",       
+    },
+    {
+        icon: "img/icon/paper2.jpg",
+        title: "Two papers accepted to IMWUT (UbiComp 2026)",
+        date: "Jun 15 2026",
+        content: (
+            <>Two papers from HCI Tech Lab have been accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>. Congratulations to Youjin Sung and Yubin Lee!</>
+        ),
+        images: [],
+        category: "Publication",
+        extraContent: (
+            <>
+            <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>RehabGen: Generative Expert-in-the-Loop Vision-Language Model for Everyday Contextualized Rehabilitation Exercises</h4>
+                        <h6><b>AUTHORS</b> Youjin Sung, Heejin Jeong, Xuhai "Orson" Xu, Sang Ho Yoon</h6>
+                    </div>
+                </div>
+                <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>CurvedTouch: Effects of Surface Curvature and Cursor Mapping Method for XR Touch Input on Curved Surface</h4>
+                        <h6><b>AUTHORS</b> Yubin Lee, Liwei Chan, Geehyuk Lee, Sang Ho Yoon</h6>
+                    </div>
+                </div>
+            </>
+        )
+    },
+    {
         icon: "img/icon/team.png",
         title: "Lab Activity",
         date: "May 15 2026",
@@ -33,7 +68,7 @@ export const news = [
     },
     {
         icon: "",
-        title: "A paper accepted to ToH",
+        title: "A paper accepted to IEEE Transactions on Haptics (TOH)",
         date: "Apr 16 2026",
         content: (<>Our paper <strong>VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception</strong> led by Hojeong is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4543165" target="_blank">IEEE Transactions on Haptics (ToH)</Link>.</>),
         images: ["img/Other/TOH.jpg"],

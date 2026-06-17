@@ -269,7 +269,9 @@ const NewsCard = () => {
                     <div style={{ fontSize: '1rem', color: '#333', lineHeight: '1.6', marginBottom: '20px' }}>
                         {selectedNews.content}
                         {selectedNews.extraContent && (
-                            <div className="mt-3" dangerouslySetInnerHTML={{ __html: selectedNews.extraContent }} />
+                            <div className="mt-3">
+                                {selectedNews.extraContent}
+                            </div>
                         )}
                     </div>
 

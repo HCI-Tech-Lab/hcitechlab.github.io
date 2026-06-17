@@ -171,7 +171,9 @@ export default function News() {
                             {selectedNews.content}
                             {/* If extra content exists, render it here safely */}
                             {selectedNews.extraContent && (
-                                <div className="mt-3" dangerouslySetInnerHTML={{ __html: selectedNews.extraContent }} />
+                                <div className="mt-3">
+                                {selectedNews.extraContent}
+                            </div>
                             )}
                         </div>
 
