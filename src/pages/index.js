@@ -197,7 +197,7 @@ const NewsCard = () => {
 
               {/* --- FIX 1: Fixed Image Overflow Layout --- */}
               {newsItem.images && newsItem.images.length > 0 && (
-                <div className="d-flex gap-2 mt-auto" style={{ height: '120px', width: '100%' }}>
+                <div className="d-flex gap-2 mt-auto">
                   {newsItem.images.slice(0, 2).map((src, i) => (
                     <img 
                       key={i} 

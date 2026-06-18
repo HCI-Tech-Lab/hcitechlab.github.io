@@ -78,7 +78,19 @@ export default function News() {
                         {item.images && item.images.length > 0 && (
                             <div className="d-flex gap-2 mt-auto">
                                 {item.images.slice(0, 2).map((src, i) => (
-                                    <img key={i} src={src} alt="news-thumb" style={{ width: '50%', objectFit: 'cover', borderRadius: '4px', border: '1px solid #eee' }} />
+                                 <img 
+                                        key={i} 
+                                        src={src} 
+                                        alt="news-thumb" 
+                                        style={{ 
+                                            flex: 1, 
+                                            minWidth: 0, 
+                                            height: '100%', 
+                                            objectFit: 'cover', 
+                                            borderRadius: '6px', 
+                                            border: '1px solid #eee' 
+                                        }} 
+                                    />                               
                                 ))}
                             </div>
                         )}
