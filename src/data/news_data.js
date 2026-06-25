@@ -2,6 +2,43 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "img/icon/paper2.jpg",
+        title: "Four papers accepted to ISMAR 2026",
+        date: "Jun 23 2026",
+        content: (
+            <>Four papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>. Congratulations to Kyoungwhan, Seo Young, Minju, and Jinwook!</>
+        ),
+        images: [],
+        extraContent: (
+            <>
+                <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>UniScale: Exploring Unimanual Gesture Mapping Strategies for Gaze+Pinch-based Scaling Interaction</h4>
+                        <h6><b>AUTHORS</b> Kyoungwhan Mheen, Jinwook Kim*, Sang Ho Yoon*</h6>
+                    </div>
+                </div>
+                <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>GeoCtrl: Finger-based Geometric Mapping and Speed-Adaptive Gain for In-Hand Object Rotation in AR/VR</h4>
+                        <h6><b>AUTHORS</b> Seo Young Oh, Taejun Son, Juyoung Lee, Sang Ho Yoon*,Woontack Woo*</h6>
+                    </div>
+                </div>
+                <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration</h4>
+                        <h6><b>AUTHORS</b> Minju Baeck, Yoonseok Shin, Hyunjin Lee, Boram Yoon, Sang Ho Yoon*, Woontack Woo* </h6>
+                    </div>
+                </div>
+                <div className = "row research_item">
+                    <div className="col-md-12">
+                        <h4>Understanding Organizational Strategies Across Multimodal Artifacts in Immersive Computational Notebook</h4>
+                        <h6><b>AUTHORS</b>Sungwon In, Minju Baeck, Yalong Yang, Sang Ho Yoon, Woontack Woo, Mallesham Dasari</h6>
+                    </div>
+                </div>  
+            </>
+        )
+    },
+    {
         icon: "",
         title: "A paper accepted to IEEE Robotics and Automation Letters (RA-L)",
         date: "Jun 17 2026",
@@ -515,7 +552,7 @@ export const news = [
                 <div className = "row research_item">
                     <div className="col-md-12">
                         <h4>HapticGen: Generative Text-to-Vibration Model for Streamlining Haptic Design</h4>
-                        <h6><b>AUTHORS</b> Youjin Sung*, Kevin John*, Sang Ho Yoon**, Hasti Seifi**</h6>
+                        <h6><b>AUTHORS</b> Youjin Sung*, Kevin John*, Hasti Seifi**, Sang Ho Yoon**</h6>
                     </div>
                 </div>
                 <div className = "row research_item">
