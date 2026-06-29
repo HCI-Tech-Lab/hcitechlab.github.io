@@ -330,7 +330,7 @@ export const interns = [
         note: "",
     },
     {
-        img: "img/Member/ES.jpg",
+        img: "img/Member/EJS.jpeg",
         hoverImg: "main_icon.png",
         name: "Eun Ji Shin",
         title: "Intern",
