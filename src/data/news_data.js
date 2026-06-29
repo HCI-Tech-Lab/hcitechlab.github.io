@@ -9,6 +9,7 @@ export const news = [
             <>Two papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://uist.acm.org/2026/" target="_blank">UIST 2026</Link>. Congratulations to Jina and Rachel(Jungmin)!</>
         ),
         images: [],
+        category: "Publication",
         /*extraContent: (
             <>
                 <div className = "row research_item">
@@ -46,6 +47,7 @@ export const news = [
             <>Four papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>. Congratulations to Kyoungwhan, Seo Young, Minju, and Jinwook!</>
         ),
         images: [],
+        category: "Publication",
         /*extraContent: (
             <>
                 <div className = "row research_item">
