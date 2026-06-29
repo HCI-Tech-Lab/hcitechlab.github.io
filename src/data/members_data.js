@@ -337,7 +337,6 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "sargentz@kaist.ac.kr",
-        linkedin: "",
         note: "",
     },
     {
@@ -348,7 +347,6 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "dibo3440@gm.gist.ac.kr",
-        linkedin: "",
         note: "",
     },
     {
@@ -359,7 +357,6 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "vn72045470@gmail.com",
-        linkedin: "",
         note: "",
     },
     {
@@ -370,7 +367,6 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "sy021023@seoultech.ac.kr",
-        linkedin: "",
         note: "",
     }
 ];
