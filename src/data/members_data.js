@@ -55,7 +55,7 @@ export const phdStudents = [
         title: "Ph.D. Student",
         interest: "Motion-Aware Haptic Interaction",
         link: "https://kyungeun.xyz/",
-        mail: "",
+        mail: "#",
         linkedin: "https://www.linkedin.com/in/kyungeunjung/",
         note: "",
     },
@@ -337,6 +337,7 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "sargentz@kaist.ac.kr",
+        linkedin: "#",
         note: "",
     },
     {
@@ -347,6 +348,7 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "dibo3440@gm.gist.ac.kr",
+        linkedin: "#",
         note: "",
     },
     {
@@ -357,6 +359,7 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "vn72045470@gmail.com",
+        linkedin: "#",
         note: "",
     },
     {
@@ -367,6 +370,7 @@ export const interns = [
         interest: "",
         link: "#",
         mail: "sy021023@seoultech.ac.kr",
+        linkedin: "#",
         note: "",
     }
 ];
@@ -598,7 +602,7 @@ export const internAlumni = [
                 (now M.S. Student @{" "}
                 <Link href="https://vi.kaist.ac.kr/" target="_blank">
                     Visual Intelligence Lab
-                </Link>
+                </Link>{""}
                 , KAIST)
             </span>
         ),
@@ -717,9 +721,9 @@ export const internAlumni = [
             <span className="type">
                 {" "}
                 (now Staff Engineer @{" "}
-                <Link href="www.samsung.com" target="_blank">
+                <Link href="https://www.samsung.com" target="_blank">
                     Samsung Electronics
-                </Link>)
+                </Link>{""})
             </span>
         ),
     },
