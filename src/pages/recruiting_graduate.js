@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function RecruitingGrad() {
     return (
         <SectionContainer>
-            <h1 className="card-title">M.S./Ph.D. Open Positions (Updated: Mar 2026)</h1>
+            <h1 className="card-title">M.S./Ph.D. Open Positions (Updated: Jul 2026)</h1>
             <br />
             <h2> Applications for M.S./Ph.D. Positions <Link href="https://forms.gle/bsay5LuEGfJjBC1P9" target="_blank">[Apply Now]</Link></h2>
             <p>If you are interested in joining our lab as a M.S./Ph.D. student, please send me an <b><i><a href="mailto:sangho@kaist.ac.kr"> email</a></i></b> and submit <b><i><a href="https://forms.gle/PFQ9CbpZDgLED2gGA" target="_blank">Google Form</a></i></b>.</p>
@@ -60,12 +60,12 @@ export default function RecruitingGrad() {
             <h2>M.S. Student</h2>
             <ul style={{marginLeft: "30px"}}>
                 <li><h5><b>(Spring 2027 Admission) We will only consider candidates who complete an internship in our lab during Summer 2026.</b></h5></li>
-                <li><h5><b>(Fall 2026 Admission) Priority will be given to candidates who complete a lab internship during Summer 2026.</b></h5></li>
                 <li><h5>All M.S. students are expected to conduct an individual research project and complete a thesis.</h5></li>
                 <li><h5>For official admission in Graduate School of Culture Technology, please refer to <Link href="https://ct.kaist.ac.kr/pages/sub/sub0601" target="_blank">admission website.</Link></h5></li>
                 <li><h5>For official admission in Graduate School of Metaverse, please refer to <Link href="https://meta.kaist.ac.kr/" target="_blank">admission website.</Link></h5></li>
                 <li><h5>For official admission in School of Computing, please refer to <Link href="https://cs.kaist.ac.kr/content?menu=41" target="_blank">admission website.</Link></h5></li>
                 <li><h5>For official admission in Robotics Program, please refer to <Link href="https://robots.kaist.ac.kr/english" target="_blank">admission website.</Link></h5></li>
+                <li><h5>For official admission in AX Department, please refer to <Link href="https://ax.kaist.ac.kr/#/admission-grad" target="_blank">admission website.</Link></h5></li>
             </ul>
 
             <br />

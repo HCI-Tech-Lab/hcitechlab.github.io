@@ -157,6 +157,9 @@ const galleries = {
   "Jun, 2026 (UIST PC Meeting)": [
     "img/Lab/2606/UIST.jpg"
   ],
+  "Jun, 2026 (Shonan Meeting)": [
+    "img/Lab/2606/Shonan.jpg"
+  ],
   "Jun, 2026 (Thesis)": [
     "img/Lab/2606/Thesis0.jpg",
     "img/Lab/2606/Thesis1.jpg",

@@ -24,7 +24,7 @@ export default function Contact() {
         <SectionContainer>
           <h2 className="card-title">Join Us</h2>
           <p></p>
-          <h4><i><b> (Updated: Mar 2026) **We currently have open positions for M.S./Ph.D.**</b></i></h4>
+          <h4><i><b> (Updated: Jul 2026) **We currently have open positions for M.S./Ph.D.**</b></i></h4>
           <p></p>
           <h4>We are excited to talk to strong candidates whose backgrounds or interests overlap with</h4>
           <h4 style={{marginLeft: "30px"}}><b>Software engineering: </b> Human-Computer Interaction(HCI), Artificial Intelligence(AI), Extended Reality(XR)</h4>
