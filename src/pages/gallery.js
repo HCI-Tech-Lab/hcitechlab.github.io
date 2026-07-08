@@ -126,6 +126,52 @@ export default function Gallery() {
 }
 
 const galleries = {
+  "Jul, 2026 (YES)": [
+    "img/Lab/2607/Yes1.jpg",
+    "img/Lab/2607/Yes2.jpg",
+    "img/Lab/2607/Yes3.jpg",
+    "img/Lab/2607/Yes4.jpg",
+  ],
+  "Jul, 2026 (External Visit, Hyundai Motors Group)": [
+    "img/Lab/2607/Thad1.jpg",
+    "img/Lab/2607/Thad2.jpg",
+  ],
+  "Jul, 2026 (External Visit, Hyundai Motors Group)": [
+    "img/Lab/2607/Hyundai3.jpg",
+    "img/Lab/2607/Hyundai2.jpg",
+    "img/Lab/2607/Hyundai1.jpg"
+  ],
+  "Jul, 2026 (Lab Move)": [
+    "img/Lab/2607/old.jpg",
+  ],
+    "Jun, 2026 (KCC)": [
+    "img/Lab/2606/KCC1.jpg",
+    "img/Lab/2606/KCC2.jpg",
+    "img/Lab/2606/KCC3.jpg",
+    "img/Lab/2606/KCC4.jpg",
+  ],
+  "Jun, 2026 (External Visit, TAICHI)": [
+    "img/Lab/2606/Visit1.jpg",
+    "img/Lab/2606/Visit2.jpg",
+  ],
+  "Jun, 2026 (UIST PC Meeting)": [
+    "img/Lab/2606/UIST.jpg"
+  ],
+  "Jun, 2026 (Thesis)": [
+    "img/Lab/2606/Thesis0.jpg",
+    "img/Lab/2606/Thesis1.jpg",
+    "img/Lab/2606/Thesis2.jpg",
+    "img/Lab/2606/Thesis3.jpg",
+  ],
+  "Jun, 2026 (External Visit, Jin Ryong Kim)": [
+    "img/Lab/2606/Visit10.jpg",
+    "img/Lab/2606/Visit12.jpg",
+    "img/Lab/2606/Visit11.jpg"
+  ],
+  "Jun, 2026 (ETRA)": [
+    "img/Lab/2606/ETRA1.jpg",
+    "img/Lab/2606/ETRA2.jpg"
+  ],
   "May, 2026 (Teacher's Day)": [
     "img/Lab/2605/Teacher0.JPG",
     "img/Lab/2605/Teacher1.JPG",

@@ -2,7 +2,28 @@ import Link from 'next/link';
 
 export const news = [
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
+        title: "Visit from Hyundai Motor Company",
+        date: "Jul 2 2026",
+        content: "Hyundai Motor Company (HMC) Research Team visited HCI Tech Lab for potential research collaboration.",
+        images: []
+    },
+    {
+        icon: "",
+        title: "Visit from Georgia Tech",
+        date: "Jul 1 2026",
+        content: "Prof. Thad Starner visited Graduate School of Metaverse and HCI Tech Lab.",
+        images: ["img/Lab/2607/Thad1.jpg"]
+    },
+    {
+        icon: "",
+        title: "Lab Move",
+        date: "Jun 30 2026",
+        content: <dev>Our lab moved to a new space.</dev>,
+        images: ["img/Lab/2607/old.jpg"]
+    },
+    {
+        icon: "",
         title: "Two papers accepted to UIST 2026",
         date: "Jun 29 2026",
         content: (
@@ -40,7 +61,28 @@ export const news = [
         )*/
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
+        title: "KCC 2026 Participation",
+        date: "Jun 25 2026",
+        content: <dev>Our lab participated in KCC'26 in Jeju. Our lab had a workshop on Multimodal Haptic Interface.</dev>,
+        images: ["img/Lab/2606/KCC4.jpg"]
+    },
+    {
+        icon: "",
+        title: "UIST PC Meeting",
+        date: "Jun 23, 2026",
+        content: <dev>Dr. Jinwook Kim and Prof. Sang Ho Yoon participated in UIST'26 PC Meeting.</dev>,
+        images: ["img/Lab/2606/UIST.jpg"],
+    },
+    {
+        icon: "",
+        title: "Visit from TAICHI",
+        date: "Jun 23, 2026",
+        content: <dev>Four professors (Liwei Chan, Yu-Chun (Grace) Yen, Tsung Tai Yeh, and Yi-Ting Chen) from NYCU (Taiwan) visited HCI Tech Lab.</dev>,
+        images: ["img/Lab/2606/Visit1.jpg"],
+    },
+    {
+        icon: "",
         title: "Four papers accepted to ISMAR 2026",
         date: "Jun 23 2026",
         content: (
@@ -87,11 +129,11 @@ export const news = [
         status: "",       
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "Two papers accepted to IMWUT (UbiComp 2026)",
         date: "Jun 15 2026",
         content: (
-            <>Two papers from HCI Tech Lab have been accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>. Congratulations to Youjin Sung and Yubin Lee!</>
+            <>Two papers from HCI Tech Lab have been accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>. Congratulations to Youjin and Yubin!</>
         ),
         images: [],
         category: "Publication",
@@ -113,14 +155,35 @@ export const news = [
         )
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
+        title: "M.S. Theses",
+        date: "Jun 6 2026",
+        content: "Kyoungwhan, Dohui, and Fangqing successfully defended their M.S. Theses. Congrats! Kyoungwhan and Dohui will continue as Ph.D. students in HCI Tech Lab.",
+        images: ["img/Lab/2606/Thesis0.jpg"],
+    },
+    {
+        icon: "",
+        title: "Visit from UT Dallas",
+        date: "Jun 1, 2026",
+        content: <dev>Prof. Jin Ryong Kim from UT Dallas gave a talk at HCI@KAIST and visited HCI Tech Lab.</dev>,
+        images: ["img/Lab/2606/Visit10.jpg"],
+    },
+    {
+        icon: "",
+        title: "ETRA 2026 Participation",
+        date: "Jun 1 2026",
+        content: <dev>Our lab participated in ETRA'26 in Morocco. Min-yung presented a paper.</dev>,
+        images: ["img/Lab/2606/ETRA1.jpg","img/Lab/2606/ETRA2.jpg"]
+    },
+    {
+        icon: "",
         title: "Lab Activity",
         date: "May 15 2026",
         content: "Great time with the lab celebrating Teacher’s Day together. Always thankful for the amazing students!",
         images: ["img/Lab/2605/Teacher2.JPG"]
     },
     {
-        icon: "img/icon/speaker.png",
+        icon: "",
         title: "Summer 2026 Undergraduate Research Internship",
         date: "May 4 2026",
         content: <div>We are looking for research interns (including URP) for 2026 Summer. Application deadline is May 15th. You can find more information <Link href="/internship/summer-2026" target="_blank">here</Link>.</div>,
@@ -264,9 +327,9 @@ export const news = [
     },
     {
         icon: "img/icon/visit.png",
-        title: "Visit from HITSZ",
+        title: "Visit (Prof. Yitian Shao)",
         date: "Dec 16 2025",
-        content: <dev>Prof.Yitian Shao from HITSZ visited us!</dev>,
+        content: <dev>Prof.Yitian Shao visited us!</dev>,
         images: ["img/Lab/2512/YItian_Visit1.jpg","img/Lab/2512/YItian_Visit2.jpg","img/Lab/2512/YItian_Visit3.jpg",]
     },
     {
