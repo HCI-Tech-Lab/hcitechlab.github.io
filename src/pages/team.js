@@ -25,9 +25,9 @@ export default function Team() {
             <ProfessorCard />
 
             {/* 3. Reusable Member Sections */}
-            <MemberSection title="Post-Doc Researcher" members={postdocs} />
-            <MemberSection title="PhD Students" members={phdStudents} />
-            <MemberSection title="MS Students" members={msStudents} />
+            <MemberSection title="Post-Doc" members={postdocs} />
+            <MemberSection title="Ph.D. Students" members={phdStudents} />
+            <MemberSection title="M.S. Students" members={msStudents} />
             <MemberSection title="Interns" members={interns} />
 
             {/* 4. Administrative Staff */}
@@ -107,7 +107,7 @@ const MemberSection = ({ title, members }) => {
 const ProfessorCard = () => {
     return (
         <div className="mb-3 pb-3 border-bottom">
-            <h2 className="fw-bold text-center mb-4" style={{ color: "#001f3f" }}>Faculty</h2>
+            <h2 className="fw-bold text-center mb-4" style={{ color: "#001f3f" }}>Professor</h2>
             <div className="card border-0 shadow-sm p-4" style={{ borderRadius: "16px", backgroundColor: "#f8f9fc" }}>
                 <div className="row align-items-center justify-content-center">
                     <div className="col-md-4 text-center mb- mb-md-0">
