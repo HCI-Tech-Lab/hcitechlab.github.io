@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import NavBar from '@/components/navbar';
 
 export default function Document() {
   return (
@@ -15,7 +14,6 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Share+Tech&display=swap" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-        <NavBar />
       </Head>
       <body>
         <Main />

@@ -9,14 +9,17 @@ export default function Team() {
     return (
         <SectionContainer>
             {/* 1. Hero Group Photo Section */}
-            <div className="text-center mb-5 pb-3 border-bottom">
-                {/* Reduced maxWidth from 900px to 450px to halve the size */}
-                <div style={{ maxWidth: "450px", margin: "0 auto", position: "relative", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}>
-                    <img className="img-fluid" src="./img/Lab/Group/2024_05_0.jpg" alt="HCI Tech Lab Group" style={{ width: "100%", height: "auto", borderRadius: "12px", display: "block" }} />
+            <div className="text-center mb-5 pb-3">
+                <div className="mb-4">
+                    <span className="section-eyebrow">People of HCI Tech Lab</span>
+                    <h1 className="section-title">Our Team</h1>
+                </div>
+                <div className="media-frame" style={{ maxWidth: "450px", margin: "0 auto" }}>
+                    <img className="img-fluid" src="./img/Lab/Group/2024_05_0.jpg" alt="HCI Tech Lab Group" style={{ width: "100%", height: "auto", display: "block" }} />
                 </div>
                 <div className="mt-4">
-                    <Link href="/gallery" className="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" style={{ letterSpacing: "0.5px" }}>
-                        View All Group Photos
+                    <Link href="/gallery" className="section-link">
+                        View All Group Photos ↗
                     </Link>
                 </div>
             </div>
@@ -51,8 +54,8 @@ const MemberSection = ({ title, members }) => {
     if (!members || members.length === 0) return null;
 
     return (
-        <div className="mb-3 pb-1">
-            <h2 className="fw-bold text-center mb-4" style={{ color: "#001f3f" }}>{title}</h2>
+        <div className="mb-5 pb-1">
+            <h2 className="team-title mb-4">{title}</h2>
             <div className="row justify-content-center g-4">
                 {members.map((member, index) => (
                     <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-6">
@@ -71,20 +74,20 @@ const MemberSection = ({ title, members }) => {
                             </p>
 
                             {/* Contact Icons */}
-                            <div className="d-flex justify-content-center gap-2 mt-0">
+                            <div className="d-flex justify-content-center gap-3 mt-3">
                                 {member.link !== "#" && (
-                                    <Link href={member.link} target="_blank" className="contact-icon bg-light text-primary rounded-circle d-flex align-items-center justify-content-center" style={{ width: "35px", height: "35px" }}>
-                                        <i className="bi bi-house-door-fill" />
+                                    <Link href={member.link} target="_blank" className="contact-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i className="bi bi-house-door-fill" style={{ color: "#1260de" }} />
                                     </Link>
                                 )}
                                 {member.mail !== "#" && (
-                                    <Link href={`mailto:${member.mail}`} target="_blank" className="contact-icon bg-light text-danger rounded-circle d-flex align-items-center justify-content-center" style={{ width: "35px", height: "35px" }}>
+                                    <Link href={`mailto:${member.mail}`} target="_blank" className="contact-icon rounded-circle d-flex align-items-center justify-content-center">
                                         <i className="bi bi-envelope-fill" style={{ color: '#005184' }} />
                                     </Link>
                                 )}
                                 {member.linkedin !== "#" && (
-                                    <Link href={member.linkedin} target="_blank" className="contact-icon bg-light text-info rounded-circle d-flex align-items-center justify-content-center" style={{ width: "35px", height: "35px" }}>
-                                        <i className="bi bi-linkedin" />
+                                    <Link href={member.linkedin} target="_blank" className="contact-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i className="bi bi-linkedin" style={{ color: "#0A66C2" }} />
                                     </Link>
                                 )}
                             </div>
@@ -106,9 +109,9 @@ const MemberSection = ({ title, members }) => {
 // --- PROFESSOR CARD ---
 const ProfessorCard = () => {
     return (
-        <div className="mb-3 pb-3 border-bottom">
-            <h2 className="fw-bold text-center mb-4" style={{ color: "#001f3f" }}>Professor</h2>
-            <div className="card border-0 shadow-sm p-4" style={{ borderRadius: "16px", backgroundColor: "#f8f9fc" }}>
+        <div className="mb-5 pb-3">
+            <h2 className="team-title mb-4">Professor</h2>
+            <div className="card member-card p-4" style={{ borderRadius: "16px" }}>
                 <div className="row align-items-center justify-content-center">
                     <div className="col-md-4 text-center mb- mb-md-0">
                         {/* FIX: Removed strict cropping wrapper here too */}
@@ -131,15 +134,15 @@ const ProfessorCard = () => {
                         
                         <p className="text-muted small mb-4"><i className="bi bi-geo-alt-fill me-2"></i>Office: KAIST N5</p>
                         
-                        <div className="d-flex gap-3">
+                        <div className="d-flex gap-3 align-items-center">
                             <Link href="https://sanghoy.com/" target="_blank" className="btn btn-primary rounded-pill px-4">
                                 <i className="bi bi-house-door-fill me-2" />Homepage
                             </Link>
-                            <Link href="mailto:sangho@kaist.ac.kr" target="_blank" className="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px" }}>
+                            <Link href="mailto:sangho@kaist.ac.kr" target="_blank" className="contact-icon rounded-circle d-flex align-items-center justify-content-center">
                                 <i className="bi bi-envelope-fill" style={{ color: '#005184' }}/>
                             </Link>
-                            <Link href="https://www.linkedin.com/in/sanghoy" target="_blank" className="btn btn-outline-info rounded-circle d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px" }}>
-                                <i className="bi bi-linkedin" />
+                            <Link href="https://www.linkedin.com/in/sanghoy" target="_blank" className="contact-icon rounded-circle d-flex align-items-center justify-content-center">
+                                <i className="bi bi-linkedin" style={{ color: "#0A66C2" }} />
                             </Link>
                         </div>
                     </div>
@@ -158,7 +161,7 @@ const AdministrativeStaff = () => {
 
     return (
         <div className="mb-3">
-            <h2 className="fw-bold text-center mb-4" style={{ color: "#001f3f" }}>Administrative Staff</h2>
+            <h2 className="team-title mb-4">Administrative Staff</h2>
             <div className="row justify-content-center g-4">
                 {staff.map((member, index) => (
                     <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-6">
@@ -169,7 +172,7 @@ const AdministrativeStaff = () => {
                             </div>
                             <h6 className="fw-bold mb-3">{member.name}</h6>
                             <div className="mt-auto">
-                                <Link href={`mailto:${member.email}`} target="_blank" className="btn btn-sm btn-light text-danger rounded-pill px-3">
+                                <Link href={`mailto:${member.email}`} target="_blank" className="contact-icon rounded-circle d-flex align-items-center justify-content-center mx-auto">
                                     <i className="bi bi-envelope-fill" style={{ color: '#005184' }}/>
                                 </Link>
                             </div>
@@ -187,7 +190,7 @@ const AlumniSection = ({ title, alumniData, type }) => {
     const contentRef = useRef(null);
 
     return (
-        <div className="card border-0 shadow-sm" style={{ borderRadius: "12px", overflow: "hidden" }}>
+        <div className="card border-0" style={{ borderRadius: "14px", overflow: "hidden", border: "1px solid #E6ECF5", boxShadow: "0 1px 2px rgba(16, 24, 40, 0.04)" }}>
             <button 
                 onClick={() => setIsOpen(!isOpen)}
                 className="btn btn-light d-flex justify-content-between align-items-center w-100 p-4 text-start border-0"
@@ -218,7 +221,7 @@ const AlumniSection = ({ title, alumniData, type }) => {
                                         <strong className="fs-6" style={{ color: "#001f3f" }}>{member.name}</strong> : 
                                         <Link href={member.nameLink} target="_blank" className="fw-bold text-primary fs-6 text-decoration-none">{member.name}</Link>
                                     }
-                                    <span className="badge bg-secondary rounded-pill">{member.title}</span>
+                                    <span className="badge rounded-pill" style={{ backgroundColor: "#EDF3FE", color: "#0B2A6B", border: "1px solid #D6E4FD", fontWeight: 600 }}>{member.title}</span>
                                     
                                     {/* Moved Thesis link up here so it sits neatly next to the degree type */}
                                     {type === 'grad' && member.thesisLink !== '#' && (

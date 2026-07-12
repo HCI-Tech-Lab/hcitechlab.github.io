@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useState, useMemo } from "react";
 import SectionContainer from "@/components/section_container";
 import Link from "next/link";
 import { research_temp } from "@/data/research_data";
@@ -9,12 +9,6 @@ export default function Publications() {
     // State for filtering and searching
     const [selectedCategory, setSelectedCategory] = useState("Conference / Journal (peer-reviewed)");
     const [searchQuery, setSearchQuery] = useState("");
-
-    useEffect(() => {
-        Object.keys(research_temp).forEach(year => {
-            yearRefs.current[year] = yearRefs.current[year] || useRef(null);
-        });
-    }, []);
 
     const scrollToYear = (year) => {
       if (yearRefs.current[year]) {
@@ -88,36 +82,39 @@ export default function Publications() {
             <div className="row">
                  {/* 1. TOP SECTION: Header & Summary Cards */}
                 <div className="mb-4">
-                    <h1 className="fw-bold mb-4" style={{ color: "black", textAlign: 'center' }}>Publications</h1>
+                    <div className="text-center mb-4">
+                        <span className="section-eyebrow">Research output</span>
+                        <h1 className="section-title">Publications</h1>
+                    </div>
                     
                     {/* Summary Cards Row */}
                     <div className="row g-3 justify-content-center mb-5">
                         <div className="col-6 col-md-2">
-                            <div className="card border-0 text-center py-4 h-100" style={{ backgroundColor: '#e5efff', borderRadius: '12px' }}>
+                            <div className="card border-0 text-center py-4 h-100 stat-card" style={{ backgroundColor: '#e5efff' }}>
                                 <h2 className="fw-bold mb-1" style={{ color: '#006eff' }}>{stats.total}</h2>
                                 <span className="text-muted small">Total Papers</span>
                             </div>
                         </div>
                         <div className="col-6 col-md-3">
-                            <div className="card border-0 text-center py-4 h-100" style={{ backgroundColor: '#f3e8fd', borderRadius: '12px' }}>
+                            <div className="card border-0 text-center py-4 h-100 stat-card" style={{ backgroundColor: '#f3e8fd' }}>
                                 <h2 className="fw-bold mb-1" style={{ color: '#9334e6' }}>{stats.confJournal}</h2>
                                 <span className="text-muted small">Conference & Journal</span>
                             </div>
                         </div>
                         <div className="col-6 col-md-3">
-                            <div className="card border-0 text-center py-4 h-100" style={{ backgroundColor: '#e6f4ea', borderRadius: '12px' }}>
+                            <div className="card border-0 text-center py-4 h-100 stat-card" style={{ backgroundColor: '#e6f4ea' }}>
                                 <h2 className="fw-bold mb-1" style={{ color: '#137333' }}>{stats.posterDemo}</h2>
                                 <span className="text-muted small">Poster & Demo</span>
                             </div>
                         </div>
                         <div className="col-6 col-md-2">
-                            <div className="card border-0 text-center py-4 h-100" style={{ backgroundColor: '#fef7e0', borderRadius: '12px' }}>
+                            <div className="card border-0 text-center py-4 h-100 stat-card" style={{ backgroundColor: '#fef7e0' }}>
                                 <h2 className="fw-bold mb-1" style={{ color: '#b06000' }}>{stats.preprint}</h2>
                                 <span className="text-muted small">Preprint</span>
                             </div>
                         </div>
                         <div className="col-6 col-md-2">
-                            <div className="card border-0 text-center py-4 h-100" style={{ backgroundColor: '#e0f2f1', borderRadius: '12px' }}>
+                            <div className="card border-0 text-center py-4 h-100 stat-card" style={{ backgroundColor: '#e0f2f1' }}>
                                 <h2 className="fw-bold mb-1" style={{ color: '#00796b' }}>{stats.submitted}</h2>
                                 <span className="text-muted small">Submitted</span>
                             </div>
@@ -125,7 +122,7 @@ export default function Publications() {
                     </div>
 
                     {/* Search and Filter Controls */}
-                    <div className="card border-0 shadow-sm p-3 mb-4" style={{ borderRadius: '12px' }}>
+                    <div className="card border-0 p-3 mb-4" style={{ borderRadius: '14px', border: '1px solid #E6ECF5', boxShadow: '0 1px 2px rgba(16, 24, 40, 0.04)' }}>
                         <div className="row g-3">
                             <div className="col-md-8">
                                 <input 
@@ -134,7 +131,7 @@ export default function Publications() {
                                     placeholder="Search by title, author, or venue..." 
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
-                                    style={{ padding: '12px', borderRadius: '8px' }}
+                                    style={{ padding: '12px 16px', borderRadius: '10px', border: '1px solid #E6ECF5' }}
                                 />
                             </div>
                             <div className="col-md-4">
@@ -142,7 +139,7 @@ export default function Publications() {
                                     className="form-select border" 
                                     value={selectedCategory} 
                                     onChange={(e) => setSelectedCategory(e.target.value)}
-                                    style={{ padding: '12px', borderRadius: '8px', backgroundColor: '#f8f9fa' }}
+                                    style={{ padding: '12px 16px', borderRadius: '10px', backgroundColor: '#F5F7FB', border: '1px solid #E6ECF5' }}
                                 >
                                     {categories.map((cat) => (
                                         <option key={cat} value={cat}>{cat}</option>
@@ -172,20 +169,22 @@ export default function Publications() {
                     .map(year => (
                         <div key={year} ref={(el) => (yearRefs.current[year] = el)}>
                             <div className="d-flex align-items-center mb-4">
-                                <h2 className="m-0 me-3" style={{ color: "#003264", fontWeight: "800" }}>{year}</h2>
-                                <div style={{ flex: 1, height: "1px", backgroundColor: "#ddd" }}></div>
+                                <h2 className="m-0 me-3 pub-year">{year}</h2>
+                                <div className="pub-year-rule"></div>
                             </div>
                             
                             {filteredData[year].map((item, index) => (
-                                <div key={`${year}-${index}`} className="row research_item mb-4 pb-3 border-bottom">
-                                    <div className="col-md-4">
-                                        <video className="img-fluid mx-auto d-block rounded" style={{ height: "140px", objectFit: "cover" }} autoPlay loop muted playsInline poster={item.poster}>
-                                            {item.demo && <source type="video/mp4" src={item.demo} />}
-                                        </video>
+                                <div key={`${year}-${index}`} className="row research_item align-items-center mb-3 pub-item">
+                                    <div className="col-md-4 mb-3 mb-md-0">
+                                        <div className="pub-media">
+                                            <video autoPlay loop muted playsInline poster={item.poster}>
+                                                {item.demo && <source type="video/mp4" src={item.demo} />}
+                                            </video>
+                                        </div>
                                     </div>
                                     <div className="col-md-8">
                                         {/* Display category badge on the item */}
-                                        <span className="badge mb-2" style={{ backgroundColor: '#e5f4ff', color: '#005bb6' }}>
+                                        <span className="badge mb-2 pub-badge">
                                             {item.category || "Uncategorized"}
                                         </span>
                                         
@@ -233,8 +232,8 @@ export default function Publications() {
                       top: "100px", 
                       alignSelf: "start" 
                   }}>
-                      <div className="text-end ps-3 border-start">
-                        <p className="text-muted small fw-bold mb-3">JUMP TO YEAR</p>
+                      <div className="text-end ps-3" style={{ borderLeft: '2px solid #E6ECF5' }}>
+                        <p className="mb-3" style={{ fontFamily: "'Share Tech', monospace", fontSize: '0.8rem', letterSpacing: '0.15em', color: '#1260de' }}>JUMP TO YEAR</p>
                         
                         {Object.keys(filteredData)
                             .sort((a, b) => {
@@ -246,15 +245,7 @@ export default function Publications() {
                             <div key={year} className="mb-2">
                                 <button 
                                     onClick={() => scrollToYear(year)}
-                                    className="btn btn-link text-decoration-none fw-bold"
-                                    style={{ 
-                                        fontSize: '1.2rem', 
-                                        padding: '0', 
-                                        color: '#555',
-                                        transition: 'color 0.2s'
-                                    }}
-                                    onMouseEnter={(e) => e.target.style.color = '#000'}
-                                    onMouseLeave={(e) => e.target.style.color = '#555'}
+                                    className="year-nav-btn"
                                 >
                                     {year}
                                 </button>

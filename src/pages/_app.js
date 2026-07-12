@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GoogleAnalytics trackingId="G-L11CDKTS4E" />
+      <NavBar />
       <main style={{ paddingTop: "86px"}}>
         <Component {...pageProps} />
       </main>

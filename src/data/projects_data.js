@@ -40,18 +40,18 @@ export const projectsData = [
         role: "Co-Investigator (Co-I)",
         field: "Physical AI & Haptics",
         status: "Ongoing",
-        image: "/project/iitp.svg",
+        image: "/project/IITP.jpg",
         description: ""
     },
     {
         id: 1,
         title: "SpaceTop: Spatial Computing HCI Technology for Everywhere XR Productivity Workstation (장소 제약 없이 XR 생산성 공간 제공을 위한 공간 컴퓨팅 HCI 기술 (화자 중심 데이터 센싱 및 공간 실감 체험 기술 개발)",
-        agency: "IITP ITRC",
+        agency: "IITP",
         period: "2026.01. - 2029.12",
         role: "Co-Investigator (Co-I)",
         field: "HCI",
         status: "Ongoing",
-        image: "/project/spacetop.jpg",
+        image: "/project/IITP.jpg",
         description: ""
     },
     /*

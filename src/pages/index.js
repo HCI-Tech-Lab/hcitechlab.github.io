@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div style={{ width: '100%', margin: 0, padding: 0 }}>
       
-      {/* SECTION 1: Welcome & Carousel (White Background) */}
-      <div style={{ backgroundColor: '#ffffff', width: '100%', padding: '15px 0' }}>
+      {/* SECTION 1: Welcome & Carousel (dot-grid hero) */}
+      <div className="hero-section" style={{ width: '100%', padding: '48px 0 40px' }}>
         <div className="container">
           <div className="row align-items-stretch">
             <WelcomeCard />
@@ -21,32 +21,36 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SECTION 2: News (Light Gray Background) */}
+      {/* SECTION 2: News (soft blue-gray surface) */}
       <div style={{ 
-        backgroundColor: '#ebf3f8ff', width: '100%', padding: '20px 0', borderTop: '1px solid #eee', borderBottom: '1px solid #eee' }}>
+        backgroundColor: '#F5F7FB', width: '100%', padding: '56px 0' }}>
         <div className="container">
           <NewsCard />
         </div>
       </div>
 
-      {/* SECTION 3: Highlighted Publications (Light Gray Background) */}
-      <div style={{ backgroundColor: '#ebf3f8ff', width: '100%', padding: '3px 0', borderTop: '1px solid #eee' }}>
+      {/* SECTION 3: Highlighted Publications (white) */}
+      <div style={{ backgroundColor: '#ffffff', width: '100%', padding: '56px 0' }}>
         <div className="container">
           <HighlightedPublicatons />
         </div>
       </div>
 
-        {/* SECTION 4: Video Section (White Background) */}
-      <div style={{ backgroundColor: '#ffffff', width: '100%', padding: '20px 0' }}>
+        {/* SECTION 4: Video Section (soft blue-gray surface) */}
+      <div style={{ backgroundColor: '#F5F7FB', width: '100%', padding: '56px 0' }}>
         <div className="container">
           <div className="col-12">
-            <div style={{ width: '50px', height: '5px', backgroundColor: '#1260de', marginBottom: '10px' }}></div>
-            <h2 style={{ fontWeight: '800', marginBottom: '30px' }}>Lab Introduction Video</h2>
-            <iframe
-              style={{ width: "100%", height: "500px", border: "none", borderRadius: '8px' }}
-              src="https://www.youtube.com/embed/TTPGI4IXRyk"
-              allowFullScreen
-            ></iframe>
+            <div className="mb-4">
+              <span className="section-eyebrow">Inside the lab</span>
+              <h2 className="section-title">Lab Introduction Video</h2>
+            </div>
+            <div className="media-frame">
+              <iframe
+                style={{ width: "100%", height: "500px", border: "none", display: 'block' }}
+                src="https://www.youtube.com/embed/TTPGI4IXRyk"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -61,10 +65,11 @@ export default function Home() {
 const WelcomeCard = () => {
   return (
     <div className="col-lg-5 col-md-12 mb-3">
-      <div className="card h-100 hero-text-card">
+      <div className="card h-100 hero-text-card" style={{ background: 'transparent' }}>
         <div className="card-body ps-0">
+            <span className="section-eyebrow mb-2">KAIST · HCI Tech Lab</span>
             <h1 className="text-container">
-              Welcome to <span style={{ color: '#000080' }}>HCI TECH LAB</span>!
+              Welcome to <span className="hero-gradient-text">HCI TECH LAB</span>!
             </h1>
 
             <h4 className="mb-4">
@@ -76,26 +81,28 @@ const WelcomeCard = () => {
              <div style={{ 
                textAlign: 'left', 
                marginTop: '15px', 
-               fontFamily: "'Inter', sans-serif", // Matches your h6 font-family
-               fontSize: '14px',                 // Matches your h6 size
-               fontWeight: 'normal'              // Matches your h6 weight
+               fontFamily: "'Inter', sans-serif",
+               fontSize: '14px',
+               fontWeight: 'normal',
+               color: '#475467',
+               lineHeight: '1.7'
              }}>
               <p>
                 The Human-Centered Interactive Technologies Lab (HCI Tech Lab) is a multidisciplinary research group at KAIST. 
                 Our mission is to empower human potential by bridging the physical and digital worlds through embodied intelligence (Physical AI) and immersive technologies (XR). <br></br>
               </p>
                 Our research focuses on:<br />
-                <ul style={{ listStylePosition: 'inside', marginLeft: 15, paddingLeft: 0 }}>
-                    <li key="embedding"><b>Advanced Sensing Technology</b></li>
-                    <li key="advancing"><b>Multimodal Haptic Technology</b></li>
-                    <li key="authoring"><b>Authoring User Experience</b></li>
-                </ul>
+                <div className="d-flex flex-wrap gap-2 mt-2 mb-2">
+                    <span className="focus-chip" key="embedding">Advanced Sensing Technology</span>
+                    <span className="focus-chip" key="advancing">Multimodal Haptic Technology</span>
+                    <span className="focus-chip" key="authoring">Authoring User Experience</span>
+                </div>
               </div>
               </div>
             
-            <div className="d-flex gap-2">
+            <div className="d-flex gap-2 mt-3">
               <Link className="btn btn-primary" href="https://www.youtube.com/@HCI_Tech" target="_blank">
-                <b>HCI Tech Lab Youtube</b>
+                <b>HCI Tech Lab Youtube&nbsp;↗</b>
               </Link>
             </div>
         </div>
@@ -119,6 +126,12 @@ const NewsCard = () => {
   const latestNews = news.slice(0, 8);
   const [selectedNews, setSelectedNews] = useState(null);
 
+  // Lock background page scroll while the modal is open
+  useEffect(() => {
+    document.body.style.overflow = selectedNews ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [selectedNews]);
+
   // Helper to render icon smartly (handles both file paths and emojis)
   const renderIcon = (iconStr, height = '20px') => {
       if (!iconStr) return null;
@@ -141,11 +154,13 @@ const NewsCard = () => {
         `}</style>
 
         {/* Section Header */}
-        <div style={{ width: '50px', height: '5px', backgroundColor: '#1260de', marginBottom: '10px' }}></div>
-        <h2 style={{ fontWeight: '800', marginBottom: '5px' }}>News</h2>
-        <div className="d-flex justify-content-between align-items-end mb-3">
-            Latest news from HCI Tech Lab
-            <Link href="/news" style={{ fontSize: '0.9rem', color: '#666', textDecoration: 'none' }}>
+        <div className="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+            <div>
+                <span className="section-eyebrow">Latest from the lab</span>
+                <h2 className="section-title">News</h2>
+                <p className="section-sub">Latest news from HCI Tech Lab</p>
+            </div>
+            <Link href="/news" className="section-link">
             All News ↗
             </Link>
         </div>
@@ -226,7 +241,8 @@ const NewsCard = () => {
                 onClick={() => setSelectedNews(null)}
                 style={{
                     position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
-                    backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+                    backgroundColor: 'rgba(0, 0, 0, 0.7)', 
+                    backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
                     display: 'flex', justifyContent: 'center', alignItems: 'center',
                     zIndex: 9999 
                 }}
@@ -235,9 +251,11 @@ const NewsCard = () => {
                     className="modal-content" 
                     onClick={(e) => e.stopPropagation()} 
                     style={{
-                        backgroundColor: '#fff', padding: '30px', borderRadius: '12px',
+                        backgroundColor: '#fff', borderRadius: '12px',
                         width: '90%', maxWidth: '700px', 
-                        maxHeight: '85vh', overflowY: 'auto', 
+                        maxHeight: '85vh',
+                        overflow: 'hidden', // Clip children so rounded corners stay rounded
+                        display: 'flex', flexDirection: 'column',
                         position: 'relative', boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
                         textAlign: 'left',
                         animation: 'modalZoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards' 
@@ -247,12 +265,15 @@ const NewsCard = () => {
                         className="close-btn" 
                         onClick={() => setSelectedNews(null)}
                         style={{
-                            position: 'absolute', top: '15px', right: '20px',
+                            position: 'absolute', top: '15px', right: '20px', zIndex: 1,
                             background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#666'
                         }}
                     >
                         ✖
                     </button>
+
+                    {/* Inner scroll container — scrollbar lives inside the rounded box */}
+                    <div style={{ overflowY: 'auto', padding: '30px' }}>
 
                     <div className="d-flex gap-2 mb-3 align-items-center">
                         {/* --- FIX 2: Applied smart icon to modal as well --- */}
@@ -287,6 +308,7 @@ const NewsCard = () => {
                             ))}
                         </div>
                     )}
+                    </div>
                 </div>
             </div>
         )}
@@ -344,7 +366,7 @@ const SelectedCarousel = ({ items }) => {
       {/* 1. Header */}
       <div className="d-flex justify-content-between align-items-end mb-3">
         <h3 style={{ fontWeight: '800', margin: 0, color: '#333' }}>Selected Publication</h3>
-        <Link href="/publications" style={{ fontSize: '0.9rem', color: '#666', textDecoration: 'none' }}>
+        <Link href="/publications" className="section-link">
           All Publication ↗
         </Link>
       </div>
@@ -476,14 +498,14 @@ const carouselItems = allResearch
     .slice(0, 4);
 
   return (
-    <div className="col-12 mb-5 mt-4">
+    <div className="col-12">
       <div className="container">
         
         {/* Section Header */}
         <div className="mb-4">
-          <div style={{ width: '50px', height: '5px', backgroundColor: '#1260de', marginBottom: '10px' }}></div>
-          <h2 style={{ fontWeight: '800', marginBottom: '5px' }}>Research</h2>
-          <p className="text-muted">Highlighted & Recent Publications from HCI Tech Lab</p>
+          <span className="section-eyebrow">Selected work</span>
+          <h2 className="section-title">Research</h2>
+          <p className="section-sub">Highlighted &amp; Recent Publications from HCI Tech Lab</p>
         </div>
 
         {/* --- SPLIT LAYOUT SECTION --- */}
@@ -500,7 +522,7 @@ const carouselItems = allResearch
           <div className="col-lg-6 col-12">
             <div className="d-flex justify-content-between align-items-end mb-3">
               <h3 style={{ fontWeight: '800', margin: 0, color: '#333' }}>Recent Publication</h3>
-              <Link href="/publications" style={{ fontSize: '0.9rem', color: '#666', textDecoration: 'none' }}>
+              <Link href="/publications" className="section-link">
                 All Publication ↗
               </Link>
             </div>

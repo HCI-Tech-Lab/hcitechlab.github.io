@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SectionContainer from '@/components/section_container';
 import { news } from '../data/news_data';
 
@@ -15,6 +15,12 @@ const getCategoryColor = (category) => {
 
 export default function News() {
     const [selectedNews, setSelectedNews] = useState(null);
+
+    // Lock background page scroll while the modal is open
+    useEffect(() => {
+        document.body.style.overflow = selectedNews ? 'hidden' : '';
+        return () => { document.body.style.overflow = ''; };
+    }, [selectedNews]);
 
     // --- Pagination State ---
     const [currentPage, setCurrentPage] = useState(1);
@@ -140,7 +146,8 @@ export default function News() {
                     onClick={() => setSelectedNews(null)}
                     style={{
                         position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
-                        backgroundColor: 'rgba(0, 0, 0, 0.6)', // Dark background blur
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)', // Dark background
+                        backdropFilter: 'blur(4px)', WebkitBackdropFilter: 'blur(4px)',
                         display: 'flex', justifyContent: 'center', alignItems: 'center',
                         zIndex: 9999 // Ensure it sits on top of everything including the navbar
                     }}
@@ -149,23 +156,28 @@ export default function News() {
                         className="modal-content" 
                         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the card
                         style={{
-                            backgroundColor: '#fff', padding: '30px', borderRadius: '12px',
+                            backgroundColor: '#fff', borderRadius: '12px',
                             width: '90%', maxWidth: '700px', // Makes it bigger and centered
-                            maxHeight: '85vh', overflowY: 'auto', // Allows scrolling if content is very long
+                            maxHeight: '85vh',
+                            overflow: 'hidden', // Clip children so rounded corners stay rounded
+                            display: 'flex', flexDirection: 'column',
                             position: 'relative', boxShadow: '0 10px 30px rgba(0,0,0,0.2)'
                         }}
                     >
-                        {/* Close 'X' Button */}
+                        {/* Close 'X' Button (stays fixed while content scrolls) */}
                         <button 
                             className="close-btn" 
                             onClick={() => setSelectedNews(null)}
                             style={{
-                                position: 'absolute', top: '15px', right: '20px',
+                                position: 'absolute', top: '15px', right: '20px', zIndex: 1,
                                 background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#666'
                             }}
                         >
                             ✖
                         </button>
+
+                        {/* Inner scroll container — scrollbar lives inside the rounded box */}
+                        <div style={{ overflowY: 'auto', padding: '30px' }}>
 
                         {/* Badges inside the modal */}
                         <div className="d-flex gap-2 mb-3 align-items-center">
@@ -202,6 +214,7 @@ export default function News() {
                                 ))}
                             </div>
                         )}
+                        </div>
                     </div>
                 </div>
             )}

@@ -210,7 +210,7 @@ export const news = [
         title: "A paper accepted to IEEE Transactions on Haptics (TOH)",
         date: "Apr 16 2026",
         content: (<>Our paper <strong>VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception</strong> led by Hojeong is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4543165" target="_blank">IEEE Transactions on Haptics (ToH)</Link>.</>),
-        images: ["img/Other/TOH.jpg"],
+        images: [],
         category: "Publication",
         status: "",       
     },

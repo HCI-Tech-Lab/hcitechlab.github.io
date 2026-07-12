@@ -4,37 +4,107 @@ import Link from 'next/link';
 export default function Contact() {
     return (
       <div>
-        <SectionContainer >
-          <h2 className="card-title" >Contact</h2>
-          <div className = "row g-0">
-            <div className = "col-md-7 text-left">
-              <h5>
-                <p></p>
-                <p>HCI Tech Lab is part of the <Link href="https://ct.kaist.ac.kr" target="_blank">Graduate School of Culture Technology</Link> in <Link href="https://www.kaist.ac.kr" target="_blank">KAIST</Link>.</p>
-                <p> Email is generally best for all communication. <br/> Please contact <Link href="mailto:sangho@kaist.ac.kr">Prof. Sang Ho Yoon</Link></p>
-                <p> For postal mail and shipments, our mail stop is</p>
-                <p style={{marginLeft: "30px"}}>   Human-Centered Interactive Technologies Lab<br/>KAIST, N5, Room 2346,<br/>291 Daehak-ro, Yuseong-gu, Daejeon, Republic of Korea (34141)</p>
-              </h5>
+        <SectionContainer>
+          {/* ===== Contact ===== */}
+          <div className="mb-4">
+            <span className="section-eyebrow">Get in touch</span>
+            <h2 className="section-title">Contact</h2>
+          </div>
+
+          <div className="row g-5 align-items-center">
+            {/* Left: concise contact info */}
+            <div className="col-lg-6">
+              <p style={{ color: '#475467', lineHeight: 1.7 }}>
+                HCI Tech Lab is part of the{' '}
+                <Link href="https://ct.kaist.ac.kr" target="_blank" className="text-decoration-none fw-semibold">Graduate School of Culture Technology</Link>{' '}
+                at <Link href="https://www.kaist.ac.kr" target="_blank" className="text-decoration-none fw-semibold">KAIST</Link>.
+              </p>
+
+              <div className="contact-row">
+                <span className="contact-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                  <i className="bi bi-envelope-fill" style={{ color: '#005184' }} />
+                </span>
+                <div>
+                  <div className="project-label mb-1">Email — best for all communication</div>
+                  <Link href="mailto:sangho@kaist.ac.kr" className="text-decoration-none fw-semibold">
+                    Prof. Sang Ho Yoon · sangho@kaist.ac.kr
+                  </Link>
+                </div>
+              </div>
+
+              <div className="contact-row">
+                <span className="contact-icon rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                  <i className="bi bi-geo-alt-fill" style={{ color: '#1260de' }} />
+                </span>
+                <div>
+                  <div className="project-label mb-1">Postal mail &amp; shipments</div>
+                  <div style={{ color: '#344054', lineHeight: 1.6 }}>
+                    Human-Centered Interactive Technologies Lab<br />
+                    KAIST, N5, Room 2346<br />
+                    291 Daehak-ro, Yuseong-gu, Daejeon, Republic of Korea (34141)
+                  </div>
+                  <div className="mt-3">
+                    <Link
+                      href="https://www.google.com/maps?q=KAIST+N5,+291+Daehak-ro,+Yuseong-gu,+Daejeon"
+                      target="_blank"
+                      className="section-link"
+                    >
+                      Open in Google Maps ↗
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="col-md-4 text-right">
-              <iframe className ="ratio ratio-16x9" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6424.938890682808!2d127.35955263490298!3d36.373628078565574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDIyJzI1LjEiTiAxMjfCsDIxJzUwLjIiRQ!5e0!3m2!1sen!2skr!4v1632238152008!5m2!1sen!2skr" frameBorder="0" width="100%" height="100%" style={{border: "0"}} allowFullScreen></iframe>
+
+            {/* Right: KAIST campus landscape */}
+            <div className="col-lg-6">
+              <div className="contact-photo media-frame">
+                <img src="./img/Other/kaist_campus.jpg" alt="KAIST campus, Daejeon" />
+                <span className="contact-mosaic-caption">KAIST </span>
+              </div>
             </div>
           </div>
         </SectionContainer>
+
         <SectionContainer>
-          <h2 className="card-title">Join Us</h2>
-          <p></p>
-          <h4><i><b> (Updated: Jul 2026) **We currently have open positions for M.S./Ph.D.**</b></i></h4>
-          <p></p>
-          <h4>We are excited to talk to strong candidates whose backgrounds or interests overlap with</h4>
-          <h4 style={{marginLeft: "30px"}}><b>Software engineering: </b> Human-Computer Interaction(HCI), Artificial Intelligence(AI), Extended Reality(XR)</h4>
-          <h4 style={{marginLeft: "30px"}}><b>Hardware engineering: </b> Actuators, Sensors, Embedded systems, Mechanical Design, Signal processing</h4>
-          <h4 style={{marginLeft: "30px"}}><b>HCI related topics: </b> UX/UI Design, Creativity Toolkit, Perception/Cognition</h4>
-          <p></p>
-          <h4>For M.S./Ph.D. students, please check below.</h4>
-          <p></p>
-          <Link className="badge bg-primary" href="/recruiting_graduate" style={{width: "15.5rem", height: "2.2rem", fontSize: "1.2rem",marginRight: "1rem" }}>M.S./Ph.D. Students</Link>
-          {/*<Link className="badge bg-primary" href="/internship/summer-2026" style={{width: "15.5rem", height: "2.2rem", fontSize: "1.2rem" }}>2026 Summer Internship</Link>*/}
+          {/* ===== Join Us ===== */}
+          <div className="mb-4">
+            <span className="section-eyebrow">Open positions</span>
+            <h2 className="section-title">Join Us</h2>
+            <p className="section-sub">
+              <b>Updated Jul 2026 — we currently have open positions for M.S./Ph.D. students.</b>
+            </p>
+          </div>
+
+          <p style={{ color: '#475467' }}>
+            We are excited to talk to strong candidates whose backgrounds or interests overlap with:
+          </p>
+
+          <div className="row g-3 mb-4">
+            <div className="col-md-4">
+              <div className="join-area-card">
+                <div className="project-label mb-2">Software engineering</div>
+                <div style={{ color: '#344054' }}>Human-Computer Interaction (HCI), Artificial Intelligence (AI), Extended Reality (XR)</div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="join-area-card">
+                <div className="project-label mb-2">Hardware engineering</div>
+                <div style={{ color: '#344054' }}>Actuators, Sensors, Embedded Systems, Mechanical Design, Signal Processing</div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="join-area-card">
+                <div className="project-label mb-2">HCI related topics</div>
+                <div style={{ color: '#344054' }}>UX/UI Design, Creativity Toolkit, Perception/Cognition</div>
+              </div>
+            </div>
+          </div>
+
+          <Link className="btn btn-primary" href="/recruiting_graduate">
+            <b>M.S./Ph.D. Students — How to Apply&nbsp;↗</b>
+          </Link>
+          {/*<Link className="btn btn-primary ms-2" href="/internship/summer-2026"><b>2026 Summer Internship</b></Link>*/}
         </SectionContainer>
       </div>
     );
