@@ -52,7 +52,6 @@ export default function Projects() {
                                 </div>
                             </div>
 
-                            {/* Right Side: Project Details (FSL / ARML Style) */}
                             <div className="col-md-7 ps-md-4">
                                 <div className="d-flex gap-2 mb-2 align-items-center">
                                     <span className="tag-badge" style={{ backgroundColor: '#0B2A6B' }}>
