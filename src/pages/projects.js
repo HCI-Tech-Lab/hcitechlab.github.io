@@ -5,13 +5,10 @@ import SectionContainer from '@/components/section_container';
 import { projectsData } from '@/data/projects_data';
 
 export default function Projects() {
-    const [filter, setFilter] = useState('Ongoing'); // Default to showing ongoing projects
+    const [category, setCategory] = useState('Lab'); // Default to Lab Projects
 
-    // Filter the projects based on the selected tab
-    const filteredProjects = projectsData.filter(project => {
-        if (filter === 'All') return true;
-        return project.status === filter;
-    });
+    // Filter by project category (entries without a type default to Lab)
+    const filteredProjects = projectsData.filter(project => (project.type || 'Lab') === category);
 
     return (
         <SectionContainer>
@@ -21,17 +18,20 @@ export default function Projects() {
                 <h2 className="section-title">Research Projects</h2>
             </div>
 
-            {/* Filter Tabs */}
+            {/* Category Tabs: Lab (blue) / Researcher (green) */}
             <div className="d-flex flex-wrap gap-2 mb-5">
-                {['Ongoing', 'Completed', 'All'].map((tab) => (
-                    <button
-                        key={tab}
-                        onClick={() => setFilter(tab)}
-                        className={`filter-pill ${filter === tab ? 'active' : ''}`}
-                    >
-                        {tab} Projects
-                    </button>
-                ))}
+                <button
+                    onClick={() => setCategory('Lab')}
+                    className={`filter-pill ${category === 'Lab' ? 'active' : ''}`}
+                >
+                    Lab Projects
+                </button>
+                <button
+                    onClick={() => setCategory('Researcher')}
+                    className={`filter-pill pill-green ${category === 'Researcher' ? 'active' : ''}`}
+                >
+                    Researcher Projects
+                </button>
             </div>
 
             {/* Projects List */}
@@ -58,7 +58,7 @@ export default function Projects() {
                                     <span className="tag-badge" style={{ backgroundColor: '#0B2A6B' }}>
                                         {project.field}
                                     </span>
-                                    <span className="tag-badge" style={{ backgroundColor: project.status === 'Ongoing' ? '#1260de' : '#98A2B3' }}>
+                                    <span className="tag-badge" style={{ backgroundColor: project.status === 'Ongoing' ? ((project.type || 'Lab') === 'Researcher' ? '#0A7D4D' : '#1260de') : '#98A2B3' }}>
                                         {project.status}
                                     </span>
                                 </div>
@@ -69,18 +69,28 @@ export default function Projects() {
 
                                 <table style={{ width: '100%', fontSize: '0.9rem', color: '#555', marginBottom: '15px' }}>
                                     <tbody>
-                                        <tr>
-                                            <td className="project-label" style={{ width: '90px', paddingBottom: '8px' }}>Agency</td>
-                                            <td style={{ paddingBottom: '8px' }}>{project.agency}</td>
-                                        </tr>
+                                        {project.agency && (
+                                            <tr>
+                                                <td className="project-label" style={{ width: '90px', paddingBottom: '8px' }}>Agency</td>
+                                                <td style={{ paddingBottom: '8px' }}>{project.agency}</td>
+                                            </tr>
+                                        )}
+                                        {project.researcher && (
+                                            <tr>
+                                                <td className="project-label" style={{ width: '90px', paddingBottom: '8px' }}>Researcher</td>
+                                                <td style={{ paddingBottom: '8px' }}>{project.researcher}</td>
+                                            </tr>
+                                        )}
                                         <tr>
                                             <td className="project-label" style={{ paddingBottom: '8px' }}>Period</td>
                                             <td style={{ paddingBottom: '8px' }}>{project.period}</td>
                                         </tr>
-                                        <tr>
-                                            <td className="project-label" style={{ paddingBottom: '8px' }}>Role</td>
-                                            <td style={{ paddingBottom: '8px' }}>{project.role}</td>
-                                        </tr>
+                                        {project.role && (
+                                            <tr>
+                                                <td className="project-label" style={{ paddingBottom: '8px' }}>Role</td>
+                                                <td style={{ paddingBottom: '8px' }}>{project.role}</td>
+                                            </tr>
+                                        )}
                                     </tbody>
                                 </table>
 
@@ -97,7 +107,7 @@ export default function Projects() {
                 {/* Fallback if no projects match the filter */}
                 {filteredProjects.length === 0 && (
                     <div className="col-12 text-center py-5">
-                        <p style={{ color: '#888' }}>No projects found for this category.</p>
+                        <p style={{ color: '#888' }}>No {category === 'Lab' ? 'lab' : 'researcher'} projects listed yet.</p>
                     </div>
                 )}
             </div>

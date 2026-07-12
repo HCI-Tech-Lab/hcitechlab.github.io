@@ -1189,3 +1189,17 @@ a.section-link:focus,
   object-fit: cover;
   display: block;
 }
+
+/* Green variant for the Researcher Projects pill */
+.filter-pill.pill-green:hover {
+  border-color: #12B76A;
+  color: #0A7D4D;
+}
+
+.filter-pill.pill-green.active,
+.filter-pill.pill-green.active:hover {
+  background: linear-gradient(135deg, #12B76A, #0A7D4D);
+  border-color: transparent;
+  color: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(18, 183, 106, 0.28);
+}
