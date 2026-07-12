@@ -1,8 +1,29 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const NavBar = () => {
     const router = useRouter();
+
+    // Close the mobile collapse menu whenever the user navigates to a new page.
+    // Next.js does client-side navigation (no reload), so Bootstrap's menu
+    // would otherwise stay open after a tap.
+    useEffect(() => {
+        const closeMenu = () => {
+            const menu = document.getElementById('navbarResponsive');
+            if (!menu || !menu.classList.contains('show')) return;
+            const bs = typeof window !== 'undefined' ? window.bootstrap : null;
+            if (bs && bs.Collapse) {
+                // Use Bootstrap's API: animates and syncs the toggler state
+                bs.Collapse.getOrCreateInstance(menu, { toggle: false }).hide();
+            } else {
+                // Fallback if the Bootstrap bundle hasn't loaded yet
+                menu.classList.remove('show');
+            }
+        };
+        router.events.on('routeChangeStart', closeMenu);
+        return () => router.events.off('routeChangeStart', closeMenu);
+    }, [router.events]);
 
     // Normalize: strip trailing slashes and .html so it works on GitHub Pages static export
     const normalize = (p) =>

@@ -20,7 +20,7 @@ export const projectsData = [
         role: "Principal Investigator (PI)",
         field: "Generative Haptics / Haptic Rendering for Skin Actuators",
         status: "Ongoing",
-        image: "/project/IITP2025.jpg",
+        image: "/project/iitp_haptic.jpg",
         type: "Lab",
     },
     {
