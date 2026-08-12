@@ -531,15 +531,15 @@ const carouselItems = allResearch
                 <div key={index} className="col-md-6 col-12 mb-4">
                   <div className="news-grid-card h-100" style={{ display: 'flex', flexDirection: 'column' }}>
                     
-                    {/* Video/Preview (Fixed Aspect Ratio 16:9) */}
-                    <div className="mb-2" style={{ position: 'relative', paddingTop: '56.25%', overflow: 'hidden', borderRadius: '4px' }}>
-                       <video 
+                    {/* Video/Preview (uniform 16:9 frame with blurred fill) */}
+                    <div className="pub-media mb-2">
+                      {item.poster && <div className="pub-media-bg" style={{ backgroundImage: `url(${item.poster})` }} />}
+                      <video 
                         muted 
                         playsInline 
                         autoPlay 
                         loop
                         poster={item.poster}
-                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'contain' }}
                       >
                         <source type="video/mp4" src={item.demo || item.video} />
                       </video>

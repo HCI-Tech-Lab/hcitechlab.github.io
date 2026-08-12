@@ -177,6 +177,7 @@ export default function Publications() {
                                 <div key={`${year}-${index}`} className="row research_item align-items-center mb-3 pub-item">
                                     <div className="col-md-4 mb-3 mb-md-0">
                                         <div className="pub-media">
+                                            {item.poster && <div className="pub-media-bg" style={{ backgroundImage: `url(${item.poster})` }} />}
                                             <video autoPlay loop muted playsInline poster={item.poster}>
                                                 {item.demo && <source type="video/mp4" src={item.demo} />}
                                             </video>
