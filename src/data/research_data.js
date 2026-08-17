@@ -15,7 +15,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight:true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -33,7 +33,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -127,7 +127,7 @@ export const research_temp = {
             category: "Conference / Journal (peer-reviewed)"
         },
         {
-            poster: "img/icon/preprint.png",
+            poster: "research/2026/RAL/glove.png",
             demo: "",
             title: "A Novel Flexible Shaft-driven Mechanism for Multidirectional Active Force Feedback in Haptic Gloves: A Preliminary Study",
             authors: "Daegeun Park, Hojeong Lee, Sang Ho Yoon, Sung-Uk Jung",
@@ -135,14 +135,14 @@ export const research_temp = {
             conference: "IEEE Robotics and Automation Letters (RA-L)",
             conferenceLink: "",
             award: "",
-            website: "",
-            doi: "",
+            website: "https://www.ieee-ras.org/publications/ra-l/",
+            doi: "https://doi.org/10.1109/LRA.2026.3723322",
             video: "",
             pdf: "",
             presentation: "",
             media: "",
             highlight: false,
-            category: "Preprint"
+            category: "Conference / Journal (peer-reviewed)"
         },
         {
             poster: "research/2026/IMWUT/rehabgen.jpg",
