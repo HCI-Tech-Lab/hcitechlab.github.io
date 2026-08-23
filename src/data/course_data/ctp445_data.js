@@ -18,7 +18,7 @@ export const ctp445_data = [
         submission: {name: "KLMS", link: "https://klms.kaist.ac.kr/"},
         discussion: {name: "Email to instructors", link: ""},
         announcements: [],
-        schedule: [
+        schedule: [/*
             {
                 day1: {
                     date: "3/2",
@@ -396,9 +396,51 @@ export const ctp445_data = [
                         { name: "Audience Evaluation (Final Video) due by 6/18(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
                     ]
                 }
-            }
+            }*/
         ],
-         projects: []
+         projects: [{
+                title: "CaseZero",
+                members: "Jasmine Wong, Lucy Zheng, Sara Streit",
+                desc: "Murder Mystery AR Game",
+                videoLink: "https://www.youtube.com/embed/x4o_KC3ALRU",
+                recognition: "Best Idea"
+            }, 
+            {
+                title: "Captcha",
+                members: "Serena Li, Sally Nagle, Goeun Lee",
+                desc: "CaptchAR: Embodied Spatial Challenges for Human Verification in Augmented Reality",
+                videoLink: "https://www.youtube.com/embed/PooMtOrQp8I",
+                recognition: "Cool Video"
+            },
+            {
+                title: "PETTARN",
+                members: "Jin Park, Hawon Song,	Eunjae Shin",
+                desc: "PETTARN: An AR Pet Companion for Therapeutic Routine Building",
+                videoLink: "https://www.youtube.com/embed/UvZhkarVZro",
+                recognition: ""
+            },
+            {
+                title: "EEU",
+                members: "Lee Seungjae, Ryu Yeorim, Lee Yejin",
+                desc: "cARt: Gesture-based AR Shopping Assistant for Every Discoveries",
+                videoLink: "https://www.youtube.com/embed/QD3uZMH3EWI",
+                recognition: ""
+            },
+            {
+                title: "Hamburgers",
+                members: "Donhhee Hyun, Hyeongjin Do, Yao liu",
+                desc: "JournalingMate: Supporting Children’s Personal Journaling through Generative AI Visual Feedback and AR Interaction on Physical Diaries",
+                videoLink: "https://www.youtube.com/embed/7SbVetvfJMc",
+                recognition: "KCC 2026 Paper"
+            },
+            {
+                title: "Purpler",
+                members: "Najeong Ryu, Jonghyeok Chae, LiXiang Chen",
+                desc: "Incant: An AR Calligraphic Ritual where Ink Answers the Manner of the Writing Hand",
+                videoLink: "https://www.youtube.com/embed/u-ALBBJ9qxI",
+                recognition: ""
+            }
+        ]
     },
     {
         course_info: {
@@ -419,391 +461,7 @@ export const ctp445_data = [
         submission: {name: "KLMS", link: "https://klms.kaist.ac.kr/"},
         discussion: {name: "Email to instructors", link: ""},
         announcements: [],
-        schedule: [/*
-            {
-                day1: {
-                    date: "2/26",
-                    titles: ["Course Overview"],
-                    type: 0,
-                    notes: [],
-                    dues: [
-                        { name: "Sign up Form due by 2/29(Thu) 11:59pm", link: "https://forms.gle/vDR7HHYKfBtYUsTH9" }
-                    ]
-                },
-                day2: {
-                    date: "2/28",
-                    titles: ["Introduction to Augmented Reality"],
-                    type: 0,
-                    notes: [
-                        { name: "Ronald T. Azuma, A Survey of Augmented Reality", link: "http://cierto.org/pdf/ARpresence.pdf" },
-                        { name: "Paul Milgram et al., Augmented reality: a class of displays on the reality-virtuality continuum", link: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/2351/1/Augmented-reality--a-class-of-displays-on-the-reality/10.1117/12.197321.full?SSO=1" }
-                    ],
-                    dues: []
-                }
-            },
-            {
-                day1: {
-                    date: "3/4",
-                    titles: ["Team Formation Activity"],
-                    type: 1,
-                    notes: [
-                        { name: "Team Formation Activity", link: "https://docs.google.com/presentation/d/1CcayTyM_HsN1wYlhdG-WqGnjXDXUFDPQMsrDezj35sM/edit?usp=sharing" }
-                    ],
-                    dues: [
-                        { name: "Reading Group Announcement", link: "https://docs.google.com/spreadsheets/d/19RklFtOvIpy6RwKsXWMVE-Z-LgvtZuzJdsvyW951ssI/edit?usp=sharing" },
-                        { name: "Topic Presentation Team Announcement", link: "https://docs.google.com/spreadsheets/d/11EqvFcPR8pH-4SRbAvcOe7nH_TiHG2RauyWxh_I4GXY/edit?usp=sharing" },
-                        { name: "Reading Response (RR) due by 3/7(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "3/6",
-                    titles: ["AR Toolkit Introduction"],
-                    type: 1,
-                    notes: [
-                        { name: "AR Toolkit Introduction (KLMS)", link: "https://klms.kaist.ac.kr/" },
-                        { name: "HW#1 & Extra Credit Task Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
-                        { name: "Get started with Unity Tutorial", link: "https://learn.unity.com/mission/real-time-creation-essentials" }
-                    ],
-                    dues: [
-                        { name: "Extra Credit Task due by 3/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "3/11",
-                    titles: ["Visual System and Display"],
-                    type: 0,
-                    notes: [
-                        { name: 'Pausch et al. "Quantifying immersion in virtual reality." SIGGRAPH, 1997', link: "https://dl.acm.org/doi/10.1145/258734.258744" },
-                        { name: 'Chang et al. "Toward the next-generation VR/AR optics: a review of holographic near-eye displays from a human-centric perspective." Optica, 2020', link: "https://www.osapublishing.org/abstract.cfm?uri=optica-7-11-1563" }
-                    ],
-                    dues: [
-                        { name: "Group AR Project Sign Up due 3/11 11:59pm", link: "https://forms.gle/MKMqzRdj8di1v2UPA" },
-                        { name: "RR Group A due by 3/11(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "3/13",
-                    titles: ["Tracking"],
-                    type: 0,
-                    notes: [
-                        { name: 'Newman et al. "Ubiquitous tracking for augmented reality" ISMAR 2004', link: "https://doi.org/10.1109/ISMAR.2004.62" },
-                        { name: 'Feiner et al. "Windows on the world: 2D windows for 3D augmented reality" UIST 1993', link: "https://dl.acm.org/doi/10.1145/168642.168657" },
-                        { name: 'Huo et al. "SynchronizAR: Instant Synchronization for Spontaneous and Spatial Collaborations in Augmented Reality" UIST 2018', link: "https://dl.acm.org/doi/abs/10.1145/3242587.3242595" }
-                    ],
-                    dues: [{ name: "Topic Presentation #1", link: ""  }]
-                }
-            },
-            {
-                day1: {
-                    date: "3/18",
-                    titles: ["AR Toolkit #2"],
-                    type: 1,
-                    notes: [{ name: "HW#2 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" }],
-                    dues: [
-                        { name: "HW #1 due by 3/18(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "RR Group B due by 3/18(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "3/20",
-                    titles: ["Computer Vision for AR"],
-                    type: 0,
-                    notes: [
-                        { name: 'Reitmayr et al. "Simultaneous localization and mapping for augmented reality" 2010', link: "https://ieeexplore.ieee.org/abstract/document/5557942?casa_token=qaN6K0ARGEsAAAAA:RR7HORB1f8MO4p4L8Gw_NidXdfphS5TPhWxO07AP4VmzCZcPm6HZ8FktCYtiOcw_bKZAO1MEjw" },
-                        { name: 'Rublee et al. "Orb-slam2: An open-source slam system for monocular, stereo, and rgb-d cameras" IEEE Trans. Robot, 2017', link: "https://ieeexplore.ieee.org/abstract/document/7946260?casa_token=-kzAlWuUn78AAAAA:a_o6PVi-tDmCK6iUUzerkL4DHR_ut1ErUhwBe65TXWwUP7yNNFQR9Wlv-AXp-fZl6S9MMmh1Uw" },
-                        { name: 'Ma et al. "Sparse-to-Dense: Depth Prediction from Sparse Depth Samples and a Single Image" ICRA, 2018', link: "https://ieeexplore.ieee.org/abstract/document/8460184" }
-                    ],
-                    dues: [{ name: "Topic Presentation #2", link: ""  }]
-                }
-            },
-            {
-                day1: {
-                    date: "3/25",
-                    titles: ["Project Feedback Meetings (Individual Team)"],
-                    type: 0,
-                    notes: [{ name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }],
-                    dues: [
-                        { name: "Proposal Presentation Slides due by 3/26(Tue) 11:59pm (All Teams)", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "3/27",
-                    titles: ["Project Proposal Presentation"],
-                    type: 1,
-                    notes: [{ name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }],
-                    dues: [
-                        { name: "RR Group A due by 3/28(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "HW #2 due by 3/31(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                }
-            },
-            
-            {
-                day1: {
-                    date: "4/1",
-                    titles: ["Calibration and Registration"],
-                    type: 0,
-                    notes: [
-                        { name: "Zhang, 'A flexible new technique for camera calibration' TPAMI, 2000", link: "https://ieeexplore.ieee.org/abstract/document/888718?casa_token=6ik8Npprs3wAAAAA:z5G3I2AzeslRykA8O1HI_DV9glciPYQc3nzwxngUnPxI25EpjfWjoi3RNUzz37Yi2XEWMPY31Q" },
-                        { name: "Tuceryan et al., 'Single-point active alignment method (SPAAM) for optical see-through HMD calibration for augmented reality' Presence: Teleoperators & Virtual Environments, 2002", link: "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.412.5855&rep=rep1&type=pdf" },
-                        { name: "Plopski et al., 'Corneal-Imaging Calibration for Optical See-Through Head-Mounted Displays' TVCG, 2015", link: "https://ieeexplore.ieee.org/abstract/document/7012105?casa_token=eZQK6T7s7mcAAAAA:EjczFG8owk--xW-Q6kbVfVscc-QDsftuuDi35N-8bvfNp_xBhG4t2CssH-M8rSyx94B04Lzk0g" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #3", link: "" },
-                        { name: "RR Group B due by 4/1(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "4/3",
-                    titles: ["Project Feedback & Discussion", "AR Toolkit Q&A"],
-                    type: 1,
-                    notes: [
-                        { name: "Feedback Meeting Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" },
-                        { name: "HW#3 Handout (KLMS)", link: "" }
-                    ],
-                    dues: []
-                }
-            },
-            {
-                day1: {
-                    date: "4/8",
-                    titles: ["Visual Coherence"],
-                    type: 0,
-                    notes: [
-                        { name: "Breen et al., 'Interactive Occlusion and Automatic Object Placement for Augmented Reality' Computer Graphics Forum, 1996", link: "https://www.cs.drexel.edu/~david/Papers/eg96.pdf" },
-                        { name: "Kan et al., 'High-quality reflections, refractions, and caustics in augmented reality and their contribution to visual coherence' ISMAR, 2012", link: "https://ieeexplore.ieee.org/abstract/document/6402546?casa_token=xBcorzrNsakAAAAA:RkA-doEO71n7R493RMtl9IklnEUafigHY2YjbhNFF5tKsU55Pml6cA1WQAukhcmGzQpZhOYTwg" },
-                        { name: "Fischer et al., 'Stylized augmented reality for improved immersion' IEEE VR, 2005", link: "https://ieeexplore.ieee.org/abstract/document/1492774?casa_token=RpmeI94kueUAAAAA:feXrriyMg08uqNvtsjHXlUHZN07r9cXyC3uFymb5M9w-Q8m4osJPegobCgeO-pGE9AFSjSbhZA" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #4", link: "" }
-                    ]
-                },
-                day2: {
-                    date: "4/10",
-                    titles: ["No class"],
-                    type: 2,
-                    notes: [],
-                    dues: [
-                        { name: "HW#3 due by 4/10(Wed) 11:59pm", link: "" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "4/15",
-                    titles: ["No class (Midterms Week)"],
-                    type: 2,
-                    notes: [],
-                    dues: []
-                },
-                day2: {
-                    date: "4/17",
-                    titles: ["No class (Midterms Week)"],
-                    type: 2,
-                    notes: [],
-                    dues: [
-                        { name: "RR Group A due by 4/18(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "4/22",
-                    titles: ["Situated Visualization"],
-                    type: 0,
-                    notes: [
-                        { name: "HW#4 Handout (KLMS)", link: "https://klms.kaist.ac.kr/" },
-                        { name: "White et al., 'SiteLens: Situated visualization techniques for urban site visits' CHI, 2009", link: "https://doi.org/10.1145/1518701.1518871" },
-                        { name: "Willet et al., 'Embedded data representations' TVCG, 2016", link: "https://doi.org/10.1109/TVCG.2016.2598608" },
-                        { name: "Lin et al., 'Towards an Understanding of Situated AR Visualization for Basketball Free-Throw Training' CHI, 2021", link: "https://doi.org/10.1145/3411764.3445649" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #5", link: ""  },
-                        { name: "RR Group B (Interaction) due by 4/22(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "4/24",
-                    titles: ["Interaction"],
-                    type: 0,
-                    notes: [
-                        { name: "Ishii et al., 'Tangible bits: towards seamless interfaces between people, bits and atoms' CHI, 1997", link: "https://dl.acm.org/doi/pdf/10.1145/258549.258715" },
-                        { name: "Du et al., 'DepthLab: Real-time 3D interaction with depth maps for mobile augmented reality' UIST, 2020", link: "https://dl.acm.org/doi/abs/10.1145/3379337.3415881" },
-                        { name: "Harrison et al., 'OmniTouch: wearable multitouch interaction everywhere' UIST, 2011", link: "https://dl.acm.org/doi/abs/10.1145/2047196.2047255" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #6", link: ""  }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "4/29",
-                    titles: ["Project Progress Presentation"],
-                    type: 1,
-                    notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }
-                    ],
-                    dues: [
-                        { name: "Progress Presentation Slides due by 4/28(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "5/1",
-                    titles: ["Project Progress Presentation"],
-                    type: 1,
-                    notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }
-                    ],
-                    dues: []
-                }
-            },
-            {
-                day1: {
-                    date: "5/6",
-                    titles: ["No class"],
-                    type: 2,
-                    notes: [
-                        { name: "Project Feedback Meeting", link: "" }
-                    ],
-                    dues: [
-                        { name: "HW#4 due by 5/5(Sun) 11:59pm", link: "" },
-                        { name: "RR Group A (Modeling & Annotation) due by 5/6(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "5/8",
-                    titles: ["Modeling & Annotation"],
-                    type: 0,
-                    notes: [
-                        { name: "Newcombe et al., 'Kinectfusion: Real-time dense surface mapping and tracking' ISMAR, 2011", link: "https://ieeexplore.ieee.org/abstract/document/6162880" },
-                        { name: "Nuernberger et al., 'Interpreting 2d gesture annotations in 3d augmented reality' 3DUI, 2016", link: "https://ieeexplore.ieee.org/abstract/document/7460046" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #7", link: "" },
-                        { name: "Progress Report due by 5/12(Sun) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "5/13",
-                    titles: ["User Study (Recorded Video)"],
-                    type: 0,
-                    notes: [],
-                    dues: [
-                        { name: "RR Group B (Authoring) due by 5/16(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "5/15",
-                    titles: ["No Class"],
-                    type: 2,
-                    notes: [],
-                    dues: [
-                        { name: "CTSCAPE (SymCT) Registration", link: "" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "5/20",
-                    titles: ["Authoring"],
-                    type: 0,
-                    notes: [
-                        { name: "Lee et al., 'Immersive authoring: What you experience is what you get' Communications of the ACM, 2005", link: "https://dl.acm.org/doi/10.1145/1070838.1070840" },
-                        { name: "Villanueva et al., 'Meta-AR-app: an authoring platform for collaborative augmented reality in STEM classrooms' CHI, 2020", link: "https://dl.acm.org/doi/abs/10.1145/3313831.3376146" },
-                        { name: "Wang et al., 'GesturAR: An Authoring System for Creating Freehand Interactive Augmented Reality Applications' UIST, 2021", link: "https://dl.acm.org/doi/abs/10.1145/3472749.3474769" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #8", link: "" },
-                        { name: "RR Group A (Navigation) due by 5/23(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "5/22",
-                    titles: ["CTScape Participation on 5/31 (Make-up Class)"],
-                    type: 1,
-                    notes: [
-                        { name: "CTScape Registration", link: "https://docs.google.com/forms/d/e/1FAIpQLSf2fWT_AWZEYC2A4xJvVfmYFifZavBqaFjuTykrl-n67Bmz4Q/viewform" }
-                    ],
-                    dues: []
-                }
-            },
-            {
-                day1: {
-                    date: "5/27",
-                    titles: ["Navigation"],
-                    type: 0,
-                    notes: [
-                        { name: "Mulloni et al., 'Indoor positioning and navigation with camera phones' IEEE Pervasive Computing, 2009", link: "https://doi.org/10.1109/MPRV.2009.30" },
-                        { name: "Sukan et al., 'Parafrustum: Visualization techniques for guiding a user to a constrained set of viewing positions and orientations' UIST, 2014", link: "https://doi.org/10.1145/2642918.2647417" },
-                        { name: "Bae et al., 'Computational Rephotography' ACM Transactions on Graphics, 2010", link: "https://doi.org/10.1145/1805964.1805968" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #9", link: ""  },
-                        { name: "RR Group B (Collaboration) due by 5/27(Mon) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "5/29",
-                    titles: ["Collaboration"],
-                    type: 0,
-                    notes: [
-                        { name: "Lukosch et al., 'Collaboration in Augmented Reality' CSCW, 2015", link: "https://link.springer.com/article/10.1007/s10606-015-9239-0" },
-                        { name: "Benko et al., 'Dyadic Projected Spatial Augmented Reality' UIST, 2014", link: "https://doi.org/10.1145/2642918.2647402" },
-                        { name: "Villanueva et al., 'ColabAR: A Toolkit for Remote Collaboration in Tangible Augmented Reality Laboratories' CSCW, 2022", link: "https://dl.acm.org/doi/pdf/10.1145/3512928" }
-                    ],
-                    dues: [
-                        { name: "Topic Presentation #10", link: "" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "6/3",
-                    titles: ["Final Presentation"],
-                    type: 1,
-                    notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }
-                    ],
-                    dues: [
-                        { name: "Final Presentation Slides due by 6/2 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                },
-                day2: {
-                    date: "6/5",
-                    titles: ["Final Presentation"],
-                    type: 1,
-                    notes: [
-                        { name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1q0dAEcQSrtzQEZzzvy8lyEf0pzE--zb-vPPN_oQi0Yg/edit?usp=sharing" }
-                    ],
-                    dues: [
-                        { name: "Final Presentation Audience Evaluation due by 6/5(Wed) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                }
-            },
-            {
-                day1: {
-                    date: "6/10",
-                    titles: ["No class (Finals Week)"],
-                    type: 2,
-                    notes: [],
-                    dues: []
-                },
-                day2: {
-                    date: "6/12",
-                    titles: ["No class (Finals Week)"],
-                    type: 2,
-                    notes: [],
-                    dues: [
-                        { name: "Final Report & Video due by 6/11(Tue) 11:59pm", link: "https://klms.kaist.ac.kr/" },
-                        { name: "Audience Evaluation (Final Video) due by 6/13(Thu) 11:59pm", link: "https://klms.kaist.ac.kr/" }
-                    ]
-                }
-            }*/
+        schedule: [
         ],
         projects: [
             {

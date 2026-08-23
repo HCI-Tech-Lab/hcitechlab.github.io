@@ -1,6 +1,160 @@
 export const gct565_data = [
     {
         course_info: {
+            code: "GCT.50065 Fall 2026", 
+            title: "Augmented Humans",
+            desc: "The idea of augmenting the human intellect has long tradition. The advancement of digital technologies has enabled physical, cognitive, and perceptual augmentation of humans. This course will introduce concepts and examples related to augmented humans where technologies enhance human capabilities beyond the individual. Students will learn basic research approach and state-of-art works in the field of augmented humans.",
+        },
+        prof: [
+            {name: "Prof. Sang Ho Yoon", link: "https://sanghoy.com/"},
+        ],
+        ta: [
+            {name: "Jina Kim", link: ""}, 
+            {name: "Dongkyu Kwak", link: ""},
+        ],
+        time: "10:30-11:50am Mon/Wed",
+        loc: "N5 #2332",
+        submission: {name: "KLMS", link: "https://klms.kaist.ac.kr/"},
+        discussion: {name: "Email", link: ""},
+        announcements: [
+            //{date: "11/25", content: "Final Presentation on 12/9 will be held in N5 #2332."},
+            //{date: "10/3", content: "Course schedule has been updated"},
+            //{date: "9/30", content: "Project Proposal Presentation"},
+            //{date: "9/13", content: "Team Project Announcement"},
+            //{date: "9/6", content: "Paper Seminar Group & Schedule Announcement"},
+            {date: "8/31", content: "Class Starts!"},
+            {date: "8/23", content: "Course website has been updated"},
+        ],
+        projects: [],
+        schedule: [
+            {
+                day1: {
+                    date: "8/31", titles: ["Course Overview"], type: 0,
+                    notes: [{name: "HW#1 Handout (KLMS)", link: ""}],
+                    dues: [],
+                },
+                day2: {
+                    date: "9/2", titles: ["Augmented Interfaces"], type: 0,
+                    notes: [],
+                    dues: [{name: "HW#1 due by 9/4 (Fri) 12pm", link: "https://klms.kaist.ac.kr/"}],
+                },
+            },
+            {
+                day1: {
+                    date: "9/7", titles: ["Project Kick-off Workshop"], type: 1,
+                    notes: [],
+                    dues: [{name: "Team Formation Activity Form due by 9/6 (Sun)", link: ""}, {name: "Paper Seminar Sign Up due by 9/6 (Sun)", link: ""}],
+                },
+                day2: {
+                    date: "9/9", titles: ["Augmented Display"], type: 0,
+                    notes: [],
+                    dues: [{name: "Project Team Sign Up due by 9/10(Thu) 12pm", link: ""}],
+                },
+            },
+            {
+                day1: {
+                    date: "9/14", titles: ["Augmented Sensing I (Optical Sensing)"], type: 0,
+                    notes: [{name: "HW#2 Handout (KLMS)", link: ""}],
+                    dues: []
+                },
+                day2: {
+                    date: "9/16", titles: ["Augmented Sensing II (Wearables & On-body Interface)"], type: 0,
+                    notes: [],
+                    dues: [
+                    {name: "RR#1 due by 9/17 (Thu)", link: "https://klms.kaist.ac.kr/"}]
+                }
+            },
+            {
+                day1: {date: "9/21", titles: ["Paper Seminar #1","Project Proposal Q&A"], type: 1, notes: [], 
+                       dues: [{name: "HW#2 due by 9/20 (Sun) 11:59pm", link: "https://klms.kaist.ac.kr/"}]},
+                day2: {date: "9/23", titles: ["Project Proposal Presentation"], type: 1, notes: [], dues: [{name: "Proposal Presentation Slides due by 9/23 (Wed)", link: "https://klms.kaist.ac.kr/"}]}
+            },
+            {
+                day1: {date: "9/28", titles: ["Project Proposal Feedback"], type: 1, notes: [
+                    {name: "Presentation Schedule", link: ""}
+                ], dues: [
+                    {name: "RR#2 due by 9/28 (Mon)", link: "https://klms.kaist.ac.kr/"}
+                ]},
+                day2: {date: "9/30", titles: ["Machine Learning & Data Mining Toolkit I"], type: 0, notes: [{name: "HW#3 Handout (KLMS)", link: ""},
+                    {name: "Feedback Schedule", link: ""}
+                ], dues: []}
+            },
+            {
+                day1: {date: "10/5", titles: ["No Class (Holiday)"], type: 2, notes: [], dues: []},
+                day2: {date: "10/7", titles: ["Augmented Sensing III (Remote/Ambient)", "Technical Evaluation","Paper Seminar #2"], type: 0, notes: [], dues: [{name: "HW#3 due by 10/19 (Fri)", link: "https://klms.kaist.ac.kr/"}]}
+            },
+            {
+                day1: {date: "10/12", titles: ["Midterm"], type: 2, notes: [], dues: []},
+                day2: {date: "10/14", titles: ["Midterm"], type: 2, notes: [], dues: []}
+            },
+            {
+                day1: {date: "10/19", titles: ["Machine Learning & Data Mining Toolkit II","EMG Data Collection"], type: 0, notes: [
+                    {name: "HW#4 Handout (KLMS)", link: ""}
+                ], dues: [{name: "RR#3 due by 10/18 (Sun)", link: "https://klms.kaist.ac.kr/"}]},
+                day2: {date: "10/21", titles: ["Paper Seminar #3"], type: 1, notes: [
+                    {name: "Discussion Schedule", link: ""}
+                ], dues: []}
+            },
+            {
+                day1: {date: "10/26", titles: ["Project Progress Presentation"], type: 1, notes: [
+                    {name: "Presentation Schedule", link: ""}
+                ], dues: [
+                    {name: "Progress Presentation Slides due by ", link: "https://klms.kaist.ac.kr/"},
+                    {name: "Audience Evaluation Form due by ", link: "https://klms.kaist.ac.kr/"}
+                ]},
+                day2: {date: "10/28", titles: ["Project Feedback"], type: 1, notes: [], dues: [
+                    {name: "RR#4 due by ", link: "https://klms.kaist.ac.kr/"},
+                    {name: "HW#4 due by ", link: "https://klms.kaist.ac.kr/"}
+                ]}
+            },
+            {
+                day1: {date: "11/2", titles: ["Augmented Haptic Feedback"], type: 0, notes: [], dues: []},
+                day2: {date: "11/4", titles: ["Quantitative and Qualitative Study","Paper Seminar #4"], type: 1, notes: [], dues: [
+                    {name: "Progress Report due by ", link: "https://klms.kaist.ac.kr/"},
+                    {name: "RR#5 due by ", link: "https://klms.kaist.ac.kr/"}
+                ]}
+            },
+            {
+                day1: {date: "11/9", titles: ["Augmented Machine Learning for Augmented Humans"], type: 0, notes: [], dues: []},
+                day2: {date: "11/11", titles: ["Paper Seminar #5"], type: 1, notes: [], dues: []}
+            },
+            {
+                day1: {date: "11/16", titles: ["Augmented hearing, taste, and smell"], type: 0, notes: [
+                    {name: "HW#5 Handout (KLMS)", link: ""}
+                ], dues: [
+                    {name: "RR#6 due by ", link: "https://klms.kaist.ac.kr/"}
+                ]},
+                day2: {date: "11/18", titles: ["Paper Seminar #6"], type: 1, notes: [], dues: []}
+            },
+            {
+                day1: {date: "11/23", titles: ["Augmented Humans Storytelling & Design Approaches"], type: 0, notes: [], dues: []},
+                day2: {date: "11/25", titles: ["Project Q&A and Preparation"], type: 1, notes: [], dues: [
+                    {name: "HW#5 due by ", link: "https://klms.kaist.ac.kr/"}
+                ]}
+            },
+            {
+                day1: {date: "12/7", titles: ["Final Presentation"], type: 1, notes: [
+                    {name: "Presentation Schedule", link: ""}
+                ], dues: [
+                    {name: "Final Presentation Slides due by ", link: "https://klms.kaist.ac.kr/"}
+                ]},
+                day2: {date: "12/9", titles: ["Final Presentation"], type: 1, notes: [
+                    {name: "Feedback Schedule", link: ""}
+                ], dues: [
+                    {name: "Audience Evaluation Form due by ", link: "https://klms.kaist.ac.kr/"}
+                ]}
+            },
+            {
+                day1: {date: "12/14", titles: ["No class (Finals Week)"], type: 2, notes: [], dues: []},
+                day2: {date: "12/16", titles: ["No class (Finals Week)"], type: 2, notes: [], dues: [
+                    {name: "Final Report due by 12/16 (Web)", link: "https://klms.kaist.ac.kr/"},
+                    {name: "Peer Evaluation due by 12/16 (Web)", link: "https://klms.kaist.ac.kr/"}
+                ]}
+            }
+        ]
+    },
+    {
+        course_info: {
             code: "GCT.50065 Fall 2025", 
             title: "Augmented Humans",
             desc: "The idea of augmenting the human intellect has long tradition. The advancement of digital technologies has enabled physical, cognitive, and perceptual augmentation of humans. This course will introduce concepts and examples related to augmented humans where technologies enhance human capabilities beyond the individual. Students will learn basic research approach and state-of-art works in the field of augmented humans.",
@@ -17,149 +171,52 @@ export const gct565_data = [
         loc: "N5 #2332",
         submission: {name: "KLMS", link: "https://klms.kaist.ac.kr/"},
         discussion: {name: "Email", link: ""},
-        announcements: [
-            //{date: "11/25", content: "Final Presentation on 12/9 will be held in N5 #2332."},
-            //{date: "10/3", content: "Course schedule has been updated"},
-            //{date: "9/30", content: "Project Proposal Presentation"},
-            //{date: "9/13", content: "Team Project Announcement"},
-            //{date: "9/6", content: "Paper Seminar Group & Schedule Announcement"},
-            {date: "9/1", content: "Class Starts!"},
-            {date: "8/25", content: "Course website has been updated"},
-        ],
-        projects: [],
-        schedule: [
+        announcements: [],
+        projects: [
             {
-                day1: {
-                    date: "9/1", titles: ["Course Overview"], type: 0,
-                    notes: [{name: "HW#1 Handout (KLMS)", link: ""}],
-                    dues: [],
-                },
-                day2: {
-                    date: "9/3", titles: ["Augmented Interfaces"], type: 0,
-                    notes: [],
-                    dues: [{name: "HW#1 due by 9/5 (Fri) 12pm", link: "https://klms.kaist.ac.kr/"}],
-                },
+                title: "HearD",
+                members: "Hyojin Kim, Donghee Hyun",
+                desc: "Multimodal Sound Localization Using Caption and Wrist Haptic for Deaf or Hard of Hearing in Virtual Reality",
+                videoLink: "https://www.youtube.com/embed/gG5VcMyMb-Q",
+                recognition: "Cool Video",
             },
             {
-                day1: {
-                    date: "9/8", titles: ["Project Kick-off Workshop"], type: 1,
-                    notes: [],
-                    dues: [{name: "Team Formation Activity Form due by 9/7 (Sun)", link: ""}, {name: "Paper Seminar Sign Up due by 9/7 (Sun)", link: ""}],
-                },
-                day2: {
-                    date: "9/10", titles: ["Augmented Display"], type: 0,
-                    notes: [],
-                    dues: [{name: "Project Team Sign Up due by 9/10(Wed) 12pm", link: ""}],
-                },
+                title: "Bravo",
+                members: "Artem Kim, Ceren Tarim",
+                desc: "PFA Coach: A VR Practice Field for Psychological First Aid Skill Training",
+                videoLink: "https://www.youtube.com/embed/KTh58Oqx4p0",
+                recognition: "",
             },
             {
-                day1: {
-                    date: "9/15", titles: ["Augmented Sensing I (Optical Sensing)"], type: 0,
-                    notes: [{name: "HW#2 Handout (KLMS)", link: ""}],
-                    dues: []
-                },
-                day2: {
-                    date: "9/17", titles: ["Augmented Sensing II (Wearables & On-body Interface)"], type: 0,
-                    notes: [],
-                    dues: [
-                    {name: "RR#1 due by 9/17 (Wed)", link: "https://klms.kaist.ac.kr/"}]
-                }
+                title: "Son & Kim",
+                members: "Taejun Son, Yeongjo Kim",
+                desc: "Foot-IMU Gestures with Direction-Based UI Mapping for AR Interaction",
+                videoLink: "https://www.youtube.com/embed/yjLwBL2j1PE",
+                recognition: "",
             },
             {
-                day1: {date: "9/22", titles: ["Paper Seminar #1","Project Proposal Q&A"], type: 1, notes: [], 
-                       dues: [{name: "HW#2 due by 9/21 (Sun) 11:59pm", link: "https://klms.kaist.ac.kr/"}]},
-                day2: {date: "9/24", titles: ["Project Proposal Presentation"], type: 1, notes: [], dues: [{name: "Proposal Presentation Slides due by 9/24 (Wed)", link: "https://klms.kaist.ac.kr/"}]}
+                title: "MESS",
+                members: "Choo Sheriel Shannon, Murad Eynizada",
+                desc: "Dynamic Narrative Adjustment via Multi-modal Emotion Sensing & Simulation",
+                videoLink: "https://www.youtube.com/embed/XxAI-gYfw-U",
+                recognition: "Best Augmented Humans Project, IEEE VR 2026 Poster",
             },
             {
-                day1: {date: "9/29", titles: ["Project Proposal Feedback"], type: 1, notes: [
-                    {name: "Presentation Schedule", link: ""}
-                ], dues: [
-                    {name: "RR#2 due by 9/29 (Mon)", link: "https://klms.kaist.ac.kr/"}
-                ]},
-                day2: {date: "10/1", titles: ["Machine Learning & Data Mining Toolkit I"], type: 0, notes: [{name: "HW#3 Handout (KLMS)", link: ""},
-                    {name: "Feedback Schedule", link: ""}
-                ], dues: []}
+                title: "ABC",
+                members: "Selin Choi, Sun Ah Bae",
+                desc: "Assembled Object-based Navigation in Virtual Reality Recordings",
+                videoLink: "https://www.youtube.com/embed/73Hkx1x7qWA",
+                recognition: "",
             },
             {
-                day1: {date: "10/6", titles: ["No Class (Chuseok)"], type: 2, notes: [], dues: []},
-                day2: {date: "10/8", titles: ["No Class (Chuseok)"], type: 2, notes: [], dues: []}
-            },
-            {
-                day1: {date: "10/13", titles: ["Augmented Sensing III (Remote/Ambient)"], type: 0, notes: [
-                    
-                ], dues: []},
-                day2: {date: "10/15", titles: ["Technical Evaluation","Paper Seminar #2"], type: 1, notes: [], dues: [                    {name: "HW#3 due by 10/19 (Fri)", link: "https://klms.kaist.ac.kr/"}
-]}
-            },
-            {
-                day1: {date: "10/20", titles: ["Midterm"], type: 2, notes: [], dues: []},
-                day2: {date: "10/22", titles: ["Midterm"], type: 2, notes: [], dues: []}
-            },
-            {
-                day1: {date: "10/27", titles: ["Machine Learning & Data Mining Toolkit II","EMG Data Collection"], type: 0, notes: [
-                    {name: "HW#4 Handout (KLMS)", link: ""}
-                ], dues: [{name: "RR#3 due by 10/26 (Sun)", link: "https://klms.kaist.ac.kr/"}]},
-                day2: {date: "10/29", titles: ["Paper Seminar #3"], type: 1, notes: [
-                    {name: "Discussion Schedule", link: ""}
-                ], dues: []}
-            },
-            {
-                day1: {date: "11/3", titles: ["Project Progress Presentation"], type: 1, notes: [
-                    {name: "Presentation Schedule", link: ""}
-                ], dues: [
-                    {name: "Progress Presentation Slides due by 11/3 (Mon)", link: "https://klms.kaist.ac.kr/"},
-                    {name: "Audience Evaluation Form due by 11/4 (Tue)", link: "https://klms.kaist.ac.kr/"}
-                ]},
-                day2: {date: "11/5", titles: ["Project Feedback"], type: 1, notes: [], dues: [
-                    {name: "RR#4 due by 11/5 (Wed)", link: "https://klms.kaist.ac.kr/"},
-                    {name: "HW#4 due by 11/9 (Sun)", link: "https://klms.kaist.ac.kr/"}
-                ]}
-            },
-            {
-                day1: {date: "11/10", titles: ["Augmented Haptic Feedback"], type: 0, notes: [], dues: []},
-                day2: {date: "11/12", titles: ["Quantitative and Qualitative Study","Paper Seminar #4"], type: 1, notes: [], dues: [
-                    {name: "Progress Report due by 11/14 (Fri)", link: "https://klms.kaist.ac.kr/"},
-                    {name: "RR#5 due by 11/16 (Sun)", link: "https://klms.kaist.ac.kr/"}
-                ]}
-            },
-            {
-                day1: {date: "11/17", titles: ["Augmented Machine Learning for Augmented Humans"], type: 0, notes: [], dues: []},
-                day2: {date: "11/19", titles: ["Paper Seminar #5"], type: 1, notes: [], dues: []}
-            },
-            {
-                day1: {date: "11/24", titles: ["Augmented hearing, taste, and smell"], type: 0, notes: [
-                    {name: "HW#5 Handout (KLMS)", link: ""}
-                ], dues: [
-                    {name: "RR#6 due by 11/23 (Sun)", link: "https://klms.kaist.ac.kr/"}
-                ]},
-                day2: {date: "11/26", titles: ["Paper Seminar #6"], type: 1, notes: [], dues: []}
-            },
-            {
-                day1: {date: "12/1", titles: ["Augmented Humans Storytelling & Design Approaches"], type: 0, notes: [], dues: []},
-                day2: {date: "12/3", titles: ["Project Q&A and Preparation"], type: 1, notes: [], dues: [
-                    {name: "HW#5 due by 12/5 (Fri) 12pm", link: "https://klms.kaist.ac.kr/"}
-                ]}
-            },
-            {
-                day1: {date: "12/8", titles: ["Final Presentation"], type: 1, notes: [
-                    {name: "Presentation Schedule", link: ""}
-                ], dues: [
-                    {name: "Final Presentation Slides due by 12/8 (Mon)", link: "https://klms.kaist.ac.kr/"}
-                ]},
-                day2: {date: "12/10", titles: ["Final Presentation"], type: 1, notes: [
-                    {name: "Feedback Schedule", link: ""}
-                ], dues: [
-                    {name: "Audience Evaluation Form due by 12/10 (Wed)", link: "https://klms.kaist.ac.kr/"}
-                ]}
-            },
-            {
-                day1: {date: "12/15", titles: ["No class (Finals Week)"], type: 2, notes: [], dues: []},
-                day2: {date: "12/17", titles: ["No class (Finals Week)"], type: 2, notes: [], dues: [
-                    {name: "Final Report due by 12/16 (Tue)", link: "https://klms.kaist.ac.kr/"},
-                    {name: "Peer Evaluation due by 12/16 (Tue)", link: "https://klms.kaist.ac.kr/"}
-                ]}
+                title: "Game Haptic Experience",
+                members: "Johan Roennquist, Youngin Kim",
+                desc: "Abyssal Harvest: Multi-Spatial Haptic Feedback in VR Horror Gameplay",
+                videoLink: "https://www.youtube.com/embed/rCHQ8o04qgo",
+                recognition: "",
             }
-        ]
+        ],
+        schedule: []
     },
     {
         course_info: {
