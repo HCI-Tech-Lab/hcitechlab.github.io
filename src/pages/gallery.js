@@ -126,6 +126,27 @@ export default function Gallery() {
 }
 
 const galleries = {
+  "Aug, 2026 (BrainLink)": [
+    "img/Lab/2608/Brain1.jpg",
+    "img/Lab/2608/Brain2.jpg",
+    "img/Lab/2608/Brain3.jpg",
+    "img/Lab/2608/Brain4.jpg",
+    "img/Lab/2608/Brain5.jpg",
+    "img/Lab/2608/Brain6.jpg",
+    "img/Lab/2608/Brain7.jpg",
+    "img/Lab/2608/Brain8.jpg",
+  ],
+  "Jul, 2026 (KHC)": [
+    "img/Lab/2608/KHC1.jpg",
+    "img/Lab/2608/KHC2.jpg",
+    "img/Lab/2608/KHC3.jpg",
+    "img/Lab/2608/KHC4.jpg",
+    "img/Lab/2608/KHC5.jpg",
+  ],
+  "Jul, 2026 (Google)": [
+    "img/Lab/2607/GoogleAI1.jpg",
+    "img/Lab/2607/GoogleAI2.jpg",
+  ],
   "Jul, 2026 (YES)": [
     "img/Lab/2607/Yes1.jpg",
     "img/Lab/2607/Yes2.jpg",

@@ -3,6 +3,27 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "",
+        title: "KHC 2026 Participation",
+        date: "Aug 11 2026",
+        content: <div>Our lab participated in the 4th Korea Haptics Conference. HyungIl, Dongkyu, Soyeong, and KunWoo presented their works.</div>,
+        images: ["img/Lab/2608/KHC1.jpg"]
+    },
+    {
+        icon: "",
+        title: "BrainLink X-Lab Day",
+        date: "Aug 9 2026",
+        content: <div>Our lab successfully held BrainLink X-Lab Day on "Omnimodal AI-XR Convergence for Future Intelligent Spaces: Cognition, Empathy, and Augmented Interaction".</div>,
+        images: ["img/Lab/2608/Brain1.jpg"]
+    },
+    {
+        icon: "",
+        title: "Google-KAIST Research Meetup Participation",
+        date: "Jul 13 2026",
+        content: "Our lab participated in Google-KAIST Meetup (AI for People & Society). Youjin and Youngrae presented their works.",
+        images: []
+    },
+    {
+        icon: "",
         title: "Visit from Hyundai Motor Company",
         date: "Jul 2 2026",
         content: "Hyundai Motor Company (HMC) Research Team visited HCI Tech Lab for potential research collaboration.",
