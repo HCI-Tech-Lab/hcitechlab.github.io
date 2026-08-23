@@ -133,6 +133,12 @@ export const gct565_data = [
                 ]}
             },
             {
+                day1: {date: "11/30", titles: ["Augmented Humans Storytelling & Design Approaches"], type: 0, notes: [], dues: []},
+                day2: {date: "12/2", titles: ["Project Q&A and Preparation"], type: 1, notes: [], dues: [
+                    {name: "HW#5 due by ", link: "https://klms.kaist.ac.kr/"}
+                ]}
+            },
+            {
                 day1: {date: "12/7", titles: ["Final Presentation"], type: 1, notes: [
                     {name: "Presentation Schedule", link: ""}
                 ], dues: [
