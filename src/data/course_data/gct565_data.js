@@ -36,7 +36,7 @@ export const gct565_data = [
                 day2: {
                     date: "9/2", titles: ["Augmented Interfaces"], type: 0,
                     notes: [],
-                    dues: [{name: "HW#1 due by 9/4 (Fri) 12pm", link: "https://klms.kaist.ac.kr/"}],
+                    dues: [{name: "HW#1 due by 9/6 (Sun)", link: "https://klms.kaist.ac.kr/"}],
                 },
             },
             {
