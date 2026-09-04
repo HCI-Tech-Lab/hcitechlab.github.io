@@ -3,6 +3,13 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "",
+        title: "Graduate Students",
+        date: "Aug 31, 2026",
+        content: "Welcome our new Ph.D. students Kyoungwhan Mheen, Dohui Lee and MS students Yejin Jang!",
+        images: []
+    },
+    {
+        icon: "",
         title: "KHC 2026 Participation",
         date: "Aug 11 2026",
         content: <div>Our lab participated in the 4th Korea Haptics Conference. HyungIl, Dongkyu, Soyeong, and KunWoo presented their works.</div>,
