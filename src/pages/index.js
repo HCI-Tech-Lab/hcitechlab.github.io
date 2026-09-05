@@ -214,7 +214,7 @@ const NewsCard = () => {
               {newsItem.images && newsItem.images.length > 0 && (
                 <div className="d-flex gap-2 mt-auto">
                   {newsItem.images.slice(0, 2).map((src, i) => (
-                    <img 
+                    <img loading="lazy" decoding="async"
                       key={i} 
                       src={src} 
                       alt="news-thumb" 
@@ -299,7 +299,7 @@ const NewsCard = () => {
                     {selectedNews.images && selectedNews.images.length > 0 && (
                         <div className="d-flex flex-column gap-3 mt-4">
                             {selectedNews.images.map((src, i) => (
-                                <img 
+                                <img loading="lazy" decoding="async"
                                     key={i} 
                                     src={src} 
                                     alt="news-large" 

@@ -66,7 +66,7 @@ export default function News() {
                         style={{ cursor: 'pointer', transition: 'transform 0.2s ease, box-shadow 0.2s ease' }}
                     >
                         <div className="d-flex gap-2 mb-2 align-items-center">
-                            {item.icon && <img alt="icon" src={item.icon} width={20} height={20} style={{ objectFit: 'contain' }} />}
+                            {item.icon && <img loading="lazy" decoding="async" alt="icon" src={item.icon} width={20} height={20} style={{ objectFit: 'contain' }} />}
                             <span className="tag-badge" style={{ backgroundColor: getCategoryColor(item.category || "News") }}>
                                 {item.category || "News"}
                             </span>
@@ -84,7 +84,7 @@ export default function News() {
                         {item.images && item.images.length > 0 && (
                             <div className="d-flex gap-2 mt-auto">
                                 {item.images.slice(0, 2).map((src, i) => (
-                                 <img 
+                                 <img loading="lazy" decoding="async"
                                         key={i} 
                                         src={src} 
                                         alt="news-thumb" 
@@ -181,7 +181,7 @@ export default function News() {
 
                         {/* Badges inside the modal */}
                         <div className="d-flex gap-2 mb-3 align-items-center">
-                            {selectedNews.icon && <img alt="icon" src={selectedNews.icon} width={24} height={24} style={{ objectFit: 'contain' }} />}
+                            {selectedNews.icon && <img loading="lazy" decoding="async" alt="icon" src={selectedNews.icon} width={24} height={24} style={{ objectFit: 'contain' }} />}
                             <span className="tag-badge" style={{ backgroundColor: getCategoryColor(selectedNews.category || "News"), padding: '4px 10px', color: '#fff', borderRadius: '4px', fontSize: '0.85rem' }}>
                                 {selectedNews.category || "News"}
                             </span>
@@ -205,7 +205,7 @@ export default function News() {
                         {selectedNews.images && selectedNews.images.length > 0 && (
                             <div className="d-flex flex-column gap-3 mt-4">
                                 {selectedNews.images.map((src, i) => (
-                                    <img 
+                                    <img loading="lazy" decoding="async"
                                         key={i} 
                                         src={src} 
                                         alt="news-large" 

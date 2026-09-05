@@ -44,7 +44,7 @@ export default function Projects() {
                                 <div className="project-media">
                                     {/* Fallback empty tile if image is missing, otherwise shows image */}
                                     {project.image && (
-                                        <img 
+                                        <img loading="lazy" decoding="async"
                                             src={project.image} 
                                             alt={project.title}
                                         />

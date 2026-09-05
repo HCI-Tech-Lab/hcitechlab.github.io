@@ -15,7 +15,7 @@ export default function Team() {
                     <h1 className="section-title">Our Team</h1>
                 </div>
                 <div className="media-frame" style={{ maxWidth: "450px", margin: "0 auto" }}>
-                    <img className="img-fluid" src="./img/Lab/Group/2024_05_0.jpg" alt="HCI Tech Lab Group" style={{ width: "100%", height: "auto", display: "block" }} />
+                    <img loading="lazy" decoding="async" className="img-fluid" src="./img/Lab/Group/2024_05_0.jpg" alt="HCI Tech Lab Group" style={{ width: "100%", height: "auto", display: "block" }} />
                 </div>
                 <div className="mt-4">
                     <Link href="/gallery" className="section-link">

@@ -59,7 +59,7 @@ export default function Contact() {
             {/* Right: KAIST campus landscape */}
             <div className="col-lg-6">
               <div className="contact-photo media-frame">
-                <img src="./img/Other/kaist_campus.jpg" alt="KAIST campus, Daejeon" />
+                <img loading="lazy" decoding="async" src="./img/Other/kaist_campus.jpg" alt="KAIST campus, Daejeon" />
                 <span className="contact-mosaic-caption">KAIST </span>
               </div>
             </div>
