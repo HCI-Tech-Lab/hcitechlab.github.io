@@ -1217,3 +1217,33 @@ a.section-link:focus,
   color: #ffffff !important;
   box-shadow: 0 6px 16px rgba(18, 183, 106, 0.28);
 }
+/* --- Navbar fit: keep all menu items on one line at every width --- */
+.navbar .navbar-nav {
+  flex-wrap: nowrap;
+}
+
+.navbar .nav-link {
+  white-space: nowrap;
+}
+
+/* Mid-size desktops (1200-1399px): tighten type, padding and gaps so the
+   last menu item can never be cut off by the viewport edge. */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  nav.navbar {
+    font-size: 15px;
+  }
+  .navbar .navbar-nav {
+    gap: 0.3rem !important;
+  }
+  .navbar .nav-link {
+    padding: 8px 9px;
+  }
+  .navbar .nav-link.active::after {
+    left: 9px;
+    right: 9px;
+  }
+  .navbar-brand img.d-none {
+    width: 190px;
+    height: auto;
+  }
+}

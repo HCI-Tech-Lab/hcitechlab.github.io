@@ -36,7 +36,7 @@ const NavBar = () => {
         currentPath === itemPath || currentPath.startsWith(itemPath + '/');
 
     return (
-        <nav className = "navbar navbar-expand-lg navbar-light px-3 fixed-top bg-white shadow-sm">
+        <nav className = "navbar navbar-expand-xl navbar-light px-3 fixed-top bg-white shadow-sm">
 
         <div className = "container">
                 
@@ -50,7 +50,7 @@ const NavBar = () => {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarResponsive">
-                   <ul className="navbar-nav gap-3" style={{ marginLeft: '4rem' }}>
+                   <ul className="navbar-nav ms-auto gap-3">
                     {[
                         { path: '/news', label: 'NEWS' },
                         { path: '/team', label: 'TEAM' },
