@@ -20,8 +20,8 @@ export const gct565_data = [
             //{date: "11/25", content: "Final Presentation on 12/9 will be held in N5 #2332."},
             //{date: "10/3", content: "Course schedule has been updated"},
             //{date: "9/30", content: "Project Proposal Presentation"},
-            //{date: "9/13", content: "Team Project Announcement"},
-            //{date: "9/6", content: "Paper Seminar Group & Schedule Announcement"},
+            {date: "9/14", content: "Team Project Announcement"},
+            {date: "9/14", content: "Paper Seminar Group & Schedule Announcement"},
             {date: "8/31", content: "Class Starts!"},
             {date: "8/23", content: "Course website has been updated"},
         ],
@@ -66,7 +66,7 @@ export const gct565_data = [
             },
             {
                 day1: {date: "9/21", titles: ["Paper Seminar #1","Project Proposal Q&A"], type: 1, notes: [], 
-                       dues: [{name: "HW#2 due by 9/20 (Sun) 11:59pm", link: "https://klms.kaist.ac.kr/"}]},
+                       dues: [{name: "HW#2 due by 9/21 (Mon) 11:59pm", link: "https://klms.kaist.ac.kr/"}]},
                 day2: {date: "9/23", titles: ["Project Proposal Presentation"], type: 1, notes: [], dues: [{name: "Proposal Presentation Slides due by 9/23 (Wed)", link: "https://klms.kaist.ac.kr/"}]}
             },
             {
