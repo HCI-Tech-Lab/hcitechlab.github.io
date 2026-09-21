@@ -1247,3 +1247,42 @@ a.section-link:focus,
     height: auto;
   }
 }
+
+/* --- Hero carousel caption overlay --- */
+.hero-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 48px 22px 34px;   /* bottom padding keeps it clear of the progress bar */
+  text-align: right;
+  color: #ffffff;
+  /* soft scrim so white text stays legible on any photo */
+  background: linear-gradient(to top, rgba(8, 16, 32, 0.62), rgba(8, 16, 32, 0));
+  pointer-events: none;
+}
+
+.hero-caption-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.15rem, 2.1vw, 1.75rem);
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.hero-caption-sub {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  margin-top: 2px;
+  opacity: 0.95;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 575.98px) {
+  .hero-caption {
+    padding: 36px 14px 30px;
+  }
+}
