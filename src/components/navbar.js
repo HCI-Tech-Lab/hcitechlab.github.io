@@ -1,9 +1,48 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState, useRef } from 'react';
+
+// Top menu. An item with `children` renders as a dropdown.
+const MENU = [
+    { path: '/team', label: 'TEAM' },
+    { path: '/publications', label: 'PUBLICATIONS' },
+    {
+        label: 'RESEARCH',
+        children: [
+            { path: '/research-overview', label: 'Overview' },
+            { path: '/research-highlights', label: 'Highlights' },
+            { path: '/projects', label: 'Projects' },
+        ],
+    },
+    {
+        label: 'STORIES',
+        children: [
+            { path: '/news', label: 'News' },
+            { path: '/gallery', label: 'Gallery' },
+        ],
+    },
+    { path: '/courses', label: 'COURSES' },
+    { path: '/contact', label: 'CONTACT' },
+];
 
 const NavBar = () => {
     const router = useRouter();
+    const [openMenu, setOpenMenu] = useState(null); // label of the open dropdown, if any
+    const navRef = useRef(null);
+
+    // Close any open dropdown on navigation or when clicking outside the navbar
+    useEffect(() => {
+        const close = () => setOpenMenu(null);
+        const onDocClick = (e) => {
+            if (navRef.current && !navRef.current.contains(e.target)) close();
+        };
+        router.events.on('routeChangeStart', close);
+        document.addEventListener('click', onDocClick);
+        return () => {
+            router.events.off('routeChangeStart', close);
+            document.removeEventListener('click', onDocClick);
+        };
+    }, [router.events]);
 
     // Close the mobile collapse menu whenever the user navigates to a new page.
     // Next.js does client-side navigation (no reload), so Bootstrap's menu
@@ -36,7 +75,7 @@ const NavBar = () => {
         currentPath === itemPath || currentPath.startsWith(itemPath + '/');
 
     return (
-        <nav className = "navbar navbar-expand-xl navbar-light px-3 fixed-top bg-white shadow-sm">
+        <nav ref={navRef} className = "navbar navbar-expand-xl navbar-light px-3 fixed-top bg-white shadow-sm">
 
         <div className = "container">
                 
@@ -51,17 +90,43 @@ const NavBar = () => {
 
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                    <ul className="navbar-nav ms-auto gap-3">
-                    {[
-                        { path: '/news', label: 'NEWS' },
-                        { path: '/team', label: 'TEAM' },
-                        { path: '/publications', label: 'PUBLICATIONS' },
-                        { path: '/projects', label: 'PROJECTS' },
-                        { path: '/courses', label: 'COURSES' },
-                        { path: '/gallery', label: 'GALLERY' },
-                        { path: '/contact', label: 'CONTACT' },
-                    ].map((item) => (
-                    <li className="nav-item" key = {item.path}> <Link href={item.path} className={`nav-link ${isActive(item.path) ? "active" : ""}`}> {item.label} </Link> </li>
-                    ))}
+                    {MENU.map((item) => {
+                        // Dropdown item (e.g. RESEARCH > Overview / Projects)
+                        if (item.children) {
+                            const isOpen = openMenu === item.label;
+                            const parentActive = item.children.some((c) => isActive(c.path));
+                            return (
+                                <li className={`nav-item nav-dropdown ${isOpen ? 'open' : ''}`} key={item.label}>
+                                    <button
+                                        type="button"
+                                        className={`nav-link nav-dropdown-toggle ${parentActive ? 'active' : ''}`}
+                                        aria-expanded={isOpen}
+                                        aria-haspopup="true"
+                                        onClick={() => setOpenMenu(isOpen ? null : item.label)}
+                                    >
+                                        {item.label} <i className="bi bi-chevron-down" aria-hidden="true" />
+                                    </button>
+                                    <ul className="nav-dropdown-menu">
+                                        {item.children.map((child) => (
+                                            <li key={child.path}>
+                                                <Link
+                                                    href={child.path}
+                                                    className={`nav-dropdown-item ${isActive(child.path) ? 'current' : ''}`}
+                                                >
+                                                    {child.label}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            );
+                        }
+                        return (
+                            <li className="nav-item" key={item.path}>
+                                <Link href={item.path} className={`nav-link ${isActive(item.path) ? "active" : ""}`}>{item.label}</Link>
+                            </li>
+                        );
+                    })}
                     </ul>
                 </div>
             </div>

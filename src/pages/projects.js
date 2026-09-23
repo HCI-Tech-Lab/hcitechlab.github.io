@@ -1,115 +1,109 @@
 // src/pages/projects.js
 
 import { useState } from 'react';
-import SectionContainer from '@/components/section_container';
+import ResearchHeader from '@/components/research_header';
 import { projectsData } from '@/data/projects_data';
+
+const ProjectCard = ({ project, number, variant }) => (
+    <div className={`project-tile ${variant === 'Researcher' ? 'is-green' : ''}`}>
+        <div className="project-tile-media">
+            {project.image ? (
+                <img loading="lazy" decoding="async" src={project.image} alt={project.title} />
+            ) : (
+                <i className="bi bi-image" aria-hidden="true" />
+            )}
+        </div>
+
+        <div className="project-tile-body">
+            <div className="mb-2">
+                <span
+                    className="tag-badge"
+                    style={{
+                        backgroundColor:
+                            project.status === 'Ongoing'
+                                ? (variant === 'Researcher' ? '#0A7D4D' : '#1260de')
+                                : '#98A2B3',
+                    }}
+                >
+                    {project.status}
+                </span>
+            </div>
+
+            <h3 className="project-tile-title">
+                {number}. {project.title}
+            </h3>
+
+            <dl className="project-meta">
+                {project.agency && (<><dt className="project-label">Agency</dt><dd>{project.agency}</dd></>)}
+                {project.program && (<><dt className="project-label">Program</dt><dd>{project.program}</dd></>)}
+                {project.researcher && (<><dt className="project-label">Researcher</dt><dd>{project.researcher}</dd></>)}
+                {project.period && (<><dt className="project-label">Period</dt><dd>{project.period}</dd></>)}
+                {project.role && (<><dt className="project-label">Role</dt><dd>{project.role}</dd></>)}
+                {project.field && (<><dt className="project-label">Field</dt><dd>{project.field}</dd></>)}
+            </dl>
+
+            {project.description && <p className="project-tile-desc">{project.description}</p>}
+        </div>
+    </div>
+);
+
+const ProjectGroup = ({ title, projects, variant }) => {
+    if (projects.length === 0) return null;
+    return (
+        <section className="mb-5">
+            <h2 className={`project-group-title ${variant === 'Researcher' ? 'is-green' : ''}`}>{title}</h2>
+            {/* 2 per row on desktop (lg+), 1 per row below */}
+            <div className="row g-4">
+                {projects.map((project, i) => (
+                    <div className="col-12 col-lg-6" key={`${project.title}-${i}`}>
+                        <ProjectCard project={project} number={i + 1} variant={variant} />
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+};
 
 export default function Projects() {
     const [category, setCategory] = useState('Lab'); // Default to Lab Projects
 
-    // Filter by project category (entries without a type default to Lab)
-    const filteredProjects = projectsData.filter(project => (project.type || 'Lab') === category);
+    // Entries without a type default to Lab
+    const inCategory = projectsData.filter((p) => (p.type || 'Lab') === category);
+    const ongoing = inCategory.filter((p) => p.status === 'Ongoing');
+    const completed = inCategory.filter((p) => p.status !== 'Ongoing');
 
     return (
-        <SectionContainer>
-            {/* Header Section */}
-            <div className="mb-4">
-                <span className="section-eyebrow">Funded research</span>
-                <h2 className="section-title">Research Projects</h2>
-            </div>
+        <>
+            <ResearchHeader current="projects" />
 
-            {/* Category Tabs: Lab (blue) / Researcher (green) */}
-            <div className="d-flex flex-wrap gap-2 mb-5">
-                <button
-                    onClick={() => setCategory('Lab')}
-                    className={`filter-pill ${category === 'Lab' ? 'active' : ''}`}
-                >
-                    Lab Projects
-                </button>
-                <button
-                    onClick={() => setCategory('Researcher')}
-                    className={`filter-pill pill-green ${category === 'Researcher' ? 'active' : ''}`}
-                >
-                    Researcher Projects
-                </button>
-            </div>
+            <div className="container pb-5">
+                {/* Category Tabs: Lab (blue) / Researcher (green) */}
+                <div className="d-flex flex-wrap gap-2 mb-5">
+                    <button
+                        onClick={() => setCategory('Lab')}
+                        className={`filter-pill ${category === 'Lab' ? 'active' : ''}`}
+                    >
+                        Lab Projects
+                    </button>
+                    <button
+                        onClick={() => setCategory('Researcher')}
+                        className={`filter-pill pill-green ${category === 'Researcher' ? 'active' : ''}`}
+                    >
+                        Researcher Projects
+                    </button>
+                </div>
 
-            {/* Projects List */}
-            <div className="row">
-                {filteredProjects.map((project) => (
-                    <div className="col-12 mb-4" key={project.id}>
-                        <div className="project-card">
-                        <div className="row align-items-center">
-                            <div className="col-md-5 mb-4 mb-md-0">
-                                <div className="project-media">
-                                    {/* Fallback empty tile if image is missing, otherwise shows image */}
-                                    {project.image && (
-                                        <img loading="lazy" decoding="async"
-                                            src={project.image} 
-                                            alt={project.title}
-                                        />
-                                    )}
-                                </div>
-                            </div>
+                <ProjectGroup title="Ongoing projects" projects={ongoing} variant={category} />
+                <ProjectGroup title="Completed projects" projects={completed} variant={category} />
 
-                            <div className="col-md-7 ps-md-4">
-                                <div className="d-flex gap-2 mb-2 align-items-center">
-                                    <span className="tag-badge" style={{ backgroundColor: '#0B2A6B' }}>
-                                        {project.field}
-                                    </span>
-                                    <span className="tag-badge" style={{ backgroundColor: project.status === 'Ongoing' ? ((project.type || 'Lab') === 'Researcher' ? '#0A7D4D' : '#1260de') : '#98A2B3' }}>
-                                        {project.status}
-                                    </span>
-                                </div>
-
-                                <h4 style={{ fontWeight: 'bold', marginBottom: '15px', lineHeight: '1.4' }}>
-                                    {project.title}
-                                </h4>
-
-                                <table style={{ width: '100%', fontSize: '0.9rem', color: '#555', marginBottom: '15px' }}>
-                                    <tbody>
-                                        {project.agency && (
-                                            <tr>
-                                                <td className="project-label" style={{ width: '90px', paddingBottom: '8px' }}>Agency</td>
-                                                <td style={{ paddingBottom: '8px' }}>{project.agency}</td>
-                                            </tr>
-                                        )}
-                                        {project.researcher && (
-                                            <tr>
-                                                <td className="project-label" style={{ width: '90px', paddingBottom: '8px' }}>Researcher</td>
-                                                <td style={{ paddingBottom: '8px' }}>{project.researcher}</td>
-                                            </tr>
-                                        )}
-                                        <tr>
-                                            <td className="project-label" style={{ paddingBottom: '8px' }}>Period</td>
-                                            <td style={{ paddingBottom: '8px' }}>{project.period}</td>
-                                        </tr>
-                                        {project.role && (
-                                            <tr>
-                                                <td className="project-label" style={{ paddingBottom: '8px' }}>Role</td>
-                                                <td style={{ paddingBottom: '8px' }}>{project.role}</td>
-                                            </tr>
-                                        )}
-                                    </tbody>
-                                </table>
-
-                                <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: '1.6', margin: 0 }}>
-                                    {project.description}
-                                </p>
-                            </div>
-
-                        </div>
-                        </div>
-                    </div>
-                ))}
-                
-                {/* Fallback if no projects match the filter */}
-                {filteredProjects.length === 0 && (
-                    <div className="col-12 text-center py-5">
-                        <p style={{ color: '#888' }}>No {category === 'Lab' ? 'lab' : 'researcher'} projects listed yet.</p>
+                {inCategory.length === 0 && (
+                    <div className="text-center py-5">
+                        <p style={{ color: '#888' }}>
+                            No {category === 'Lab' ? 'lab' : 'researcher'} projects listed yet.
+                        </p>
                     </div>
                 )}
             </div>
-        </SectionContainer>
+        </>
     );
 }
