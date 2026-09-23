@@ -7,17 +7,22 @@ import ResearchHeader from '@/components/research_header';
  *    (PowerPoint: File > Export > JPEG; it names them Slide1.jpg, Slide2.jpg, ...)
  * 2. Put the images in:  public/overview_slides/
  * 3. Set SLIDE_COUNT below to the number of slides.
- * File names are case-sensitive on GitHub Pages (Slide1.jpg is not Slide1.JPG).
+ * File names are case-sensitive on GitHub Pages, but if the extension case
+ * doesn't match, the viewer automatically retries the other case (.PNG/.png).
  */
-const SLIDE_COUNT = 9;
+const SLIDE_COUNT = 12;
 const SLIDE_DIR = '/overview_slides';
 const SLIDE_EXT = 'PNG';
 
-const slides = Array.from({ length: SLIDE_COUNT }, (_, i) => `${SLIDE_DIR}/Slide${i + 1}.${SLIDE_EXT}`);
+// GitHub Pages is case-sensitive, so if Slide1.PNG is missing we retry Slide1.png
+const ALT_EXT = SLIDE_EXT === SLIDE_EXT.toLowerCase() ? SLIDE_EXT.toUpperCase() : SLIDE_EXT.toLowerCase();
+const slidePath = (i, useAlt) => `${SLIDE_DIR}/Slide${i + 1}.${useAlt ? ALT_EXT : SLIDE_EXT}`;
+const slides = Array.from({ length: SLIDE_COUNT }, (_, i) => slidePath(i, false));
 
 export default function ResearchOverview() {
   const [current, setCurrent] = useState(0);
   const [broken, setBroken] = useState({});
+  const [altCase, setAltCase] = useState({}); // slides whose file uses the other extension case
   const [isFullscreen, setIsFullscreen] = useState(false);
   const stageRef = useRef(null);
   const thumbsRef = useRef(null);
@@ -80,7 +85,12 @@ export default function ResearchOverview() {
     touchX.current = null;
   };
 
-  const markBroken = (i) => setBroken((b) => ({ ...b, [i]: true }));
+  // First failure: retry with the other extension case. Second failure: show placeholder.
+  const handleError = (i) => {
+    if (!altCase[i]) setAltCase((a) => ({ ...a, [i]: true }));
+    else setBroken((b) => ({ ...b, [i]: true }));
+  };
+  const srcFor = (i) => slidePath(i, Boolean(altCase[i]));
 
   return (
     <>
@@ -109,10 +119,10 @@ export default function ResearchOverview() {
               </div>
             ) : (
               <img
-                key={current}
-                src={slides[current]}
+                key={`${current}-${altCase[current] ? 'alt' : 'std'}`}
+                src={srcFor(current)}
                 alt={`Lab overview slide ${current + 1} of ${count}`}
-                onError={() => markBroken(current)}
+                onError={() => handleError(current)}
               />
             )}
 
@@ -147,7 +157,7 @@ export default function ResearchOverview() {
                 {broken[i] ? (
                   <span className="deck-thumb-num">{i + 1}</span>
                 ) : (
-                  <img src={src} alt="" loading="lazy" decoding="async" onError={() => markBroken(i)} />
+                  <img src={srcFor(i)} alt="" loading="lazy" decoding="async" onError={() => handleError(i)} />
                 )}
               </button>
             ))}
