@@ -12,7 +12,7 @@ import ResearchHeader from '@/components/research_header';
  */
 const SLIDE_COUNT = 9;
 const SLIDE_DIR = '/overview_slides';
-const SLIDE_EXT = 'PNG';
+const SLIDE_EXT = 'webp';
 
 // GitHub Pages is case-sensitive, so if Slide1.PNG is missing we retry Slide1.png
 const ALT_EXT = SLIDE_EXT === SLIDE_EXT.toLowerCase() ? SLIDE_EXT.toUpperCase() : SLIDE_EXT.toLowerCase();
