@@ -11,7 +11,7 @@ import ResearchHeader from '@/components/research_header';
  */
 const SLIDE_COUNT = 9;
 const SLIDE_DIR = '/overview_slides';
-const SLIDE_EXT = 'png';
+const SLIDE_EXT = 'PNG';
 
 const slides = Array.from({ length: SLIDE_COUNT }, (_, i) => `${SLIDE_DIR}/Slide${i + 1}.${SLIDE_EXT}`);
 
