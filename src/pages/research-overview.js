@@ -1,16 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import ResearchHeader from '@/components/research_header';
 
-/*
- * HOW TO UPDATE THE SLIDES
- * 1. Export your lab overview presentation as images
- *    (PowerPoint: File > Export > JPEG; it names them Slide1.jpg, Slide2.jpg, ...)
- * 2. Put the images in:  public/overview_slides/
- * 3. Set SLIDE_COUNT below to the number of slides.
- * File names are case-sensitive on GitHub Pages, but if the extension case
- * doesn't match, the viewer automatically retries the other case (.PNG/.png).
- */
-const SLIDE_COUNT = 12;
+
+const SLIDE_COUNT = 8;
 const SLIDE_DIR = '/overview_slides';
 const SLIDE_EXT = 'webp';
 
