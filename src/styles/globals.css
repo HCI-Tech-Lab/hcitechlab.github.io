@@ -1745,3 +1745,52 @@ a.section-link:focus,
     transform: none;
   }
 }
+
+/* Full-screen fallback for iOS Safari / Chrome on iOS, which have no
+   element Fullscreen API. Mimics fullscreen with fixed positioning. */
+.deck-stage.is-pseudo-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100dvh; /* accounts for the browser's dynamic toolbars */
+  max-height: 100dvh;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: #000;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+}
+
+.deck-stage.is-pseudo-fullscreen img {
+  background: #000;
+}
+
+/* Exit button, shown in either fullscreen mode */
+.deck-close {
+  position: absolute;
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  left: calc(14px + env(safe-area-inset-left, 0px));
+  z-index: 3;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0B2A6B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(16, 24, 40, 0.15);
+  cursor: pointer;
+}
+
+.deck-close:hover {
+  background: #1260de;
+  color: #ffffff;
+}
+
+.deck-stage:fullscreen .deck-close,
+.deck-stage.is-pseudo-fullscreen .deck-close {
+  display: flex;
+}

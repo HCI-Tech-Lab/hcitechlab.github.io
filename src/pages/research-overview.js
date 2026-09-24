@@ -10,7 +10,7 @@ import ResearchHeader from '@/components/research_header';
  * File names are case-sensitive on GitHub Pages, but if the extension case
  * doesn't match, the viewer automatically retries the other case (.PNG/.png).
  */
-const SLIDE_COUNT = 8;
+const SLIDE_COUNT = 12;
 const SLIDE_DIR = '/overview_slides';
 const SLIDE_EXT = 'webp';
 
@@ -23,7 +23,8 @@ export default function ResearchOverview() {
   const [current, setCurrent] = useState(0);
   const [broken, setBroken] = useState({});
   const [altCase, setAltCase] = useState({}); // slides whose file uses the other extension case
-  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);   // native fullscreen (desktop, Android)
+  const [pseudoFull, setPseudoFull] = useState(false);       // CSS fallback (iOS Safari/Chrome)
   const stageRef = useRef(null);
   const thumbsRef = useRef(null);
   const touchX = useRef(null);
@@ -64,16 +65,61 @@ export default function ResearchOverview() {
     });
   }, [current]);
 
-  // Track fullscreen state
+  // Track native fullscreen state (webkit prefix covers older Safari on macOS)
   useEffect(() => {
-    const onChange = () => setIsFullscreen(Boolean(document.fullscreenElement));
+    const onChange = () =>
+      setIsFullscreen(Boolean(document.fullscreenElement || document.webkitFullscreenElement));
     document.addEventListener('fullscreenchange', onChange);
-    return () => document.removeEventListener('fullscreenchange', onChange);
+    document.addEventListener('webkitfullscreenchange', onChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onChange);
+      document.removeEventListener('webkitfullscreenchange', onChange);
+    };
   }, []);
 
+  // While in the CSS fallback, lock page scroll and let Esc close it
+  useEffect(() => {
+    if (!pseudoFull) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e) => { if (e.key === 'Escape') setPseudoFull(false); };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [pseudoFull]);
+
+  const expanded = isFullscreen || pseudoFull;
+
   const toggleFullscreen = () => {
-    if (document.fullscreenElement) document.exitFullscreen();
-    else if (stageRef.current && stageRef.current.requestFullscreen) stageRef.current.requestFullscreen();
+    const el = stageRef.current;
+    const doc = document;
+
+    // Already expanded: leave whichever mode we are in
+    if (doc.fullscreenElement || doc.webkitFullscreenElement) {
+      (doc.exitFullscreen || doc.webkitExitFullscreen).call(doc);
+      return;
+    }
+    if (pseudoFull) {
+      setPseudoFull(false);
+      return;
+    }
+
+    // iOS Safari / Chrome on iOS have no element fullscreen, so fall back to CSS
+    const request = el && (el.requestFullscreen || el.webkitRequestFullscreen);
+    if (!request) {
+      setPseudoFull(true);
+      return;
+    }
+    Promise.resolve(request.call(el))
+      .then(() => {
+        // Landscape is a much better fit for 16:9 slides on phones (Android only)
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock('landscape').catch(() => {});
+        }
+      })
+      .catch(() => setPseudoFull(true));
   };
 
   // Touch swipe on mobile
@@ -107,7 +153,7 @@ export default function ResearchOverview() {
           {/* Main stage */}
           <div
             ref={stageRef}
-            className="deck-stage"
+            className={`deck-stage ${pseudoFull ? 'is-pseudo-fullscreen' : ''}`}
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
           >
@@ -135,12 +181,18 @@ export default function ResearchOverview() {
 
             <div className="deck-counter">{current + 1} / {count}</div>
 
+            {expanded && (
+              <button className="deck-close" onClick={toggleFullscreen} aria-label="Exit full screen">
+                <i className="bi bi-x-lg" />
+              </button>
+            )}
+
             <button
               className="deck-fullscreen"
               onClick={toggleFullscreen}
-              aria-label={isFullscreen ? 'Exit full screen' : 'Full screen'}
+              aria-label={expanded ? 'Exit full screen' : 'Full screen'}
             >
-              <i className={`bi ${isFullscreen ? 'bi-fullscreen-exit' : 'bi-arrows-fullscreen'}`} />
+              <i className={`bi ${expanded ? 'bi-fullscreen-exit' : 'bi-arrows-fullscreen'}`} />
             </button>
           </div>
 
