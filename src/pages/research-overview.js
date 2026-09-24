@@ -10,7 +10,7 @@ import ResearchHeader from '@/components/research_header';
  * File names are case-sensitive on GitHub Pages, but if the extension case
  * doesn't match, the viewer automatically retries the other case (.PNG/.png).
  */
-const SLIDE_COUNT = 9;
+const SLIDE_COUNT = 8;
 const SLIDE_DIR = '/overview_slides';
 const SLIDE_EXT = 'webp';
 
