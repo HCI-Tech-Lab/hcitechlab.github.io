@@ -2,7 +2,7 @@ export const research_temp = {
     "2026":[
         {
             poster: "research/2026/UIST/gazetune.png",
-            demo: "",
+            demo: "research/2026/UIST/GazeTune.mp4",
             title: "GazeTune: Facilitating Precise Gaze-Driven Interactions with Cascaded Touch Input",
             authors: "Jina Kim, Eric J Gonzalez, Yang Zhang, Sang Ho Yoon",
             status: "",
@@ -16,11 +16,13 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight:true,
+            play: true,
+            playOrder: 6,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
             poster: "research/2026/UIST/dobi.png",
-            demo: "",
+            demo: "research/2026/UIST/Dobi.mp4",
             title: "DOBI: Dynamic Opportunistic Body Input via Spare Joint Recruitment for Hands-Free XR",
             authors: "Rachel Kim, Xun Qian*, Sang Ho Yoon*",
             status: "",
@@ -51,7 +53,7 @@ export const research_temp = {
             pdf: "https://arxiv.org/pdf/2609.00500",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -141,7 +143,7 @@ export const research_temp = {
             pdf: "",
             presentation: "",
             media: "",
-            highlight: false,
+            highlight: true,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -226,7 +228,7 @@ export const research_temp = {
             conferenceLink: "https://chi2026.acm.org/",
             award: "",
             website: "https://hoicraft.hcitech.org/",
-            doi: "https://arxiv.org/abs/2602.08219",
+            doi: "https://doi.org/10.1145/3772318.3790823",
             video: "https://www.youtube.com/watch?v=-QvYgTRsOgI",
             pdf: "",
             presentation: "",
@@ -244,7 +246,7 @@ export const research_temp = {
             conferenceLink: "https://chi2026.acm.org/",
             award: "",
             website: "https://ftv.hcitech.org",
-            doi: "https://arxiv.org/abs/2602.08201",
+            doi: "https://doi.org/10.1145/3772318.3790557",
             video: "https://www.youtube.com/watch?v=v2W-RMr8XpU",
             pdf: "",
             presentation: "",
@@ -655,6 +657,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 7,
             category: "Conference / Journal (peer-reviewed)"
         },
         {
@@ -805,6 +809,8 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: true,
+            play: true,
+            playOrder: 8,
             category: "Conference / Journal (peer-reviewed)"
         },
         {

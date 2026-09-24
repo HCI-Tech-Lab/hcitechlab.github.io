@@ -5,38 +5,218 @@ import { useState, useRef, useEffect } from 'react';
 import { research_temp } from '@/data/research_data';
 
 // --- UPDATED COMPONENT: Selected Video Carousel ---
+// Short labels for the playlist: "HapticGen: Generative..." -> "HapticGen",
+// "IEEE Transactions ... (TVCG/ISMAR2025)" -> "TVCG/ISMAR2025"
+const shortTitle = (t = '') => (t.includes(':') ? t.split(':')[0].trim() : t);
+const shortVenue = (v = '') => {
+  const m = v.match(/\(([^)]+)\)\s*$/);
+  return m ? m[1] : v;
+};
+
+// m:ss for the timeline tooltip
+const fmtTime = (t) => {
+  if (!Number.isFinite(t) || t < 0) return '0:00';
+  const m = Math.floor(t / 60);
+  const sec = Math.floor(t % 60);
+  return `${m}:${sec.toString().padStart(2, '0')}`;
+};
+
+// Selected Publication: video player + full playlist of every highlight video
 const SelectedCarousel = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(0);      // 0-100
+  const [duration, setDuration] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [muted, setMuted] = useState(true);         // muted by default so autoplay is allowed
+  const [hover, setHover] = useState(null);         // { x, f, t } while hovering the timeline
+  const [scrubbing, setScrubbing] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false); // native fullscreen
+  const [pseudoFull, setPseudoFull] = useState(false);     // CSS fallback
   const videoRef = useRef(null);
+  const playerRef = useRef(null);
+  const barRef = useRef(null);
 
+  const expanded = isFullscreen || pseudoFull;
+
+  // ---------- playback ----------
   const handleVideoEnd = () => {
     setActiveIndex((prev) => (prev + 1) % items.length);
     setProgress(0);
   };
 
   const handleTimeUpdate = () => {
-    if (videoRef.current) {
-      const duration = videoRef.current.duration;
-      const currentTime = videoRef.current.currentTime;
-      if (duration > 0) {
-        setProgress((currentTime / duration) * 100);
-      }
-    }
+    const v = videoRef.current;
+    if (!scrubbing && v && v.duration > 0) setProgress((v.currentTime / v.duration) * 100);
   };
 
   const handleJumpTo = (index) => {
     setActiveIndex(index);
     setProgress(0);
+    setPaused(false);
+  };
+
+  const togglePlay = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) { v.play().catch(() => {}); setPaused(false); }
+    else { v.pause(); setPaused(true); }
   };
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.play().catch(e => console.log("Autoplay prevented:", e));
+    const v = videoRef.current;
+    setDuration(0);
+    if (v) {
+      v.currentTime = 0;
+      v.play().catch(() => {});
     }
     setProgress(0);
   }, [activeIndex]);
+
+  // React's `muted` prop doesn't update reliably after mount, so set it directly
+  useEffect(() => {
+    if (videoRef.current) videoRef.current.muted = muted;
+  }, [muted, activeIndex]);
+
+  // ---------- timeline: hover preview, click to seek, drag to scrub ----------
+  const posAt = (clientX) => {
+    const bar = barRef.current;
+    if (!bar) return null;
+    const r = bar.getBoundingClientRect();
+    const f = Math.min(Math.max((clientX - r.left) / r.width, 0), 1);
+    return { f, x: f * r.width, width: r.width, t: f * (duration || 0) };
+  };
+
+  const seekTo = (pos) => {
+    const v = videoRef.current;
+    if (!v || !pos || !(v.duration > 0)) return;
+    v.currentTime = pos.f * v.duration;
+    setProgress(pos.f * 100);
+  };
+
+  const onBarPointerDown = (e) => {
+    e.preventDefault();
+    e.currentTarget.setPointerCapture && e.currentTarget.setPointerCapture(e.pointerId);
+    setScrubbing(true);
+    const pos = posAt(e.clientX);
+    setHover(pos);
+    seekTo(pos);
+  };
+
+  const onBarPointerMove = (e) => {
+    const pos = posAt(e.clientX);
+    setHover(pos);
+    if (scrubbing) seekTo(pos);
+  };
+
+  const endScrub = (e) => {
+    if (!scrubbing) return;
+    e.currentTarget.releasePointerCapture && e.currentTarget.releasePointerCapture(e.pointerId);
+    setScrubbing(false);
+    if (e.pointerType !== 'mouse') setHover(null); // touch: hide tooltip after release
+  };
+
+  const onBarKeyDown = (e) => {
+    const v = videoRef.current;
+    if (!v || !(v.duration > 0)) return;
+    if (e.key === 'ArrowRight') { v.currentTime = Math.min(v.duration, v.currentTime + 5); e.preventDefault(); }
+    if (e.key === 'ArrowLeft') { v.currentTime = Math.max(0, v.currentTime - 5); e.preventDefault(); }
+  };
+
+  // ---------- fullscreen: desktop, Android, iPad, iPhone ----------
+  useEffect(() => {
+    const onChange = () => {
+      const el = document.fullscreenElement || document.webkitFullscreenElement;
+      setIsFullscreen(Boolean(el && playerRef.current && el === playerRef.current));
+    };
+    document.addEventListener('fullscreenchange', onChange);
+    document.addEventListener('webkitfullscreenchange', onChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onChange);
+      document.removeEventListener('webkitfullscreenchange', onChange);
+    };
+  }, []);
+
+  // iPhone: the native video player reports its own enter/exit events
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const onBegin = () => setIsFullscreen(true);
+    const onEnd = () => {
+      setIsFullscreen(false);
+      // iOS pauses the video when leaving its player; keep our button in sync
+      setPaused(v.paused);
+    };
+    v.addEventListener('webkitbeginfullscreen', onBegin);
+    v.addEventListener('webkitendfullscreen', onEnd);
+    return () => {
+      v.removeEventListener('webkitbeginfullscreen', onBegin);
+      v.removeEventListener('webkitendfullscreen', onEnd);
+    };
+  }, []);
+
+  // CSS fallback: lock page scroll while expanded
+  useEffect(() => {
+    if (!pseudoFull) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prev; };
+  }, [pseudoFull]);
+
+  // Keyboard shortcuts while expanded: Space play/pause, arrows seek, Esc exits fallback
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e) => {
+      const v = videoRef.current;
+      if (e.key === 'Escape' && pseudoFull) setPseudoFull(false);
+      if (!v) return;
+      if (e.key === ' ' || e.key === 'k') { e.preventDefault(); togglePlay(); }
+      if (e.key === 'ArrowRight' && v.duration > 0) v.currentTime = Math.min(v.duration, v.currentTime + 5);
+      if (e.key === 'ArrowLeft') v.currentTime = Math.max(0, v.currentTime - 5);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [expanded, pseudoFull]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const toggleFullscreen = () => {
+    const doc = document;
+    const el = playerRef.current;
+    const v = videoRef.current;
+
+    if (doc.fullscreenElement || doc.webkitFullscreenElement) {
+      (doc.exitFullscreen || doc.webkitExitFullscreen).call(doc);
+      return;
+    }
+    if (pseudoFull) {
+      setPseudoFull(false);
+      return;
+    }
+
+    // 1) Desktop, Android, iPad: fullscreen the whole player (keeps our overlay + playlist-driven controls)
+    const request = el && (el.requestFullscreen || el.webkitRequestFullscreen);
+    if (request) {
+      Promise.resolve(request.call(el))
+        .then(() => {
+          if (screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock('landscape').catch(() => {});
+          }
+        })
+        .catch(() => setPseudoFull(true));
+      return;
+    }
+
+    // 2) iPhone (Safari and Chrome): only the native video player can go fullscreen
+    if (v && v.webkitEnterFullscreen) {
+      try {
+        v.webkitEnterFullscreen();
+        return;
+      } catch (err) {
+        /* fall through to the CSS fallback */
+      }
+    }
+
+    // 3) Anything else (e.g. some in-app browsers): CSS fullscreen
+    setPseudoFull(true);
+  };
 
   if (!items || items.length === 0) {
     return (
@@ -48,6 +228,9 @@ const SelectedCarousel = ({ items }) => {
 
   const activeItem = items[activeIndex];
 
+  // keep the hover tooltip inside the bar
+  const tipLeft = hover ? Math.min(Math.max(hover.x, 22), hover.width - 22) : 0;
+
   return (
     <div className="d-flex flex-column h-100">
       {/* 1. Header */}
@@ -58,108 +241,110 @@ const SelectedCarousel = ({ items }) => {
         </Link>
       </div>
 
-      {/* 2. Main Video Card */}
-      <div style={{ 
-        flex: 1,                 
-        position: 'relative', 
-        borderRadius: '12px', 
-        overflow: 'hidden', 
-        backgroundColor: '#000', 
-        minHeight: '400px',      
-        boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
-      }}>
+      {/* 2. Player */}
+      <div ref={playerRef} className={`hl-player ${pseudoFull ? 'is-pseudo-fullscreen' : ''} ${scrubbing ? 'is-scrubbing' : ''}`}>
         <video
           ref={videoRef}
           src={activeItem.demo || activeItem.video}
           poster={activeItem.poster}
-          style={{ width: '100%', height: '100%', objectFit: 'contain', backgroundColor: 'black' }} 
           muted
           playsInline
           autoPlay
+          onClick={togglePlay}
           onTimeUpdate={handleTimeUpdate}
+          onLoadedMetadata={(e) => setDuration(e.currentTarget.duration || 0)}
           onEnded={handleVideoEnd}
         />
 
-        {/* Text Overlay */}
-        <div style={{
-          position: 'absolute',
-          bottom: 0,
-          left: 0,
-          width: '100%',
-          padding: '25px',
-          background: 'linear-gradient(to top, rgba(0,0,0,0.9), transparent)'
-        }}>
-          <span style={{ 
-            backgroundColor: '#007bff', 
-            color: '#fff', 
-            padding: '3px 8px', 
-            borderRadius: '4px', 
-            fontSize: '0.75rem', 
-            fontWeight: 'bold',
-            marginBottom: '8px',
-            display: 'inline-block'
-          }}>
-            {activeItem.conference || "Publication"}
-          </span>
+        <div className="hl-chip">
+          Now playing {activeIndex + 1} / {items.length}
+        </div>
 
-          <h4 style={{ color: 'white', fontWeight: 'bold', marginBottom: '5px' }}>
-            {activeItem.title}
-          </h4>
-          <p style={{ color: '#ddd', fontSize: '0.9rem', margin: 0 }}>
-            {activeItem.authors}
-          </p>
+        <div className="hl-controls">
+          <button className="hl-ctrl" onClick={togglePlay} aria-label={paused ? 'Play video' : 'Pause video'}>
+            <i className={`bi ${paused ? 'bi-play-fill' : 'bi-pause-fill'}`} />
+          </button>
+          <button className="hl-ctrl" onClick={() => setMuted((m) => !m)} aria-label={muted ? 'Unmute' : 'Mute'}>
+            <i className={`bi ${muted ? 'bi-volume-mute-fill' : 'bi-volume-up-fill'}`} />
+          </button>
+          <button className="hl-ctrl" onClick={toggleFullscreen} aria-label={expanded ? 'Exit full screen' : 'Full screen'}>
+            <i className={`bi ${expanded ? 'bi-fullscreen-exit' : 'bi-arrows-fullscreen'}`} />
+          </button>
+        </div>
+
+        <div className="hl-overlay">
+          <span className="hl-venue">{activeItem.conference || 'Publication'}</span>
+          <h4 className="hl-title">{activeItem.title}</h4>
+          <p className="hl-authors">{activeItem.authors}</p>
+        </div>
+
+        {/* Scrubbable timeline */}
+        <div
+          ref={barRef}
+          className="hl-timeline"
+          role="slider"
+          tabIndex={0}
+          aria-label="Seek video"
+          aria-valuemin={0}
+          aria-valuemax={Math.round(duration)}
+          aria-valuenow={Math.round((progress / 100) * duration)}
+          aria-valuetext={`${fmtTime((progress / 100) * duration)} of ${fmtTime(duration)}`}
+          onPointerDown={onBarPointerDown}
+          onPointerMove={onBarPointerMove}
+          onPointerUp={endScrub}
+          onPointerCancel={endScrub}
+          onPointerLeave={() => { if (!scrubbing) setHover(null); }}
+          onKeyDown={onBarKeyDown}
+        >
+          <div className="hl-track">
+            {hover && <div className="hl-track-hover" style={{ width: `${hover.f * 100}%` }} />}
+            <div className="hl-track-fill" style={{ width: `${progress}%` }} />
+            <div className="hl-knob" style={{ left: `${progress}%` }} />
+          </div>
+          {hover && duration > 0 && (
+            <div className="hl-tooltip" style={{ left: `${tipLeft}px` }}>
+              {fmtTime(hover.t)} / {fmtTime(duration)}
+            </div>
+          )}
         </div>
       </div>
 
-      {/* 3. Progress Indicators (Thicker & Dynamic Width) */}
-      <div style={{ 
-        display: 'flex', 
-        gap: '8px', 
-        marginTop: '15px',
-        alignItems: 'center',
-        height: '14px' // Ensure container is tall enough for the thicker bars
-      }}>
-        {items.map((_, idx) => (
-          <div 
-            key={idx} 
+      {/* 3. Playlist: every highlight video visible at once */}
+      <div className="hl-playlist-head">
+        <span className="project-label">All highlight videos · {items.length}</span>
+      </div>
+      <div className="hl-playlist" role="list">
+        {items.map((item, idx) => (
+          <button
+            key={`${item.title}-${idx}`}
+            role="listitem"
+            className={`hl-item ${idx === activeIndex ? 'current' : ''}`}
             onClick={() => handleJumpTo(idx)}
-            style={{ 
-              // --- KEY CHANGE 1: Dynamic Width (Flex) ---
-              // Active item takes 3x more space than inactive items
-              flex: idx === activeIndex ? 3 : 1, 
-
-              // --- KEY CHANGE 2: Thicker Height ---
-              // Inactive: 6px, Active: 10px (you can adjust these numbers)
-              height: idx === activeIndex ? '10px' : '6px', 
-              
-              backgroundColor: '#e0e0e0', 
-              borderRadius: '5px', 
-              cursor: 'pointer',
-              overflow: 'hidden',
-              position: 'relative',
-              
-              // Smooth transition for both width (flex) and height
-              transition: 'all 0.4s ease-in-out' 
-            }}
+            title={item.title}
+            aria-current={idx === activeIndex}
           >
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              height: '100%',
-              backgroundColor: '#555',
-              // Fill logic remains the same
-              width: idx < activeIndex ? '100%' : idx === activeIndex ? `${progress}%` : '0%',
-              transition: idx === activeIndex ? 'width 0.1s linear' : 'none'
-            }}></div>
-          </div>
+            <div className="hl-thumb">
+              {item.poster ? (
+                <img src={item.poster} alt="" loading="lazy" decoding="async" />
+              ) : (
+                <span className="hl-thumb-fallback"><i className="bi bi-play-circle" /></span>
+              )}
+              {idx === activeIndex ? (
+                <span className="hl-thumb-badge"><i className={`bi ${paused ? 'bi-pause-fill' : 'bi-play-fill'}`} /></span>
+              ) : (
+                <span className="hl-thumb-hover"><i className="bi bi-play-fill" /></span>
+              )}
+              {idx === activeIndex && <span className="hl-thumb-progress" style={{ width: `${progress}%` }} />}
+            </div>
+            <span className="hl-item-title">{shortTitle(item.title)}</span>
+            <span className="hl-item-venue">{shortVenue(item.conference || '')}</span>
+          </button>
         ))}
       </div>
     </div>
   );
 };
 
-//HighlightedPublications
 const HighlightedPublications = ({ showHeader = true }) => {
   // 1. Flatten Data
   const allResearch = Object.keys(research_temp)
