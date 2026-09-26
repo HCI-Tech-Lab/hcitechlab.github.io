@@ -291,35 +291,35 @@ export const news = [
         category: "Publication",
     },
     {
-        icon: "img/icon/project.png",
+        icon: "",
         title: "New Research Project",
         date: "Mar 12 2026",
         content: <><strong>Context-Aware Multimodal Physical AI Framework for Coexistence-Oriented Human–Robot Interaction</strong> supported by NRF was selected.</>,
         images: ["img/Other/nrf.png"],
     },
     {
-        icon: "img/icon/Welcome.jpg",
+        icon: "",
         title: "Graduate Students",
         date: "Mar 1, 2026",
         content: "Welcome our new Ph.D. students Hanseok Jeong, Hyung Wook Yi and MS students HyeongJin Do, Hyunwook Jung!",
         images: []
     },
     {
-        icon: "img/icon/graduation.png",
+        icon: "",
         title: "2026 Graduation",
         date: "Feb 20 2026",
         content: "Kun-woo, Hojeong, Hyunyoung, Hanseok, Hyungwook, and Yubin graudated. Congrats!",
         images: ["img/Lab/2602/Grad_1.jpg", "img/Lab/2602/Grad_2.jpg"],
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
         title: "Lab Activity",
         date: "Jan 26 2026",
         content: "Lab Winter Retreat",
         images: ["img/Lab/2601/1.jpg","img/Lab/2601/2.jpg","img/Lab/2601/3.jpg"]
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "Two papers accepted to CHI 2026",
         date: "Jan 20 2026",
         content: (
@@ -345,7 +345,7 @@ export const news = [
         )
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to IEEE TVCG (VR2026)",
         date: "Jan 2, 2026",
         content: (
@@ -355,21 +355,21 @@ export const news = [
         category: "Publication",
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
         title: "Lab Gathering",
         date: "Dec 23 2025",
         content: "End-of-Year Lab Gathering",
         images: ["img/Lab/2512/EOY.png","img/Lab/2512/EOY1.png"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit (Prof. Yitian Shao)",
         date: "Dec 16 2025",
         content: <dev>Prof.Yitian Shao visited us!</dev>,
         images: ["img/Lab/2512/YItian_Visit1.jpg","img/Lab/2512/YItian_Visit2.jpg","img/Lab/2512/YItian_Visit3.jpg",]
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to IEEE TVCG (VR2026)",
         date: "Dec 7, 2025",
         content: (
@@ -379,7 +379,7 @@ export const news = [
         category: "Publication",
     },
     {
-        icon: "img/icon/speaker.png",
+        icon: "",
         title: "Winter 2026 Undergraduate Research Internship",
         date: "Nov 7 2025",
         content: <div>We are looking for research interns (including URP) for 2025 Winter. Application deadline is Nov 18th. You can find more information <Link href="/recruiting_under" target="_blank">here</Link>.</div>,
@@ -388,175 +388,175 @@ export const news = [
         status: "Closed",       
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from Danish delegation of distinguished professors",
         date: "Nov 3 2025",
         content: <dev>Distinguished professors from Denmark visited our lab as part of the Global Innovation Network Programme (GINP) – Korea 2025.</dev>,
         images: ["img/Lab/2511/Denmark1.jpg","img/Lab/2511/Denmark2.jpg","img/Lab/2511/Denmark4.jpg","img/Lab/2511/Denmark5.jpg"]
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to IMWUT (UbiComp 2026)",
         date: "Oct 27 2025",
         content: <div>Our paper <strong>Moving-Press: Pressure-based Moving Phantom Sensation for Immersive VR Hand Interaction</strong> led by Dongkyu, Kyungjin and Rachel is accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>.</div>,
         images: []
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
         title: "Lab Activity (Fall Barbeque)",
         date: "Oct 24 2025",
         content: "Lab Gathering for Fall Barbeque.",
         images: ["img/Lab/2510/Lab_Barbeque.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "UbiComp 2025 Participation",
         date: "Oct 16 2025",
         content: <dev>Our lab participated in UbiComp'25 in Espoo. Changheyon and HyungIl presented IMWUT paper and ISWC Brief.</dev>,
         images: ["img/Lab/2510/UbiComp1.jpg","img/Lab/2510/UbiComp2.jpg","img/Lab/2510/UbiComp3.jpg"]
     },
     {
-        icon: "img/icon/award.png",
+        icon: "",
         title: "Best Paper Award for ISMAR 2025",
         date:"Oct 13 2025",
         content: (<>Our paper <strong>Visuo-Tactile Feedback with Hand Outline Styles for Modulating Affective Roughness Perception</strong> led by Minju wins Best Paper Award <span>(&lt;1%)</span> for <Link href="https://www.ieeeismar.net/2025/" target="_blank">ISMAR 2025</Link>!'</>),
         images: ["img/Lab/2510/TVCGAward.jpg","img/Lab/2510/TVCGAward1.jpg"],
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "ISMAR 2025 Participation",
         date: "Oct 13 2025",
         content: <dev>Our lab participated in ISMAR'25 in Daejeon. Kun-woo and Minju presented papers. Hojeong, Kyoungwhan, Min-yung, and Dongkyu presented posters.</dev>,
         images: ["img/Lab/2510/ISMAR1.jpg","img/Lab/2510/ISMAR22.jpg","img/Lab/2510/ISMAR4.jpg","img/Lab/2510/ISMAR8.jpg"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from Aarhus University",
         date: "Oct 10 2025",
         content: <dev>Prof. Ken Pfeuffer and Dr. Qiushi Zhou from Aarhus University visited us!</dev>,
         images: ["img/Lab/2510/Kenvisit1.jpg","img/Lab/2510/Kenvisit2.jpg","img/Lab/2510/Kenvisit3.jpg"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from MIT & FH Technikum Wien",
         date: "Oct 10 2025",
         content: <dev>Dr.Liu from MIT's <Link href="https://leapgroup.mit.edu/" target="_blank">Leap Group</Link> and Horst Orsolits from FH Technikum Wien visited us!</dev>,
         images: ["img/Lab/2510/mitvisit1.jpg","img/Lab/2510/mitvisit2.jpg"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from Google XR team",
         date: "Oct 2 2025",
         content: "Ruofei and Xun from Google XR team visited HCI Tech Lab for potential research collaboration.",
         images: ["img/Lab/2509/GoogleVisit1.png", "img/Lab/2509/GoogleVisit2.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "UIST 2025 Participation",
         date: "Sep 29 2025",
         content: <dev>Our lab participated in UIST'25 in Busan. Youjin, Hanseok, and Donkyu presented demos. Eunho and Rachel presented SIC demo.</dev>,
         images: ["img/Lab/2509/UIST1.jpg","img/Lab/2509/UIST2.jpg","img/Lab/2509/UIST3.jpg","img/Lab/2509/UIST4.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "Pre-UIST Participation",
         date: "Sep 28 2025",
         content: <dev>Our lab participated in <Link href="https://cs.kaist.ac.kr/board/view?bbs_id=news&bbs_sn=11590&menu=83" target="_blank">Pre-UIST</Link> event in KAIST.</dev>,
         images: ["img/Lab/2509/PreUIST0.jpg","img/Lab/2509/PreUIST2.jpg"]
     },
     {
-        icon: "img/icon/Welcome.jpg",
+        icon: "",
         title: "Graduate Students",
         date: "Sep 1, 2025",
         content: "Welcome our new Ph.D. students Kun-woo Song, Hojeong Lee and MS student Donghee Hyun!",
         images: []
     },
     {
-        icon: "img/icon/star.png",
+        icon: "",
         title: "Student Fellowship",
         date: "Aug 28 2025",
         content: "Dongkyu & Kyungeun are selected for 'PhD Student Research Grant' from the National Research Foundation of Korea.",
         images: []
     },
     {
-        icon: "img/icon/star.png",
+        icon: "",
         title: "Student Fellowship",
         date: "Aug 20 2025",
         content: "Kyungeun is selected for 'Research Grant for U.S. Visiting Women Researchers' from the National Research Foundation of Korea.",
         images: []
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "KCCV 2025 Participation",
         date: "Aug 1 2025",
         content: <dev>Our lab participated in KCCV'25 in Busan. Hanseok presented our <Link href="https://pimforce.hcitech.org/" target="_blank">NeurIPS'24 paper</Link>.</dev>,
         images: ["img/Lab/2508/KCCV1.jpg","img/Lab/2508/KCCV2.jpg"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from Beihang, Tsinghua, SUS Tech",
         date: "July 15 2025",
         content: <dev>Visitors from Chinese institutions including Prof. Dangxiao Wang, Prof. Yun Wang, Prof. Yang Jiao, Prof. Seungwoo Je visited us!</dev>,
         images: ["img/Lab/2507/Beihang1.jpg","img/Lab/2507/Beihang2.jpg","img/Lab/2507/Beihang4.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "WHC 2025 Participation",
         date: "July 8 2025",
         content: <dev>Our lab participated in WHC'25 in Suwon. Hojeong presented a paper and Eunho, Murad, Kun-woo, and Youjin presented demos/posters.</dev>,
         images: ["img/Lab/2507/WHC4.jpg","img/Lab/2507/WHC1.jpg","img/Lab/2507/WHC2.jpg"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from UIUC",
         date: "July 7 2025",
         content: <dev>Prof. Craig Shultz from UIUC's <Link href="https://www.interactivedisplaylab.com/" target="_blank">Interactive Display Lab</Link> visited us!</dev>,
         images: ["img/Lab/2507/CraigVisit1.jpg","img/Lab/2507/CraigVisit2.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "KCC 2025 Participation",
         date: "July 1 2025",
         content: <dev>Our lab participated in KCC'25 in Jeju. Our lab had a workshop on Multimodal Haptic Interface. Yubin and Dohui received Outstanding Paper Awards.</dev>,
         images: ["img/Lab/2507/KCC.jpg"]
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
         title: "Lab Activity (Sports Day)",
         date: "Jun 18 2025",
         content: "Lab Gathering with Sports Activity.",
         images: ["img/Lab/2506/Lab1.jpg","img/Lab/2506/Lab2.jpg","img/Lab/2506/Lab3.jpg"]
     },
     {
-        icon: "img/icon/project.png",
+        icon: "",
         title: "Research Collaboration (ETRI)",
         date: "Jun 5 2025",
         content: <dev>Out lab participated in ETRI Conference 2025. Hojeong & Dongkyu presented our haptic glove project with ETRI.</dev>,
         images: ["img/Lab/2506/ETRI1.png","img/Lab/2506/ETRI2.png"]
     },
     {
-        icon: "img/icon/visit.png",
+        icon: "",
         title: "Visit from ASU",
         date: "Jun 4 2025",
         content: <dev>Prof. Heejin Jeong from Arizona State University's <Link href="https://himer.lab.asu.edu/" target="_blank">HiMER Lab</Link> visited us!</dev>,
         images: ["img/Lab/2506/ASU1.jpeg","img/Lab/2506/ASU2.jpeg","img/Lab/2506/ASU3.jpeg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "CHI 2025 Participation",
         date: "May 1 2025",
         content: <div>Our lab participated in CHI'25 in Yokohama. Jina, Kyungeun, Youjin & Hyunyoung presented their papers with 2 Honorable Mention Awards!</div>,
         images: ["img/Lab/2504/Pic1.jpg", "img/Lab/2504/Pic7.jpg", "img/Lab/2504/Pic8.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "CHI 2025 Workshop",
         date: "Apr 28 2025",
         content: <div>We had a successful 1st <Link href="https://sites.google.com/view/xr-phy-2025" target="_blank">XR-PHY</Link> workshop at CHI'25. Thanks Jina & Soyeong for volunteering as assistants. </div>,
         images: ["img/Lab/2504/Workshop1.jpg"]
     },
     {
-        icon: "img/icon/conf.png",
+        icon: "",
         title: "HCI Tech Lab members and papers at CHI 2025",
         date: "Apr 28 2025",
         content: <div>4 full papers and 1 workshop got accepted to <Link href="https://chi2025.acm.org/" target="_blank">CHI 2025</Link>.</div>,
@@ -591,42 +591,42 @@ export const news = [
         )
     },
     {
-        icon: "img/icon/speaker.png",
+        icon: "",
         title: "Summer 2025 Undergraduate Research Internship",
         date: "Apr 27 2025",
         content: <div>We are looking for research interns (including URP) for 2025 Summer. Application deadline is May 7th.</div>,
         images: []
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to WHC 2025",
         date: "Apr 18 2025",
         content: <div>Our paper <strong>3D Shape Perception through Spatiotemporal Vibrotactile Patterns with Kinesthetic Feedback</strong> led by Hojeong and Eun Ho is accepted to <Link href="https://2025.worldhaptics.org/" target="_blank">IEEE World Haptics Conference (WHC)</Link>.</div>,
         images: []
     },
     {
-        icon: "img/icon/paper2.jpg",
+        icon: "",
         title: "A paper accepted to IMWUT (UbiComp 2025)",
         date: "Apr 3 2025",
         content: <div>Our paper <strong>UltraBoard: Always-Available Wearable Ultrasonic Mid-air Haptic Interface for Responsive and Robust VR Inputs</strong> led by Changhyeon and Yubin is accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>.</div>,
         images: []
     },
     {
-        icon: "img/icon/project.png",
+        icon: "",
         title: "New Research Project",
         date: "Apr 1 2025",
         content: <><strong>Generative Haptics and Fine Response Inference for Flexible Tactile Interfaces</strong> supported by Institute for Information & communication Technology Planning & evaluation (IITP) for 4 years.</>,
         images: []
     },
     {
-        icon: "img/icon/team.png",
+        icon: "",
         title: "Lab Activity (KAIST Strawberry Party)",
         date: "Mar 31 2025",
         content: "Lab Gathering at the KAIST Strawberry Party.",
         images: ["img/Lab/2503/2503_4.jpg"]
     },
     {
-        icon: "img/icon/award.png",
+        icon: "",
         title: "Two Honorable Mention Award for CHI 2025",
         date: "Mar 28 2025",
         content: (<>Our papers <strong>ChoreoCraft: In-situ Crafting of Choreography in Virtual Reality through Creativity Support Tool</strong> led by Kyungeun & Hyunyoung and <strong>T2IRay: Design of Thumb-to-Index based Indirect Pointing for Continuous and Robust AR/VR Input</strong> led by Jina win Honorable Mention Award for <Link href="https://chi2025.acm.org/" target="_blank">CHI 2025</Link>!'</>),
