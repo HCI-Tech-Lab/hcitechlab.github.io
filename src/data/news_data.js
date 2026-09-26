@@ -2,6 +2,13 @@ import Link from 'next/link';
 
 export const news = [
     {
+        icon: "img/icon/neurips.png",
+        title: "A paper accepted to NeurIPS 2026 Evaluations and Datasets",
+        date: "Sep 26 2026",
+        content: <div>Our paper <strong>HAPACT: A Benchmark For Human-Centric Physical Impact Localization in Movies</strong> led by Youngrae is accepted to <Link href="https://neurips.cc/" target="_blank">NeurIPS2026 Evaluations and Datasets Track</Link>.</div>,
+        images: []
+    },
+    {
         icon: "",
         title: "Graduate Students",
         date: "Aug 31, 2026",

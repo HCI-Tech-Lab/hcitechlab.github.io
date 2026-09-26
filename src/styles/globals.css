@@ -1824,6 +1824,13 @@ a.section-link:focus,
   padding: 44px 20px 34px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0));
   pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Title fades away a few seconds into each video */
+.hl-overlay.is-hidden {
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 .hl-venue {
@@ -2177,4 +2184,70 @@ a.section-link:focus,
   }
   .hl-controls { gap: 6px; }
   .hl-chip { font-size: 0.7rem; }
+}
+
+/* --- Previous / next arrows (full screen) --- */
+.hl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: #0B2A6B;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hl-nav:hover {
+  background: #1260de;
+  color: #fff;
+}
+
+.hl-nav-prev { left: calc(14px + env(safe-area-inset-left, 0px)); }
+.hl-nav-next { right: calc(14px + env(safe-area-inset-right, 0px)); }
+
+/* --- Smaller title overlay on phones --- */
+@media (max-width: 575.98px) {
+  .hl-overlay {
+    padding: 28px 14px 30px;
+  }
+  .hl-venue {
+    font-size: 0.64rem;
+    padding: 2px 8px;
+    margin-bottom: 4px;
+  }
+  .hl-title {
+    font-size: 0.88rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 2px;
+  }
+  .hl-authors {
+    font-size: 0.72rem;
+  }
+  .hl-nav {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl-overlay {
+    transition: opacity 0.2s linear;
+  }
+  .hl-overlay.is-hidden {
+    transform: none;
+  }
 }

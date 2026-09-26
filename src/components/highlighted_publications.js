@@ -32,9 +32,12 @@ const SelectedCarousel = ({ items }) => {
   const [scrubbing, setScrubbing] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false); // native fullscreen
   const [pseudoFull, setPseudoFull] = useState(false);     // CSS fallback
+  const [showInfo, setShowInfo] = useState(true);  // title overlay visibility
   const videoRef = useRef(null);
   const playerRef = useRef(null);
   const barRef = useRef(null);
+  const infoTimer = useRef(null);
+  const touchStart = useRef(null);
 
   const expanded = isFullscreen || pseudoFull;
 
@@ -53,6 +56,47 @@ const SelectedCarousel = ({ items }) => {
     setActiveIndex(index);
     setProgress(0);
     setPaused(false);
+  };
+
+  const goNext = () => handleJumpTo((activeIndex + 1) % items.length);
+  const goPrev = () => handleJumpTo((activeIndex - 1 + items.length) % items.length);
+
+  // Title overlay: show it, then fade it out after `ms`
+  const revealInfo = (ms = 3000) => {
+    setShowInfo(true);
+    clearTimeout(infoTimer.current);
+    infoTimer.current = setTimeout(() => setShowInfo(false), ms);
+  };
+
+  // Each new video shows its title for 5 seconds
+  useEffect(() => {
+    revealInfo(5000);
+  }, [activeIndex]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => () => clearTimeout(infoTimer.current), []);
+
+  // Swipe left/right to change videos (full screen only; ignores swipes that start on the timeline)
+  const onPlayerTouchStart = (e) => {
+    if (!expanded || e.target.closest('.hl-timeline, .hl-ctrl, .hl-nav')) {
+      touchStart.current = null;
+      return;
+    }
+    const t = e.touches[0];
+    touchStart.current = { x: t.clientX, y: t.clientY };
+  };
+
+  const onPlayerTouchEnd = (e) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    // horizontal, deliberate swipes only (so vertical drags and taps are ignored)
+    if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) {
+      if (dx < 0) goNext();
+      else goPrev();
+    }
   };
 
   const togglePlay = () => {
@@ -169,13 +213,15 @@ const SelectedCarousel = ({ items }) => {
       const v = videoRef.current;
       if (e.key === 'Escape' && pseudoFull) setPseudoFull(false);
       if (!v) return;
-      if (e.key === ' ' || e.key === 'k') { e.preventDefault(); togglePlay(); }
+      if (e.key === ' ' || e.key === 'k') { e.preventDefault(); togglePlay(); return; }
+      if (e.key === 'n' || (e.shiftKey && e.key === 'ArrowRight')) { goNext(); return; }
+      if (e.key === 'p' || (e.shiftKey && e.key === 'ArrowLeft')) { goPrev(); return; }
       if (e.key === 'ArrowRight' && v.duration > 0) v.currentTime = Math.min(v.duration, v.currentTime + 5);
       if (e.key === 'ArrowLeft') v.currentTime = Math.max(0, v.currentTime - 5);
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [expanded, pseudoFull]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [expanded, pseudoFull, activeIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const toggleFullscreen = () => {
     const doc = document;
@@ -242,7 +288,13 @@ const SelectedCarousel = ({ items }) => {
       </div>
 
       {/* 2. Player */}
-      <div ref={playerRef} className={`hl-player ${pseudoFull ? 'is-pseudo-fullscreen' : ''} ${scrubbing ? 'is-scrubbing' : ''}`}>
+      <div
+        ref={playerRef}
+        className={`hl-player ${pseudoFull ? 'is-pseudo-fullscreen' : ''} ${scrubbing ? 'is-scrubbing' : ''}`}
+        onMouseMove={() => revealInfo(3000)}
+        onTouchStart={onPlayerTouchStart}
+        onTouchEnd={onPlayerTouchEnd}
+      >
         <video
           ref={videoRef}
           src={activeItem.demo || activeItem.video}
@@ -272,11 +324,23 @@ const SelectedCarousel = ({ items }) => {
           </button>
         </div>
 
-        <div className="hl-overlay">
+        <div className={`hl-overlay ${showInfo || paused || scrubbing ? '' : 'is-hidden'}`}>
           <span className="hl-venue">{activeItem.conference || 'Publication'}</span>
           <h4 className="hl-title">{activeItem.title}</h4>
           <p className="hl-authors">{activeItem.authors}</p>
         </div>
+
+        {/* Previous / next video (full screen) */}
+        {expanded && items.length > 1 && (
+          <>
+            <button className="hl-nav hl-nav-prev" onClick={goPrev} aria-label="Previous video">
+              <i className="bi bi-chevron-left" />
+            </button>
+            <button className="hl-nav hl-nav-next" onClick={goNext} aria-label="Next video">
+              <i className="bi bi-chevron-right" />
+            </button>
+          </>
+        )}
 
         {/* Scrubbable timeline */}
         <div
