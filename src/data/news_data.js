@@ -2,11 +2,12 @@ import Link from 'next/link';
 
 export const news = [
     {
-        icon: "img/icon/neurips.png",
+        icon: "",
         title: "A paper accepted to NeurIPS 2026 Evaluations and Datasets",
         date: "Sep 26 2026",
         content: <div>Our paper <strong>HAPACT: A Benchmark For Human-Centric Physical Impact Localization in Movies</strong> led by Youngrae is accepted to <Link href="https://neurips.cc/" target="_blank">NeurIPS2026 Evaluations and Datasets Track</Link>.</div>,
-        images: []
+        images: ["img/news/neurips.png"],
+        category: "Publication",
     },
     {
         icon: "",
@@ -34,14 +35,14 @@ export const news = [
         title: "Google-KAIST Research Meetup Participation",
         date: "Jul 13 2026",
         content: "Our lab participated in Google-KAIST Meetup (AI for People & Society). Youjin and Youngrae presented their works.",
-        images: []
+        images: ["img/news/google.jpeg"]
     },
     {
         icon: "",
         title: "Visit from Hyundai Motor Company",
         date: "Jul 2 2026",
         content: "Hyundai Motor Company (HMC) Research Team visited HCI Tech Lab for potential research collaboration.",
-        images: []
+        images: ["img/news/hmg.jpeg"]
     },
     {
         icon: "",
@@ -64,7 +65,7 @@ export const news = [
         content: (
             <>Two papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://uist.acm.org/2026/" target="_blank">UIST 2026</Link>. Congratulations to Jina and Rachel(Jungmin)!</>
         ),
-        images: [],
+        images: ["img/news/uist26.png"],
         category: "Publication",
         /*extraContent: (
             <>
