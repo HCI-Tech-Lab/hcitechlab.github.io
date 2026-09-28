@@ -73,7 +73,7 @@ export const gct565_data = [
                 day1: {date: "9/28", titles: ["Project Proposal Feedback"], type: 1, notes: [
                     {name: "Presentation Schedule", link: ""}
                 ], dues: [
-                    {name: "RR#2 due by 9/28 (Mon)", link: "https://klms.kaist.ac.kr/"}
+                    {name: "RR#2 due by 10/1 (Thu)", link: "https://klms.kaist.ac.kr/"}
                 ]},
                 day2: {date: "9/30", titles: ["Machine Learning & Data Mining Toolkit I"], type: 0, notes: [{name: "HW#3 Handout (KLMS)", link: ""},
                     {name: "Feedback Schedule", link: ""}
