@@ -73,7 +73,7 @@ export const gct565_data = [
                 day1: {date: "9/28", titles: ["Project Proposal Feedback"], type: 1, notes: [
                     {name: "Presentation Schedule", link: ""}
                 ], dues: [
-                    {name: "RR#2 due by 10/1 (Thu)", link: "https://klms.kaist.ac.kr/"}
+                    {name: "RR#2 due by 10/2 (Fri)", link: "https://klms.kaist.ac.kr/"}
                 ]},
                 day2: {date: "9/30", titles: ["Machine Learning & Data Mining Toolkit I"], type: 0, notes: [{name: "HW#3 Handout (KLMS)", link: ""},
                     {name: "Feedback Schedule", link: ""}
@@ -81,7 +81,7 @@ export const gct565_data = [
             },
             {
                 day1: {date: "10/5", titles: ["No Class (Holiday)"], type: 2, notes: [], dues: []},
-                day2: {date: "10/7", titles: ["Augmented Sensing III (Remote/Ambient)", "Technical Evaluation","Paper Seminar #2"], type: 0, notes: [], dues: [{name: "HW#3 due by 10/19 (Fri)", link: "https://klms.kaist.ac.kr/"}]}
+                day2: {date: "10/7", titles: ["Augmented Sensing III (Remote/Ambient)", "Technical Evaluation","Paper Seminar #2"], type: 0, notes: [], dues: [{name: "HW#3 due by 10/9 (Fri)", link: "https://klms.kaist.ac.kr/"}]}
             },
             {
                 day1: {date: "10/12", titles: ["Midterm"], type: 2, notes: [], dues: []},
