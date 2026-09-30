@@ -81,7 +81,7 @@ export const gct565_data = [
             },
             {
                 day1: {date: "10/5", titles: ["No Class (Holiday)"], type: 2, notes: [], dues: []},
-                day2: {date: "10/7", titles: ["Augmented Sensing III (Remote/Ambient)", "Technical Evaluation","Paper Seminar #2"], type: 0, notes: [], dues: [{name: "HW#3 due by 10/9 (Fri)", link: "https://klms.kaist.ac.kr/"}]}
+                day2: {date: "10/7", titles: ["Augmented Sensing III (Remote/Ambient)", "Technical Evaluation","Paper Seminar #2"], type: 1, notes: [], dues: [{name: "HW#3 due by 10/9 (Fri)", link: "https://klms.kaist.ac.kr/"}]}
             },
             {
                 day1: {date: "10/12", titles: ["Midterm"], type: 2, notes: [], dues: []},
@@ -92,62 +92,64 @@ export const gct565_data = [
                     {name: "HW#4 Handout (KLMS)", link: ""}
                 ], dues: [{name: "RR#3 due by 10/18 (Sun)", link: "https://klms.kaist.ac.kr/"}]},
                 day2: {date: "10/21", titles: ["Paper Seminar #3"], type: 1, notes: [
-                    {name: "Discussion Schedule", link: ""}
-                ], dues: []}
+                ], dues: [
+                          {name: "RR#4 due by Oct 25 (Sun)", link: "https://klms.kaist.ac.kr/"},
+                ]}
             },
             {
                 day1: {date: "10/26", titles: ["Project Progress Presentation"], type: 1, notes: [
-                    {name: "Presentation Schedule", link: ""}
+                    {name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1JPj-EKUZYZf20-Wg-mmiHm0vYJhT8oZgGkH5_emAWFY/edit?usp=sharing"}
                 ], dues: [
-                    {name: "Progress Presentation Slides due by ", link: "https://klms.kaist.ac.kr/"},
-                    {name: "Audience Evaluation Form due by ", link: "https://klms.kaist.ac.kr/"}
+                    {name: "Progress Presentation Slides due by 10/26 (Mon)", link: "https://klms.kaist.ac.kr/"},
+                    {name: "Audience Evaluation Form due by 10/26 (Mon)", link: "https://klms.kaist.ac.kr/"}
                 ]},
-                day2: {date: "10/28", titles: ["Project Feedback"], type: 1, notes: [], dues: [
-                    {name: "RR#4 due by ", link: "https://klms.kaist.ac.kr/"},
-                    {name: "HW#4 due by ", link: "https://klms.kaist.ac.kr/"}
+                day2: {date: "10/28", titles: ["Augmented Haptic Feedback","Paper Seminar #4"], type: 1, notes: [], 
+                    dues: [
+                        {name: "HW#4 due by Oct 30 (Fri)", link: "https://klms.kaist.ac.kr/"}
+                    ]},
+
+            },
+            {
+                day1: {date: "11/2", titles: ["Project Feedback"], type: 1, notes: [], dues: [
+                ]},
+                day2: {date: "11/4", titles: ["Progress Report Q&A"], type: 1, notes: [], dues: [
+                    {name: "Progress Report due by 11/5 (Fri)", link: "https://klms.kaist.ac.kr/"},
+                    {name: "RR#5 due by 11/8 (Sun)", link: "https://klms.kaist.ac.kr/"}
                 ]}
             },
             {
-                day1: {date: "11/2", titles: ["Augmented Haptic Feedback"], type: 0, notes: [], dues: []},
-                day2: {date: "11/4", titles: ["Quantitative and Qualitative Study","Paper Seminar #4"], type: 1, notes: [], dues: [
-                    {name: "Progress Report due by ", link: "https://klms.kaist.ac.kr/"},
-                    {name: "RR#5 due by ", link: "https://klms.kaist.ac.kr/"}
-                ]}
-            },
-            {
-                day1: {date: "11/9", titles: ["Augmented Machine Learning for Augmented Humans"], type: 0, notes: [], dues: []},
+                day1: {date: "11/9", titles: ["Quantitative and Qualitative Study"], type: 0, notes: [], dues: []},
                 day2: {date: "11/11", titles: ["Paper Seminar #5"], type: 1, notes: [], dues: []}
             },
             {
-                day1: {date: "11/16", titles: ["Augmented hearing, taste, and smell"], type: 0, notes: [
+                day1: {date: "11/16", titles: ["Augmented Machine Learning for Augmented Humans"], type: 0, notes: [
                     {name: "HW#5 Handout (KLMS)", link: ""}
                 ], dues: [
-                    {name: "RR#6 due by ", link: "https://klms.kaist.ac.kr/"}
+                    {name: "RR#6 due by 11/15 (Sun)", link: "https://klms.kaist.ac.kr/"}
                 ]},
                 day2: {date: "11/18", titles: ["Paper Seminar #6"], type: 1, notes: [], dues: []}
             },
             {
-                day1: {date: "11/23", titles: ["Augmented Humans Storytelling & Design Approaches"], type: 0, notes: [], dues: []},
-                day2: {date: "11/25", titles: ["Project Q&A and Preparation"], type: 1, notes: [], dues: [
-                    {name: "HW#5 due by ", link: "https://klms.kaist.ac.kr/"}
-                ]}
+                day1: {date: "11/23", titles: ["Augmented hearing, taste, and smell"], type: 0, notes: [], dues: [
+                    {name: "HW#5 due by 11/24 (Tue)", link: "https://klms.kaist.ac.kr/"}
+                ]},
+                day2: {date: "11/25", titles: ["Project Q&A and Preparation"], type: 1, notes: [], dues: []}
             },
             {
                 day1: {date: "11/30", titles: ["Augmented Humans Storytelling & Design Approaches"], type: 0, notes: [], dues: []},
                 day2: {date: "12/2", titles: ["Project Q&A and Preparation"], type: 1, notes: [], dues: [
-                    {name: "HW#5 due by ", link: "https://klms.kaist.ac.kr/"}
                 ]}
             },
             {
                 day1: {date: "12/7", titles: ["Final Presentation"], type: 1, notes: [
-                    {name: "Presentation Schedule", link: ""}
+                    {name: "Presentation Schedule", link: "https://docs.google.com/spreadsheets/d/1JPj-EKUZYZf20-Wg-mmiHm0vYJhT8oZgGkH5_emAWFY/edit?usp=sharing"}
                 ], dues: [
-                    {name: "Final Presentation Slides due by ", link: "https://klms.kaist.ac.kr/"}
+                    {name: "Final Presentation Slides due by 12/7", link: "https://klms.kaist.ac.kr/"}
                 ]},
-                day2: {date: "12/9", titles: ["Final Presentation"], type: 1, notes: [
-                    {name: "Feedback Schedule", link: ""}
+                day2: {date: "12/9", titles: ["Final Presentation Feedback"], type: 1, notes: [
+                    {name: "Feedback Schedule", link: "https://docs.google.com/spreadsheets/d/1JPj-EKUZYZf20-Wg-mmiHm0vYJhT8oZgGkH5_emAWFY/edit?usp=sharing"}
                 ], dues: [
-                    {name: "Audience Evaluation Form due by ", link: "https://klms.kaist.ac.kr/"}
+                    {name: "Audience Evaluation Form due by 12/9", link: "https://klms.kaist.ac.kr/"}
                 ]}
             },
             {
