@@ -143,7 +143,7 @@ export const phdStudents = [
         name: "Hyung Wook Yi",
         title: "M.S. Student",
         interest: "Sensor Fabrication & Toolkit",
-        link: "#",
+        link: "https://wonderingseoul.github.io/",
         mail: "#",
         linkedin: "https://www.linkedin.com/in/hyung-wook-yi-673828178",
         note: "",
