@@ -16,7 +16,7 @@ export const research_temp = {
             presentation: "",
             media: "",
             highlight: false,
-            category: "PrePrint"
+            category: "Preprint"
         },
         {
             poster: "research/2026/UIST/gazetune.png",
