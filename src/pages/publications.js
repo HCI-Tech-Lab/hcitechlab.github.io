@@ -174,13 +174,21 @@ export default function Publications() {
                             </div>
                             
                             {filteredData[year].map((item, index) => (
-                                <div key={`${year}-${index}`} className="row research_item align-items-center mb-3 pub-item">
+                                <div key={`${year}-${item.title}`} className="row research_item align-items-center mb-3 pub-item">
                                     <div className="col-md-4 mb-3 mb-md-0">
                                         <div className="pub-media">
                                             {item.poster && <div className="pub-media-bg" style={{ backgroundImage: `url(${item.poster})` }} />}
-                                            <video autoPlay loop muted playsInline poster={item.poster}>
-                                                {item.demo && <source type="video/mp4" src={item.demo} />}
-                                            </video>
+                                            {/* Keyed by its own media so a filter change mounts a fresh
+                                                video instead of reusing another paper's player */}
+                                            <video
+                                                key={item.demo || item.poster || item.title}
+                                                src={item.demo || undefined}
+                                                poster={item.poster}
+                                                autoPlay
+                                                loop
+                                                muted
+                                                playsInline
+                                            />
                                         </div>
                                     </div>
                                     <div className="col-md-8">
