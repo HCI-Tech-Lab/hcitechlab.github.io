@@ -1,0 +1,264 @@
+{
+  "_readme": "banner path (under public/) -> official logo keys. Logo files live in scripts/news-logos/<key>.(svg|png|jpg|webp).",
+  "banners": {
+    "img/news/banners/20260926-neurips.webp": {
+      "logos": [
+        "neurips"
+      ],
+      "news": "A paper accepted to NeurIPS 2026 Evaluations and Datasets (Sep 26 2026)"
+    },
+    "img/news/banners/20260713-google-research.webp": {
+      "logos": [
+        "google-research"
+      ],
+      "news": "Google-KAIST Research Meetup Participation (Jul 13 2026)"
+    },
+    "img/news/banners/20260702-hyundai.webp": {
+      "logos": [
+        "hyundai"
+      ],
+      "news": "Visit from Hyundai Motor Company (Jul 2 2026)"
+    },
+    "img/news/banners/20260629-uist2026.webp": {
+      "logos": [
+        "uist2026"
+      ],
+      "news": "Two papers accepted to UIST 2026 (Jun 29 2026)"
+    },
+    "img/news/banners/20260315-etra2026.webp": {
+      "logos": [
+        "etra2026"
+      ],
+      "news": "A paper accepted to ETRA 2026 (Mar 15, 2026)"
+    },
+    "img/news/banners/20260312-nrf.webp": {
+      "logos": [
+        "nrf"
+      ],
+      "news": "New Research Project (Mar 12 2026)"
+    },
+    "img/news/banners/20260623-ismar-2026-four-papers-from-hci-tech-lab.webp": {
+      "logos": [
+        "ismar2026"
+      ],
+      "news": "Four papers accepted to ISMAR 2026 (Jun 23 2026)"
+    },
+    "img/news/banners/20260617-ieee-ra-l-robotics-and-automation-letter.webp": {
+      "logos": [
+        "ieee-ral"
+      ],
+      "news": "A paper accepted to IEEE Robotics and Automation Letters (RA-L) (Jun 17 2026)"
+    },
+    "img/news/banners/20260615-imwut-ubicomp-2026-two-papers-from-hci-t.webp": {
+      "logos": [
+        "ubicomp2026"
+      ],
+      "news": "Two papers accepted to IMWUT (UbiComp 2026) (Jun 15 2026)"
+    },
+    "img/news/banners/20260416-ieee-toh-transactions-on-haptics-vibgras.webp": {
+      "logos": [
+        "ieee-toh"
+      ],
+      "news": "A paper accepted to IEEE Transactions on Haptics (TOH) (Apr 16 2026)"
+    },
+    "img/news/banners/20260120-chi-2026-two-papers-from-hci-tech-lab.webp": {
+      "logos": [
+        "chi2026"
+      ],
+      "news": "Two papers accepted to CHI 2026 (Jan 20 2026)"
+    },
+    "img/news/banners/20260102-ieee-tvcg-vr-2026-aquahaptics.webp": {
+      "logos": [
+        "ieee-vr2026"
+      ],
+      "news": "A paper accepted to IEEE TVCG (VR2026) (Jan 2, 2026)"
+    },
+    "img/news/banners/20251207-ieee-tvcg-vr-2026-forcectrl.webp": {
+      "logos": [
+        "ieee-vr2026"
+      ],
+      "news": "A paper accepted to IEEE TVCG (VR2026) (Dec 7, 2025)"
+    },
+    "img/news/banners/20251027-imwut-ubicomp-2026-moving-press.webp": {
+      "logos": [
+        "ubicomp2026"
+      ],
+      "news": "A paper accepted to IMWUT (UbiComp 2026) (Oct 27 2025)"
+    },
+    "img/news/banners/20250828-student-fellowship-nrf-ph-d-student-rese.webp": {
+      "logos": [
+        "nrf"
+      ],
+      "news": "Student Fellowship (Aug 28 2025)"
+    },
+    "img/news/banners/20250820-student-fellowship-nrf-grant-for-u-s-vis.webp": {
+      "logos": [
+        "nrf"
+      ],
+      "news": "Student Fellowship (Aug 20 2025)"
+    },
+    "img/news/banners/20250428-chi-2025-four-full-papers-and-one-worksh.webp": {
+      "logos": [
+        "chi2025"
+      ],
+      "news": "HCI Tech Lab members and papers at CHI 2025 (Apr 28 2025)"
+    },
+    "img/news/banners/20250418-whc-2025-ieee-world-haptics-conference.webp": {
+      "logos": [
+        "whc2025"
+      ],
+      "news": "A paper accepted to WHC 2025 (Apr 18 2025)"
+    },
+    "img/news/banners/20250403-imwut-ubicomp-2025-ultraboard.webp": {
+      "logos": [
+        "ubicomp2025"
+      ],
+      "news": "A paper accepted to IMWUT (UbiComp 2025) (Apr 3 2025)"
+    },
+    "img/news/banners/20250401-new-research-project-iitp-generative-hap.webp": {
+      "logos": [
+        "iitp"
+      ],
+      "news": "New Research Project (Apr 1 2025)"
+    },
+    "img/news/banners/20250126-ieee-tvcg-neck-goes-vrrr.webp": {
+      "logos": [
+        "ieee-tvcg"
+      ],
+      "news": "A paper accepted to IEEE TVCG (Jan 26 2025)"
+    },
+    "img/news/banners/20250117-chi-2025-four-papers-from-hci-tech-lab-c.webp": {
+      "logos": [
+        "chi2025"
+      ],
+      "news": "Four papers accepted to CHI 2025 (Jan 17 2025)"
+    },
+    "img/news/banners/20240926-neurips-2024-posture-informed-muscular-f.webp": {
+      "logos": [
+        "neurips"
+      ],
+      "news": "A paper accepted to NeurIPS 2024 (Sep 26 2024)"
+    },
+    "img/news/banners/20240821-khc-2024-korea-haptics-conference-poster.webp": {
+      "logos": [
+        "khc2024"
+      ],
+      "news": "KHC 2024 Participation (Aug 21 2024)"
+    },
+    "img/news/banners/20240810-imwut-ubicomp-2024-estatig.webp": {
+      "logos": [
+        "ubicomp2024"
+      ],
+      "news": "A paper accepted to IMWUT (UbiComp 2024) (Aug 10 2024)"
+    },
+    "img/news/banners/20240810-ismar-2024-thermicvib.webp": {
+      "logos": [
+        "ismar2024"
+      ],
+      "news": "A paper accepted to ISMAR 2024 (Aug 10 2024)"
+    },
+    "img/news/banners/20240415-student-fellowship-nrf-master-s-student.webp": {
+      "logos": [
+        "nrf"
+      ],
+      "news": "Student Fellowship (Apr 15 2024)"
+    },
+    "img/news/banners/20231015-imwut-ubicomp-2024-hapticpilot.webp": {
+      "logos": [
+        "ubicomp2024"
+      ],
+      "news": "A paper accepted to IMWUT (UbiComp 2024) (Oct 15 2023)"
+    },
+    "img/news/banners/20231009-virtual-reality-springer-hapmotion.webp": {
+      "logos": [
+        "springer-vr"
+      ],
+      "news": "A paper accepted to Virtual Reality (Springer VR) (Oct 9 2023)"
+    },
+    "img/news/banners/20230906-merric-newsletter-hci-tech-lab-featured.webp": {
+      "logos": [
+        "merric"
+      ],
+      "news": "📣 HCI Tech lab in the MERRIC News Letter (Sep 6 2023)"
+    },
+    "img/news/banners/20230825-sui-2023-vibaware.webp": {
+      "logos": [
+        "sui2023"
+      ],
+      "news": "A paper accepted to SUI 2023 (Aug 25 2023)"
+    },
+    "img/news/banners/20230825-uist-2023-mo2hap.webp": {
+      "logos": [
+        "uist2023"
+      ],
+      "news": "A demo accepted to UIST 2023 (Aug 25 2023)"
+    },
+    "img/news/banners/20230601-new-research-project-performing-arts-edu.webp": {
+      "logos": [
+        "kocca"
+      ],
+      "news": "New Research Project (Jun 1 2023)"
+    },
+    "img/news/banners/20230601-new-research-project-interactive-digital.webp": {
+      "logos": [
+        "kocca"
+      ],
+      "news": "New Research Project (Jun 1 2023)"
+    },
+    "img/news/banners/20230317-new-research-project-nrf-outstanding-you.webp": {
+      "logos": [
+        "nrf"
+      ],
+      "news": "New Research Project (Mar 17 2023)"
+    },
+    "img/news/banners/20230130-ieee-vr-2023-three-poster-presentations.webp": {
+      "logos": [
+        "ieee-vr2023"
+      ],
+      "news": "VR 2023 Posters (Jan 30 2023)"
+    },
+    "img/news/banners/20220907-vrst-2022-two-poster-presentations.webp": {
+      "logos": [
+        "vrst2022"
+      ],
+      "news": "VRST 2022 Posters (Sep 7 2022)"
+    },
+    "img/news/banners/20220822-ismar-2022-three-posters-from-the-ctp445.webp": {
+      "logos": [
+        "ismar2022"
+      ],
+      "news": "ISMAR 2022 Posters (Aug 22 2022)"
+    },
+    "img/news/banners/20220704-siggraph-2022-sense-of-embodiment-induce.webp": {
+      "logos": [
+        "siggraph2022"
+      ],
+      "news": "SIGGRAPH 2022 Emerging Technologies (Jul 4 2022)"
+    },
+    "img/news/banners/20220704-eccv-2022-sound-guided-semantic-video-ge.webp": {
+      "logos": [
+        "eccv2022"
+      ],
+      "news": "ECCV 2022 (Jul 4 2022)"
+    },
+    "img/news/banners/20220601-new-research-projects-supported-by-kocca.webp": {
+      "logos": [
+        "kocca",
+        "nrf"
+      ],
+      "news": "New Research Projects (June 1 2022)"
+    },
+    "img/news/banners/20220302-cvpr-2022-sound-guided-semantic-image-ma.webp": {
+      "logos": [
+        "cvpr2022"
+      ],
+      "news": "CVPR 2022 (Mar 2 2022)"
+    },
+    "img/news/banners/20211201-new-research-project-nst-open-xr-platfor.webp": {
+      "logos": [
+        "nst"
+      ],
+      "news": "New Research Project (Dec 1 2021)"
+    }
+  }
+}

@@ -6,7 +6,7 @@ export const news = [
         title: "A paper accepted to NeurIPS 2026 Evaluations and Datasets",
         date: "Sep 26 2026",
         content: <div>Our paper <strong>HAPACT: A Benchmark For Human-Centric Physical Impact Localization in Movies</strong> led by Youngrae is accepted to <Link href="https://neurips.cc/" target="_blank">NeurIPS2026 Evaluations and Datasets Track</Link>.</div>,
-        images: ["img/news/neurips.png"],
+        images: ["img/news/banners/20260926-neurips.webp"],
         category: "Publication",
     },
     {
@@ -14,7 +14,7 @@ export const news = [
         title: "Graduate Students",
         date: "Aug 31, 2026",
         content: "Welcome our new Ph.D. students Kyoungwhan Mheen, Dohui Lee and MS students Yejin Jang!",
-        images: []
+        images: ["img/news/banners/20260831-new-lab-members-ph-d-m-s-students-joinin.webp"]
     },
     {
         icon: "",
@@ -35,14 +35,14 @@ export const news = [
         title: "Google-KAIST Research Meetup Participation",
         date: "Jul 13 2026",
         content: "Our lab participated in Google-KAIST Meetup (AI for People & Society). Youjin and Youngrae presented their works.",
-        images: ["img/news/google.jpeg"]
+        images: ["img/news/banners/20260713-google-research.webp"]
     },
     {
         icon: "",
         title: "Visit from Hyundai Motor Company",
         date: "Jul 2 2026",
         content: "Hyundai Motor Company (HMC) Research Team visited HCI Tech Lab for potential research collaboration.",
-        images: ["img/news/hmg.jpeg"]
+        images: ["img/news/banners/20260702-hyundai.webp"]
     },
     {
         icon: "",
@@ -65,7 +65,7 @@ export const news = [
         content: (
             <>Two papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://uist.acm.org/2026/" target="_blank">UIST 2026</Link>. Congratulations to Jina and Rachel(Jungmin)!</>
         ),
-        images: ["img/news/uist26.png"],
+        images: ["img/news/banners/20260629-uist2026.webp"],
         category: "Publication",
         /*extraContent: (
             <>
@@ -124,7 +124,7 @@ export const news = [
         content: (
             <>Four papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>. Congratulations to Kyoungwhan, Seo Young, Minju, and Jinwook!</>
         ),
-        images: [],
+        images: ["img/news/banners/20260623-ismar-2026-four-papers-from-hci-tech-lab.webp"],
         category: "Publication",
         /*extraContent: (
             <>
@@ -160,7 +160,7 @@ export const news = [
         title: "A paper accepted to IEEE Robotics and Automation Letters (RA-L)",
         date: "Jun 17 2026",
         content: (<>A paper <strong>A Novel Flexible Shaft-driven Mechanism for Multidirectional Active Force Feedback in Haptic Gloves: A Preliminary Study</strong> in collaboration with ETRI is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369" target="_blank">IEEE Robotics and Automation Letters (RA-L)</Link>.</>),
-        images: [],
+        images: ["img/news/banners/20260617-ieee-ra-l-robotics-and-automation-letter.webp"],
         category: "Publication",
         status: "",       
     },
@@ -171,7 +171,7 @@ export const news = [
         content: (
             <>Two papers from HCI Tech Lab have been accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>. Congratulations to Youjin and Yubin!</>
         ),
-        images: [],
+        images: ["img/news/banners/20260615-imwut-ubicomp-2026-two-papers-from-hci-t.webp"],
         category: "Publication",
         extraContent: (
             <>
@@ -223,7 +223,7 @@ export const news = [
         title: "Summer 2026 Undergraduate Research Internship",
         date: "May 4 2026",
         content: <div>We are looking for research interns (including URP) for 2026 Summer. Application deadline is May 15th. You can find more information <Link href="/internship/summer-2026" target="_blank">here</Link>.</div>,
-        images: [],
+        images: ["img/news/banners/20260504-research-internship-summer-2026-undergra.webp"],
         category: "Position",      
         status: "Closed",
     },
@@ -246,7 +246,7 @@ export const news = [
         title: "A paper accepted to IEEE Transactions on Haptics (TOH)",
         date: "Apr 16 2026",
         content: (<>Our paper <strong>VibGrasp: Spatiotemporal Vibration Based Multimodal Haptic Rendering with a Lightweight Exo-Glove for 3D Shape Perception</strong> led by Hojeong is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4543165" target="_blank">IEEE Transactions on Haptics (ToH)</Link>.</>),
-        images: [],
+        images: ["img/news/banners/20260416-ieee-toh-transactions-on-haptics-vibgras.webp"],
         category: "Publication",
         status: "",       
     },
@@ -276,7 +276,7 @@ export const news = [
         title: "M.S./Ph.D. Openings",
         date: "Mar 15 2026",
         content: <div>We are looking for M.S and Ph.D students for Fall 2026 and Spring 2027 semester. Please refer to updated <Link href="/recruiting_graduate" target="_blank">M.S./Ph.D. Openings</Link>.</div>,
-        images: [],
+        images: ["img/news/banners/20260315-m-s-ph-d-openings-fall-2026-spring-2027.webp"],
         category: "Position",      
         status: "Closed",       
     },
@@ -287,7 +287,7 @@ export const news = [
         content: (
             <>Our paper <strong>Align-to-Scale: Mode Switching Technique for Unimanual 3D Object Manipulation with Gaze-Hand-Object Alignment in Extended Reality</strong> led by Min-yung is accepted to <Link href="https://etra.acm.org/2026/" target="_blank">ETRA 2026</Link>.</>
         ),
-        images: ["img/Other/etra26.png"],
+        images: ["img/news/banners/20260315-etra2026.webp"],
         category: "Publication",
     },
     {
@@ -295,14 +295,14 @@ export const news = [
         title: "New Research Project",
         date: "Mar 12 2026",
         content: <><strong>Context-Aware Multimodal Physical AI Framework for Coexistence-Oriented Human–Robot Interaction</strong> supported by NRF was selected.</>,
-        images: ["img/Other/nrf.png"],
+        images: ["img/news/banners/20260312-nrf.webp"],
     },
     {
         icon: "",
         title: "Graduate Students",
         date: "Mar 1, 2026",
         content: "Welcome our new Ph.D. students Hanseok Jeong, Hyung Wook Yi and MS students HyeongJin Do, Hyunwook Jung!",
-        images: []
+        images: ["img/news/banners/20260301-new-lab-members-ph-d-m-s-students-joinin.webp"]
     },
     {
         icon: "",
@@ -325,7 +325,7 @@ export const news = [
         content: (
             <>Two papers from HCI Tech Lab have been accepted to <Link href="https://chi2026.acm.org/" target="_blank">CHI 2026</Link>. Congratulations to Kun-woo Song, Dohui Lee, and Youngrae Kim!</>
         ),
-        images: [],
+        images: ["img/news/banners/20260120-chi-2026-two-papers-from-hci-tech-lab.webp"],
         category: "Publication",
         extraContent: (
             <>
@@ -351,7 +351,7 @@ export const news = [
         content: (
             <>Our paper <strong>AquaHaptics: Hand-based Multimodal Haptic Interactions for Immersive Virtual Underwater Experience</strong> led by Soyeong Yang is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
-        images: [],
+        images: ["img/news/banners/20260102-ieee-tvcg-vr-2026-aquahaptics.webp"],
         category: "Publication",
     },
     {
@@ -375,7 +375,7 @@ export const news = [
         content: (
             <>Our paper <strong>ForceCtrl: Hand-Raycasting with User-Defined Pinch Force for Control-Display Gain Application</strong> led by Seo Young (co-advised by Prof. Woontack Woo) and Junghoon is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
-        images: [],
+        images: ["img/news/banners/20251207-ieee-tvcg-vr-2026-forcectrl.webp"],
         category: "Publication",
     },
     {
@@ -383,7 +383,7 @@ export const news = [
         title: "Winter 2026 Undergraduate Research Internship",
         date: "Nov 7 2025",
         content: <div>We are looking for research interns (including URP) for 2025 Winter. Application deadline is Nov 18th. You can find more information <Link href="/recruiting_under" target="_blank">here</Link>.</div>,
-        images: [],
+        images: ["img/news/banners/20251107-research-internship-winter-2026-undergra.webp"],
         category: "Position",      
         status: "Closed",       
     },
@@ -399,7 +399,7 @@ export const news = [
         title: "A paper accepted to IMWUT (UbiComp 2026)",
         date: "Oct 27 2025",
         content: <div>Our paper <strong>Moving-Press: Pressure-based Moving Phantom Sensation for Immersive VR Hand Interaction</strong> led by Dongkyu, Kyungjin and Rachel is accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20251027-imwut-ubicomp-2026-moving-press.webp"]
     },
     {
         icon: "",
@@ -469,21 +469,21 @@ export const news = [
         title: "Graduate Students",
         date: "Sep 1, 2025",
         content: "Welcome our new Ph.D. students Kun-woo Song, Hojeong Lee and MS student Donghee Hyun!",
-        images: []
+        images: ["img/news/banners/20250901-new-lab-members-ph-d-m-s-students-joinin.webp"]
     },
     {
         icon: "",
         title: "Student Fellowship",
         date: "Aug 28 2025",
         content: "Dongkyu & Kyungeun are selected for 'PhD Student Research Grant' from the National Research Foundation of Korea.",
-        images: []
+        images: ["img/news/banners/20250828-student-fellowship-nrf-ph-d-student-rese.webp"]
     },
     {
         icon: "",
         title: "Student Fellowship",
         date: "Aug 20 2025",
         content: "Kyungeun is selected for 'Research Grant for U.S. Visiting Women Researchers' from the National Research Foundation of Korea.",
-        images: []
+        images: ["img/news/banners/20250820-student-fellowship-nrf-grant-for-u-s-vis.webp"]
     },
     {
         icon: "",
@@ -560,7 +560,7 @@ export const news = [
         title: "HCI Tech Lab members and papers at CHI 2025",
         date: "Apr 28 2025",
         content: <div>4 full papers and 1 workshop got accepted to <Link href="https://chi2025.acm.org/" target="_blank">CHI 2025</Link>.</div>,
-        images: [],
+        images: ["img/news/banners/20250428-chi-2025-four-full-papers-and-one-worksh.webp"],
         extraContent: (
             <>
                 <div className = "row research_item">
@@ -595,28 +595,28 @@ export const news = [
         title: "Summer 2025 Undergraduate Research Internship",
         date: "Apr 27 2025",
         content: <div>We are looking for research interns (including URP) for 2025 Summer. Application deadline is May 7th.</div>,
-        images: []
+        images: ["img/news/banners/20250427-research-internship-summer-2025-undergra.webp"]
     },
     {
         icon: "",
         title: "A paper accepted to WHC 2025",
         date: "Apr 18 2025",
         content: <div>Our paper <strong>3D Shape Perception through Spatiotemporal Vibrotactile Patterns with Kinesthetic Feedback</strong> led by Hojeong and Eun Ho is accepted to <Link href="https://2025.worldhaptics.org/" target="_blank">IEEE World Haptics Conference (WHC)</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20250418-whc-2025-ieee-world-haptics-conference.webp"]
     },
     {
         icon: "",
         title: "A paper accepted to IMWUT (UbiComp 2025)",
         date: "Apr 3 2025",
         content: <div>Our paper <strong>UltraBoard: Always-Available Wearable Ultrasonic Mid-air Haptic Interface for Responsive and Robust VR Inputs</strong> led by Changhyeon and Yubin is accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20250403-imwut-ubicomp-2025-ultraboard.webp"]
     },
     {
         icon: "",
         title: "New Research Project",
         date: "Apr 1 2025",
         content: <><strong>Generative Haptics and Fine Response Inference for Flexible Tactile Interfaces</strong> supported by Institute for Information & communication Technology Planning & evaluation (IITP) for 4 years.</>,
-        images: []
+        images: ["img/news/banners/20250401-new-research-project-iitp-generative-hap.webp"]
     },
     {
         icon: "",
@@ -630,14 +630,14 @@ export const news = [
         title: "Two Honorable Mention Award for CHI 2025",
         date: "Mar 28 2025",
         content: (<>Our papers <strong>ChoreoCraft: In-situ Crafting of Choreography in Virtual Reality through Creativity Support Tool</strong> led by Kyungeun & Hyunyoung and <strong>T2IRay: Design of Thumb-to-Index based Indirect Pointing for Continuous and Robust AR/VR Input</strong> led by Jina win Honorable Mention Award for <Link href="https://chi2025.acm.org/" target="_blank">CHI 2025</Link>!'</>),
-        images: [],
+        images: ["img/news/banners/20250328-honorable-mention-chi-2025-choreocraft-t.webp"],
     },
     {
         icon: "img/icon/speaker.png",
         title: "New Lab Logo",
         date: "Feb 20 2025",
         content: "Our lab got a new logo designed by Changheyon Park! Thanks all members for the feedback!",
-        images: [],
+        images: ["img/news/banners/20250220-new-lab-logo-designed-by-changhyeon-park.webp"],
     },
     {
         icon: "img/icon/graduation.png",
@@ -662,7 +662,7 @@ export const news = [
         content: (
             <>Our paper <strong>Neck Goes VRrr: Reducing Rotation-Induced Virtual Reality Sickness through Neck Muscle Vibrations</strong> led by Kun-Woo is accepted to <Link href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945" target="_blank">IEEE Transactions on Visualization and Computer Graphics (TVCG)</Link>.</>
         ),
-        images: [],
+        images: ["img/news/banners/20250126-ieee-tvcg-neck-goes-vrrr.webp"],
         
     },
     {
@@ -672,7 +672,7 @@ export const news = [
         content: (
             <>Four papers from HCI Tech Lab and collaborators have been accepted to <Link href="https://chi2025.acm.org/" target="_blank">CHI 2025</Link>. Congratulations to Hyunyoung Han, Kyungeun Jung, Jina Kim, and Youjin Sung!</>
         ),
-        images: [],
+        images: ["img/news/banners/20250117-chi-2025-four-papers-from-hci-tech-lab-c.webp"],
         extraContent: (
             <>
                 <div className = "row research_item">
@@ -707,7 +707,7 @@ export const news = [
         title: "Interns",
         date: "Jan 1 2025",
         content: "Welcome our winter interns Rachel Jungmin Kim, Eun Ho Kim, and Hyunwook Jung!",
-        images: []
+        images: ["img/news/banners/20250101-winter-interns-undergraduate-research-in.webp"]
     },
     ,
     {
@@ -743,7 +743,7 @@ export const news = [
         title: "Winter 2025 Undergraduate Research Internship",
         date: "Nov 12 2024",
         content: <div>We are looking for research interns (including 1 URP) for 2024 Winter. <Link href="/recruiting_under">Application</Link> deadline is Nov 24th.</div>,
-        images: []
+        images: ["img/news/banners/20241112-research-internship-winter-2025-undergra.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -764,35 +764,35 @@ export const news = [
         title: "A paper accepted to NeurIPS 2024",
         date: "Sep 26 2024",
         content: <div>Our paper <strong>Posture-Informed Muscular Force Learning for Robust Hand Pressure Estimation</strong> led by Kyungjin and Junghoon is accepted to <Link href="https://neurips.cc/" target="_blank">NeurIPS2024</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20240926-neurips-2024-posture-informed-muscular-f.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Students",
         date: "Aug 26 2024",
         content: "Welcome our new Ph.D. students Kyungeun Jung, Kyungjin Seo and MS student Dohui Lee!",
-        images: []
+        images: ["img/news/banners/20240826-new-lab-members-ph-d-m-s-students-joinin.webp"]
     },
     {
         icon: "img/icon/conf.png",
         title: "KHC 2024 Participation",
         date: "Aug 21 2024",
         content: <div>Our lab participated in the 2nd Korea Haptics Conference. Our lab received the Poster Presentation Award (Kyungjin, Junghoon, Hanseok)! Check <Link href="https://haptics.or.kr/conference/2024/award.php" target="_blank">here</Link> for more detail.</div>,
-        images: []
+        images: ["img/news/banners/20240821-khc-2024-korea-haptics-conference-poster.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "A paper accepted to IMWUT (UbiComp 2024)",
         date: "Aug 10 2024",
         content: <div>Our paper <strong>EStatiG: Wearable Haptic Feedback with Multi-Phalanx Electrostatic Brake for Enhanced Object Perception in VR</strong> led by Nicha and Hojeong is accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20240810-imwut-ubicomp-2024-estatig.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "A paper accepted to ISMAR 2024",
         date: "Aug 10 2024",
         content: <div>Our paper <strong>ThermicVib: Enabling Dynamic Thermal Sensation with Multimodal Haptic Glove for Thermal-Responsive Interaction</strong> led by Hyung Il is accepted to <Link href="https://ieeeismar.org/" target="_blank">IEEE ISMAR2024</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20240810-ismar-2024-thermicvib.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -806,7 +806,7 @@ export const news = [
         title: "Kyungjin, Kyungeun, and Nicha successfully defended their M.S. Theses",
         date: "Jun 11 2024",
         content: "Kyungjin Seo, Kyungeun Jung, Nicha Vanichvoranun successfully defended their M.S. Theses. Congrats! Kyungjin and Kyungeun will continue as Ph.D. students in HCI Tech Lab.",
-        images: []
+        images: ["img/news/banners/20240611-m-s-thesis-defense-kyungjin-seo-kyungeun.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -820,21 +820,21 @@ export const news = [
         title: "Summer 2024 Undergraduate Research Internship",
         date: "May 6 2024",
         content: "We are looking for research interns (including URP) for 2024 Summer. Application deadline is May 20th.",
-        images: []
+        images: ["img/news/banners/20240506-research-internship-summer-2024-undergra.webp"]
     },
     {
         icon: "",
         title: "Student Fellowship",
         date: "Apr 15 2024",
         content: "Kunwoo & Hyunyoung are selected for 'Master's Student Research Grant' from the National Research Foundation of Korea.",
-        images: []
+        images: ["img/news/banners/20240415-student-fellowship-nrf-master-s-student.webp"]
     },
     {
         icon: "",
         title: "Venture Research Program",
         date: "Apr 1 2024",
         content: "Youjin's Venture Research Proposal on 'Generative Haptic for VR Experience Design' was selected.",
-        images: []
+        images: ["img/news/banners/20240401-venture-research-program-generative-hapt.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -848,7 +848,7 @@ export const news = [
         title: "Graduate Students",
         date: "Mar 1 2024",
         content: "Welcome our new Ph.D. student Jina Kim and MS students Hanseok Jeong, Yubin Lee, Changhyeon Park, and Kyoungwhan Mheen!",
-        images: []
+        images: ["img/news/banners/20240301-new-lab-members-ph-d-m-s-students-joinin.webp"]
     },
     {
         icon: "img/icon/graduation.png",
@@ -876,7 +876,7 @@ export const news = [
         title: "Jina successfully defended her M.S. Thesis",
         date: "Dec 5 2023",
         content: "Jina Kim successfully defended her M.S. Thesis. Congrats! Jina will continue as a Ph.D. student in HCI Tech Lab.",
-        images: []
+        images: ["img/news/banners/20231205-m-s-thesis-defense-jina-kim.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -890,7 +890,7 @@ export const news = [
         title: "Winter 2024 Undergraduate Research Internship",
         date: "Nov 17 2023",
         content: <div>We are looking for research interns (including 1 URP) for 2024 Winter. <Link href="https://hcitech.org/recruiting/recruiting_under_2024.html" target="_blank">Application</Link> deadline is Nov 24th.</div>,
-        images: []
+        images: ["img/news/banners/20231117-research-internship-winter-2024-undergra.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -911,7 +911,7 @@ export const news = [
         title: "A paper accepted to IMWUT (UbiComp 2024)",
         date: "Oct 15 2023",
         content: <div>Our paper "HapticPilot: Authoring In-situ Hand Posture-Adaptive Vibrotactile Feedback for Virtual Reality" led by Youjin is accepted to <Link href="https://dl.acm.org/journal/imwut" target="_blank">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20231015-imwut-ubicomp-2024-hapticpilot.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -925,35 +925,35 @@ export const news = [
         title: "A paper accepted to Virtual Reality (Springer VR)",
         date: "Oct 9 2023",
         content: <div>Our paper "HapMotion: Motion-to-Tactile Framework with Wearable Haptic Devices for Immersive VR Performance Experience" led by Kyungeun is accepted to <Link href="https://www.springer.com/journal/10055" target="_blank">Virtual Reality (Springer)</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20231009-virtual-reality-springer-hapmotion.webp"]
     },
     {
         icon: "",
         title: "📣 HCI Tech lab in the MERRIC News Letter",
         date: "Sep 6 2023",
         content: <div>HCI Tech Lab has been featured on <Link href="https://www.materic.or.kr/v2/mp/content.asp?f_id=145&page=1&listType=20" target="_blank">Merric</Link> (Mechanical Engineering and Robotics Research Information Center) news letter.</div>,
-        images: []
+        images: ["img/news/banners/20230906-merric-newsletter-hci-tech-lab-featured.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Students",
         date: "Sep 1 2023",
         content: "Welcome our new Ph.D. student Youjin Sung and MS students Hyunyoung Han, Kun-Woo Song, Hojeong Lee, Fangqing Li, and Hyung Wook Yi!",
-        images: []
+        images: ["img/news/banners/20230901-new-lab-members-ph-d-m-s-students-joinin.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "A paper accepted to SUI 2023",
         date: "Aug 25 2023",
         content: <div>Our paper "VibAware: Context-Aware Tap and Swipe Gestures Using Bio-Acoustic Sensing" led by Jina is accepted to <Link href="https://sui.acm.org/2023/" target="_blank">SUI2023</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20230825-sui-2023-vibaware.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "A demo accepted to UIST 2023",
         date: "Aug 25 2023",
         content: <div>Our demo "Mo2Hap: Rendering performer’s Motion Flow to Upper-body Vibrotactile Haptic Feedback for VR performance" will be presented at <Link href="https://uist.acm.org/2023/" target="_blank">UIST 2023</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20230825-uist-2023-mo2hap.webp"]
     },
     {
         icon: "img/icon/visit.png",
@@ -988,35 +988,35 @@ export const news = [
         title: "Recruiting Graduate Students",
         date: "Jun 14 2023",
         content: <div>We have positions for M.S. & Ph.D for Spring 2024 (Graduate School of Culture Technology & Metaverse Program). Please check <Link href="recruiting/recruiting_graduate.html" target="_blank">Open Positions</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20230614-graduate-openings-m-s-ph-d-positions-for.webp"]
     },
     {
         icon: "img/icon/thesis.png",
         title: "Youjin successfully defended her M.S. Thesis",
         date: "Jun 13 2023",
         content: "Youjin Sung successfully defended her M.S. Thesis. Congrats! Youjin will continue as a Ph.D. student in HCI Tech Lab.",
-        images: []
+        images: ["img/news/banners/20230613-m-s-thesis-defense-youjin-sung.webp"]
     },
     {
         icon: "img/icon/project.png",
         title: "New Research Project",
         date: "Jun 1 2023",
         content: "New research project on 'Real-time virtual convergence-based performing arts education platform technology' collaborated with ETRI, 1Million, and EBS.",
-        images: []
+        images: ["img/news/banners/20230601-new-research-project-performing-arts-edu.webp"]
     },
     {
         icon: "img/icon/project.png",
         title: "New Research Project",
         date: "Jun 1 2023",
         content: "New research project on 'In-camera based interactive digital VFX content production pipeline technology' collaborated with KETI, DexterStudios, Studio EON, and Metalocat.",
-        images: []
+        images: ["img/news/banners/20230601-new-research-project-interactive-digital.webp"]
     },
     {
         icon: "img/icon/speaker.png",
         title: "Summer 2023 Undergraduate Research Internship",
         date: "May 10 2023",
         content: "We are looking for research interns for 2023 Summer. Application deadline is May 17th.",
-        images: []
+        images: ["img/news/banners/20230510-research-internship-summer-2023-undergra.webp"]
     },
     {
         icon: "img/icon/conf.png",
@@ -1030,35 +1030,35 @@ export const news = [
         title: "Venture Research Program",
         date: "Mar 20 2023",
         content: "Jina & Min-yung's Venture Research Proposal on 'Interaction improvement using sensing technology' was selected!",
-        images: []
+        images: ["img/news/banners/20230320-venture-research-program-interaction-imp.webp"]
     },
     {
         icon: "img/icon/project.png",
         title: "New Research Project",
         date: "Mar 17 2023",
         content: "Outstanding Young Scientist Grants (NRF) on 'A wearable multimodal sensing framework for adaptive interaction in extended reality' selected.",
-        images: []
+        images: ["img/news/banners/20230317-new-research-project-nrf-outstanding-you.webp"]
     },
     {
         icon: "img/icon/speaker.png",
         title: "Recruiting Graduate Students",
         date: "Mar 10 2023",
         content: "We have positions for M.S. & Ph.D for Spring 2023. Please register for information session for Graduate School of Culture Technology.",
-        images: []
+        images: ["img/news/banners/20230310-graduate-openings-m-s-ph-d-positions-for.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Students & Intern",
         date: "Mar 6 2023",
         content: "Welcome our new Ph.D. student Seo Young Oh (Co-advising), and spring intern Hyunyoung Han!",
-        images: []
+        images: ["img/news/banners/20230306-new-lab-members-ph-d-student-spring-inte.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Students",
         date: "Feb 27 2023",
         content: "Welcome our new MS students Dong Kyu, Min-yung, Hyung Il, Soyeong, and Junghoon!",
-        images: []
+        images: ["img/news/banners/20230227-new-lab-members-m-s-students-joining-in.webp"]
     },
     {
         icon: "img/icon/graduation.png",
@@ -1079,7 +1079,7 @@ export const news = [
         title: "VR 2023 Posters",
         date: "Jan 30 2023",
         content: <div>Three posters will be presented at <Link href="https://ieeevr.org/2023/" target="_blank">VR 2023</Link>.</div>,
-        images: [],
+        images: ["img/news/banners/20230130-ieee-vr-2023-three-poster-presentations.webp"],
         extraContent: (
             <>
                 <small><p><strong>VibAware: Context-Aware Tap and Swipe Gestures Using Bio-Acoustic</strong> Jina Kim, Minyung Kim, Woo Suk Lee, Sang Ho Yoon (in collaboration with Microsoft)</p>
@@ -1107,7 +1107,7 @@ export const news = [
         title: "Winter 2023 Undergraduate Research Internship",
         date: "Dec 7 2022",
         content: "We are looking for research interns for 2023 Winter. Internship Application deadline is Dec 19th.",
-        images: []
+        images: ["img/news/banners/20221207-research-internship-winter-2023-undergra.webp"]
     },
     {
         icon: "img/icon/award.png",
@@ -1121,42 +1121,42 @@ export const news = [
         title: "Recruiting Graduate Students",
         date: "Sep 15 2022",
         content: <div>We have positions for M.S. & Ph.D for Spring 2023. Please check <Link href="recruiting_graduate.html" target="_blank">Open Positions</Link> & <Link href="https://meta.kaist.ac.kr" target="_blank">KAIST Metaverse program</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20220915-graduate-openings-m-s-ph-d-positions-for.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "VRST 2022 Posters",
         date: "Sep 7 2022",
         content: <div>Youjin's work on vibration intensity map based on hand posture in collaboration with Technische Universität Dresden & Zofia's work (URP) on finger-worn haptic actuator will be presented at <Link href="https://vrst.acm.org/vrst2022/" target="_blank">VRST2022</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20220907-vrst-2022-two-poster-presentations.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "ISMAR 2022 Posters",
         date: "Aug 22 2022",
         content: <div>Three poster papers from <Link href="https://hcitech.org/course/CTP445_Spring2022.html" target="_blank">CTP445</Link> class will be presented at <Link href="https://ismar2022.org/" target="_blank">ISMAR2022</Link>.</div>,
-        images: []
+        images: ["img/news/banners/20220822-ismar-2022-three-posters-from-the-ctp445.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Students",
         date: "Aug 29 2022",
         content: "Welcome our new MS students Kyungjin and Kyungeun!",
-        images: []
+        images: ["img/news/banners/20220829-new-lab-members-m-s-students-joining-in.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "SIGGRAPH 2022 Emerging Technologies",
         date: "Jul 4 2022",
         content: <>Our SIGGRAPH 2022 Emerging Technologies paper <Link href="https://s2022.siggraph.org/presentation/?id=gensub_329&sess=sess220" target="_blank">Sense of Embodiment Inducement for People With Reduced Lower-body Mobility and Sensations With Partial-visuomotor Stimulation</Link> in collaboration with LAVA Lab & Visual Cognition Lab is highlighted on <Link href="https://blog.siggraph.org/2022/06/researchers-make-sense-of-embodiment-available-to-all.html/" target="_blank">SIGGRAPH Blog</Link>!</>,
-        images: []
+        images: ["img/news/banners/20220704-siggraph-2022-sense-of-embodiment-induce.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "ECCV 2022",
         date: "Jul 4 2022",
         content: <>Sound-Guided Semantic Video Generation in collaboration with Computer Vision Lab is accepted to <Link href="https://eccv2022.ecva.net/" target="_blank">ECCV2022</Link>!</>,
-        images: []
+        images: ["img/news/banners/20220704-eccv-2022-sound-guided-semantic-video-ge.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
@@ -1170,14 +1170,14 @@ export const news = [
         title: "New Research Projects",
         date: "June 1 2022",
         content: "Research projects supported by Korea Creative Content Agency (KOCCA) & National Research Foundation of Korea (NRF).",
-        images: []
+        images: ["img/news/banners/20220601-new-research-projects-supported-by-kocca.webp"]
     },
     {
         icon: "img/icon/speaker.png",
         title: "Undergraduate Research Internship",
         date: "May 2022",
         content: "We are looking for research interns for 2022 Summer.",
-        images: []
+        images: ["img/news/banners/20220501-research-internship-summer-2022-undergra.webp"]
     },
     {
         icon: "",
@@ -1191,21 +1191,21 @@ export const news = [
         title: "Graduate Student",
         date: "Mar 2 2022",
         content: "Welcome our new MS student Youjin!",
-        images: []
+        images: ["img/news/banners/20220302-new-lab-member-m-s-student-joining-in-sp.webp"]
     },
     {
         icon: "img/icon/paper2.jpg",
         title: "CVPR 2022",
         date: "Mar 2 2022",
         content: <>Sound-Guided Semantic Image Manipulation in collaboration with Computer Vision Lab is accepted to <Link href="https://cvpr2022.thecvf.com/" target="_blank">CVPR2022</Link>!</>,
-        images: []
+        images: ["img/news/banners/20220302-cvpr-2022-sound-guided-semantic-image-ma.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Winter Interns",
         date: "Jan 17 2022",
         content: "Welcome KAIST undergraduate interns Nicha, Yoonseo, and Haebin.",
-        images: []
+        images: ["img/news/banners/20220117-winter-interns-kaist-undergraduate-inter.webp"]
     },
     {
         icon: "",
@@ -1219,41 +1219,41 @@ export const news = [
         title: "Lab Opening!",
         date: "Jan 3 2022",
         content: "Officially opened the lab area. Work-in-progress setting up the lab with members.",
-        images: []
+        images: ["img/news/banners/20220103-lab-opening-january-2022.webp"]
     },
     {
         icon: "",
         title: "URP Individual Research Selected",
         date: "Dec 21 2021",
         content: <>Individual Research Proposal by Zofia has been accepted. This is exploratory research to enable <i>Novel Haptic Interface</i>.</>,
-        images: []
+        images: ["img/news/banners/20211221-urp-individual-research-exploring-a-nove.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Students",
         date: "Dec 13 2021",
         content: "Welcome our new MS student Minjae and Interns Zofia and Kyungeun.",
-        images: []
+        images: ["img/news/banners/20211213-new-lab-members-m-s-student-interns-wint.webp"]
     },
     {
         icon: "img/icon/project.png",
         title: "New Research Project",
         date: "Dec 1 2021",
         content: <><strong>Development of Open XR platform for high immersive collaboration</strong> supported by National Research Council of Science and Technology (NST) for 6 years.</>,
-        images: []
+        images: ["img/news/banners/20211201-new-research-project-nst-open-xr-platfor.webp"]
     },
     {
         icon: "img/icon/Welcome.jpg",
         title: "Graduate Student",
         date: "Nov 4 2021",
         content: "Welcome our new MS student Jina!",
-        images: []
+        images: ["img/news/banners/20211104-new-lab-member-m-s-student-joining-in-fa.webp"]
     },
     {
         icon: "",
         title: "Lab Website Open!",
         date: "Sep 27 2021",
         content: "Beta version website is open. The website will be actively updated.",
-        images: []
+        images: ["img/news/banners/20210927-lab-website-open-september-2021.webp"]
     }
 ];
