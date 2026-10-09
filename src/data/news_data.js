@@ -3,6 +3,20 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "",
+        title: "Best Paper Award for ISMAR 2026",
+        date:"Oct 7 2026",
+        content: (<>A paper <strong>Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration</strong> led by Minju wins Best Paper Award <span>(&lt;1%)</span> for <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>!'</>),
+        images: ["img/Lab/2610/ISMAR2026_Award1.jpg"],
+    },
+    {
+        icon: "",
+        title: "Honorable Mention Award for ISMAR 2026",
+        date:"Oct 7 2026",
+        content: (<>A collaborative paper <strong>Understanding Organizational Strategies Across Multimodal Artifacts in Immersive Computational Notebooks</strong> with Georgia Tech and Northeastern University (led by Minju on our side) wins Honorable Mention Award <span>(&lt;5%)</span> for <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>!'</>),
+        images: ["img/Lab/2610/ISMAR2026_Award2.jpg"],
+    },
+    {
+        icon: "",
         title: "A paper accepted to NeurIPS 2026 Evaluations and Datasets",
         date: "Sep 26 2026",
         content: <div>Our paper <strong>HAPACT: A Benchmark For Human-Centric Physical Impact Localization in Movies</strong> led by Youngrae is accepted to <Link href="https://neurips.cc/" target="_blank">NeurIPS2026 Evaluations and Datasets Track</Link>.</div>,
