@@ -24,7 +24,7 @@ export default function Document() {
               <div className="col-lg-6 px-4"> 
                 <h5 className="m-0 text-left text-white" style= {{fontSize:"medium"}} ><b>HCI Tech Lab</b></h5> 
                 <h5 className="m-0 text-left" style= {{color: "lightgray", fontSize:"small"}}>
-                  KAIST, N5, Room 2347<br />
+                  KAIST, N5, Room 2337<br />
                   291 Daehak-ro, Yuseong-gu, Daejeon (34141) <br />
                   Republic of Korea
                 </h5> 
