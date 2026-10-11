@@ -138,7 +138,7 @@ export const research_temp = {
             conferenceLink: "https://www.ubicomp.org/ubicomp-iswc-2026/",
             award: "",
             website: "",
-            doi: "",
+            doi: "https://dl.acm.org/doi/10.1145/3830727.3834812",
             video: "",
             pdf: "",
             presentation: "",
