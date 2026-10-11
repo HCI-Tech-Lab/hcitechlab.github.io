@@ -3,6 +3,13 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "",
+        title: "ISMAR 2026 Participation",
+        date: "Oct 6 2026",
+        content: <dev>Our lab participated in ISMAR'26 in Italy. Kyoungwhan, Minju, and Dr. Seoyoung presented papers and participated in the XR-SPro'26 workshop..</dev>,
+        images: ["img/Lab/2610/ISMAR2026_3","img/Lab/2610/ISMAR2026_6"]
+    },
+    {
+        icon: "",
         title: "Best Paper Award for ISMAR 2026",
         date:"Oct 7 2026",
         content: (<>A paper <strong>Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration</strong> led by Minju wins Best Paper Award <span>(&lt;1%)</span> for <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>!'</>),

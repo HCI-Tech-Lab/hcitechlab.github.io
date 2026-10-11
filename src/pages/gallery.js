@@ -126,6 +126,17 @@ export default function Gallery() {
 }
 
 const galleries = {
+  "Oct 2026 (ISMAR, Italy)": [
+    "img/Lab/2610/ISMAR2026_1.jpg",
+    "img/Lab/2610/ISMAR2026_2.jpg",
+    "img/Lab/2610/ISMAR2026_3.jpg",
+    "img/Lab/2610/ISMAR2026_4.jpg",
+    "img/Lab/2610/ISMAR2026_5.jpg",
+    "img/Lab/2610/ISMAR2026_6.jpg",
+    "img/Lab/2610/ISMAR2026_7.jpg",
+    "img/Lab/2610/ISMAR2026_Award1.jpg",
+    "img/Lab/2610/ISMAR2026_Award2.jpg",
+  ],
   "Aug 2026 (BrainLink, Incheon)": [
     "img/Lab/2608/Brain1.jpg",
     "img/Lab/2608/Brain2.jpg",
