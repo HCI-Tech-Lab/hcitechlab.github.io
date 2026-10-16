@@ -1,7 +1,7 @@
 export const research_temp = {
     "2026":[
         {
-            poster: "img/icon/preprint.png",
+            poster: "research/2026/NeurIPS/hapact.png",
             demo: "",
             title: "HAPACT: A Benchmark For Human-Centric Physical Impact Localization in Movies",
             authors: "Youngrae Kim, Yejin Jang, Eunho Kim, Youjin Sung, Kun-Woo Song, Sangpil Kim, Sang Ho Yoon ",
@@ -9,8 +9,8 @@ export const research_temp = {
             conference: "NeurIPS 2026 Evaluations and Datasets Track",
             conferenceLink: "https://neurips.cc/Conferences/2026",
             award: "",
-            website: "",
-            doi: "",
+            website: "https://hapact.hcitech.org/",
+            doi: "https://neurips.cc/virtual/2026/loc/sydney/poster/139113",
             video: "",
             pdf: "",
             presentation: "",
