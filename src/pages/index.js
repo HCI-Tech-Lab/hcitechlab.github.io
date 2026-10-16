@@ -88,7 +88,7 @@ const WelcomeCard = () => {
                lineHeight: '1.7'
              }}>
               <p>
-                The Human-Centered Interactive Technologies Lab (HCI Tech Lab) is a multidisciplinary research group at KAIST. 
+                The Human-Centered Interactive Technologies Laboratory (HCI Tech Lab) is a multidisciplinary research group at KAIST. 
                 Our mission is to empower human potential by bridging the physical and digital worlds through embodied intelligence (Physical AI) and immersive technologies (XR). <br></br>
               </p>
                 Our research focuses on:<br />
