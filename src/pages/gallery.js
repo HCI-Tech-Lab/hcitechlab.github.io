@@ -126,6 +126,20 @@ export default function Gallery() {
 }
 
 const galleries = {
+  "Oct 2026 (UbiComp, Shanghai)": [
+    "img/Lab/2610/UbiComp2026_1.jpg",
+    "img/Lab/2610/UbiComp2026_2.jpg",
+    "img/Lab/2610/UbiComp2026_3.jpg",
+    "img/Lab/2610/UbiComp2026_4.jpg",
+    "img/Lab/2610/UbiComp2026_5.jpg",
+    "img/Lab/2610/UbiComp2026_6.jpg",
+    "img/Lab/2610/UbiComp2026_7.jpg",
+    "img/Lab/2610/UbiComp2026_8.jpg",
+    "img/Lab/2610/UbiComp2026_9.jpg",
+    "img/Lab/2610/UbiComp2026_10.jpg",
+    "img/Lab/2610/UbiComp2026_11.jpg",
+    "img/Lab/2610/UbiComp2026_12.jpg",    
+  ],
   "Oct 2026 (ISMAR, Italy)": [
     "img/Lab/2610/ISMAR2026_1.jpg",
     "img/Lab/2610/ISMAR2026_2.jpg",
