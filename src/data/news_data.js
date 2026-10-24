@@ -6,7 +6,7 @@ export const news = [
         title: "UbiComp 2026 Participation",
         date: "Oct 16 2026",
         content: <dev>Our lab participated in UbiComp'26 in Shanghai. Youjin, Dongkyu, Hyung Il, and Yubin presented IMWUT & ISWC papers.</dev>,
-        images: ["img/Lab/2610/UbiComp1.jpg"]
+        images: ["img/Lab/2610/UbiComp2026_1.jpg"]
     },
     {
         icon: "",

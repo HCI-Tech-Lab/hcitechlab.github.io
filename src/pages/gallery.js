@@ -138,7 +138,6 @@ const galleries = {
     "img/Lab/2610/UbiComp2026_9.jpg",
     "img/Lab/2610/UbiComp2026_10.jpg",
     "img/Lab/2610/UbiComp2026_11.jpg",
-    "img/Lab/2610/UbiComp2026_12.jpg",    
   ],
   "Oct 2026 (ISMAR, Italy)": [
     "img/Lab/2610/ISMAR2026_1.jpg",
