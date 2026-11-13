@@ -1,4 +1,15 @@
 export const internshipCalls = {
+    "winter-2027": {
+        period: "Winter 2027",
+        formLink: "https://forms.gle/1v1rxqGACoP9mDNj6", 
+        documentLink: "https://docs.google.com/document/d/18SQ5dKvn7kR41IIuQ5BsH4aUslLirszoRiR49RGG7kA/edit?usp=sharing",
+        projectTitles: [
+            "Multimodal Hand Interaction Dataset & Collection (Topic: Physical AI, Haptics)",
+            "Generative Motion Synthesis for Expressive Robots (Topic: HRI, HCI, Robotics)",
+            "Human-Robot Haptic Interaction Generation (Topic: HRI, HCI, Robotics)",
+        ],
+        deadline: "Nov 20, 2026 (Fri)",
+    },
     // Example of a past/future call. Its URL will be: yourwebsite.com/internship/summer-2026
     "summer-2026": {
         period: "Summer 2026",
