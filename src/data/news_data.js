@@ -12,6 +12,26 @@ export const news = [
     },
     {
         icon: "",
+        title: "Our work on multimodal haptic glove will be featured in CES 2027.",
+        date: "Nov 13 2026",
+        content: <dev>Our research project on multimodal haptic glove got CES 2027 Award (Honoree) and was featured in{" "}
+        <Link href="https://news.kaist.ac.kr/site/news/html/news/?mode=V&mng_no=69010&GotoPage=1&skey=keyword" target="_blank" rel="noopener noreferrer">media</Link>.</dev>,
+    },
+    {
+        icon: "",
+        title: "Our work on visualizing haptics for VR collaboration was featured in the media.",
+        date: "Nov 13 2026",
+        content: <dev>Our work, <em>"Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration,"</em> was featured in{" "}
+        <Link href="https://news.kaist.ac.kr/site/news/html/news/?mode=V&mng_no=69010&GotoPage=1&skey=keyword" target="_blank" rel="noopener noreferrer">media</Link>.</dev>,
+    },
+    {
+        icon: "",
+        title: "UIST 2026 Participation",
+        date: "Nov 10 2026",
+        content: <dev>Our lab participated in UIST'26 in Detroit. Jina and Rachel presented UIST papers & demos.</dev>,
+    },
+    {
+        icon: "",
         title: "UbiComp 2026 Participation",
         date: "Oct 16 2026",
         content: <dev>Our lab participated in UbiComp'26 in Shanghai. Youjin, Dongkyu, Hyung Il, and Yubin presented IMWUT & ISWC papers.</dev>,
