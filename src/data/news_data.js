@@ -12,14 +12,15 @@ export const news = [
     },
     {
         icon: "",
-        title: "Our work on multimodal haptic glove will be featured in CES 2027.",
+        title: "Our work on multimodal haptic glove will be featured in CES 2027",
         date: "Nov 13 2026",
         content: <dev>Our research project on multimodal haptic glove got CES 2027 Award (Honoree) and was featured in{" "}
-        <Link href="https://news.kaist.ac.kr/site/news/html/news/?mode=V&mng_no=69010&GotoPage=1&skey=keyword" target="_blank" rel="noopener noreferrer">media</Link>.</dev>,
+        <Link href="https://fortune.com/press-releases/dynamic-solution-dynamic-x-hand-ces-2027-innovation-awards-2026-11-09/" target="_blank" rel="noopener noreferrer">media</Link>.</dev>,
+        images: ["img/Lab/2611/CES.jpg"]
     },
     {
         icon: "",
-        title: "Our work on visualizing haptics for VR collaboration was featured in the media.",
+        title: "Our work on visualizing haptics for VR collaboration was featured in the media",
         date: "Nov 13 2026",
         content: <dev>Our work, <em>"Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration,"</em> was featured in{" "}
         <Link href="https://news.kaist.ac.kr/site/news/html/news/?mode=V&mng_no=69010&GotoPage=1&skey=keyword" target="_blank" rel="noopener noreferrer">media</Link>.</dev>,
@@ -29,6 +30,7 @@ export const news = [
         title: "UIST 2026 Participation",
         date: "Nov 10 2026",
         content: <dev>Our lab participated in UIST'26 in Detroit. Jina and Rachel presented UIST papers & demos.</dev>,
+        images: ["img/Lab/2611/UIST/IMG_5570.jpg","img/Lab/2611/UIST/IMG_5295.jpg"]
     },
     {
         icon: "",
