@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-/*
+
 export const postdocs = [
-	,{
+/*	,{
         img: "img/Member/JW.jpg",
         hoverImg: "img/Member/hover_image/JW_hover.jpg",
         name: "Jinwook Kim",
@@ -23,8 +23,8 @@ export const postdocs = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/kimkeunwook/",
         note: "",
-    }
-];*/
+    }*/
+];
 
 export const phdStudents = [
     {
