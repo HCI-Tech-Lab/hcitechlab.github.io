@@ -1,7 +1,8 @@
 import Link from "next/link";
 
+/*
 export const postdocs = [
-	{
+	,{
         img: "img/Member/JW.jpg",
         hoverImg: "img/Member/hover_image/JW_hover.jpg",
         name: "Jinwook Kim",
@@ -11,7 +12,7 @@ export const postdocs = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/jinwook-kim-779491183/",
         note: "",
-    }/*,
+    }
     {
         img: "img/Member/KK.JPG",
         hoverImg: "main_icon.png",
@@ -22,8 +23,8 @@ export const postdocs = [
         mail: "#",
         linkedin: "https://www.linkedin.com/in/kimkeunwook/",
         note: "",
-    }*/
-];
+    }
+];*/
 
 export const phdStudents = [
     {
@@ -321,6 +322,15 @@ export const interns = [
 ];
 
 export const gradAlumni = [
+    {
+        name: "Jinwook Kim",
+        nameLink: "#",
+        title: "Post-Doc Researcher",
+        period: "Sep 2025 - Nov 2026",
+        interest: "Multimodal Interaction",
+        link: "http://jinwook.me/",
+        current: "(now PostDoc Fellow, University of Houston)",
+    },
     {
         name: "Seo Young Oh",
         nameLink: "#",

@@ -39,7 +39,7 @@ export default function Team() {
             {/* 5. Alumni Sections */}
             <div className="row mt-5 pt-4 border-top">
                 <div className="col-md-6 mb-4">
-                    <AlumniSection title="Alumni (Graduate Students)" alumniData={gradAlumni} type="grad" />
+                    <AlumniSection title="Alumni (Postdocs & Graduate Students)" alumniData={gradAlumni} type="grad" />
                 </div>
                 <div className="col-md-6 mb-4">
                     <AlumniSection title="Alumni (Interns)" alumniData={internAlumni} type="intern" />

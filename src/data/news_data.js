@@ -3,6 +3,12 @@ import Link from 'next/link';
 export const news = [
     {
         icon: "",
+        title: "Farewell to Dr. Jinwook Kim",
+        date: "Nov 13 2026",
+        content: <div>Dr. Jinwook Kim, a postdoctoral researcher in our lab, will join the University of Houston as a Postdoctoral Fellow. We are grateful for his contributions to the HCI Tech Lab and wish him all the best in this next chapter. Congratulations, Jinwook!</div>,
+    },
+    {
+        icon: "",
         title: "Winter 2027 Undergraduate Research Internship",
         date: "Nov 13 2026",
         content: <div>We are looking for research interns (including URP) for 2027 Winter. Application deadline is Nov 20th. You can find more information <Link href="/internship/winter-2027" target="_blank">here</Link>.</div>,
