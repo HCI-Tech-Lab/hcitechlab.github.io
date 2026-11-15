@@ -327,8 +327,7 @@ export const gradAlumni = [
         nameLink: "#",
         title: "Post-Doc Researcher",
         period: "Sep 2025 - Nov 2026",
-        interest: "Multimodal Interaction",
-        link: "http://jinwook.me/",
+        thesisLink: "#",
         current: "(now PostDoc Fellow, University of Houston)",
     },
     {
