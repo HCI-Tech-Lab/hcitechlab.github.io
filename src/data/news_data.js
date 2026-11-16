@@ -28,7 +28,7 @@ export const news = [
         icon: "",
         title: "Our work on visualizing haptics for VR collaboration was featured in the media",
         date: "Nov 13 2026",
-        content: <dev>Our work, <em>"Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration,"</em> was featured in{" "}
+        content: <dev>Our work, <em>"Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration"</em> was featured in{" "}
         <Link href="https://news.kaist.ac.kr/site/news/html/news/?mode=V&mng_no=69010&GotoPage=1&skey=keyword" target="_blank" rel="noopener noreferrer">media</Link>.</dev>,
     },
     {
@@ -56,7 +56,7 @@ export const news = [
         icon: "",
         title: "Best Paper Award for ISMAR 2026",
         date:"Oct 7 2026",
-        content: (<>A paper <strong>Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration</strong> led by Minju wins Best Paper Award <span>(&lt;1%)</span> for <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>!'</>),
+        content: (<>A paper <strong>Sharing Roughness with Hand-Outline Visualization to Reduce Sensory Asymmetry in VR Collaboration</strong> led by Minju wins Best Paper Award <span>(&lt;1%)</span> for <Link href="https://www.ieeeismar.net/2026/" target="_blank">ISMAR 2026</Link>!</>),
         images: ["img/Lab/2610/ISMAR2026_Award1.jpg"],
     },
     {
